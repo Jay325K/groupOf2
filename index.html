@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            box-shadow: inset 0 0 5px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div:hover{
+            box-shadow: 0 0 5px black;
+        }
+
+        div:hover span{
+            animation: animate 0.5s infinite alternate linear;
+        }
+        div span{
+            width: 50px ;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span span{
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            transition: 0.05s;
+        }
+        div:hover span span{
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.329);
+        }
+        @keyframes animate{
+            100%{
+                transform: rotate(3600deg) ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>
+            <span></span>
+        </span>
+    </div>
+</body>
+</html>
