@@ -11,7 +11,7 @@ main .header_imgBox{
     width: 100%;
     height: 360px;
     margin: 5px auto;
-    background: url("images/03_Water\ Leadership.jpg_1440x480.jpg")no-repeat;
+    background: url("Communities_images/03_Focus_Area_Header_Image_04_767x462.jpg")no-repeat;
     background-size: cover;
 }
 main .header_imgBox .pageName{
@@ -26,7 +26,8 @@ main .header_imgBox .pageName h2{
     font-size: 4em;
     text-transform: uppercase;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
                     /*sec_two*/
@@ -173,54 +174,26 @@ main .RLPT .sec_four_text_wrap p{
   letter-spacing: -1px;
   color: #080808;
 }
-
-
 /*더보기*/
 main .RLPT .sec_four_text_wrap .sec_two_more_btn{
   width: 100px;
+  background: #2e2e2e;
   border-radius: 3px ;
   transition: 0.2s;
 }
+main .RLPT .sec_four_text_wrap .sec_two_more_btn:hover{
+  background: rgb(236, 25, 25);
+}
 
 main .RLPT .sec_four_text_wrap a{
-  position: relative;
   height: 40px;
   text-decoration: none;
+  color: #fff;
   display: flex;
-  color: #191919;
   justify-content: center;
   align-items: center;
   font-weight: 800;
 }
-
-main .RLPT .sec_four_text_wrap a:hover{
-  text-decoration: underline;
-  color: red;
-}
-
-main .RLPT .sec_four_text_wrap a::before{
-  position: absolute;
-  top: 15px;
-  width: 10px;
-  height: 10px;
-  right: 0;
-  content: '' ;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  transform: rotate(45deg);
-}
-
-main .RLPT .sec_four_text_wrap:hover a::before{
-  border-color: red;
-  animation: text_deco_move 1s infinite alternate ease-in-out;
-}
-
-@keyframes text_deco_move{
-  100%{
-    transform: translateX(20px) rotate(45deg);
-  }
-}
-
 
 
   /*사진 영역*/
@@ -248,7 +221,7 @@ main .RLPT .sec_four_text_wrap:hover a::before{
 
 
 
-          /*********** sec_five ************/  
+  /* sec_five */  
   main .sec_five{
     width: 100%;
   }
@@ -257,8 +230,6 @@ main .RLPT .sec_four_text_wrap:hover a::before{
     width: 1080px;
     margin: auto;
   }
-
-
 
               /*더많은 이야기 텍스트*/
   main .sec_five_wrap .more_story{
@@ -275,9 +246,6 @@ main .RLPT .sec_four_text_wrap:hover a::before{
     height: 80%;
     border-left: 6px solid red;
   }
-
-
-
                 /*sec_five_이미지, 제목*/
     main .sec_five_wrap .img_box{
       width: 100%;
@@ -287,44 +255,40 @@ main .RLPT .sec_four_text_wrap:hover a::before{
 
     main .sec_five_wrap .img_box .sec_img_box{
       transition: 0.5s;
-      display: none;
     }
 
-    main .sec_five_wrap .img_box .all_img_box ul{
+    main .sec_five_wrap .img_box .first_img_box ul{
       width: 100%;
       padding-bottom: 40px;
       display: flex;
 
     }
-    main .sec_five_wrap .img_box .all_img_box ul li{
+    main .sec_five_wrap .img_box .first_img_box ul li{
       position: relative;
       height: 270px;
       margin-right: 25px;
       box-shadow: 0 0 3px rgb(0, 0, 0);
     }
-    main .sec_five_wrap .img_box .all_img_box ul li .imgtransform{
+    main .sec_five_wrap .img_box .first_img_box ul li .imgtransform{
       height: 160px;
       overflow: hidden;
     }
                         /*이미지 커졌다 작아졌다*/
-    main .sec_five_wrap .img_box .all_img_box ul li img{
+    main .sec_five_wrap .img_box .first_img_box ul li img{
       transition: 0.3s;
     }
-    main .sec_five_wrap .img_box .all_img_box ul li:hover img{
+    main .sec_five_wrap .img_box .first_img_box ul li:hover img{
       
       transition: 0.3s;
       transform: scale(1.1);
     }
-
-
-
                       /*이미지 박스 텍스트 영역*/
     main .sec_five_wrap .img_box .txt_wrap{
       width: 100%;
       height: 110px;
       background: linear-gradient(to bottom, rgba(248, 125, 125, 0), rgba(0, 0, 0, 0.274));
     }
-    main .sec_five_wrap .img_box .all_img_box ul li p{
+    main .sec_five_wrap .img_box .first_img_box ul li p{
       position: absolute;
       top: 160px;
       width: 100%;
@@ -334,7 +298,7 @@ main .RLPT .sec_four_text_wrap:hover a::before{
       justify-content: center;
       align-items: center;
     }
-    main .sec_five_wrap .img_box .all_img_box ul li p a{
+    main .sec_five_wrap .img_box .first_img_box ul li p a{
       text-decoration: none;
       font-weight: bolder;
       letter-spacing: -1px;
@@ -342,10 +306,9 @@ main .RLPT .sec_four_text_wrap:hover a::before{
       text-align: center;
     }
 
-    main .sec_five_wrap .img_box .all_img_box ul li:hover p a{
+    main .sec_five_wrap .img_box .first_img_box ul li:hover p a{
       animation: fontcolortransfer 0.5s infinite linear alternate;
     }
-    /* 텍스트 깜빡거림 */
     @keyframes fontcolortransfer{
       100%{
         color: rgba(12, 72, 77, 0.493);
