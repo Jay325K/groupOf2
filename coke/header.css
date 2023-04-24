@@ -1,0 +1,76 @@
+/*   박주현  */
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (min-width:1350px) {
+    
+}
+header{
+    position: relative;
+    width: 1080px;
+    height: 126px;
+    margin: auto;
+    font-family: 'Arita-buri-SemiBold';
+}
+    /*********logo***********/
+header .IMG_border{
+    width: 1080px;
+    padding: 5px;
+    padding-top: 10px;
+    text-align: center;
+}
+header .IMG_border img{
+    width: 294px;
+    height: 60px;
+}
+
+    /*********gnb*********/
+header nav{
+    width: 1080px;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    position: relative;
+    margin-right : 50px;
+    display: inline-block;
+}
+header nav ul li a:hover::before{
+    position: absolute;
+    top: 30px;
+    content: '';
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid red;
+}
+
+/*gnb a*/
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.22em;
+    color: rgb(82, 78, 78);
+}
+header nav ul li a:hover{
+        color: rgb(177, 177, 177);
+}
+
+
+/*gnb button*/
+header nav ul li button{
+    background: 0;
+    border: 0;
+    font-size: 1.125em;
+}
+header nav ul li button i:hover{
+    color: rgb(177, 177, 177);
+    cursor: pointer;
+}
