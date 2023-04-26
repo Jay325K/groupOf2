@@ -9,3 +9,12 @@ function header_file() {
     xhttp.open("GET", "/header.html");
     xhttp.send();
 }
+window.addEventListener('scroll',function(){
+  let heiY= window.pageYOffset;
+  console.log(heiY);
+  if(heiY>130){
+    document.querySelector('.move_gnb').style.top='0px';
+  }else{
+    document.querySelector('.move_gnb').style.top='-999999px';
+  }
+});

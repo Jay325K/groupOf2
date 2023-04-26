@@ -6,15 +6,13 @@
     font-style: normal;
 }
 
-@media screen and (min-width:1350px) {
-    
-}
 header{
     position: relative;
     width: 1080px;
     height: 126px;
     margin: auto;
     font-family: 'Arita-buri-SemiBold';
+    z-index: 1;
 }
     /*********logo***********/
 header .IMG_border{
@@ -36,21 +34,54 @@ header nav{
     justify-content: center;
     align-items: center;
 }
-header nav ul{
+header nav .static_gnb{
     list-style: none;
 }
-header nav ul li{
+header nav .static_gnb li{
     position: relative;
     margin-right : 50px;
     display: inline-block;
 }
-header nav ul li a:hover::before{
+header nav .static_gnb li a:hover::before{
     position: absolute;
     top: 30px;
     content: '';
     width: 100%;
     border-radius: 30px;
     border: 1px solid red;
+}
+
+/* scroll gnb */
+header nav .move_gnb{
+    position: fixed;
+    top: -99999px;
+    left: 0;
+    height: 84px;
+    padding: 10px;
+    width: 100vw;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 1px 3px gray;
+}
+header nav .move_gnb li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header nav .move_gnb li a:hover::before{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    content: '';
+    border-radius: 30px;
+    border: 1px solid red;
+}
+header nav .move_gnb li:nth-child(1) a:hover::before{
+    border: 0;
 }
 
 /*gnb a*/
