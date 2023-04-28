@@ -1,0 +1,41 @@
+/* section One */
+.sec_one{
+    width: 220px;
+    height: 100%;
+    padding: 10px;
+}
+.sec_one .sec_one_wrap>h3{
+    padding: 40px 5px;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+}
+.sec_one .sec_one_wrap>h3 a
+{
+    color: rgb(199, 47, 48);
+}
+
+
+.sec_one .sec_one_wrap{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+}
+.sec_one .sec_one_wrap .event h2{
+    font-size: 1em;
+    text-align: start;
+}
+
+.sec_one .sec_one_wrap .event h2 a{
+    color: black;
+}
+.sec_one .sec_one_wrap .event p{
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+.sec_one .sec_one_wrap .img_box img:hover{
+    box-shadow: 0 0 3px black;
+}
+.sec_one .sec_one_wrap .img_box img{
+    width: 100%;
+}

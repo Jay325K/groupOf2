@@ -1,0 +1,74 @@
+{
+    "local" : [
+        {
+            "Store_name" : "강남우리라운지점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "강남역2점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "청담삼성로점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "강남대로논현점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "코엑스점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "카페테리아&삼성점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "역삼테헤란점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "선릉샹제리제점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "수서점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        },
+        {
+            "Store_name" : "고속터미널영동선점",
+            "status" : "영업중",
+            "addr" : "서울특별시 강남구 테헤란로 301 역삼동 701-02 삼정빌딩 1층",
+            "Store_service" : ["parking"],
+            "Store_Tel" : "02-566-1002"
+        }
+    ]
+  }
