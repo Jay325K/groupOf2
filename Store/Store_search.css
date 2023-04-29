@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 임시reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+    box-shadow: 0;
+}
+ul li:hover{
+    box-shadow: 0 0 2px rgb(199, 47, 48);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.screen_out{
+    display: none;
+}
+
+
+/* *************************************************** */
+header{
+    width: 100%;
+    min-width: 940px;
+    margin: auto;
+    height: 148px;
+    border: 1px solid;
+}
+table{
+    border-top: black;
+    border-bottom: black;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 0.8em;
+}
+/*********** main ***********/
+main{
+    width: 940px;
+    margin: auto;
+    padding: 40px 0;
+    height: 100vh;
+    display: flex;
+}
+main .sec_one{
+    width: 220px;
+    padding-right: 20px;
+}
+/* 매장검색 */
+main .sec_one .sec_one_wrap>h2{
+    font-size: 1.44em;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+main .sec_one .sec_one_wrap>h2 a{
+    color: rgb(199, 47, 48);
+}
+
+/* event */
+main .sec_one .sec_one_wrap .event h2 {
+    font-size: 1em ;
+    letter-spacing: -1px;
+    padding-bottom: 3px;
+}
+main .sec_one .sec_one_wrap .event h2 a{
+    color: rgb(80, 80, 80);
+}
+main .sec_one .sec_one_wrap .event p{
+    font-size: 0.8em ;
+    letter-spacing: -1px;
+}
+
+/* img_box */
+main .sec_one .sec_one_wrap .event .img_box{
+    width: 190px;
+}
+main .sec_one .sec_one_wrap .event .img_box a{
+    display: block;
+    width: 100%;
+    padding: 30px 10px 30px 0;
+}
+main .sec_one .sec_one_wrap .event .img_box a img{
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+/************** sec_two *************/
+main .sec_two{
+    width: 700px;
+    border: 1px solid;
+}
+
+/* 경로 */
+main .sec_two .path{
+    width: 100%;
+    border: 1px solid;
+}
+
+/* 매장검색 */
+main .sec_two .h2_wrap{
+    width: 100%;
+    border: 1px solid;
+}
+
+
+/* 매장 검색했을때 위치와 검색하는 곳 */
+main .sec_two .search_wrap{
+    position: relative;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+}
+
+/* 지도 사이즈 */
+main .sec_two .search_wrap .map{
+    width: 100%;
+    height: 430px;
+    border: 1px solid;
+}
+
+/* 매장 검색하는곳 */
+main .sec_two .search_wrap .search_Store{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 300px;
+    border: 1px solid;
+}
+
+/* 매장명, 매장주소로 찾기 */
+main .sec_two .search_Store .search_Store_wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/************* 매장검색 버튼 ************/
+main .sec_two .search_Store .search_Store_wrap .search_Store_button_wrap{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    font-size: 0.8em;
+    background: rgb(199, 47, 47);
+}
+/* 매장검색 버튼에 관한 내용들 */
+main .sec_two .search_Store .search_Store_wrap .search_Store_input_label{
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height: calc(100% - 42px);
+}
+/* 매장찾기, 지역검색 */
+main .sec_two .search_Store .search_Store_wrap .search_Store_input_label .input_label_detail,
+main .sec_two .search_Store .search_Store_wrap .search_Store_input_label .input_label_locate_search{
+
+    position: absolute;
+    background: rgb(199, 47, 47);
+}
+/* 매장찾기 */
+main .sec_two .search_Store .search_Store_wrap .search_Store_input_label h4{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+main .sec_two .search_Store .search_Store_wrap .search_Store_input_label p{
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+    padding: 20px 5px;
+}
+main .sec_two .search_Store .search_Store_wrap .search_Store_input_label input{
+    width: 100%;
+    padding: 5px;
+}
+/* 검색버튼 및 설명 */
+main .sec_two .search_Store .search_Store_wrap .search_Store_input_label form{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+main .sec_two .search_Store .search_Store_wrap .search_Store_input_label a{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    border: 0;
+    padding: 2px;
+}
+
+/************ 지역검색 ***************/
+/* 지역검색 버튼 */
+main .sec_two .search_Store .locate_Store_button_wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    font-size: 0.8em;
+    background: rgb(199, 48, 48);
+}
+
+/* 지역검색 버튼 누를시 나타나는 지역들 */
+main .sec_two .search_Store .locate_Store_input_label{
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height: calc(100% - 42px);
+    overflow: auto;
+
+}
+main .sec_two .search_Store .locate_Store_input_label h4{
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+main .sec_two .search_Store .locate_Store_input_label>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .sec_two .search_Store .locate_Store_input_label>ul>li{
+    width: 47%;
+    border: 1px solid;
+    margin: 2px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* 매장 리스트 설명 */
+main .Store_table>p{
+    border: 1px solid;
+}
+/* 매장 리스트 */
+main .Store_table table{
+    width: 100%;
+    border: 1px solid;
+}
