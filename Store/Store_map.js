@@ -1,9 +1,5 @@
 var txt;
-function store_infomation(store_name,addr,TelNum){
-    this.store_name = store_name;
-    this.addr = addr;
-    this.TelNum = TelNum;
-}
+
 // 마커를 담을 배열입니다
 var markers = [];
             
