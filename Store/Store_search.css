@@ -51,11 +51,12 @@ td,th{
 }
 /*********** main ***********/
 main{
-    width: 940px;
+    width: 1180px;
     margin: auto;
     padding: 40px 0;
     height: 100vh;
     display: flex;
+    justify-content: center;
 }
 main .sec_one{
     width: 220px;
@@ -249,11 +250,21 @@ main .sec_two .search_Store .locate_Store_input_label>ul>li{
 }
 
 /* 매장 리스트 설명 */
-main .Store_table>p{
+main .sec_two .Store_table>p{
     border: 1px solid;
 }
 /* 매장 리스트 */
-main .Store_table table{
+main .sec_two .Store_table table{
     width: 100%;
     border: 1px solid;
+}
+
+
+/*************** section_three ***************/
+main .sec_three{
+    width: 0;
+    border: 1px solid;
+}
+main .sec_three.active{
+    width: 220px;
 }

@@ -14,14 +14,13 @@ request.onload = function() {
         locate_city[x] = locate[x].locate;
     }
     $(function(){
-        let test='';
         let local_text ='';
         console.log($('.local_city li').length);
         for(let x =0; x<$('.local_city li').length; x++){
-            test=test+' '+$('.local_city li').eq(x).text();
+            local_text=local_text+' '+$('.local_city li').eq(x).text();
         }
-        test=test.split(' ');
-        test.shift();
+        local_text=local_text.split(' ');
+        local_text.shift();
         
         $('.local_city li').on('click',function(){
             let city=$(this).text();    //내가 클릭했을때 지정할 도시
@@ -36,6 +35,7 @@ request.onload = function() {
                     bor_index++;
                 }
             });
+
             //'~구'들중에 중복을 제거하고 '구'는 하나만 출력
             bor.forEach(function(el){
                 let count=0;
@@ -54,12 +54,23 @@ request.onload = function() {
             for(let x=0; x<bor_remove_dup.length; x++){
                 let myLi = document.createElement('li');
                 let myA = document.createElement('a');
-                myA.setAttribute('href','#');
+                myA.setAttribute('href','#none');
                 myA.textContent=bor_remove_dup[x];
                 myLi.append(myA);
                 document.querySelector('.local_city_bor').append(myLi);
             }
-            
+
+            /* 뒤로가기 버튼 누를시 다시 지역이 뜰 수 있도록 설정 */
+            $('.local_city_bor li').on('click',function(){
+                if($(this).index()===0){
+                    $('.local_city').css({'display':'flex'});
+                    $('.local_city_bor').text('');
+                }else{
+                    
+                }
+            });
         });
+
+        
     });
 }
