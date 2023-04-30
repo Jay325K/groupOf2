@@ -23,7 +23,7 @@ request.onload = function() {
         local_text.shift();
         
         $('.local_city li').on('click',function(){
-            let city=$(this).text();    //내가 클릭했을때 지정할 도시
+            var city=$(this).text();    //내가 클릭했을때 지정할 도시
             let bor=[]; //도시중 '시/구'만 저장할 공간
             let bor_index=0;
             let bor_remove_dup=['뒤로가기'];
@@ -59,16 +59,59 @@ request.onload = function() {
                 myLi.append(myA);
                 document.querySelector('.local_city_bor').append(myLi);
             }
-
-            /* 뒤로가기 버튼 누를시 다시 지역이 뜰 수 있도록 설정 */
+            
             $('.local_city_bor li').on('click',function(){
+                /* 뒤로가기 버튼 누를시 다시 지역이 뜰 수 있도록 설정 */
                 if($(this).index()===0){
                     $('.local_city').css({'display':'flex'});
                     $('.local_city_bor').text('');
                 }else{
-                    
+                    /* 지역 '~구' 클릭시 관련지역 매장들 테이블에 출력 */
+                    $('.Store_detail_table tbody').text('');
+                    var myTbody=$('.Store_detail_table tbody');
+                    for(let x=0; x<locate.length; x++){
+                        if(locate[x].locate.match(city +" "+ $(this).text())){
+                            let myTR= document.createElement('tr');
+                            let myTD_locate= document.createElement('td');
+
+                            let myTD_Store_name = document.createElement('td');
+                            let myA_myTdStore_name= document.createElement('a');
+                            myA_myTdStore_name.setAttribute('href','#none');
+                            myTD_Store_name.append(myA_myTdStore_name);
+
+                            let myTD_addr = document.createElement('td');
+                            let myA_myTdAddr = document.createElement('a');
+                            myA_myTdAddr.setAttribute('href','#none');
+                            myTD_addr.append(myA_myTdAddr);
+
+                            let myTD_service = document.createElement('td');
+                            let myTD_Tel = document.createElement('td');
+
+                            myTD_locate.textContent=locate[x].locate;
+                            myA_myTdStore_name.textContent=locate[x].Store;
+                            myA_myTdAddr.textContent=locate[x].addr;
+                            myTD_service.textContent=locate[x].Service;
+                            myTD_Tel.textContent=locate[x].Tel;
+                            
+                            myTR.append(myTD_locate);
+                            myTR.append(myTD_Store_name);
+                            myTR.append(myTD_addr);
+                            myTR.append(myTD_service);
+                            myTR.append(myTD_Tel);
+                            
+                            myTbody.append(myTR);
+                        }
+                    }
                 }
             });
+        });
+        $('.open_close').on('click',function(){
+            $('.search_Store').toggleClass('active');
+            if($('.search_Store').hasClass('active')==true){
+                $('.open_close').text('닫기');
+            }else{
+                $('.open_close').text('검색');
+            }
         });
 
         

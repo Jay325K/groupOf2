@@ -27,7 +27,11 @@ a:hover{
 .screen_out{
     display: none;
 }
-
+.Store_table{
+    height: 465px;
+    overflow: auto;
+    border: 1px solid blue;
+}
 
 /* *************************************************** */
 header{
@@ -41,6 +45,7 @@ table{
     border-top: black;
     border-bottom: black;
     border-collapse: collapse;
+    overflow: auto;
 }
 td,th{
     padding: 10px;
@@ -51,7 +56,7 @@ td,th{
 }
 /*********** main ***********/
 main{
-    width: 1180px;
+    width: 1340px;
     margin: auto;
     padding: 40px 0;
     height: 100vh;
@@ -124,7 +129,8 @@ main .sec_two .h2_wrap{
 main .sec_two .search_wrap{
     position: relative;
     width: 100%;
-    border: 1px solid;
+    border: 1px solid blue;
+    overflow: hidden;
     display: flex;
 }
 
@@ -139,13 +145,23 @@ main .sec_two .search_wrap .map{
 main .sec_two .search_wrap .search_Store{
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: -30%;
     transform: translateY(-50%);
     width: 30%;
     height: 300px;
     border: 1px solid;
+    transition: 0.5s;
 }
-
+main .sec_two .search_wrap .search_Store.active{
+    right: 0;
+    transition: 0.5s;
+}
+/* 매장 검색하는곳 열고 닫는곳 */
+main .sec_two .search_wrap .search_Store .open_close{
+    position: absolute;
+    width:20px;
+    left: -21px;
+}
 /* 매장명, 매장주소로 찾기 */
 main .sec_two .search_Store .search_Store_wrap{
     position: relative;
@@ -262,8 +278,9 @@ main .sec_two .Store_table table{
 
 /*************** section_three ***************/
 main .sec_three{
-    width: 0;
+    width: 400px;
     border: 1px solid;
+    overflow: hidden;
 }
 main .sec_three.active{
     width: 220px;
