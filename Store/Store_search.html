@@ -10,10 +10,6 @@
     <script src="Store_info.js"></script>
 
     <title>Store Search</title>
-   <style>
-        
-        
-    </style>
         </head>
         <body>
             <header>header</header>
@@ -52,6 +48,7 @@
                          <!-- 매장 검색하는곳 -->
                         <div class="search_Store">
                             <button type="button" class="open_close">검색</button>
+
                             <!-- 매장명, 매장주소로 찾기 -->
                             <div class="search_Store_wrap screen_out">
                                 <div class="search_Store_button_wrap">
@@ -63,7 +60,7 @@
                                         <h4>매장찾기</h4>
                                         <p>지점명 또는 주소를 입력하세요</p>
                                         <form action="" method="get">
-                                            <input type="text" id="" placeholder="">
+                                            <input type="text" id="get_Store_name">
                                             <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
                                         </form>
                                     </div>
@@ -138,9 +135,9 @@
                         <h3 class="Store_name">케이지할리스에프앤비</h3>
 
                         <div class="sec_three_img_box">
-                            <img class="sec_three_main_img" src="Store_img_box/not_img.gif" alt="">
+                            <img class="sec_three_main_img" src="Store_img_box/케이지할리스에프앤비/img_1.jpg" alt="">
                             <div class="sub_img_box">
-                                <a href="#none"><img src="Store_img_box/not_img.gif" alt=""></a>
+                                <a href="#none"><img src="Store_img_box/케이지할리스에프앤비/img_1.jpg" alt=""></a>
                                 <a href="#none"><img src="Store_img_box/not_img.gif" alt=""></a>
                                 <a href="#none"><img src="Store_img_box/not_img.gif" alt=""></a>
                             </div>
@@ -170,13 +167,17 @@
                                 </li>
                             </ul>
                         </div>  
+                        
                         <div class="print_box">
                             <button type="button">매장 정보 인쇄</button>
                         </div>
+
+                        <button type="button" class="hide">X</button>
                     </div>
                 </section>
             </main>
             <footer></footer>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c71727dc2f232aae9889de60b8fb6b55&libraries=services"></script>
+            <script src="map.js"></script>
 </body>
 </html>

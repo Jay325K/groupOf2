@@ -172,7 +172,6 @@ main .sec_two .search_wrap .search_Store{
     width: 30%;
     height: 300px;
     transition: 0.5s;
-    background: rgba(255, 255, 255,1);
     animation: load_end_animate 0.5s 1 alternate ease-in-out;
     animation-delay: 1s;
 }
@@ -327,6 +326,7 @@ main .sec_two .search_Store .search_Store_wrap .locate_Store_input_label>ul>li{
     margin: 2px;
     text-align: center;
     padding: 5px;
+    background-color: white;
 }
 
 /* 매장 리스트 설명 */
@@ -353,10 +353,9 @@ main .sec_two .Store_table::-webkit-scrollbar-thumb{
 /*************** section_three ***************/
 main .sec_three{
     position: relative;
-    top: 20px;
+    top: 25px;
     left: 30px;
     width: 400px;
-    min-height: 100vh;
     overflow: hidden;
     transform: translateX(-230px);
     display: flex;
@@ -383,14 +382,17 @@ main .sec_three .sec_three_img_box{
     margin-top: 40px ;
 }
 main .sec_three .sec_three_img_box>img{
+    position: relative;
+    top: 45px;
     width: 100%;
-    height: 300px;
+    height: 250px;
+    border: 1px solid lightgray;
 }
 main .sec_three .sec_three_img_box .sub_img_box{
     position: absolute;
     top: 300px;
     width: 100%;
-    height: 100px;
+    height: 85px;
     display: flex;
     justify-content: space-between;
 }
@@ -407,7 +409,8 @@ main .sec_three .sec_three_img_box .sub_img_box a img{
 /* 매장 정보 */
 main .sec_three .Store_introduce{
     width: 80%;
-    border: 1px solid;
+    padding: 10px;
+    border: 1px solid lightgray;
     margin: auto;
     margin-top: 50px;
 }
@@ -435,7 +438,22 @@ main .sec_three .print_box{
     margin: auto;
 }
 
-
+/* 닫기버튼 */
+main .sec_three .sec_three_wrap>button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 8px;
+    font-size: 1.3em;
+    background: none;
+    border: 1px solid rgba(128, 128, 128, 0.562);
+    cursor: pointer;
+    border-radius: 5px;
+}
+main .sec_three .sec_three_wrap>button:active{
+    background: rgb(199, 47, 47);
+    color: white;
+}
 
 /*********************footer*******************/
 footer{

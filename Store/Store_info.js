@@ -15,26 +15,27 @@ request.onload = function() {
     $(function(){
 
         /* 매장검색 & 지역검색*/
-        /* 매장검색 */
+        /* 매장검색 버튼누를시 */
         $('.search_Store_button_wrap a').on('click focus',function(){
             $('.search_Store_input_label').removeClass('screen_out');
             $('.locate_Store_input_label').addClass('screen_out');
             $('.locate_Store_input_label').css('display','none');
         });
-        /* 지역검색 */
+
+        /* 지역검색 버튼누를시 */
         $('.locate_Store_button_wrap a').on('click focus',function(){
             $('.locate_Store_input_label').removeClass('screen_out');
             $('.search_Store_input_label').addClass('screen_out');
             $('.locate_Store_input_label').css('display','block');
         });
 
-
+        
         let local_text ='';
         for(let x =0; x<$('.local_city li').length; x++){
             local_text=local_text+' '+$('.local_city li').eq(x).text();
         }
         local_text=local_text.split(' ');
-        local_text.shift();
+        local_text.shift();/* 배열 처음 빈공간 제거*/
 
 
         
@@ -45,14 +46,24 @@ request.onload = function() {
             if($('.search_Store').hasClass('active')==true){
                 $('.open_close').text('닫기');
                 $('.search_Store_wrap').css('display','flex');
-                $('.search_Store').css({'background':'rgba(255,255,255,1)'});
             }else{
                 $('.open_close').text('검색');
                 $('.search_Store_wrap').css({'display':'none'});
-                $('.search_Store').css({'background':'rgba(0,0,0,0)'});
             }
         });
 
+
+        /* 버튼 누를시 section_three 숨김 */
+        $('.hide').on('click',function(){
+            $('.sec_one, .sec_two, .sec_three').removeClass('active');
+        });
+
+
+
+
+
+
+        /****** 지역검색하는 곳 *****/
         let Store_name_text='할리스 케이지할리스에프앤비 서울 중구';
         $('.local_city li').on('click',function(){
             var city=$(this).text();    //내가 클릭했을때 지정할 도시
@@ -102,6 +113,7 @@ request.onload = function() {
                     var myTbody=$('.Store_detail_table tbody');
                     for(let x=0; x<locate.length; x++){
                         if(locate[x].locate.match(city +" "+ $(this).text())){
+                            /* table안에 요소들 생성해서 이어주는 작업 */
                             let myTR= document.createElement('tr');
                             let myTD_locate= document.createElement('td');
 
@@ -135,32 +147,23 @@ request.onload = function() {
                     }
                     /* 테이블 누를때 section_three 나타남 */
                     $('.Store_detail_table tbody tr td a').on('click',function(){
+
+                        /* section_three 열고닫기 */
+                        $('.sec_three, .sec_two, .sec_one').addClass('active');
+
                         let Store_TR=$(this).parent().parent();
                         let Store_TR_copy=Store_TR;
-                        if(Store_TR.text().match('케이지할리스에프앤비')){
-                            Store_TR=Store_name_text;
-                        }else{
                             Store_TR='할리스 '+Store_TR.children('td:eq(1)').text();
-                        }
                         
                         // 키워드로 장소를 검색합니다
                         ps.keywordSearch(Store_TR, placesSearchCB)
-
-                        $('.sec_three').addClass('active'); 
-                        $('.sec_two').addClass('active');
-                        $('.sec_one').addClass('active');
-                        let Store_name_value = Store_TR.slice(4);
+                            let Store_name_value = Store_TR.slice(4); /* '할리스 매장명' 에서 할리스를 제외하는 작업 */
                         document.querySelector('.sec_three .Store_name').textContent=Store_name_value;
 
                         //매장의 이미지 로드
                         for(let num=0; num<3; num++){
-                            try{
                                 let StoreImg_txt ='Store_img_box/'+Store_name_value+'/img_'+(num+1)+'.jpg';
                                 $('.sec_three_img_box .sub_img_box img').eq(num).attr('src',StoreImg_txt);
-                            }catch(e){
-                                alert(e);
-                                logMyErrors(e);
-                            }
                         }
                         $('.sec_three_main_img').attr('src', $('.sec_three_img_box .sub_img_box img').eq(0).attr('src'));
                         //매장 이미지 클릭시 매장정보의  바뀜
@@ -178,68 +181,41 @@ request.onload = function() {
         $('.Store_detail_table tbody tr td a').on('click',function(){
             let Store_TR=$(this).parent().parent();
             Store_TR=Store_name_text;
-
+        
             // 키워드로 장소를 검색합니다
-            ps.keywordSearch(Store_TR, placesSearchCB)
-            $('.sec_three').addClass('active'); 
-            $('.sec_two').addClass('active');
-            $('.sec_one').addClass('active');
+            ps.keywordSearch(Store_TR, placesSearchCB);
+            $('.sec_three, .sec_two, .sec_one').addClass('active');
         });
 
-        /* ↓ 지도 API ↓ */
-        // 마커를 클릭하면 장소명을 표출할 인포윈도우 입니다
-        var infowindow = new kakao.maps.InfoWindow({zIndex:1});
 
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-            mapOption = {
-                center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
-            };  
-        
-        // 지도를 생성합니다    
-        var map = new kakao.maps.Map(mapContainer, mapOption); 
 
-        // 장소 검색 객체를 생성합니다
-        var ps = new kakao.maps.services.Places(); 
         
-        
-        // 키워드로 장소를 검색합니다
-        ps.keywordSearch(Store_name_text, placesSearchCB); 
-        
-        // 키워드 검색 완료 시 호출되는 콜백함수 입니다
-        function placesSearchCB (data, status, pagination) {
-            if (status === kakao.maps.services.Status.OK) {
+
+
+
+
+        $('.input_label_detail a').on('click',function(){
+            let search_keyword=$('#get_Store_name').val();
             
-                // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
-                // LatLngBounds 객체에 좌표를 추가합니다
-                var bounds = new kakao.maps.LatLngBounds();
-            
-                for (var i=0; i<data.length; i++) {
-                    displayMarker(data[i]);    
-                    bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
-                }       
-            
-                // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
-                map.setBounds(bounds);
-            } 
-        }
+            let locate_Store = [];  //전체 매장명 들어갈공간
+            let locate_addr = [];   //전체 매장주소 들어갈 공간
 
-        // 지도에 마커를 표시하는 함수입니다
-        function displayMarker(place) {
+            for(let x=0; x<locate.length; x++){
+                locate_Store[x]=locate[x].Store;
+                locate_addr[x]=locate[x].addr;
+            }
 
-            // 마커를 생성하고 지도에 표시합니다
-            var marker = new kakao.maps.Marker({
-                map: map,
-                position: new kakao.maps.LatLng(place.y, place.x) 
+            let my_search_addr =[]; //내가 검색한 주소 들어갈 공간
+
+            locate_Store.forEach(function(el){
+                console.log(el);
             });
+
+            // 키워드로 장소를 검색합니다
+            ps.keywordSearch(search_keyword, placesSearchCB);
+        });
+
         
-            // 마커에 클릭이벤트를 등록합니다
-            kakao.maps.event.addListener(marker, 'click', function() {
-                // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
-                infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
-                infowindow.open(map, marker);
-            });
-        }
         
     });
 
