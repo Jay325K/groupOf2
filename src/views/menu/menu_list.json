@@ -1,358 +1,350 @@
 {
-  "drink": [
-    {
-      "coffee/decaffeine": [
-        {
-          "name": "디카페인 아메리카노",
-          "nameEn": "Americano (Decaf blend)",
-          "text": "듀얼브루 원액으로 만든 부드러운 풍미와 균형잡힌 바디감의 디카페인 아메리카노",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_1.png"
-        },
-        {
-          "name": "디카페인 카페 라떼",
-          "nameEn": "Caffe Latte (Decaf blend)",
-          "text": "듀얼브루 원액으로 만든 부드러운 풍미와 균형 잡힌 바디감의 디카페인 카페 라떼",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_2.png"
-        },
-        {
-          "name": "디카페인 바닐라 딜라이트",
-          "nameEn": "Vanilla Delight (Decaf blend)",
-          "text": "듀얼브루 원액으로 만들어 더욱 부드럽고 편안해진 바닐라 딜라이트 (*바닐라 딜라이트 제조에 사용되는 파우더에 카페인이 일부 함유되어 있음)",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_3.png"
-        },
-        {
-          "name": "프리미엄 블렌드 아메리카노",
-          "nameEn": "Premium Blend Americano",
-          "text": "화사한 산미와 과일과 같은 달콤함, 깔끔한 후미를 즐길수 있는 커피",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_4.png"
-        },
-        {
-          "name": "프리미엄 블렌드 딥라떼",
-          "nameEn": "Premium Blend Deep Latte",
-          "text": "풍성한 우유 거품 위에 프리미엄 블렌드 리스트레또 샷이 더해져 깊은 커피 풍미를 느낄 수 있는 라떼",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_5.png"
-        },
-        {
-          "name": "콜드브루 딜라이트",
-          "nameEn": "Cold Brew Delight",
-          "text": "실키한 연유베이스에 콜드브루를 넣어 부담없이 즐기는 라떼",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_6.png"
-        },
-        {
-          "name": "콜드브루 라떼",
-          "nameEn": "Cold Brew Latte",
-          "text": "콜드브루 커피의 풍부한 풍미와 우유의 고소함이 더해진 라떼",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_7.png"
-        },
-        {
-          "name": "콜드브루",
-          "nameEn": "Cold Brew",
-          "text": "콜드브루 전용 블렌드를 상온의 물로 오랜시간 추출해 달콤한 산미와 부드러운 바디감이 살아있는 커피",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_8.png"
-        },
-        {
-          "name": "바닐라딜라이트",
-          "nameEn": "Vanilla Delight",
-          "text": "카페라떼에 바닐라빈으로 만든 바닐라 파우더를 더해 더욱 풍부하고 감미로운 할리스만의 바닐라라떼",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_9.png"
-        },
-        {
-          "name": "리스트레또 딜라이트",
-          "nameEn": "Ristretto Delight",
-          "text": "달콤한 연유와 고소한 할리스 원두, 크리미한 바디가 절묘하게 어우러진 시즌 스페셜 메뉴",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_10.png"
-        },
-        {
-          "name": "카라멜 마키아또",
-          "nameEn": "Caramel Macchiato",
-          "text": "진한 에스프레소에 바닐라 시럽과 카라멜소스가 더해진 카라멜 커피음료의 대표",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_11.png"
-        },
-        {
-          "name": "카페모카",
-          "nameEn": "Caffe Mocha",
-          "text": "진한 에스프레소와 우유, 달콤 쌉싸름한 초콜릿이 어우러진 커피",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_12.png"
-        },
-        {
-          "name": "카푸치노",
-          "nameEn": "Cappuccino",
-          "text": "에스프레소에 실키하고 폭신폭신한 우유 거품이 풍부하게 더해진 커피",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_13.png"
-        },
-        {
-          "name": "카페 라떼",
-          "nameEn": "Caffe Latte",
-          "text": "진한 에스프레소에 우유를 넣어 풍부한 커피향을 부드럽게 즐길 수 있는 커피",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_14.png"
-        },
-        {
-          "name": "아메리카노",
-          "nameEn": "Caffe Americano",
-          "text": "진한 에스프레소의 맛과 향을 부드럽게 즐길 수 있는 아메리칸 스타일의 커피",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_15.png"
-        },
-        {
-          "name": "아포가토",
-          "nameEn": "Affogato",
-          "text": "바닐라 아이스크림과 리스트레또 더블샷이 어우러져 부드럽고 진한 맛의 아포가토",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_16.png"
-        },
-        {
-          "name": "에스프레소",
-          "nameEn": "Espresso",
-          "text": "강렬한 첫 맛, 풍부한 바디감, 깔끔한 뒷 맛이 특징인 커피의 심장",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_17.png"
-        }
-      ]
-    },
-    {
-      "latte/choco/tea": [
-        {
-          "name": "제주 말차 라떼",
-          "nameEn": "Jeju Matcha Latte",
-          "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 라떼",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_18.png"
-        },
-        {
-          "name": "민트초코",
-          "nameEn": "Mint Chocolate",
-          "text": "진한 민트 맛이 특징인 상쾌하면서 부드러운 맛의 민트 초코 라떼",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_19.png"
-        },
-        {
-          "name": "밀크티라떼",
-          "nameEn": "Milk Tea Latte",
-          "text": "향긋한 홍차에 우유의 고소함과 부드러움을 더한 티라떼",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_20.png"
-        },
-        {
-          "name": "핫/아이스초코",
-          "nameEn": "Chocolate HOT/ICED",
-          "text": "진한 초콜렛과 우유가 어우러져 달콤한 초콜릿 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_21.png"
-        },
-        {
-          "name": "화이트초코",
-          "nameEn": "White Chocolate",
-          "text": "화이트 초콜릿에 따뜻한 우유가 더해진 달콤한 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_22.png"
-        },
-        {
-          "name": "유자 캐모마일",
-          "nameEn": "Yuzu Chamomile",
-          "text": "은은한 향의 캐모마일과 유자차를 같이 느낄 수 있는 티베리에이션 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_23.png"
-        },
-        {
-          "name": "복숭아 얼그레이",
-          "nameEn": "Peach Earl Grey",
-          "text": "달콤한 복숭아와 얼그레이의 베르가못 향의 조화, 깔끔하면서도 달콤한 티베리에이션 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_24.png"
-        },
-        {
-          "name": "홍자몽차",
-          "nameEn": "Red Grapefruit Tea",
-          "text": "자몽과일 특유의 달콤 쌉싸름한 맛을 즐길 수 있는 과일차",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_25.png"
-        },
-        {
-          "name": "제주 한라봉 감귤차",
-          "nameEn": "jeju Hanrabong tangerine tea",
-          "text": "향긋한 한라봉과 감귤이 어우러져 상큼하면서도 달콤한 과일차",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_26.png"
-        },
-        {
-          "name": "고흥 유자차",
-          "nameEn": "Goheung Yuzu Tea",
-          "text": "고흥 유자의 풍미를 살린 할리스 유자차",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_27.png"
-        },
-        {
-          "name": "해남 녹차",
-          "nameEn": "Green Tea",
-          "text": "고소한 감칠맛과 부드러운 목넘김이 좋은 땅끝 마음 해남에서 재배한 녹차(유기농 녹차잎 사용)",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_28.png"
-        },
-        {
-          "name": "페퍼민트",
-          "nameEn": "Peppermint",
-          "text": "입안 가득 깔끔한 청량감으로 기분까지 상쾌한 허브차",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_29.png"
-        },
-        {
-          "name": "캐모마일",
-          "nameEn": "Chamomile",
-          "text": "캐모마일 꽃잎을 그대로 말려 노란색의 향긋한 꽃향이 그대로 살아 있는 허브차",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_30.png"
-        },
-        {
-          "name": "얼그레이",
-          "nameEn": "Earl Grey",
-          "text": "스리랑카 캔디 지방에서 재배된 홍차에 시칠리아의 감귤,베르가못향이 조화된 감미로운 홍차",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_31.png"
-        }
-      ]
-    },
+  "drink": {
+    "coffee/decaffeine": [
+      {
+        "name": "디카페인 아메리카노",
+        "nameEn": "Americano (Decaf blend)",
+        "text": "듀얼브루 원액으로 만든 부드러운 풍미와 균형잡힌 바디감의 디카페인 아메리카노",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_1.png"
+      },
+      {
+        "name": "디카페인 카페 라떼",
+        "nameEn": "Caffe Latte (Decaf blend)",
+        "text": "듀얼브루 원액으로 만든 부드러운 풍미와 균형 잡힌 바디감의 디카페인 카페 라떼",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_2.png"
+      },
+      {
+        "name": "디카페인 바닐라 딜라이트",
+        "nameEn": "Vanilla Delight (Decaf blend)",
+        "text": "듀얼브루 원액으로 만들어 더욱 부드럽고 편안해진 바닐라 딜라이트 (*바닐라 딜라이트 제조에 사용되는 파우더에 카페인이 일부 함유되어 있음)",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_3.png"
+      },
+      {
+        "name": "프리미엄 블렌드 아메리카노",
+        "nameEn": "Premium Blend Americano",
+        "text": "화사한 산미와 과일과 같은 달콤함, 깔끔한 후미를 즐길수 있는 커피",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_4.png"
+      },
+      {
+        "name": "프리미엄 블렌드 딥라떼",
+        "nameEn": "Premium Blend Deep Latte",
+        "text": "풍성한 우유 거품 위에 프리미엄 블렌드 리스트레또 샷이 더해져 깊은 커피 풍미를 느낄 수 있는 라떼",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_5.png"
+      },
+      {
+        "name": "콜드브루 딜라이트",
+        "nameEn": "Cold Brew Delight",
+        "text": "실키한 연유베이스에 콜드브루를 넣어 부담없이 즐기는 라떼",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_6.png"
+      },
+      {
+        "name": "콜드브루 라떼",
+        "nameEn": "Cold Brew Latte",
+        "text": "콜드브루 커피의 풍부한 풍미와 우유의 고소함이 더해진 라떼",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_7.png"
+      },
+      {
+        "name": "콜드브루",
+        "nameEn": "Cold Brew",
+        "text": "콜드브루 전용 블렌드를 상온의 물로 오랜시간 추출해 달콤한 산미와 부드러운 바디감이 살아있는 커피",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_8.png"
+      },
+      {
+        "name": "바닐라딜라이트",
+        "nameEn": "Vanilla Delight",
+        "text": "카페라떼에 바닐라빈으로 만든 바닐라 파우더를 더해 더욱 풍부하고 감미로운 할리스만의 바닐라라떼",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_9.png"
+      },
+      {
+        "name": "리스트레또 딜라이트",
+        "nameEn": "Ristretto Delight",
+        "text": "달콤한 연유와 고소한 할리스 원두, 크리미한 바디가 절묘하게 어우러진 시즌 스페셜 메뉴",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_10.png"
+      },
+      {
+        "name": "카라멜 마키아또",
+        "nameEn": "Caramel Macchiato",
+        "text": "진한 에스프레소에 바닐라 시럽과 카라멜소스가 더해진 카라멜 커피음료의 대표",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_11.png"
+      },
+      {
+        "name": "카페모카",
+        "nameEn": "Caffe Mocha",
+        "text": "진한 에스프레소와 우유, 달콤 쌉싸름한 초콜릿이 어우러진 커피",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_12.png"
+      },
+      {
+        "name": "카푸치노",
+        "nameEn": "Cappuccino",
+        "text": "에스프레소에 실키하고 폭신폭신한 우유 거품이 풍부하게 더해진 커피",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_13.png"
+      },
+      {
+        "name": "카페 라떼",
+        "nameEn": "Caffe Latte",
+        "text": "진한 에스프레소에 우유를 넣어 풍부한 커피향을 부드럽게 즐길 수 있는 커피",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_14.png"
+      },
+      {
+        "name": "아메리카노",
+        "nameEn": "Caffe Americano",
+        "text": "진한 에스프레소의 맛과 향을 부드럽게 즐길 수 있는 아메리칸 스타일의 커피",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_15.png"
+      },
+      {
+        "name": "아포가토",
+        "nameEn": "Affogato",
+        "text": "바닐라 아이스크림과 리스트레또 더블샷이 어우러져 부드럽고 진한 맛의 아포가토",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_16.png"
+      },
+      {
+        "name": "에스프레소",
+        "nameEn": "Espresso",
+        "text": "강렬한 첫 맛, 풍부한 바디감, 깔끔한 뒷 맛이 특징인 커피의 심장",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_17.png"
+      }
+    ],
 
-    {
-      "hollyccino/crush": [
-        {
-          "name": "제주 말차 할리치노",
-          "nameEn": "Jeju Matcha Hollyccino",
-          "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 할리치노",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_32.png"
-        },
-        {
-          "name": "피치 딸기 크러쉬",
-          "nameEn": "Peach Strawberry Crush",
-          "text": "과즙 가득한 복숭아 슬러쉬 안에 톡톡 씹히는 딸기 과육이 더해진 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_33.png"
-        },
-        {
-          "name": "민트 초코칩 할리치노",
-          "nameEn": "Mint Chocochip Hollyccino",
-          "text": "초코칩이 콕콕 박힌 상쾌하면서 청량한 민트 맛의 블렌디드 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_34.png"
-        },
-        {
-          "name": "딸기 치즈케이크 할리치노",
-          "nameEn": "Strawberry Cheese Cake Hollyccino",
-          "text": "치즈케익맛 아이스블렌디드 음료에 상큼한 딸기를 토핑한 할리스 시그니처 메뉴",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_35.png"
-        },
-        {
-          "name": "플레인 요거트 할리치노",
-          "nameEn": "Iyote-Plain",
-          "text": "저지방우유에 유산균이 살아있는 요거트를 더한 슬러쉬",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_36.png"
-        },
-        {
-          "name": "다크초코칩 할리치노",
-          "nameEn": "Dark Chocochip Hollyccino",
-          "text": "벨기에산 리얼 다크초콜릿이 씹히는 시원하고 진한 초콜릿 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_37.png"
-        },
-        {
-          "name": "콜드브루 할리치노",
-          "nameEn": "Coldbrew Hollyccino",
-          "text": "콜드브루와 우유, 얼음이 갈린 할리치노",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_38.png"
-        }
-      ]
-    },
+    "latte/choco/tea": [
+      {
+        "name": "제주 말차 라떼",
+        "nameEn": "Jeju Matcha Latte",
+        "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 라떼",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_18.png"
+      },
+      {
+        "name": "민트초코",
+        "nameEn": "Mint Chocolate",
+        "text": "진한 민트 맛이 특징인 상쾌하면서 부드러운 맛의 민트 초코 라떼",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_19.png"
+      },
+      {
+        "name": "밀크티라떼",
+        "nameEn": "Milk Tea Latte",
+        "text": "향긋한 홍차에 우유의 고소함과 부드러움을 더한 티라떼",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_20.png"
+      },
+      {
+        "name": "핫/아이스초코",
+        "nameEn": "Chocolate HOT/ICED",
+        "text": "진한 초콜렛과 우유가 어우러져 달콤한 초콜릿 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_21.png"
+      },
+      {
+        "name": "화이트초코",
+        "nameEn": "White Chocolate",
+        "text": "화이트 초콜릿에 따뜻한 우유가 더해진 달콤한 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_22.png"
+      },
+      {
+        "name": "유자 캐모마일",
+        "nameEn": "Yuzu Chamomile",
+        "text": "은은한 향의 캐모마일과 유자차를 같이 느낄 수 있는 티베리에이션 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_23.png"
+      },
+      {
+        "name": "복숭아 얼그레이",
+        "nameEn": "Peach Earl Grey",
+        "text": "달콤한 복숭아와 얼그레이의 베르가못 향의 조화, 깔끔하면서도 달콤한 티베리에이션 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_24.png"
+      },
+      {
+        "name": "홍자몽차",
+        "nameEn": "Red Grapefruit Tea",
+        "text": "자몽과일 특유의 달콤 쌉싸름한 맛을 즐길 수 있는 과일차",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_25.png"
+      },
+      {
+        "name": "제주 한라봉 감귤차",
+        "nameEn": "jeju Hanrabong tangerine tea",
+        "text": "향긋한 한라봉과 감귤이 어우러져 상큼하면서도 달콤한 과일차",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_26.png"
+      },
+      {
+        "name": "고흥 유자차",
+        "nameEn": "Goheung Yuzu Tea",
+        "text": "고흥 유자의 풍미를 살린 할리스 유자차",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_27.png"
+      },
+      {
+        "name": "해남 녹차",
+        "nameEn": "Green Tea",
+        "text": "고소한 감칠맛과 부드러운 목넘김이 좋은 땅끝 마음 해남에서 재배한 녹차(유기농 녹차잎 사용)",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_28.png"
+      },
+      {
+        "name": "페퍼민트",
+        "nameEn": "Peppermint",
+        "text": "입안 가득 깔끔한 청량감으로 기분까지 상쾌한 허브차",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_29.png"
+      },
+      {
+        "name": "캐모마일",
+        "nameEn": "Chamomile",
+        "text": "캐모마일 꽃잎을 그대로 말려 노란색의 향긋한 꽃향이 그대로 살아 있는 허브차",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_30.png"
+      },
+      {
+        "name": "얼그레이",
+        "nameEn": "Earl Grey",
+        "text": "스리랑카 캔디 지방에서 재배된 홍차에 시칠리아의 감귤,베르가못향이 조화된 감미로운 홍차",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_31.png"
+      }
+    ],
 
-    {
-      "smoothie/juice/sparkling": [
-        {
-          "name": "토마토 통통 주스",
-          "nameEn": "Tomato Juice",
-          "text": "신선한 토마토를 그대로 갈아 만든 주스에 토마토를 듬뿍 토핑한 생과일 주스",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_39.png"
-        },
-        {
-          "name": "키위 생생 주스",
-          "nameEn": "Kiwi Juice",
-          "text": "신선한 키위를 그대로 갈아 만든 주스에 키위를 듬뿍 토핑한 생과일 주스",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_40.png"
-        },
-        {
-          "name": "샤인머스캣 봉봉 스무디",
-          "nameEn": "Shine Muscat Smoothie",
-          "text": "상큼하고 청량한 샤인머스캣 스무디에 샤인머스캣 구슬 아이스크림을 토핑한 스무디",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_41.png"
-        },
-        {
-          "name": "딸기 스무디",
-          "nameEn": "Strawberry Smoothie",
-          "text": "딸기 본연의 맛을 살려 갈아 만든 과일 스무디",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_42.png"
-        },
-        {
-          "name": "애플망고 스무디",
-          "nameEn": "Apple mango Smoothie",
-          "text": "상큼 달콤한 애플망고 과육을 갈아 만든 과일 스무디",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_43.png"
-        },
-        {
-          "name": "사과 비트 착즙 주스",
-          "nameEn": "Apple Beet Juice",
-          "text": "사과, 비트, 파인애플이 어우러진 건강한 과채 주스",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_44.png"
-        },
-        {
-          "name": "오렌지 당근 착즙 주스",
-          "nameEn": "Orange Carrot Juice",
-          "text": "오렌지, 당근, 사과가 어우러진 달콤한 과채 주스",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_45.png"
-        },
-        {
-          "name": "청포도케일 착즙 주스",
-          "nameEn": "Green Grape Kale Juice",
-          "text": "청포도, 케일, 밀싹이 어우러진 산뜻한 과채 주스",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_46.png"
-        },
-        {
-          "name": "복숭아 자두 스파클링",
-          "nameEn": "Peach Plum Sparkling",
-          "text": "청량감 가득한 탄산수와 복숭아, 자두가 상큼달콤하게 어우러진 스파클링 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_47.png"
-        },
-        {
-          "name": "청포도 스파클링",
-          "nameEn": "Green Grape SPARKLING",
-          "text": "청량감 가득한 탄산수와 탱글탱글한 청포도가 상큼달콤하게 어우러진 스파클링 음료",
-          "price": "",
-          "image": "../../assets/images/menu/drink/drink_48.png"
-        }
-      ]
-    }
-  ]
+    "hollyccino/crush": [
+      {
+        "name": "제주 말차 할리치노",
+        "nameEn": "Jeju Matcha Hollyccino",
+        "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 할리치노",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_32.png"
+      },
+      {
+        "name": "피치 딸기 크러쉬",
+        "nameEn": "Peach Strawberry Crush",
+        "text": "과즙 가득한 복숭아 슬러쉬 안에 톡톡 씹히는 딸기 과육이 더해진 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_33.png"
+      },
+      {
+        "name": "민트 초코칩 할리치노",
+        "nameEn": "Mint Chocochip Hollyccino",
+        "text": "초코칩이 콕콕 박힌 상쾌하면서 청량한 민트 맛의 블렌디드 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_34.png"
+      },
+      {
+        "name": "딸기 치즈케이크 할리치노",
+        "nameEn": "Strawberry Cheese Cake Hollyccino",
+        "text": "치즈케익맛 아이스블렌디드 음료에 상큼한 딸기를 토핑한 할리스 시그니처 메뉴",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_35.png"
+      },
+      {
+        "name": "플레인 요거트 할리치노",
+        "nameEn": "Iyote-Plain",
+        "text": "저지방우유에 유산균이 살아있는 요거트를 더한 슬러쉬",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_36.png"
+      },
+      {
+        "name": "다크초코칩 할리치노",
+        "nameEn": "Dark Chocochip Hollyccino",
+        "text": "벨기에산 리얼 다크초콜릿이 씹히는 시원하고 진한 초콜릿 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_37.png"
+      },
+      {
+        "name": "콜드브루 할리치노",
+        "nameEn": "Coldbrew Hollyccino",
+        "text": "콜드브루와 우유, 얼음이 갈린 할리치노",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_38.png"
+      }
+    ],
+    "smoothie/juice/sparkling": [
+      {
+        "name": "토마토 통통 주스",
+        "nameEn": "Tomato Juice",
+        "text": "신선한 토마토를 그대로 갈아 만든 주스에 토마토를 듬뿍 토핑한 생과일 주스",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_39.png"
+      },
+      {
+        "name": "키위 생생 주스",
+        "nameEn": "Kiwi Juice",
+        "text": "신선한 키위를 그대로 갈아 만든 주스에 키위를 듬뿍 토핑한 생과일 주스",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_40.png"
+      },
+      {
+        "name": "샤인머스캣 봉봉 스무디",
+        "nameEn": "Shine Muscat Smoothie",
+        "text": "상큼하고 청량한 샤인머스캣 스무디에 샤인머스캣 구슬 아이스크림을 토핑한 스무디",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_41.png"
+      },
+      {
+        "name": "딸기 스무디",
+        "nameEn": "Strawberry Smoothie",
+        "text": "딸기 본연의 맛을 살려 갈아 만든 과일 스무디",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_42.png"
+      },
+      {
+        "name": "애플망고 스무디",
+        "nameEn": "Apple mango Smoothie",
+        "text": "상큼 달콤한 애플망고 과육을 갈아 만든 과일 스무디",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_43.png"
+      },
+      {
+        "name": "사과 비트 착즙 주스",
+        "nameEn": "Apple Beet Juice",
+        "text": "사과, 비트, 파인애플이 어우러진 건강한 과채 주스",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_44.png"
+      },
+      {
+        "name": "오렌지 당근 착즙 주스",
+        "nameEn": "Orange Carrot Juice",
+        "text": "오렌지, 당근, 사과가 어우러진 달콤한 과채 주스",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_45.png"
+      },
+      {
+        "name": "청포도케일 착즙 주스",
+        "nameEn": "Green Grape Kale Juice",
+        "text": "청포도, 케일, 밀싹이 어우러진 산뜻한 과채 주스",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_46.png"
+      },
+      {
+        "name": "복숭아 자두 스파클링",
+        "nameEn": "Peach Plum Sparkling",
+        "text": "청량감 가득한 탄산수와 복숭아, 자두가 상큼달콤하게 어우러진 스파클링 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_47.png"
+      },
+      {
+        "name": "청포도 스파클링",
+        "nameEn": "Green Grape SPARKLING",
+        "text": "청량감 가득한 탄산수와 탱글탱글한 청포도가 상큼달콤하게 어우러진 스파클링 음료",
+        "price": "",
+        "image": "../../assets/images/menu/drink/drink_48.png"
+      }
+    ]
+  }
 }
