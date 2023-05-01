@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <style>
+        @font-face {
+        font-family: "MICEGothic Bold";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
+            format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        }
+        body{
+            font-family: 'MICEGothic Bold';
+        }
+    </style>
+    <script src="../jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".gnb").mouseenter(function () {
+                $(".sub_menu").slideDown();
+            });
+            $(".gnb").mouseleave(function () {
+                $(".sub_menu").slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="#" class="skip_menu">본문 바로가기</a>
+
+    <header id="header" class="header">
+        <h1 class="logo">
+            <a href="#"><img src="images/logo.png" alt="Hollys logo"></a>
+        </h1>
+        
+        <nav class="gnb">
+            <h2 class="hide">주메뉴</h2>
+            <ul class="menu">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">할리스 몰</a></li>
+                <li><a href="#">멤버십</a></li>
+                <li><a href="#">이벤트 및 공지</a></li>
+                <li><a href="#">매장</a></li>
+                <li><a href="#">할리스 소개</a></li>
+            </ul>
+            <div class="sub_menu" style="display: none;">
+                <ul>
+                    <li><a href="#">COFFEE</a></li>
+                    <li><a href="#">라떼 · 초콜릿 · 티</a></li>
+                    <li><a href="#">할리치노 · 빙수</a></li>
+                    <li><a href="#">스무디 · 주스</a></li>
+                    <li><a href="#">스파클링</a></li>
+                    <li><a href="#">푸드</a></li>
+                    <li><a href="#">MD상품</a></li>
+                    <li><a href="#">MD식품</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">할리스카드</a></li>
+                    <li><a href="#">E-Store</a></li>
+                    <li><a href="#">구매내역</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">스마트오더</a></li>
+                    <li><a href="#">멤버십 혜택</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">Event</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">매장검색</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">HOLLYS</a></li>
+                    <li><a href="#">할리스 위치 및 연락처</a></li>
+                    <li><a href="#">채용 안내</a></li>
+                    <li><a href="#">가맹문의 및 절차</a></li>
+                    <li><a href="#">B2B 사업 소개</a></li>
+                </ul>
+            </div>        
+        </nav>
+
+        <div class="top_menu">
+            <h2 class="hide">사용자 서비스</h2>
+            <ul>
+                <li><a href="#">멤버십 로그인</a></li>
+                <li><a href="#">멤버십 가입</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
