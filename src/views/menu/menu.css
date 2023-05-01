@@ -43,11 +43,13 @@ main {
 .content_wrap h2 {
   margin-bottom: 20px;
 }
-.content_category {
-  display: flex;
+.content_category--wrap {
   border: 1px solid black;
   box-sizing: border-box;
   margin-bottom: 30px;
+}
+.content_category {
+  display: flex;
   justify-content: space-around;
 }
 .content_category li {
