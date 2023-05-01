@@ -145,10 +145,29 @@ request.onload = function() {
                         
                         // 키워드로 장소를 검색합니다
                         ps.keywordSearch(Store_TR, placesSearchCB)
+
                         $('.sec_three').addClass('active'); 
                         $('.sec_two').addClass('active');
                         $('.sec_one').addClass('active');
-                        document.querySelector('.sec_three .Store_name').textContent=(Store_TR.slice(4));
+                        let Store_name_value = Store_TR.slice(4);
+                        document.querySelector('.sec_three .Store_name').textContent=Store_name_value;
+
+                        //매장의 이미지 로드
+                        for(let num=0; num<3; num++){
+                            try{
+                                let StoreImg_txt ='Store_img_box/'+Store_name_value+'/img_'+(num+1)+'.jpg';
+                                $('.sec_three_img_box .sub_img_box img').eq(num).attr('src',StoreImg_txt);
+                            }catch(e){
+                                alert(e);
+                                logMyErrors(e);
+                            }
+                        }
+                        $('.sec_three_main_img').attr('src', $('.sec_three_img_box .sub_img_box img').eq(0).attr('src'));
+                        //매장 이미지 클릭시 매장정보의  바뀜
+                        $('.sec_three_img_box .sub_img_box img').on('click',function(){
+                            let Store_main_img=$(this).attr('src');
+                            $('.sec_three_main_img').attr('src', Store_main_img);
+                        });
                         document.querySelector('.sec_three .Store_introduce .addr').textContent=Store_TR_copy.children('td:eq(2)').text();
                         document.querySelector('.sec_three .Store_introduce .Tel').textContent=Store_TR_copy.children('td:eq(4)').text();
                     });
