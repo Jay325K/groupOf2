@@ -13,7 +13,8 @@ div,
 main,
 a,
 img,
-span {
+span,
+input {
   margin: 0;
   padding: 0;
 }
@@ -31,26 +32,52 @@ main {
   position: relative;
 }
 
+/* lnb */
+.lnb {
+  width: 240px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.lnb li {
+  width: 240px;
+}
+.lnb li :hover {
+  width: 240px;
+  color: #c72f30;
+}
+
 /* content */
 .content_wrap {
   width: 940px;
   margin: 0 auto;
   display: flex;
 }
-.lnb {
-  width: 240px;
-}
+
 .content_wrap h2 {
+  font-size: 28px;
   margin-bottom: 20px;
 }
 .content_category--wrap {
+  width: 700px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
   border: 1px solid black;
   box-sizing: border-box;
-  margin-bottom: 30px;
+}
+.content_category--wrap h3 {
+  border-bottom: 1px solid black;
+  padding: 10px;
 }
 .content_category {
   display: flex;
   justify-content: space-around;
+}
+.content_category label {
+  padding: 5px;
+  cursor: pointer;
+}
+.content_category label:hover {
+  color: #999;
 }
 .content_category li {
   margin-right: 10px;
@@ -71,6 +98,10 @@ main {
   margin-right: 10px;
   font-size: 16px;
 }
+.drink_list li:hover {
+  scale: 1.1;
+  color: #999;
+}
 .drink_list a {
   width: 160px;
   display: flex;
@@ -85,6 +116,7 @@ main {
   width: 160px;
 }
 
+.blank_item {
+  width: 160px;
+}
 /* drink desc */
-
-/* lnb */
