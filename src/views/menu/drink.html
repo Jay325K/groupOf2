@@ -9,19 +9,19 @@
   </head>
   <body>
     <main id="main" class="main">
-      <section class="content_wrap">
+      <section class="drink_content--wrap">
         <div class="lnb">
           <ul>
             <li><a href="./drink.html">음료</a></li>
-            <li><a href="./food.html">디저트</a></li>
+            <li><a href="./food.html">음식</a></li>
             <li><a href="./md.html">MD</a></li>
           </ul>
         </div>
-        <section class="content">
+        <section class="drink_content">
           <h2>음료</h2>
-          <section class="content_category--wrap">
+          <section class="drink_category--wrap">
             <h3>분류</h3>
-            <section class="content_category">
+            <section class="drink_category">
               <label>
                 <span>전체</span>
                 <input type="checkbox" checked />
@@ -47,11 +47,19 @@
           <section class="drink_list--wrap">
             <ul class="drink_list"></ul>
           </section>
-          <section class="drink_page">
-            <!-- <span>1</span>
-            <span>2</span>
-            <span>3</span> -->
+          <section class="drink_detail--wrap display_none">
+            <section class="drink_detail">
+              <button type="button" class="drink_detail--close_btn">
+                <img src="../../assets/images/menu/icon/close.png" />
+              </button>
+              <section class="drink_detail--desc"></section>
+              <section class="drink_nutritional--wrap">
+                <p>제품영양정보 (1회 제공량 / Regular 기준)</p>
+                <table class="drink_nutritional"></table>
+              </section>
+            </section>
           </section>
+          <section class="drink_page"></section>
         </section>
       </section>
     </main>
