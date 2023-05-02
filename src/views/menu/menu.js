@@ -1,16 +1,18 @@
 const drinkPage = document.querySelector(".drink_page");
 const drinkList = document.querySelector(".drink_list");
-const category = document.querySelector(".content_category");
-const checkBox = document.querySelectorAll(".content_category > label");
-const categoryArray = [
+const drinkCategory = document.querySelector(".drink_category");
+const drinkCategoryCheckBox = document.querySelectorAll(
+  ".drink_category > label"
+);
+const drinkCategoryArray = [
   "coffee/decaffeine",
   "latte/choco/tea",
   "hollyccino/crush",
   "smoothie/juice/sparkling",
 ];
-let drinkListPrint = [];
-let categoryChecked = [true, false, false, false, false];
-let pageNum = "1";
+let drinkListArray = [];
+let drinkCategoryChecked = [true, false, false, false, false];
+let drinkPageNum = "1";
 
 const getMenu = () => {
   const response = fetch("./menu_list.json");
@@ -21,44 +23,49 @@ const drinkPrintExec = async () => {
   try {
     const list = await getMenu();
 
-    if (!pageNum || pageNum == pageNum) {
-      drinkPagePrint(list);
+    if (drinkPageNum) {
+      drinkPagePrintProcess(list);
     }
   } catch (error) {
     console.log(error);
   }
 };
-const drinkPagePrint = (list) => {
-  drinkListPrint = [];
+const drinkPagePrintProcess = (list) => {
+  drinkListArray = [];
   drinkList.innerHTML = "";
   drinkPage.innerHTML = "";
 
+  drinkListGenerate(list);
+  const pageCount = Math.ceil(drinkListArray.length / 20);
+
+  for (let i = 1; i <= pageCount; i++) {
+    if (pageCount != 1) drinkPage.innerHTML += `<span>${i}</span>`;
+  }
+  drinkPagePrint();
+};
+const drinkListGenerate = (list) => {
   for (let i = 0; i < 5; i++) {
-    if (categoryChecked[0] == true) {
-      drinkListPrint = [
-        ...list["drink"][categoryArray[0]],
-        ...list["drink"][categoryArray[1]],
-        ...list["drink"][categoryArray[2]],
-        ...list["drink"][categoryArray[3]],
+    if (drinkCategoryChecked[0] == true) {
+      drinkListArray = [
+        ...list["drink"][drinkCategoryArray[0]],
+        ...list["drink"][drinkCategoryArray[1]],
+        ...list["drink"][drinkCategoryArray[2]],
+        ...list["drink"][drinkCategoryArray[3]],
       ];
-    } else if (categoryChecked[i]) {
-      drinkListPrint = [
-        ...drinkListPrint,
-        ...list["drink"][categoryArray[i - 1]],
+    } else if (drinkCategoryChecked[i]) {
+      drinkListArray = [
+        ...drinkListArray,
+        ...list["drink"][drinkCategoryArray[i - 1]],
       ];
     }
   }
-  const pageCount = Math.ceil(drinkListPrint.length / 20);
-
-  for (let i = 1; i <= pageCount; i++) {
-    drinkPage.innerHTML += `<span>${i}</span>`;
-  }
-
-  for (let i = (parseInt(pageNum) - 1) * 20; i < 20 * pageNum; i++) {
-    if (!drinkListPrint[i]) {
+};
+const drinkPagePrint = () => {
+  for (let i = (parseInt(drinkPageNum) - 1) * 20; i < 20 * drinkPageNum; i++) {
+    if (!drinkListArray[i]) {
       drinkList.innerHTML += `<li class="blank_item"></li>`;
-    } else if (drinkListPrint[i]) {
-      drinkList.innerHTML += `<li><a href="#none"><img src="${drinkListPrint[i].image}" alt=""><span>${drinkListPrint[i].name}</span></a></li>`;
+    } else if (drinkListArray[i]) {
+      drinkList.innerHTML += `<li><a href="#none"><img src="${drinkListArray[i].image}" alt=""><span>${drinkListArray[i].name}</span></a></li>`;
     }
   }
 };
@@ -70,34 +77,34 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 drinkPage.addEventListener("click", (e) => {
-  if (pageNum !== e.target.innerHTML && e.target.localName == "span") {
-    pageNum = e.target.innerHTML;
+  if (drinkPageNum !== e.target.innerHTML && e.target.localName == "span") {
+    drinkPageNum = e.target.innerHTML;
     drinkPrintExec();
   }
 });
-category.addEventListener("change", () => {
-  pageNum = 1;
+drinkCategory.addEventListener("change", () => {
+  drinkPageNum = 1;
 
   if (
-    checkBox[0].lastElementChild.checked == true &&
-    categoryChecked[0] == true
+    drinkCategoryCheckBox[0].lastElementChild.checked == true &&
+    drinkCategoryChecked[0] == true
   ) {
-    checkBox[0].lastElementChild.checked = false;
-    categoryChecked[0] = false;
+    drinkCategoryCheckBox[0].lastElementChild.checked = false;
+    drinkCategoryChecked[0] = false;
   } else if (
-    checkBox[0].lastElementChild.checked == true &&
-    categoryChecked[0] == false
+    drinkCategoryCheckBox[0].lastElementChild.checked == true &&
+    drinkCategoryChecked[0] == false
   ) {
-    checkBox[0].lastElementChild.checked = true;
-    categoryChecked[0] = true;
+    drinkCategoryCheckBox[0].lastElementChild.checked = true;
+    drinkCategoryChecked[0] = true;
     for (let i = 1; i < 5; i++) {
-      categoryChecked[i] = false;
-      checkBox[i].lastElementChild.checked = false;
+      drinkCategoryChecked[i] = false;
+      drinkCategoryCheckBox[i].lastElementChild.checked = false;
     }
   }
 
   for (let i = 0; i < 5; i++) {
-    categoryChecked[i] = checkBox[i].lastElementChild.checked;
+    drinkCategoryChecked[i] = drinkCategoryCheckBox[i].lastElementChild.checked;
   }
   drinkPrintExec();
 });
