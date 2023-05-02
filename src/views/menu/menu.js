@@ -4,6 +4,10 @@ const drinkCategory = document.querySelector(".drink_category");
 const drinkCategoryCheckBox = document.querySelectorAll(
   ".drink_category > label"
 );
+const drinkDetailwrap = document.querySelector(".drink_detail--wrap");
+const drinkDetailDesc = document.querySelector(".drink_detail--desc");
+const drinkNutritional = document.querySelector(".drink_nutritional");
+const drinkDetailClose = document.querySelector(".drink_detail--close_btn");
 const drinkCategoryArray = [
   "coffee/decaffeine",
   "latte/choco/tea",
@@ -21,41 +25,42 @@ const getMenu = () => {
 
 const drinkPrintExec = async () => {
   try {
-    const list = await getMenu();
+    const menu = await getMenu();
 
     if (drinkPageNum) {
-      drinkPagePrintProcess(list);
+      drinkPagePrintProcess(menu);
     }
   } catch (error) {
     console.log(error);
   }
 };
-const drinkPagePrintProcess = (list) => {
+const drinkPagePrintProcess = (menu) => {
   drinkListArray = [];
   drinkList.innerHTML = "";
   drinkPage.innerHTML = "";
 
-  drinkListGenerate(list);
+  drinkListGenerate(menu);
   const pageCount = Math.ceil(drinkListArray.length / 20);
 
   for (let i = 1; i <= pageCount; i++) {
-    if (pageCount != 1) drinkPage.innerHTML += `<span>${i}</span>`;
+    if (pageCount != 1)
+      drinkPage.innerHTML += `<button><span>${i}</span></button>`;
   }
   drinkPagePrint();
 };
-const drinkListGenerate = (list) => {
+const drinkListGenerate = (menu) => {
   for (let i = 0; i < 5; i++) {
     if (drinkCategoryChecked[0] == true) {
       drinkListArray = [
-        ...list["drink"][drinkCategoryArray[0]],
-        ...list["drink"][drinkCategoryArray[1]],
-        ...list["drink"][drinkCategoryArray[2]],
-        ...list["drink"][drinkCategoryArray[3]],
+        ...menu["drink"][drinkCategoryArray[0]],
+        ...menu["drink"][drinkCategoryArray[1]],
+        ...menu["drink"][drinkCategoryArray[2]],
+        ...menu["drink"][drinkCategoryArray[3]],
       ];
     } else if (drinkCategoryChecked[i]) {
       drinkListArray = [
         ...drinkListArray,
-        ...list["drink"][drinkCategoryArray[i - 1]],
+        ...menu["drink"][drinkCategoryArray[i - 1]],
       ];
     }
   }
@@ -68,6 +73,102 @@ const drinkPagePrint = () => {
       drinkList.innerHTML += `<li><a href="#none"><img src="${drinkListArray[i].image}" alt=""><span>${drinkListArray[i].name}</span></a></li>`;
     }
   }
+};
+const modalPrintExec = async (name) => {
+  try {
+    const menu = await getMenu();
+    modalPrintProcess(menu, name);
+    drinkDetailwrap.classList.remove("display_none");
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const modalPrintProcess = (menu, name) => {
+  drinkListArray = [
+    ...menu["drink"][drinkCategoryArray[0]],
+    ...menu["drink"][drinkCategoryArray[1]],
+    ...menu["drink"][drinkCategoryArray[2]],
+    ...menu["drink"][drinkCategoryArray[3]],
+  ];
+  const nameFilter = drinkListArray.filter((data) => data["name"] === name);
+  modalPrint(nameFilter);
+};
+const modalPrint = (data) => {
+  drinkDetailDesc.innerHTML = `
+  <img src="${data[0].image}" alt="" />
+  <h3>${data[0].name}</h3>
+  <p>${data[0].nameEn}</p>
+  <span>${data[0].text}</span>  
+  `;
+  drinkNutritionalPrint(data);
+};
+const drinkNutritionalPrint = (data) => {
+  if (data[0].nutritional.hot.calorie == "") {
+    drinkNutritional.innerHTML += `
+    ${drinkNutritionalStaticPrint()}
+    <tr>
+    <th>ICED</th>
+    <td>${data[0].nutritional.iced.calorie}</td>
+    <td>${data[0].nutritional.iced.sugars}</td>
+    <td>${data[0].nutritional.iced.protein}</td>
+    <td>${data[0].nutritional.iced.saturatedFat}</td>
+    <td>${data[0].nutritional.iced.salt}</td>
+    <td>${data[0].nutritional.iced.caffeine}</td>
+    </tr>
+    </tbody>
+    `;
+  } else if (data[0].nutritional.iced.calorie == "") {
+    drinkNutritional.innerHTML += `
+    ${drinkNutritionalStaticPrint()}
+    <tr>
+    <th>HOT</th>
+    <td>${data[0].nutritional.hot.calorie}</td>
+    <td>${data[0].nutritional.hot.sugars}</td>
+    <td>${data[0].nutritional.hot.protein}</td>
+    <td>${data[0].nutritional.hot.saturatedFat}</td>
+    <td>${data[0].nutritional.hot.salt}</td>
+    <td>${data[0].nutritional.hot.caffeine}</td>
+    </tr>
+    </tbody>
+    `;
+  } else {
+    drinkNutritional.innerHTML += `
+    ${drinkNutritionalStaticPrint()}
+    <tr>
+    <th>HOT</th>
+    <td>${data[0].nutritional.hot.calorie}</td>
+    <td>${data[0].nutritional.hot.sugars}</td>
+    <td>${data[0].nutritional.hot.protein}</td>
+    <td>${data[0].nutritional.hot.saturatedFat}</td>
+    <td>${data[0].nutritional.hot.salt}</td>
+    <td>${data[0].nutritional.hot.caffeine}</td>
+    </tr>
+    <tr>
+    <th>ICED</th>
+    <td>${data[0].nutritional.iced.calorie}</td>
+    <td>${data[0].nutritional.iced.sugars}</td>
+    <td>${data[0].nutritional.iced.protein}</td>
+    <td>${data[0].nutritional.iced.saturatedFat}</td>
+    <td>${data[0].nutritional.iced.salt}</td>
+    <td>${data[0].nutritional.iced.caffeine}</td>
+    </tr>
+    </tbody>
+    `;
+  }
+};
+const drinkNutritionalStaticPrint = () => {
+  return `
+  <tbody>
+  <tr>
+  <th></th>
+  <th>칼로리</td>
+  <th>당류</th>
+  <th>단백질</th>
+  <th>포화지방</th>
+  <th>나트륨</th>
+  <th>카페인</th>
+  </tr>`;
 };
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -107,4 +208,16 @@ drinkCategory.addEventListener("change", () => {
     drinkCategoryChecked[i] = drinkCategoryCheckBox[i].lastElementChild.checked;
   }
   drinkPrintExec();
+});
+
+drinkList.addEventListener("click", (e) => {
+  if (e.target.localName === "img") {
+    modalPrintExec(e.target.nextElementSibling.innerHTML);
+  } else if (e.target.localName === "span") {
+    modalPrintExec(e.target.innerHTML);
+  }
+});
+drinkDetailClose.addEventListener("click", () => {
+  drinkNutritional.innerHTML = "";
+  drinkDetailwrap.classList.add("display_none");
 });
