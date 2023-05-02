@@ -1256,5 +1256,84 @@
         }
       }
     ]
+  },
+  "food": {
+    "cake": [
+      {
+        "name": "",
+        "nameEn": "",
+        "category": "cake",
+        "text": "",
+        "price": "",
+        "image": "../../assets/images/menu/bakery/bakery_01.png",
+        "nutritional": {
+          "calorie": "",
+          "sugars": "",
+          "protein": "",
+          "saturatedFat": "",
+          "salt": ""
+        }
+      },
+      {
+        "name": "",
+        "nameEn": "",
+        "category": "cake",
+        "text": "",
+        "price": "",
+        "image": "../../assets/images/menu/bakery/bakery_01.png",
+        "nutritional": {
+          "calorie": "",
+          "sugars": "",
+          "protein": "",
+          "saturatedFat": "",
+          "salt": ""
+        }
+      },
+      {
+        "name": "",
+        "nameEn": "",
+        "category": "cake",
+        "text": "",
+        "price": "",
+        "image": "../../assets/images/menu/bakery/bakery_01.png",
+        "nutritional": {
+          "calorie": "",
+          "sugars": "",
+          "protein": "",
+          "saturatedFat": "",
+          "salt": ""
+        }
+      },
+      {
+        "name": "",
+        "nameEn": "",
+        "category": "cake",
+        "text": "",
+        "price": "",
+        "image": "../../assets/images/menu/bakery/bakery_01.png",
+        "nutritional": {
+          "calorie": "",
+          "sugars": "",
+          "protein": "",
+          "saturatedFat": "",
+          "salt": ""
+        }
+      },
+      {
+        "name": "티라미수 쏘스윗박스 파티팩",
+        "nameEn": "Tiramisu So Sweet box Partypack",
+        "category": "cake",
+        "text": "마스카포네 치즈무스와 커피시럽의 촉촉한 시트, 진한 발로나 코코아 파우더가 조화로운 오리지널 티라미스의 홀사이즈 케이크",
+        "price": "",
+        "image": "../../assets/images/menu/bakery/bakery_01.png",
+        "nutritional": {
+          "calorie": "370kcal",
+          "sugars": "25g/25%",
+          "protein": "7g/12%",
+          "saturatedFat": "11.9g/80%",
+          "salt": "150mg/7%"
+        }
+      }
+    ]
   }
 }
