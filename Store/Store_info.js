@@ -103,24 +103,23 @@ request.onload = function() {
             }
             
             $('.local_city_bor li').on('click',function(){
-                /* 뒤로가기 버튼 누를시 다시 지역이 뜰 수 있도록 설정 */
-                if($(this).index()===0){
+                
+                if($(this).index()===0){// 뒤로가기 버튼 누를시 다시 지역이 뜰 수 있도록 설정
                     $('.local_city').css({'display':'flex'});
                     $('.local_city_bor').text('');
-                }else{
-                    /* 지역 '~구' 클릭시 관련지역 매장들 테이블에 출력 */
+                }else{//지역 '~구' 클릭시 관련지역 매장들 테이블에 출력
                     $('.Store_detail_table tbody').text('');
-                    var myTbody=$('.Store_detail_table tbody');
+                    let myTbody=$('.Store_detail_table tbody');
                     for(let x=0; x<locate.length; x++){
                         if(locate[x].locate.match(city +" "+ $(this).text())){
-                            /* table안에 요소들 생성해서 이어주는 작업 */
+                            //테이블내 태그들 생성
                             let myTR= document.createElement('tr');
                             let myTD_locate= document.createElement('td');
 
-                            let myTD_Store_name = document.createElement('td');
+                            let myTD_Store = document.createElement('td');
                             let myA_myTdStore_name= document.createElement('a');
                             myA_myTdStore_name.setAttribute('href','#none');
-                            myTD_Store_name.append(myA_myTdStore_name);
+                            myTD_Store.append(myA_myTdStore_name);
 
                             let myTD_addr = document.createElement('td');
                             let myA_myTdAddr = document.createElement('a');
@@ -130,50 +129,27 @@ request.onload = function() {
                             let myTD_service = document.createElement('td');
                             let myTD_Tel = document.createElement('td');
 
+
+                            //생성된 태그들 텍스트 지정
                             myTD_locate.textContent=locate[x].locate;
                             myA_myTdStore_name.textContent=locate[x].Store;
                             myA_myTdAddr.textContent=locate[x].addr;
                             myTD_service.textContent=locate[x].Service;
                             myTD_Tel.textContent=locate[x].Tel;
                             
+
+                            //테이블 태그들 연결
                             myTR.append(myTD_locate);
-                            myTR.append(myTD_Store_name);
+                            myTR.append(myTD_Store);
                             myTR.append(myTD_addr);
                             myTR.append(myTD_service);
                             myTR.append(myTD_Tel);
-                            
                             myTbody.append(myTR);
                         }
                     }
-                    /* 테이블 누를때 section_three 나타남 */
-                    $('.Store_detail_table tbody tr td a').on('click',function(){
-
-                        /* section_three 열고닫기 */
-                        $('.sec_three, .sec_two, .sec_one').addClass('active');
-
-                        let Store_TR=$(this).parent().parent();
-                        let Store_TR_copy=Store_TR;
-                            Store_TR='할리스 '+Store_TR.children('td:eq(1)').text();
-                        
-                        // 키워드로 장소를 검색합니다
-                        ps.keywordSearch(Store_TR, placesSearchCB)
-                            let Store_name_value = Store_TR.slice(4); /* '할리스 매장명' 에서 할리스를 제외하는 작업 */
-                        document.querySelector('.sec_three .Store_name').textContent=Store_name_value;
-
-                        //매장의 이미지 로드
-                        for(let num=0; num<3; num++){
-                                let StoreImg_txt ='Store_img_box/'+Store_name_value+'/img_'+(num+1)+'.jpg';
-                                $('.sec_three_img_box .sub_img_box img').eq(num).attr('src',StoreImg_txt);
-                        }
-                        $('.sec_three_main_img').attr('src', $('.sec_three_img_box .sub_img_box img').eq(0).attr('src'));
-                        //매장 이미지 클릭시 매장정보의  바뀜
-                        $('.sec_three_img_box .sub_img_box img').on('click',function(){
-                            let Store_main_img=$(this).attr('src');
-                            $('.sec_three_main_img').attr('src', Store_main_img);
-                        });
-                        document.querySelector('.sec_three .Store_introduce .addr').textContent=Store_TR_copy.children('td:eq(2)').text();
-                        document.querySelector('.sec_three .Store_introduce .Tel').textContent=Store_TR_copy.children('td:eq(4)').text();
-                    });
+                    show_section_three();
+                    
+                    
                 }
             });
         });
@@ -205,18 +181,109 @@ request.onload = function() {
                 locate_addr[x]=locate[x].addr;
             }
 
-            let my_search_addr =[]; //내가 검색한 주소 들어갈 공간
+            let search_result =[]; //내가 검색한 키워드의 매장명
+            let search_result_index=0;; 
 
-            locate_Store.forEach(function(el){
-                console.log(el);
-            });
+            /* 전체 매장중 내가 검색한 키워드 관련 매장만 search_result[]에 저장 */
+             for(let x=0; x<locate_Store.length; x++){
+                if(locate_Store[x].match(search_keyword) || locate_addr[x].match(search_keyword)){
+                    search_result[search_result_index]=locate[x];
+                    search_result_index++;
+                }
+             }
+             console.log(search_result);
+             /* 내 검색 관련 매장들 테이블에 띄우기 */
+              let myTbody=$('.Store_detail_table tbody');
+              $('.Store_detail_table tbody').text('');
+                for(let x=0; x<search_result.length; x++){
+                    //테이블내 태그들 생성
+                    let myTR = document.createElement('tr');
+                    let myTD_locate = document.createElement('td');
 
+                    let myTD_Store = document.createElement('td');
+                    let myA_Store = document.createElement('a');
+                    myA_Store.setAttribute('href','#none');
+                    myTD_Store.append(myA_Store);
+
+                    let myTD_addr = document.createElement('td');
+                    let myA_addr = document.createElement('a');
+                    myA_addr.setAttribute('href','#none');
+                    myTD_addr.append(myA_addr);
+
+                    let myTD_service = document.createElement('td');
+                    let myTD_Tel = document.createElement('td');
+
+                    //생성된 태그들 텍스트 지정
+                    myTD_locate.textContent=search_result[x].locate;
+                    myA_Store.textContent=search_result[x].Store;
+                    myA_addr.textContent=search_result[x].addr;
+                    myTD_Tel.textContent=search_result[x].Tel;
+
+                    
+                    //테이블 태그들 연결
+                    myTD_Store.append(myA_Store);
+                    myTD_addr.append(myA_addr);
+
+                    myTR.append(myTD_locate);
+                    myTR.append(myTD_Store);
+                    myTR.append(myTD_addr);
+                    myTR.append(myTD_service);
+                    myTR.append(myTD_Tel);
+                    myTbody.append(myTR);
+                } 
+
+                
             // 키워드로 장소를 검색합니다
-            ps.keywordSearch(search_keyword, placesSearchCB);
+            let distinction = search_keyword.slice(search_keyword.length-1);
+            if(distinction==='점'){
+                ps.keywordSearch(('할리스 '+search_keyword), placesSearchCB);
+                console.log(search_keyword);
+            }else{
+                ps.keywordSearch(search_keyword, placesSearchCB);
+                console.log(search_keyword);
+            }
+
+            show_section_three();
         });
 
         
         
+
+
+
+
+        function show_section_three(){
+            /* 테이블 누를때 section_three 나타남 */
+            $('.Store_detail_table tbody tr td a').on('click',function(){
+
+                /* section_three 열고닫기 */
+                $('.sec_three, .sec_two, .sec_one').addClass('active');
+
+                let Store_TR=$(this).parent().parent();
+                let Store_TR_copy=Store_TR;
+                    Store_TR='할리스 '+Store_TR.children('td:eq(1)').text();
+                
+                // 키워드로 장소를 검색합니다
+                ps.keywordSearch(Store_TR, placesSearchCB)
+                let Store_name_value = Store_TR.slice(4); /* '할리스 매장명' 에서 할리스를 제외하는 작업 */
+                document.querySelector('.sec_three .Store_name').textContent=Store_name_value;
+
+                //매장의 이미지 로드
+                for(let num=0; num<3; num++){
+                        let StoreImg_txt ='Store_img_box/'+Store_name_value+'/img_'+(num+1)+'.jpg';
+                        $('.sec_three_img_box .sub_img_box img').eq(num).attr('src',StoreImg_txt);
+                }
+                $('.sec_three_main_img').attr('src', $('.sec_three_img_box .sub_img_box img').eq(0).attr('src'));
+
+                //매장 이미지 클릭시 매장정보의  바뀜
+                $('.sec_three_img_box .sub_img_box img').on('click',function(){
+                    let Store_main_img=$(this).attr('src');
+                    $('.sec_three_main_img').attr('src', Store_main_img);
+                });
+                document.querySelector('.sec_three .Store_introduce .addr').textContent=Store_TR_copy.children('td:eq(2)').text();
+                document.querySelector('.sec_three .Store_introduce .Tel').textContent=Store_TR_copy.children('td:eq(4)').text();
+            });
+        }
     });
 
 
