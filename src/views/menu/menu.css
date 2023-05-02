@@ -14,7 +14,12 @@ main,
 a,
 img,
 span,
-input {
+input,
+table,
+tr,
+th,
+td,
+p {
   margin: 0;
   padding: 0;
 }
@@ -136,4 +141,18 @@ main {
   width: 700px;
   height: 900px;
   background: white;
+}
+.drink_detail p {
+  border-bottom: 1px solid #999;
+}
+.drink_detail table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.drink_detail th,
+td {
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #000;
 }
