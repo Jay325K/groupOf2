@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>main page</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="frameWork/jquery_3.6.4.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <style>
+        /* 헤더 ex */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        /* 로고 ex */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* GNB ex */
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* 스크롤 페이지 1 */
+        .main_cont_1{
+            position: relative;
+            display: table;
+            height: 100vh;
+        }
+
+        .video1_L{
+            position: absolute;
+            display: table-cell;
+            flex-grow: 1;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            filter: blur(10px);
+        }
+        
+        .video1_R {
+            position: absolute;
+            display: table-cell;
+            height: 100%;
+            left: 50%;
+            object-fit: cover;
+        }
+
+        .text1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Maybe Hollys GNB</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Hollys mall</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Hollys News</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Hollys is</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <div class="main_cont_wrap">
+            <section class="main_cont_1">
+                <div class="video1_L">
+                    <video src="../../assets/video/cookie.mp4" autoplay muted>
+                        백드롭필터 동영상
+                    </video>
+                </div>
+                <div class="video1_R">
+                    <video src="../../assets/video/cookie.mp4" autoplay muted>
+                        메인 스크롤 전 쿠키
+                    </video>
+                </div>
+                <div class="text1">
+                    할리스 
+                </div>
+            </section>
+            <section class="main_cont_2">
+                <video src="../../assets/video/roseCake.mp4" autoplay muted>
+                    메인 스크롤 첫번째 분홍 동영상
+                </video>
+            </section>
+            <section class="main_cont_3">
+                <a href="#none"><img src="" alt=""> </a>
+            </section>
+            <section class="main_cont_4">
+                <a href=""><img src="" alt=""> </a>
+            </section>
+
+
+            <a href=""><img src="" alt=""> </a>
+            <a href=""><img src="" alt=""> </a>
+        </div>
+        1
+        2
+        3
+        4
+        PrevNext
+        Franchise 가맹안내
+        HOLLYS MALL
+
+        할리스의 다양한 상품들을 온라인에서도 만나보세요.
+        더블베리 초코 쏘스윗박스 더블베리 초코 쏘스윗박스
+        카네이션 케이크 카네이션 케이크
+        트리플 베리 생크림 트리플 베리 생크림
+        store store
+        할리스 멤버십
+        할리스카드 이벤트
+        news
+        [출시기념 이벤트] 케이크 픽업 예약하고 더 많은 혜택 받아가세요! 04-17
+        Dear My Love, 카네이션 케이크 출시 Event 04-17
+        VIVID SPRING, 싱그럽고 생생한 봄 음료 출시! 04-06
+        Hollys B2B Solution
+        할리스 F&B는 20년의 커피 노하우를
+        기반으로 한 할리스 B2B 솔루션을
+        소개합니다.
+        바로가기
+        news news 바로가기
+        [공고] 제3자 배정 유상증자 신주발행 공고 05-03
+    </main>
+    <footer>
+        개인정보처리방침 변경 안내 10-06
+        중간배당 기준일 공고 10-14
+        창업안내 창업안내
+        고객문의 고객문의
+        HOLLYS LIVE facebook
+
+        개인정보처리방침 서비스이용약관 멤버십이용약관 할리스카드이용약관 고객문의 고객설문 사이트맵 BI 소개
+        법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호
+        주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)
+
+        COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
+    </footer>
+    <script>
+        // $(function () {
+
+        // })
+
+
+    </script>
+</body>
+
+</html>

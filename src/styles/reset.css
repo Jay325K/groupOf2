@@ -1,0 +1,47 @@
+/*
+	CSS Reset(초기화) : 
+	태그들이 가지고 있는 기본 속성과 값을
+	코딩하기 편한 값으로 변경
+*/
+/*   *{ } = all elements   */
+body, h1, h2, h3, p, div, ul, li, dl, dt, dd, form, fieldset, input, button{
+	margin:0;
+	padding:0
+}
+body, input{
+	font-size:13px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+	color:#000; /* inherit */
+	text-decoration:none
+}
+ul, li{
+	list-style:none
+}
+address{
+	font-style: normal
+}
+img {
+	border: 0 none
+}
+fieldset{
+	border: 0 none;
+}
+input, button{
+	vertical-align: middle;
+}
+button{
+	cursor: pointer;
+}
+
+/* 공통 클래스 */
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
