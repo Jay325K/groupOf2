@@ -108,78 +108,118 @@ main .sec_two .page_intro h2{
     letter-spacing: -2px;
 }
 
-main .sec_two .teacher_wrap{
+/* 개강일정 관련 */
+main .sec_two .class_planner{
     width: 100%;
 }
-
-main .sec_two .teacher_wrap ul{
-    width: 100%;
+main .sec_two .class_planner .button_wrap{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: auto;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+
 }
-main .sec_two .teacher_wrap ul li{
-    width: 30%;
-    height: 300px;
-    box-shadow: 0 0 2px rgb(199, 47, 48);
-    margin-bottom: 20px;
-    border-radius: 5px;
+main .sec_two .class_planner .button_wrap a{
+    position: relative;
+    margin-right: 50px;
+}
+main .sec_two .class_planner .button_wrap a::before{
+    position: absolute;
+    content: '▼';
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.6em;
+
+}
+main .sec_two .class_planner .button_wrap a:hover{
+    border: 0;
+    text-decoration: underline;
 }
 
-/* 트레이너 카드 이미지 */
-main .sec_two .teacher_wrap ul li .imgbox{
-    height: 50%;
+/* 달력 */
+main .sec_two .class_planner .plan__planner{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+main .sec_two .class_planner .plan__planner .planner{
+    width: 100%;
+}
+
+/* 달 */
+.plan__planner .planner .year_month{
+    position: relative;
+}
+.plan__planner .planner .year_month .month{
+    width: 100%;
+    font-size: 5em;
+    border-bottom: 1px solid gray;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main .sec_two .teacher_wrap ul li .imgbox img{
-    padding: 10px;
-}
-
-
-main .sec_two .teacher_wrap ul li .trainer_info{
-    height: 50%;
+.plan__planner .planner .year_month .month a{
     position: relative;
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
-}
-/* 카드정보 나타내는 곳 */
-main .sec_two .teacher_wrap ul li .trainer_info .trainer_info_wrap{
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-
-/* 트레이너 카드정보 */
-main .sec_two .teacher_wrap ul li .Trainer_name{
-    height: 30%;
-    width: 100%;
-    color: black;
-    background: transparent;
+    top: 5px;
+    height: 60px;
     display: flex;
     align-items: center;
 }
-main .sec_two .teacher_wrap ul li .Trainer_name p{
-    position: relative;
-    left: 10px;
-    border-radius: 50px;
-    padding: 1px 0;
-    font-family: none;
+.plan__planner .planner .year_month .month a:hover,
+.plan__planner .planner .year_month .year a:hover
+{
+    border: 0;
+    text-shadow: 0 0 3px black;
+}
+.plan__planner .planner .year_month .month span{
+    padding: 10px 20px;
     font-weight: 800;
-    font-size: 0.9em;
 }
 
-main .sec_two .teacher_wrap ul li .say_it{
+/* 년 */
+.plan__planner .planner .year_month .year{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
     width: 100%;
+    font-size: 1.2em;
 }
-main .sec_two .teacher_wrap ul li .say_it p{
-    padding: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.7em;
-    color: gray
+
+/* 요일 */
+.plan__planner .planner .date__days .days ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.plan__planner .planner .date__days .days ul li{
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* 일 */
+.plan__planner .planner .date__days .date table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.plan__planner .planner .date__days .date td{
+    position: relative;
+    height: 91px;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+}
+.plan__planner .planner .date__days .date td:nth-child(1){
+    border-left: 1px solid white;
+}
+.plan__planner .planner .date__days .date td:nth-last-child(1){
+    border-right: 1px solid white;
+}
+.plan__planner .planner .date__days .date td span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.85em;
+    letter-spacing: -2px;
+    color: rgb(83, 83, 83);
+    font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
 }
 /*********************footer*******************/
 footer{
