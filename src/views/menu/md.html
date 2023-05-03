@@ -4,8 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>할리스 : 음료</title>
+    <link rel="stylesheet" href="./menu.css" />
   </head>
-  <body></body>
-  <script src="./script.js"></script>
+  <body>
+    <main id="main" class="main">
+      <section class="drink_content--wrap">
+        <div class="lnb">
+          <ul>
+            <li><a href="./drink.html">음료</a></li>
+            <li><a href="./food.html">음식</a></li>
+            <li><a href="./md.html">MD</a></li>
+          </ul>
+        </div>
+        <section class="drink_content">
+          <h2>음료</h2>
+          <section class="drink_category--wrap">
+            <h3>분류</h3>
+            <section class="drink_category">
+              <label>
+                <span>전체</span>
+                <input type="checkbox" checked />
+              </label>
+              <label>
+                <span>상품</span>
+                <input type="checkbox" />
+              </label>
+              <label>
+                <span>식품</span>
+                <input type="checkbox" />
+              </label>
+            </section>
+          </section>
+          <section class="drink_list--wrap">
+            <ul class="drink_list"></ul>
+          </section>
+          <section class="drink_detail--wrap display_none">
+            <section class="drink_detail">
+              <button type="button" class="drink_detail--close_btn">
+                <img src="../../assets/images/menu/icon/close.png" />
+              </button>
+              <section class="drink_detail--desc"></section>
+              <section class="drink_nutritional--wrap">
+                <p>제품영양정보 (1회 제공량 / Regular 기준)</p>
+                <table class="drink_nutritional"></table>
+              </section>
+            </section>
+          </section>
+          <section class="drink_page"></section>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="./menu.js"></script>
 </html>

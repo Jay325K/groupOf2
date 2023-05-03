@@ -8,15 +8,20 @@ const drinkDetailwrap = document.querySelector(".drink_detail--wrap");
 const drinkDetailDesc = document.querySelector(".drink_detail--desc");
 const drinkNutritional = document.querySelector(".drink_nutritional");
 const drinkDetailClose = document.querySelector(".drink_detail--close_btn");
-const drinkCategoryArray = [
-  "coffee/decaffeine",
-  "latte/choco/tea",
-  "hollyccino/crush",
-  "smoothie/juice/sparkling",
-];
-let drinkListArray = [];
-let drinkCategoryChecked = [true, false, false, false, false];
+const menuCategoryArray = {
+  drink: [
+    "coffee/decaffeine",
+    "latte/choco/tea",
+    "hollyccino/crush",
+    "smoothie/juice/sparkling",
+  ],
+  food: ["cake", "sandwich/toast", "bakery", "food"],
+  md: ["product", "food"],
+};
+let menuListArray = [];
+let drinkCategoryChecked = [true];
 let drinkPageNum = "1";
+let pageName = [];
 
 const getMenu = () => {
   const response = fetch("./menu_list.json");
@@ -26,9 +31,8 @@ const getMenu = () => {
 const drinkPrintExec = async () => {
   try {
     const menu = await getMenu();
-
     if (drinkPageNum) {
-      drinkPagePrintProcess(menu);
+      drinkPagePrintProcess(menu[pageName]);
     }
   } catch (error) {
     console.log(error);
@@ -36,11 +40,12 @@ const drinkPrintExec = async () => {
 };
 const drinkPagePrintProcess = (menu) => {
   drinkListArray = [];
+  menuListArray = [];
   drinkList.innerHTML = "";
   drinkPage.innerHTML = "";
 
   drinkListGenerate(menu);
-  const pageCount = Math.ceil(drinkListArray.length / 20);
+  const pageCount = Math.ceil(menuListArray.length / 20);
 
   for (let i = 1; i <= pageCount; i++) {
     if (pageCount != 1)
@@ -49,35 +54,34 @@ const drinkPagePrintProcess = (menu) => {
   drinkPagePrint();
 };
 const drinkListGenerate = (menu) => {
-  for (let i = 0; i < 5; i++) {
-    if (drinkCategoryChecked[0] == true) {
-      drinkListArray = [
-        ...menu["drink"][drinkCategoryArray[0]],
-        ...menu["drink"][drinkCategoryArray[1]],
-        ...menu["drink"][drinkCategoryArray[2]],
-        ...menu["drink"][drinkCategoryArray[3]],
-      ];
-    } else if (drinkCategoryChecked[i]) {
-      drinkListArray = [
-        ...drinkListArray,
-        ...menu["drink"][drinkCategoryArray[i - 1]],
-      ];
-    }
+  if (drinkCategoryChecked[0]) {
+    menuCategoryArray[pageName].forEach((e) => {
+      menuListArray = [...menuListArray, ...menu[e]];
+    });
+  } else if (drinkCategoryChecked[0] == false) {
+    drinkCategoryChecked.forEach((e, index) => {
+      if (e) {
+        menuListArray = [
+          ...menuListArray,
+          ...menu[menuCategoryArray[pageName][index - 1]],
+        ];
+      }
+    });
   }
 };
 const drinkPagePrint = () => {
   for (let i = (parseInt(drinkPageNum) - 1) * 20; i < 20 * drinkPageNum; i++) {
-    if (!drinkListArray[i]) {
+    if (!menuListArray[i]) {
       drinkList.innerHTML += `<li class="blank_item"></li>`;
-    } else if (drinkListArray[i]) {
-      drinkList.innerHTML += `<li><a href="#none"><img src="${drinkListArray[i].image}" alt=""><span>${drinkListArray[i].name}</span></a></li>`;
+    } else if (menuListArray[i]) {
+      drinkList.innerHTML += `<li><a href="#none"><img src="${menuListArray[i].image}" alt=""><span>${menuListArray[i].name}</span></a></li>`;
     }
   }
 };
 const modalPrintExec = async (name) => {
   try {
     const menu = await getMenu();
-    modalPrintProcess(menu, name);
+    modalPrintProcess(menu[pageName], name);
     drinkDetailwrap.classList.remove("display_none");
   } catch (error) {
     console.log(error);
@@ -85,83 +89,42 @@ const modalPrintExec = async (name) => {
 };
 
 const modalPrintProcess = (menu, name) => {
-  drinkListArray = [
-    ...menu["drink"][drinkCategoryArray[0]],
-    ...menu["drink"][drinkCategoryArray[1]],
-    ...menu["drink"][drinkCategoryArray[2]],
-    ...menu["drink"][drinkCategoryArray[3]],
-  ];
-  const nameFilter = drinkListArray.filter((data) => data["name"] === name);
+  menuListArray = [];
+  menuCategoryArray[pageName].forEach((e) => {
+    menuListArray = [...menuListArray, ...menu[e]];
+  });
+  const nameFilter = menuListArray.filter((data) =>
+    console.log(data["name"], name)
+  )[0];
+  console.log(menuListArray);
+  // console.log(nameFilter);
+  // console.log(name);
   modalPrint(nameFilter);
-};
-const modalPrint = (data) => {
-  drinkDetailDesc.innerHTML = `
-  <img src="${data[0].image}" alt="" />
-  <h3>${data[0].name}</h3>
-  <p>${data[0].nameEn}</p>
-  <span>${data[0].text}</span>  
-  `;
-  drinkNutritionalPrint(data);
-};
-const drinkNutritionalPrint = (data) => {
-  if (data[0].nutritional.hot.calorie == "") {
-    drinkNutritional.innerHTML += `
-    ${drinkNutritionalStaticPrint()}
-    <tr>
-    <th>ICED</th>
-    <td>${data[0].nutritional.iced.calorie}</td>
-    <td>${data[0].nutritional.iced.sugars}</td>
-    <td>${data[0].nutritional.iced.protein}</td>
-    <td>${data[0].nutritional.iced.saturatedFat}</td>
-    <td>${data[0].nutritional.iced.salt}</td>
-    <td>${data[0].nutritional.iced.caffeine}</td>
-    </tr>
-    </tbody>
-    `;
-  } else if (data[0].nutritional.iced.calorie == "") {
-    drinkNutritional.innerHTML += `
-    ${drinkNutritionalStaticPrint()}
-    <tr>
-    <th>HOT</th>
-    <td>${data[0].nutritional.hot.calorie}</td>
-    <td>${data[0].nutritional.hot.sugars}</td>
-    <td>${data[0].nutritional.hot.protein}</td>
-    <td>${data[0].nutritional.hot.saturatedFat}</td>
-    <td>${data[0].nutritional.hot.salt}</td>
-    <td>${data[0].nutritional.hot.caffeine}</td>
-    </tr>
-    </tbody>
-    `;
-  } else {
-    drinkNutritional.innerHTML += `
-    ${drinkNutritionalStaticPrint()}
-    <tr>
-    <th>HOT</th>
-    <td>${data[0].nutritional.hot.calorie}</td>
-    <td>${data[0].nutritional.hot.sugars}</td>
-    <td>${data[0].nutritional.hot.protein}</td>
-    <td>${data[0].nutritional.hot.saturatedFat}</td>
-    <td>${data[0].nutritional.hot.salt}</td>
-    <td>${data[0].nutritional.hot.caffeine}</td>
-    </tr>
-    <tr>
-    <th>ICED</th>
-    <td>${data[0].nutritional.iced.calorie}</td>
-    <td>${data[0].nutritional.iced.sugars}</td>
-    <td>${data[0].nutritional.iced.protein}</td>
-    <td>${data[0].nutritional.iced.saturatedFat}</td>
-    <td>${data[0].nutritional.iced.salt}</td>
-    <td>${data[0].nutritional.iced.caffeine}</td>
-    </tr>
-    </tbody>
-    `;
+  if (nameFilter.nutritional) {
+    drinkNutritionalPrint(nameFilter);
   }
 };
-const drinkNutritionalStaticPrint = () => {
+const modalPrint = (data) => {
+  // console.log(data.image);
+  drinkDetailDesc.innerHTML = `
+  <img src="${data.image}" alt="" />
+  <h3>${data.name}</h3>
+  <p>${data.nameEn}</p>
+  <span>${data.text}</span>  
+  `;
+};
+const drinkNutritionalPrint = (data) => {
+  const nameFilterKeys = Object.keys(data.nutritional);
+  drinkNutritional.innerHTML += `
+  ${drinkNutritionalStaticPrint(nameFilterKeys)}
+  ${test(data, nameFilterKeys)}
+  `;
+};
+const drinkNutritionalStaticPrint = (keys) => {
   return `
   <tbody>
   <tr>
-  <th></th>
+  ${keys.length == 6 ? "" : "<th></th>"}
   <th>칼로리</td>
   <th>당류</th>
   <th>단백질</th>
@@ -170,11 +133,31 @@ const drinkNutritionalStaticPrint = () => {
   <th>카페인</th>
   </tr>`;
 };
-
-window.addEventListener("DOMContentLoaded", () => {
-  if (window.location.pathname.includes("drink")) {
-    drinkPrintExec();
+const test = (data, keys) => {
+  let returnText;
+  if (keys.length == 6) {
+    returnText = "<tr>";
+    keys.forEach((key) => {
+      returnText += `<td>${data.nutritional[key]}</td>`;
+    });
+    returnText += "</tr></tbody>";
+  } else {
+    returnText = "";
+    keys.forEach((key) => {
+      const nutritionalKeys = Object.keys(data.nutritional[key]);
+      returnText += `<tr><th>${key}</th>`;
+      nutritionalKeys.forEach((e) => {
+        returnText += `<td>${data.nutritional[key][e]}</td>`;
+      });
+    });
+    returnText += "</tr></tbody>";
   }
+  return returnText;
+};
+window.addEventListener("DOMContentLoaded", () => {
+  const pageSlash = window.location.pathname.split("/");
+  pageName = pageSlash[pageSlash.length - 1].split(".")[0];
+  drinkPrintExec();
 });
 
 drinkPage.addEventListener("click", (e) => {
@@ -198,13 +181,13 @@ drinkCategory.addEventListener("change", () => {
   ) {
     drinkCategoryCheckBox[0].lastElementChild.checked = true;
     drinkCategoryChecked[0] = true;
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i < drinkCategoryCheckBox.length; i++) {
       drinkCategoryChecked[i] = false;
       drinkCategoryCheckBox[i].lastElementChild.checked = false;
     }
   }
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < drinkCategoryCheckBox.length; i++) {
     drinkCategoryChecked[i] = drinkCategoryCheckBox[i].lastElementChild.checked;
   }
   drinkPrintExec();
