@@ -2,7 +2,7 @@ $(function(){
     let big_img = $('.space_main_img img');
 
     //메뉴 클릭시 이미지 바뀜
-    $('.space_menu li>a').on('click',function(){
+    $('.space_menu li>a').on('click focus',function(){
         $('.space_img_wrap').addClass('screen_out');
         $(this).next().removeClass('screen_out');
         let slice_src =$(this).next().children('a').eq(0).children().attr('src');
@@ -26,7 +26,7 @@ $(function(){
     });
 
     //작은 이미지 클릭시 큰 이미지 바뀜
-    $('.space_img_wrap a img').on('click',function(){
+    $('.space_img_wrap a img').on('click focus',function(){
         let img_src = $(this).attr('src').slice(0,$(this).attr('src').length-4);
         big_img.attr('src',(img_src+'_2.jpg'));
     })
