@@ -93,10 +93,8 @@ const modalPrintProcess = (menu, name) => {
   menuCategoryArray[pageName].forEach((e) => {
     menuListArray = [...menuListArray, ...menu[e]];
   });
-  const nameFilter = menuListArray.filter((data) =>
-    console.log(data["name"], name)
-  )[0];
-  console.log(menuListArray);
+  const nameFilter = menuListArray.filter((data) => data["name"] === name)[0];
+  // console.log(menuListArray);
   // console.log(nameFilter);
   // console.log(name);
   modalPrint(nameFilter);
