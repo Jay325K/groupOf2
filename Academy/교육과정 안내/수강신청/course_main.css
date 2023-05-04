@@ -1,0 +1,157 @@
+header{
+    width: 100%;
+    min-width: 940px;
+    margin: auto;
+    height: 148px;
+    border: 1px solid;
+}
+/*********** main ***********/
+main{
+    width: 940px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/************** sec_two *************/
+main .sec_two{
+    position: relative;
+    width: 700px;
+    transition: 0.5s;
+    z-index: 1;
+    background: white;
+}
+
+main .sec_two .page_intro .page_path{
+    font-size: 0.75em;
+    color: gray;
+    padding: 15px 0;
+
+}
+main .sec_two .page_intro h2{
+    font-size: 2.2em;
+    margin-left: 30px;
+    padding: 5px 0;
+    letter-spacing: -2px;
+}
+
+/* 수강신청 */
+main .sec_two .my_info{
+    margin-top: 30px;
+}
+main .sec_two .my_info form{
+    position: relative;
+}
+main .sec_two .my_info form legend{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3em;
+    border: 0;
+}
+main .sec_two .my_info form fieldset{
+    width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+}
+main .sec_two .my_info form fieldset .text_wrap{
+    padding-top: 30px;
+}
+
+/* 내용작성 */
+main .sec_two .my_info form fieldset .text_wrap .info_wrap{
+    text-align: start;
+    line-height: 30px;
+}
+
+/* 중앙에 정렬할 텍스트들 */
+main .sec_two .my_info form fieldset .text_wrap .info_wrap .center{
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(199,47,48);
+    padding-top: 50px;
+}
+
+/* 움직일부분 */
+main .sec_two .my_info form fieldset .text_wrap .info_wrap .move{
+    text-align: center;
+}
+main .sec_two .my_info form fieldset .text_wrap .info_wrap .move p{
+    font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif;
+    font-size: 0.9em;
+    letter-spacing: -1px;
+    color: #2e2e2e;
+}
+
+/* 강좌 및 수강인원 */
+form fieldset .text_wrap .info_wrap .move .my_infomation_wrap{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+form fieldset .text_wrap .info_wrap .payment_wrap{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form fieldset .text_wrap .info_wrap .payment{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* []텍스트 */
+form fieldset .text_wrap .info_wrap .payment .big_size{
+    position: relative;
+    left: calc(-5px + 15px*(var(--little)) );
+    font-size: 2em;
+}
+/* 결제방법 선택 세로정렬 */
+form fieldset .text_wrap .info_wrap .flex_colum{
+    padding: 0 20px;
+    width: 35%;
+    display: flex;
+    font-size: 0.9em;
+    letter-spacing: -1px;
+    justify-content: center;
+    flex-direction: column;
+}
+/* 라디오버튼과 라벨 갭차이 줄이기 */
+form fieldset .text_wrap .info_wrap .flex_colum label input{
+    width: 20px;
+}
+
+form fieldset .text_wrap .button_wrap{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+form fieldset .text_wrap .button_wrap button{
+    padding: 5px 15px;
+    background: rgb(199,47,48);
+    color: #fff;
+    border: 1px solid;
+    font-size: 0.9em;
+    letter-spacing: -0.5px;
+    font-weight: 800;
+    cursor: pointer;
+}
+form fieldset .text_wrap .button_wrap button:active{
+    background: rgb(199,47,48);
+    
+    color: #fff;
+}
+/*********************footer*******************/
+footer{
+    width: 100%;
+    height: 300px;
+    
+    border: 1px solid;
+}
+
+

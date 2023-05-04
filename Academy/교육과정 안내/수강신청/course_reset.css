@@ -26,5 +26,16 @@ a:hover{
 }
 .screen_out{
     display: none;
+}
+.text_out{
     text-indent: -99999999px;
+}
+input{
+    text-align: center;
+    width: 60px;
+    border: 0;
+    border-bottom: 1px dashed #2e2e2e;
+}
+.long_text{
+    width: 170px;
 }
