@@ -94,16 +94,12 @@ const modalPrintProcess = (menu, name) => {
     menuListArray = [...menuListArray, ...menu[e]];
   });
   const nameFilter = menuListArray.filter((data) => data["name"] === name)[0];
-  // console.log(menuListArray);
-  // console.log(nameFilter);
-  // console.log(name);
   modalPrint(nameFilter);
   if (nameFilter.nutritional) {
     drinkNutritionalPrint(nameFilter);
   }
 };
 const modalPrint = (data) => {
-  // console.log(data.image);
   drinkDetailDesc.innerHTML = `
   <img src="${data.image}" alt="" />
   <h3>${data.name}</h3>
@@ -194,8 +190,10 @@ drinkCategory.addEventListener("change", () => {
 drinkList.addEventListener("click", (e) => {
   if (e.target.localName === "img") {
     modalPrintExec(e.target.nextElementSibling.innerHTML);
+    console.log(e.target.nextElementSibling.innerHTML);
   } else if (e.target.localName === "span") {
     modalPrintExec(e.target.innerHTML);
+    console.log(e.target.innerHTML);
   }
 });
 drinkDetailClose.addEventListener("click", () => {
