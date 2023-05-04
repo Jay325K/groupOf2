@@ -1,13 +1,16 @@
-const drinkPage = document.querySelector(".drink_page");
-const drinkList = document.querySelector(".drink_list");
-const drinkCategory = document.querySelector(".drink_category");
-const drinkCategoryCheckBox = document.querySelectorAll(
-  ".drink_category > label"
+const menuPage = document.querySelector(".menu_page");
+const menuList = document.querySelector(".menu_list");
+const menuCategory = document.querySelector(".menu_category");
+const menuCategoryCheckbox = document.querySelectorAll(
+  ".menu_category--checkbox"
 );
-const drinkDetailwrap = document.querySelector(".drink_detail--wrap");
-const drinkDetailDesc = document.querySelector(".drink_detail--desc");
-const drinkNutritional = document.querySelector(".drink_nutritional");
-const drinkDetailClose = document.querySelector(".drink_detail--close_btn");
+const menuModalWrap = document.querySelector(".menu_modal--wrap");
+const menuModalDetail = document.querySelector(".menu_modal--detail");
+const menuNutritional = document.querySelector(".menu_nutritional");
+const menuModalCloseBtn = document.querySelector(".menu_modal--close_btn");
+const menuServingsize = document.querySelector(".menu_servingsize");
+// const menuModal = document.querySelector(".menu_modal");
+const menuAllergy = document.querySelector(".menu_allergy");
 const menuCategoryArray = {
   drink: [
     "coffee/decaffeine",
@@ -41,15 +44,15 @@ const drinkPrintExec = async () => {
 const drinkPagePrintProcess = (menu) => {
   drinkListArray = [];
   menuListArray = [];
-  drinkList.innerHTML = "";
-  drinkPage.innerHTML = "";
+  menuList.innerHTML = "";
+  menuPage.innerHTML = "";
 
   drinkListGenerate(menu);
   const pageCount = Math.ceil(menuListArray.length / 20);
 
   for (let i = 1; i <= pageCount; i++) {
     if (pageCount != 1)
-      drinkPage.innerHTML += `<button><span>${i}</span></button>`;
+      menuPage.innerHTML += `<button><span>${i}</span></button>`;
   }
   drinkPagePrint();
 };
@@ -72,9 +75,9 @@ const drinkListGenerate = (menu) => {
 const drinkPagePrint = () => {
   for (let i = (parseInt(drinkPageNum) - 1) * 20; i < 20 * drinkPageNum; i++) {
     if (!menuListArray[i]) {
-      drinkList.innerHTML += `<li class="blank_item"></li>`;
+      menuList.innerHTML += `<li class="blank_item"></li>`;
     } else if (menuListArray[i]) {
-      drinkList.innerHTML += `<li><a href="#none"><img src="${menuListArray[i].image}" alt=""><span>${menuListArray[i].name}</span></a></li>`;
+      menuList.innerHTML += `<li><a href="#none"><img src="${menuListArray[i].image}" alt=""><span>${menuListArray[i].name}</span></a></li>`;
     }
   }
 };
@@ -82,7 +85,7 @@ const modalPrintExec = async (name) => {
   try {
     const menu = await getMenu();
     modalPrintProcess(menu[pageName], name);
-    drinkDetailwrap.classList.remove("display_none");
+    menuModalWrap.classList.remove("display_none");
   } catch (error) {
     console.log(error);
   }
@@ -95,21 +98,29 @@ const modalPrintProcess = (menu, name) => {
   });
   const nameFilter = menuListArray.filter((data) => data["name"] === name)[0];
   modalPrint(nameFilter);
-  if (nameFilter.nutritional) {
-    drinkNutritionalPrint(nameFilter);
-  }
+  menuAllergy.innerHTML = `<p>알레르기 유발요인 : ${nameFilter.allergy}<br>
+  ※ 식품 등의 표시 · 광고의 관한 법률에 의거하여 알레르기 표시항목에 한해서만 표기함</p>`;
 };
 const modalPrint = (data) => {
-  drinkDetailDesc.innerHTML = `
+  menuModalDetail.innerHTML = `
   <img src="${data.image}" alt="" />
   <h3>${data.name}</h3>
   <p>${data.nameEn}</p>
-  <span>${data.text}</span>  
+  <p>${data.text}</p>
+  ${data.caution ? `<p>${data.caution}</p>` : ""}
   `;
+  if (data.nutritional) {
+    drinkNutritionalPrint(data);
+  }
 };
 const drinkNutritionalPrint = (data) => {
   const nameFilterKeys = Object.keys(data.nutritional);
-  drinkNutritional.innerHTML += `
+  console.log(menuServingsize);
+  menuServingsize.innerHTML = `${
+    data.servingSize ? `<p>${data.servingSize}</p>` : ""
+  }
+  `;
+  menuNutritional.innerHTML += `  
   ${drinkNutritionalStaticPrint(nameFilterKeys)}
   ${test(data, nameFilterKeys)}
   `;
@@ -154,49 +165,48 @@ window.addEventListener("DOMContentLoaded", () => {
   drinkPrintExec();
 });
 
-drinkPage.addEventListener("click", (e) => {
+menuPage.addEventListener("click", (e) => {
   if (drinkPageNum !== e.target.innerHTML && e.target.localName == "span") {
     drinkPageNum = e.target.innerHTML;
     drinkPrintExec();
   }
 });
-drinkCategory.addEventListener("change", () => {
+menuCategory.addEventListener("change", () => {
   drinkPageNum = 1;
 
   if (
-    drinkCategoryCheckBox[0].lastElementChild.checked == true &&
+    menuCategoryCheckbox[0].lastElementChild.checked == true &&
     drinkCategoryChecked[0] == true
   ) {
-    drinkCategoryCheckBox[0].lastElementChild.checked = false;
+    menuCategoryCheckbox[0].lastElementChild.checked = false;
     drinkCategoryChecked[0] = false;
   } else if (
-    drinkCategoryCheckBox[0].lastElementChild.checked == true &&
+    menuCategoryCheckbox[0].lastElementChild.checked == true &&
     drinkCategoryChecked[0] == false
   ) {
-    drinkCategoryCheckBox[0].lastElementChild.checked = true;
+    menuCategoryCheckbox[0].lastElementChild.checked = true;
     drinkCategoryChecked[0] = true;
-    for (let i = 1; i < drinkCategoryCheckBox.length; i++) {
+    for (let i = 1; i < menuCategoryCheckbox.length; i++) {
       drinkCategoryChecked[i] = false;
-      drinkCategoryCheckBox[i].lastElementChild.checked = false;
+      menuCategoryCheckbox[i].lastElementChild.checked = false;
     }
   }
 
-  for (let i = 0; i < drinkCategoryCheckBox.length; i++) {
-    drinkCategoryChecked[i] = drinkCategoryCheckBox[i].lastElementChild.checked;
+  for (let i = 0; i < menuCategoryCheckbox.length; i++) {
+    drinkCategoryChecked[i] = menuCategoryCheckbox[i].lastElementChild.checked;
   }
   drinkPrintExec();
 });
 
-drinkList.addEventListener("click", (e) => {
+menuList.addEventListener("click", (e) => {
   if (e.target.localName === "img") {
-    modalPrintExec(e.target.nextElementSibling.innerHTML);
-    console.log(e.target.nextElementSibling.innerHTML);
+    modalPrintExec(e.target.nextElementSibling.innerText);
   } else if (e.target.localName === "span") {
     modalPrintExec(e.target.innerHTML);
     console.log(e.target.innerHTML);
   }
 });
-drinkDetailClose.addEventListener("click", () => {
-  drinkNutritional.innerHTML = "";
-  drinkDetailwrap.classList.add("display_none");
+menuModalCloseBtn.addEventListener("click", () => {
+  menuNutritional.innerHTML = "";
+  menuModalWrap.classList.add("display_none");
 });
