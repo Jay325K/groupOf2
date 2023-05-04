@@ -38,6 +38,8 @@ $(function(){
         $('.show_month').text(change_month+'월');
 
         setting_date(nowdate, change_month, change_year)
+
+        
     }); 
 
     function setting_date(nowdate, change_month, change_year){
@@ -92,8 +94,8 @@ $(function(){
         }else{
             return date_30;
         }
-
     }
+
 
     /* 월 1일이 어떤 요일인지 알아내서 31일까지 달력에 출력하기 */
     function date_for(oneday, month_last_date){
@@ -107,8 +109,12 @@ $(function(){
     /* 오늘 날짜 백그라운드 변경 */
     function now_date_reading(oneyear,onemonth,nowdate,onemonth,oneyear){
         if(nowyear === oneyear && nowmonth === onemonth){
+            
+            
             $('.date table tr td').eq(nowdate).css('background','rgba(199,47,48,0.3)');
+            
         }else{
+            $('td').hover(function(){$(this).css('background','rgb(248,248,248)')},function(){$(this).css('background','0')})
             $('.date table tr td').css('background','#fff');
         }
 
