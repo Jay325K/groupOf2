@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 임시reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ul,ul li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,a,p,td{
+    font-family: 'MICEGothic Bold';
+}
+table{
+    border-collapse: collapse;
+}
+tr{
+    border: 1px solid;
+    border-left: 0;
+    border-right: 0;
+}
+td,th{
+    border: 1px solid lightgray;
+}
+thead th{
+    border: 0;
+}
+td{
+    padding: 10px;
+    font-size: 0.85em;
+    text-align: center;
+    font-weight: 300;
+    color: gray;
+    font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
+}
+td:nth-child(1),th:nth-child(1){
+    border-left: 0 ;
+}
+td:nth-last-child(1),th:nth-last-child(1){
+    border-right: 0 ;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 1px solid;
+}
+input{
+    text-align: center;
+    width: 60px;
+    border: 0;
+    border-bottom: 1px dashed #2e2e2e;
+}
+
+
+.screen_out{
+    display: none;
+}
+
+.text_out{
+    text-indent: -99999999px;
+}
+
+.long_text{
+    width: 170px;
+}
+
+.list_item_none td{
+    padding: 30px;
+}
