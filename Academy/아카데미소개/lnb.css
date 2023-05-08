@@ -17,7 +17,7 @@ main .sec_one_wrap .guide_wrap>ul>li{
     position: relative;
 }
 main .sec_one_wrap .guide_wrap>ul>li>a{
-    color: rgb(199, 47, 48);
+    color: #2e2e2e;
     font-size: 1.2em;
     text-decoration: none;
 }
