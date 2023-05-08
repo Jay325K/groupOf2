@@ -1,0 +1,57 @@
+/* reset */
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+div,
+main,
+a,
+img,
+span,
+input,
+table,
+tr,
+th,
+td,
+button,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* main */
+
+/* lnb */
+.hollysis_lnb {
+  width: 240px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.hollysis_lnb li {
+  width: 240px;
+}
+.hollysis_lnb li :hover {
+  width: 240px;
+  color: #c72f30;
+}
+
+/* about content */
+.history_content--wrap {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
