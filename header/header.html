@@ -12,13 +12,12 @@
     <script src="../jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function () {
-            /* gnb>sub menu slide down */
-            $(".gnb").mouseenter(function(){
-                $(".sub_menu").slideDown();
-            });
-            $(".gnb").mouseleave(function(){
-                $(".sub_menu").slideUp();
-            });
+            /*** gnb hover 시 submenu show ***/
+            $(".gnb").hover(function(){
+                $('.sub_menu').css({'display':'block'});}
+            , function(){
+                $('.sub_menu').css({'display':'none'});
+            })
         })
     </script>
 </head>

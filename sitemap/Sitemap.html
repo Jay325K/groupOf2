@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sitemap</title>
+    <!--reset css-->
+    <link rel="stylesheet" href="../reset/reset.css">
+    <!--header css-->
+    <link rel="stylesheet" href="../header/header.css">
+    <!--footer css-->
+    <link rel="stylesheet" href="../footer/footer.css">
+    <!--main css-->
+    <link rel="stylesheet" href="sitemap_main.css">
+    <script src="../jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*** gnb hover 시 submenu show ***/
+            $(".gnb").hover(function(){
+                $('.sub_menu').css({'display':'block'});}
+            , function(){
+                $('.sub_menu').css({'display':'none'});
+            })
+        });
+    </script>
+</head>
+<body>
+    <a href="#" class="skip_menu">본문 바로가기</a>
+
+    <header id="header" class="header">
+            <h1 class="logo">
+                <a href="#"><img src="../header/h_images/logo.png" alt="Hollys logo"></a>
+            </h1>
+            
+            <nav class="gnb">
+            <h2 class="hide">주메뉴</h2>
+                <ul class="menu">
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">할리스 몰</a></li>
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">이벤트 및 공지</a></li>
+                    <li><a href="#">매장</a></li>
+                    <li><a href="#">할리스 소개</a></li>
+                </ul>
+                <div class="sub_menu" style="display: none;">
+                    <div class="s_menu_cont">
+                        <ul>
+                        <li><a href="#">음료</a></li>
+                        <li><a href="#">음식</a></li>
+                        <li><a href="#">MD</a></li>
+                        </ul>
+                        <ul>
+                        <li><a href="#">할리스카드</a></li>
+                        <li><a href="#">E-Store</a></li>
+                        <li><a href="#">구매내역</a></li>
+                        </ul>
+                        <ul>
+                        <li><a href="#">스마트오더</a></li>
+                        <li><a href="#">멤버십 혜택</a></li>
+                        </ul>
+                        <ul>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="#">Event</a></li>
+                        </ul>
+                        <ul>
+                        <li><a href="#">매장검색</a></li>
+                        </ul>
+                        <ul>
+                        <li><a href="#">HOLLYS</a></li>
+                        <li><a href="#">할리스 위치 및 연락처</a></li>
+                        <li><a href="#">채용 안내</a></li>
+                        <li><a href="#">가맹문의 및 절차</a></li>
+                        <li><a href="#">B2B 사업 소개</a></li>
+                        </ul>
+                    </div>
+                </div>        
+            </nav>
+    
+            <div class="top_menu">
+            <h2 class="hide">사용자 서비스</h2>
+            <ul>
+                <li><a href="#">멤버십 로그인</a></li>
+                <li><a href="#">멤버십 가입</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            </div>
+    </header>
+
+    <main id="main" class="main">
+        <div id="lnb" class="lnb">
+            <ul>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <div class="ad">
+                <p>Membership</p>
+                <p>할리스 멤버십 'CROWN'으로 다양한 혜택을 즐겨보세요</p>
+                <a href="#"><img src="s_images/ad.gif" alt="membership ad"></a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h2>사이트맵</h2>
+            <div class="content_wrap">
+                <div class="content_top">
+                    <dl>
+                        <dt><a href="#">메뉴</a></dt>
+                        <dd><a href="#">COFFEE</a></dd>
+                        <dd><a href="#">라떼 · 초콜릿 · 티</a></dd>
+                        <dd><a href="#">할리치노 · 빙수</a></dd>
+                        <dd><a href="#">스파클링</a></dd>
+                        <dd><a href="#">푸드</a></dd>
+                        <dd><a href="#">MD상품</a></dd>
+                        <dd><a href="#">MD식품</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">할리스몰</a></dt>
+                        <dd><a href="#">할리스콘</a></dd>
+                        <dd><a href="#">할리스카드</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">멤버십</a></dt>
+                        <dd><a href="#">스마트오더</a></dd>
+                        <dd><a href="#">멤버십 혜택안내</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">이벤트 및 공지</a></dt>
+                        <dd><a href="#">Notice</a></dd>
+                        <dd><a href="#">Event</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">매장</a></dt>
+                        <dd><a href="#">매장검색</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">할리스소개</a></dt>
+                        <dd><a href="#">HOLLYS</a></dd>
+                        <dd><a href="#">할리스위치 및 연락처</a></dd>
+                        <dd><a href="#">채용안내</a></dd>
+                        <dd><a href="#">가맹문의 및 절차</a></dd>
+                        <dd><a href="#">B2B 사업 소개</a></dd>
+                    </dl>
+                </div>
+                <div class="content_plus">
+                    <dl>
+                        <dt><a href="#">프랜차이즈</a></dt>
+                        <dd><a href="#">가맹안내 및 창업설명회</a></dd>
+                        <dd><a href="#">가맹문의</a></dd>
+                        <dd><a href="#">상담신청</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">아카데미</a></dt>
+                        <dd><a href="#">아카데미소개</a>
+                            <ul>
+                                <li><a href="#">오시는길</a></li>
+                                <li><a href="#">강사진소개</a></li>
+                                <li><a href="#">시설소개</a></li>
+                            </ul>
+                        </dd>
+                        <dd><a href="#">교육과정안내</a>
+                            <ul>
+                                <li><a href="#">커리큘럼 안내</a></li>
+                                <li><a href="#">개강일정 및 강의시간표</a></li>
+                                <li><a href="#">수강신청</a></li>
+                                <li><a href="#">레드아카데미 신청내역</a></li>
+                            </ul>
+                        </dd>
+                        <dd><a href="#">커뮤니티</a>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">고객서비스</a></dt>
+                        <dd><a href="#">고객문의</a></dd>
+                        <dd><a href="#">FAQ</a></dd>
+                        <dd><a href="#">Customer Survey</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer_content">
+            <div class="footer_term">
+                <h2 class="hide">약관</h2>
+
+                <span class="bold"><a href="#">개인정보처리방침</a></span>
+                <span><a href="#">서비스이용약관</a></span>
+                <span><a href="#">멤버십이용약관</a></span>
+                <span><a href="#">할리스카드이용약관</a></span>
+                <span><a href="#">고객문의</a></span>
+                <span><a href="#">고객설문</a></span>
+                <span><a href="#">사이트맵</a></span>
+                <span><a href="#">BI 소개</a></span>
+            </div>
+    
+            <div class="footer_text" >
+                <h2 class="hide">사업자 정보</h2>
+
+                <p>법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호</p>
+                <address>주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)</address>
+                <p>COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.</p>        
+            </div>
+
+            <div class="footer_icon">
+                <h2 class="hide">사업문의</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img src="../footer/f_images/store.png" alt="가맹문의"><br>
+                        <span>가맹문의</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../footer/f_images/chain.png" alt="창업설명회"><br>
+                        <span>창업설명회</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../footer/f_images/b2b.png" alt="기업특판"><br>
+                        <span>기업특판</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--social live
+        <ul>
+            <li><a href="#">facebook</a></li>
+        </ul>-->
+    </footer>        
+</body>
+</html>
