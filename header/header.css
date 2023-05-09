@@ -72,6 +72,7 @@ h1 img {
   width: 100%;
   background: #4f4c4b;
   z-index: 99;
+  transition: all, 1s;
 }
 .s_menu_cont {
   width: 940px;
@@ -86,8 +87,11 @@ h1 img {
   width: 13%;
 }
 .sub_menu a {
-  font-size: 12px;
-  color: #a6a6a6;
+  font-size: 13px;
+  color: #c7c5c5;
+}
+.sub_menu a:hover{
+  color: white;
 }
 /*top menu*/
 .top_menu {
@@ -101,7 +105,7 @@ h1 img {
   width: 200px;
 }
 .top_menu a {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 /*h2 display none*/
