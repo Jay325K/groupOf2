@@ -27,13 +27,14 @@ let drinkPageNum = "1";
 let pageName = [];
 
 const getMenu = () => {
-  const response = fetch("./menu_list.json");
+  const response = fetch("../menu_list.json");
   return response.then((res) => res.json());
 };
 
 const drinkPrintExec = async () => {
   try {
     const menu = await getMenu();
+    console.log(menu);
     if (drinkPageNum) {
       drinkPagePrintProcess(menu[pageName]);
     }
