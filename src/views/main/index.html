@@ -53,41 +53,39 @@
             background-color: #555;
         }
 
-        /* 스크롤 페이지 1 */
-        .main_cont_1{
+        /* 메인 */
+        .main_cont_wrap{
             position: relative;
-            display: table;
-            height: 100vh;
-        }
-
-        .video1_L{
-            position: absolute;
-            display: table-cell;
-            flex-grow: 1;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            filter: blur(10px);
+            padding: 0;
         }
         
-        .video1_R {
-            position: absolute;
-            display: table-cell;
-            height: 100%;
-            left: 50%;
-            object-fit: cover;
+        /* 메인 콘텐츠 첫번째 영상 */
+        .main_cont_1{
+            position: relative;
+        }
+        .video{
+            width: 100%;
+            height: auto;
         }
 
-        .text1 {
+        .cof_text {
             position: absolute;
-            left: 0;
-            top: 0;
+            right: 0;
+            top: 140px;
             padding: 20px;
             backdrop-filter: blur(10px);
             color: white;
-            font-size: 24px;
+            font-size: 100px;
+            font-weight: bold;
+        }
+        .min_text{
+            position: absolute;
+            right: 0;
+            top: 240px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            color: white;
+            font-size: 100px;
             font-weight: bold;
         }
 
@@ -114,24 +112,19 @@
 
         <div class="main_cont_wrap">
             <section class="main_cont_1">
-                <div class="video1_L">
-                    <video src="../../assets/video/cookie.mp4" autoplay muted>
-                        백드롭필터 동영상
+                <div class="video">
+                    <video src="../../assets/video/main.mp4" autoplay muted>
+                        할리스 메인 동영상
                     </video>
                 </div>
-                <div class="video1_R">
-                    <video src="../../assets/video/cookie.mp4" autoplay muted>
-                        메인 스크롤 전 쿠키
-                    </video>
-                </div>
-                <div class="text1">
-                    할리스 
+                <div class="cof_text">
+                    커피의 즐거움을 만드는</div>
+                <div class="min_text">
+                    작은 차이의 미학
                 </div>
             </section>
             <section class="main_cont_2">
-                <video src="../../assets/video/roseCake.mp4" autoplay muted>
-                    메인 스크롤 첫번째 분홍 동영상
-                </video>
+                
             </section>
             <section class="main_cont_3">
                 <a href="#none"><img src="" alt=""> </a>
