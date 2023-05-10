@@ -9,7 +9,6 @@ const menuModalDetail = document.querySelector(".menu_modal--detail");
 const menuNutritional = document.querySelector(".menu_nutritional");
 const menuModalCloseBtn = document.querySelector(".menu_modal--close_btn");
 const menuServingsize = document.querySelector(".menu_servingsize");
-// const menuModal = document.querySelector(".menu_modal");
 const menuAllergy = document.querySelector(".menu_allergy");
 const menuCategoryArray = {
   drink: [
@@ -27,7 +26,7 @@ let drinkPageNum = "1";
 let pageName = [];
 
 const getMenu = () => {
-  const response = fetch("./menu_list.json");
+  const response = fetch("../menu_list.json");
   return response.then((res) => res.json());
 };
 

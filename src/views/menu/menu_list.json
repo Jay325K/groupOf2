@@ -7,7 +7,7 @@
         "category": "coffee/decaffeine",
         "text": "듀얼브루 원액으로 만든 부드러운 풍미와 균형잡힌 바디감의 디카페인 아메리카노",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_1.png",
+        "image": "../../../assets/images/menu/drink/drink_1.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -34,7 +34,7 @@
         "category": "coffee/decaffeine",
         "text": "듀얼브루 원액으로 만든 부드러운 풍미와 균형 잡힌 바디감의 디카페인 카페 라떼",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_2.png",
+        "image": "../../../assets/images/menu/drink/drink_2.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -63,7 +63,7 @@
         "text": "듀얼브루 원액으로 만들어 더욱 부드럽고 편안해진 바닐라 딜라이트",
         "caution": "*바닐라 딜라이트 제조에 사용되는 파우더에 카페인이 일부 함유되어 있음",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_3.png",
+        "image": "../../../assets/images/menu/drink/drink_3.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -92,7 +92,7 @@
         "text": "화사한 산미와 과일과 같은 달콤함, 깔끔한 후미를 즐길수 있는 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_4.png",
+        "image": "../../../assets/images/menu/drink/drink_4.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -120,7 +120,7 @@
         "text": "풍성한 우유 거품 위에 프리미엄 블렌드 리스트레또 샷이 더해져 깊은 커피 풍미를 느낄 수 있는 라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_5.png",
+        "image": "../../../assets/images/menu/drink/drink_5.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -149,7 +149,7 @@
         "text": "실키한 연유베이스에 콜드브루를 넣어 부담없이 즐기는 라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_6.png",
+        "image": "../../../assets/images/menu/drink/drink_6.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "iced": {
@@ -170,7 +170,7 @@
         "text": "콜드브루 커피의 풍부한 풍미와 우유의 고소함이 더해진 라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_7.png",
+        "image": "../../../assets/images/menu/drink/drink_7.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "iced": {
@@ -191,7 +191,7 @@
         "text": "콜드브루 전용 블렌드를 상온의 물로 오랜시간 추출해 달콤한 산미와 부드러운 바디감이 살아있는 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_8.png",
+        "image": "../../../assets/images/menu/drink/drink_8.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "iced": {
@@ -211,7 +211,7 @@
         "text": "카페라떼에 바닐라빈으로 만든 바닐라 파우더를 더해 더욱 풍부하고 감미로운 할리스만의 바닐라라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_9.png",
+        "image": "../../../assets/images/menu/drink/drink_9.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -240,7 +240,7 @@
         "text": "달콤한 연유와 고소한 할리스 원두, 크리미한 바디가 절묘하게 어우러진 시즌 스페셜 메뉴",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_10.png",
+        "image": "../../../assets/images/menu/drink/drink_10.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -269,7 +269,7 @@
         "text": "진한 에스프레소에 바닐라 시럽과 카라멜소스가 더해진 카라멜 커피음료의 대표",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_11.png",
+        "image": "../../../assets/images/menu/drink/drink_11.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -298,7 +298,7 @@
         "text": "진한 에스프레소와 우유, 달콤 쌉싸름한 초콜릿이 어우러진 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_12.png",
+        "image": "../../../assets/images/menu/drink/drink_12.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -327,7 +327,7 @@
         "text": "에스프레소에 실키하고 폭신폭신한 우유 거품이 풍부하게 더해진 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_13.png",
+        "image": "../../../assets/images/menu/drink/drink_13.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -348,7 +348,7 @@
         "text": "진한 에스프레소에 우유를 넣어 풍부한 커피향을 부드럽게 즐길 수 있는 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_14.png",
+        "image": "../../../assets/images/menu/drink/drink_14.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -377,7 +377,7 @@
         "text": "진한 에스프레소의 맛과 향을 부드럽게 즐길 수 있는 아메리칸 스타일의 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_15.png",
+        "image": "../../../assets/images/menu/drink/drink_15.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "hot": {
@@ -405,7 +405,7 @@
         "text": "바닐라 아이스크림과 리스트레또 더블샷이 어우러져 부드럽고 진한 맛의 아포가토",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_16.png",
+        "image": "../../../assets/images/menu/drink/drink_16.png",
         "servingSize": "제품영양정보 (1회 제공량 / 150ml 기준)",
         "nutritional": {
           "iced": {
@@ -426,7 +426,7 @@
         "text": "강렬한 첫 맛, 풍부한 바디감, 깔끔한 뒷 맛이 특징인 커피의 심장",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_17.png",
+        "image": "../../../assets/images/menu/drink/drink_17.png",
         "servingSize": "제품영양정보 (1회 제공량 / Solo / 25ml 기준)",
         "nutritional": {
           "hot": {
@@ -448,7 +448,7 @@
         "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_18.png",
+        "image": "../../../assets/images/menu/drink/drink_18.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -476,7 +476,7 @@
         "category": "latte/choco/tea",
         "text": "진한 민트 맛이 특징인 상쾌하면서 부드러운 맛의 민트 초코 라떼",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_19.png",
+        "image": "../../../assets/images/menu/drink/drink_19.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -505,7 +505,7 @@
         "text": "향긋한 홍차에 우유의 고소함과 부드러움을 더한 티라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_20.png",
+        "image": "../../../assets/images/menu/drink/drink_20.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -533,7 +533,7 @@
         "category": "latte/choco/tea",
         "text": "진한 초콜렛과 우유가 어우러져 달콤한 초콜릿 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_21.png",
+        "image": "../../../assets/images/menu/drink/drink_21.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -561,7 +561,7 @@
         "category": "latte/choco/tea",
         "text": "화이트 초콜릿에 따뜻한 우유가 더해진 달콤한 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_22.png",
+        "image": "../../../assets/images/menu/drink/drink_22.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -589,7 +589,7 @@
         "category": "latte/choco/tea",
         "text": "은은한 향의 캐모마일과 유자차를 같이 느낄 수 있는 티베리에이션 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_23.png",
+        "image": "../../../assets/images/menu/drink/drink_23.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -616,7 +616,7 @@
         "category": "latte/choco/tea",
         "text": "달콤한 복숭아와 얼그레이의 베르가못 향의 조화, 깔끔하면서도 달콤한 티베리에이션 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_24.png",
+        "image": "../../../assets/images/menu/drink/drink_24.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -644,7 +644,7 @@
         "category": "latte/choco/tea",
         "text": "자몽과일 특유의 달콤 쌉싸름한 맛을 즐길 수 있는 과일차",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_25.png",
+        "image": "../../../assets/images/menu/drink/drink_25.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -671,7 +671,7 @@
         "category": "latte/choco/tea",
         "text": "향긋한 한라봉과 감귤이 어우러져 상큼하면서도 달콤한 과일차",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_26.png",
+        "image": "../../../assets/images/menu/drink/drink_26.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -698,7 +698,7 @@
         "category": "latte/choco/tea",
         "text": "고흥 유자의 풍미를 살린 할리스 유자차",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_27.png",
+        "image": "../../../assets/images/menu/drink/drink_27.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -725,7 +725,7 @@
         "category": "latte/choco/tea",
         "text": "고소한 감칠맛과 부드러운 목넘김이 좋은 땅끝 마음 해남에서 재배한 녹차(유기농 녹차잎 사용)",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_28.png",
+        "image": "../../../assets/images/menu/drink/drink_28.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -752,7 +752,7 @@
         "category": "latte/choco/tea",
         "text": "입안 가득 깔끔한 청량감으로 기분까지 상쾌한 허브차",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_29.png",
+        "image": "../../../assets/images/menu/drink/drink_29.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -779,7 +779,7 @@
         "category": "latte/choco/tea",
         "text": "캐모마일 꽃잎을 그대로 말려 노란색의 향긋한 꽃향이 그대로 살아 있는 허브차",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_30.png",
+        "image": "../../../assets/images/menu/drink/drink_30.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -806,7 +806,7 @@
         "category": "latte/choco/tea",
         "text": "스리랑카 캔디 지방에서 재배된 홍차에 시칠리아의 감귤,베르가못향이 조화된 감미로운 홍차",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_31.png",
+        "image": "../../../assets/images/menu/drink/drink_31.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "hot": {
@@ -836,7 +836,7 @@
         "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 할리치노",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_32.png",
+        "image": "../../../assets/images/menu/drink/drink_32.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "iced": {
@@ -856,7 +856,7 @@
         "category": "hollyccino/crush",
         "text": "과즙 가득한 복숭아 슬러쉬 안에 톡톡 씹히는 딸기 과육이 더해진 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_33.png",
+        "image": "../../../assets/images/menu/drink/drink_33.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "iced": {
@@ -876,7 +876,7 @@
         "category": "hollyccino/crush",
         "text": "초코칩이 콕콕 박힌 상쾌하면서 청량한 민트 맛의 블렌디드 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_35.png",
+        "image": "../../../assets/images/menu/drink/drink_35.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "iced": {
@@ -896,7 +896,7 @@
         "category": "hollyccino/crush",
         "text": "치즈케익맛 아이스블렌디드 음료에 상큼한 딸기를 토핑한 할리스 시그니처 메뉴",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_36.png",
+        "image": "../../../assets/images/menu/drink/drink_36.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "iced": {
@@ -916,7 +916,7 @@
         "category": "hollyccino/crush",
         "text": "저지방우유에 유산균이 살아있는 요거트를 더한 슬러쉬",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_37.png",
+        "image": "../../../assets/images/menu/drink/drink_37.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "iced": {
@@ -936,7 +936,7 @@
         "category": "hollyccino/crush",
         "text": "벨기에산 리얼 다크초콜릿이 씹히는 시원하고 진한 초콜릿 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_38.png",
+        "image": "../../../assets/images/menu/drink/drink_38.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "iced": {
@@ -957,7 +957,7 @@
         "text": "콜드브루와 우유, 얼음이 갈린 할리치노",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_39.png",
+        "image": "../../../assets/images/menu/drink/drink_39.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
           "iced": {
@@ -979,7 +979,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "신선한 토마토를 그대로 갈아 만든 주스에 토마토를 듬뿍 토핑한 생과일 주스",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_40.png",
+        "image": "../../../assets/images/menu/drink/drink_40.png",
         "servingSize": "제품영양정보 (1회 제공량/ Grande / 472ml 기준)",
         "nutritional": {
           "iced": {
@@ -998,7 +998,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "신선한 키위를 그대로 갈아 만든 주스에 키위를 듬뿍 토핑한 생과일 주스",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_41.png",
+        "image": "../../../assets/images/menu/drink/drink_41.png",
         "servingSize": "제품영양정보 (1회 제공량/ Grande / 472ml 기준)",
         "nutritional": {
           "iced": {
@@ -1017,7 +1017,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "상큼하고 청량한 샤인머스캣 스무디에 샤인머스캣 구슬 아이스크림을 토핑한 스무디",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_42.png",
+        "image": "../../../assets/images/menu/drink/drink_42.png",
         "servingSize": "제품영양정보 (총 중량 337g, 1회 제공량 337g 기준)",
         "nutritional": {
           "iced": {
@@ -1037,7 +1037,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "딸기 본연의 맛을 살려 갈아 만든 과일 스무디",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_43.png",
+        "image": "../../../assets/images/menu/drink/drink_43.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "iced": {
@@ -1056,7 +1056,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "상큼 달콤한 애플망고 과육을 갈아 만든 과일 스무디",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_34.png",
+        "image": "../../../assets/images/menu/drink/drink_34.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "iced": {
@@ -1075,7 +1075,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "사과, 비트, 파인애플이 어우러진 건강한 과채 주스",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_44.png",
+        "image": "../../../assets/images/menu/drink/drink_44.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "iced": {
@@ -1094,7 +1094,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "오렌지, 당근, 사과가 어우러진 달콤한 과채 주스",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_45.png",
+        "image": "../../../assets/images/menu/drink/drink_45.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "iced": {
@@ -1113,7 +1113,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "청포도, 케일, 밀싹이 어우러진 산뜻한 과채 주스",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_46.png",
+        "image": "../../../assets/images/menu/drink/drink_46.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
           "iced": {
@@ -1132,7 +1132,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "청량감 가득한 탄산수와 복숭아, 자두가 상큼달콤하게 어우러진 스파클링 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_47.png",
+        "image": "../../../assets/images/menu/drink/drink_47.png",
         "servingSize": "제품영양정보 (1회 제공량/ Grande / 472ml 기준)",
         "nutritional": {
           "iced": {
@@ -1152,7 +1152,7 @@
         "category": "smoothie/juice/sparkling",
         "text": "청량감 가득한 탄산수와 탱글탱글한 청포도가 상큼달콤하게 어우러진 스파클링 음료",
         "price": "",
-        "image": "../../assets/images/menu/drink/drink_48.png",
+        "image": "../../../assets/images/menu/drink/drink_48.png",
         "servingSize": "제품영양정보 (1회 제공량/ Grande / 472ml 기준)",
         "nutritional": {
           "iced": {
@@ -1175,7 +1175,7 @@
         "category": "cake",
         "text": "블루베리, 크랜베리 토핑에 진한 초코 생크림과 중간중간 씹히는 초코 크런치가 매력적인 달콤한 초코 생크림 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_01.png",
+        "image": "../../../assets/images/menu/food/cake_01.png",
         "servingSize": "제품영양정보 (총 중량 161g, 1회 제공량 161g)",
         "nutritional": {
           "calorie": "500kcal",
@@ -1193,7 +1193,7 @@
         "category": "cake",
         "text": "부드러운 생크림과 딸기 필링이 샌딩된 케이크에 카네이션 슈가 플라워가 활짝 피어난 딸기 생크림 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_02.png",
+        "image": "../../../assets/images/menu/food/cake_02.png",
         "servingSize": "제품영양정보 (총 중량 971g, 1회 제공량 139g)",
         "nutritional": {
           "calorie": "419kcal",
@@ -1211,7 +1211,7 @@
         "category": "cake",
         "text": "상큼한 베리필링과 부드러운 크림치즈 무스에 고소한 크럼블이 어우러지는 홀케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_03.png",
+        "image": "../../../assets/images/menu/food/cake_03.png",
         "servingSize": "제품영양정보 (총 중량 1,001g, 1회 제공량 167g )",
         "nutritional": {
           "calorie": "488kcal",
@@ -1229,7 +1229,7 @@
         "category": "cake",
         "text": "상큼한 베리필링과 부드러운 크림치즈 무스에 고소한 크럼블이 어우러지는 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_04.png",
+        "image": "../../../assets/images/menu/food/cake_04.png",
         "servingSize": "제품영양정보 (총 중량 168g, 1회 제공량 168g)",
         "nutritional": {
           "calorie": "494kcal",
@@ -1247,7 +1247,7 @@
         "category": "cake",
         "text": "밀크, 다크, 화이트 3가지 초콜릿 맛을 즐길 수 있는 달콤한 초코 무스 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_05.png",
+        "image": "../../../assets/images/menu/food/cake_05.png",
         "servingSize": "제품영양정보 (총 중량 101g, 1회 제공량 101g)",
         "nutritional": {
           "calorie": "307kcal",
@@ -1265,7 +1265,7 @@
         "category": "cake",
         "text": "부드러운 생크림과 달콤한 딸기가 샌딩된 케이크 위에 블루베리와 크랜베리를 토핑한 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_06.png",
+        "image": "../../../assets/images/menu/food/cake_06.png",
         "servingSize": "제품영양정보 (총 중량 101g, 1회 제공량 101g)",
         "nutritional": {
           "calorie": "267kcal",
@@ -1283,7 +1283,7 @@
         "category": "cake",
         "text": "마스카포네 치즈무스와 커피시럽의 촉촉한 시트, 진한 발로나 코코아 파우더가 조화로운 오리지널 티라미스의 홀사이즈 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_07.png",
+        "image": "../../../assets/images/menu/food/cake_07.png",
         "servingSize": "제품영양정보 (총 중량 789g, 1회 제공량 132g)",
         "nutritional": {
           "calorie": "370kcal",
@@ -1301,7 +1301,7 @@
         "category": "cake",
         "text": "진한 크림치즈와 블랙쿠키가 부드럽게 어우러진 쿠키앤크림 홀사이즈 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_08.png",
+        "image": "../../../assets/images/menu/food/cake_08.png",
         "servingSize": "제품영양정보 (총 중량 801g, 1회 제공량 134g)",
         "nutritional": {
           "calorie": "395kcal",
@@ -1319,7 +1319,7 @@
         "category": "cake",
         "text": "진한 크림치즈와 블랙쿠키가 부드럽게 어우러진 쿠키앤크림 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_09.png",
+        "image": "../../../assets/images/menu/food/cake_09.png",
         "servingSize": "제품영양정보 (총 중량 135g, 1회 제공량 135g)",
         "nutritional": {
           "calorie": "394kcal",
@@ -1337,7 +1337,7 @@
         "category": "cake",
         "text": "마스카포네 치즈무스와 커피시럽의 촉촉한 시트, 진한 발로나 코코아 파우더가 조화로운 오리지널 티라미스 케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_10.png",
+        "image": "../../../assets/images/menu/food/cake_10.png",
         "servingSize": "제품영양정보 (총 중량 133g, 1회 제공량 133g)",
         "nutritional": {
           "calorie": "378kcal",
@@ -1355,7 +1355,7 @@
         "category": "cake",
         "text": "할리스 시그니처 메뉴인 '바닐라 딜라이트'를 갸또 스타일 케이크로 구현한 디저트",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_11.png",
+        "image": "../../../assets/images/menu/food/cake_11.png",
         "servingSize": "제품영양정보 (총 중량 141g, 1회 제공량 141g)",
         "nutritional": {
           "calorie": "538kcal",
@@ -1373,7 +1373,7 @@
         "category": "cake",
         "text": "부드러운 생크림과 달콤한 딸기가 샌딩된 케이크에 고급스러운 티아라가 얹어진 딸기 케이크(홀사이즈)",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_12.png",
+        "image": "../../../assets/images/menu/food/cake_12.png",
         "servingSize": "제품영양정보 (총 중량 721g, 1회 제공량 100g 기준)",
         "nutritional": {
           "calorie": "259kcal",
@@ -1391,7 +1391,7 @@
         "category": "cake",
         "text": "부드럽고 촉촉한 식감과 진한 크림 치즈 맛의 구움 치즈케이크(홀사이즈)",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_13.png",
+        "image": "../../../assets/images/menu/food/cake_13.png",
         "servingSize": "제품영양정보 (총 중량 880g, 1회 제공량 100g 기준)",
         "nutritional": {
           "calorie": "345kcal",
@@ -1408,7 +1408,7 @@
         "category": "cake",
         "text": "부드럽고 촉촉한 식감과 진한 크림 치즈 맛의 구움 치즈케이크",
         "price": "",
-        "image": "../../assets/images/menu/food/cake_14.png",
+        "image": "../../../assets/images/menu/food/cake_14.png",
         "servingSize": "제품영양정보 (총 중량 106g, 1회 제공량 106g 기준)",
         "nutritional": {
           "calorie": "368kcal",
@@ -1428,7 +1428,7 @@
         "category": "sandwich/toast",
         "text": "부드럽고 촉촉한 브리오슈 식빵에 스크램블 에그와 햄, 치즈를 넣어 구운 토스트",
         "price": "",
-        "image": "../../assets/images/menu/food/sandwich_toast_01.png",
+        "image": "../../../assets/images/menu/food/sandwich_toast_01.png",
         "servingSize": "제품영양정보 (총 중량 100g, 1회 제공량 100g 기준)",
         "nutritional": {
           "calorie": "290kcal",
@@ -1446,7 +1446,7 @@
         "category": "sandwich/toast",
         "text": "고소한 버터, 겹겹이 쌓은 햄에 양배추 피클과 트러플오일이 더해진 소프트한 잠봉뵈르 샌드위치",
         "price": "",
-        "image": "../../assets/images/menu/food/sandwich_toast_02.png",
+        "image": "../../../assets/images/menu/food/sandwich_toast_02.png",
         "servingSize": "제품영양정보 (총 중량 175g, 1회 제공량 175g 기준)",
         "nutritional": {
           "calorie": "485kcal",
@@ -1464,7 +1464,7 @@
         "category": "sandwich/toast",
         "text": "통밀 식빵에 부드러운 치킨과 상큼함이 매력적인 크랜베리가 만나 톡톡 튀는 샌드위치",
         "price": "",
-        "image": "../../assets/images/menu/food/sandwich_toast_03.png",
+        "image": "../../../assets/images/menu/food/sandwich_toast_03.png",
         "servingSize": "제품영양정보 (총 중량 240g, 1회 제공량 240g 기준)",
         "nutritional": {
           "calorie": "572kcal",
@@ -1482,7 +1482,7 @@
         "category": "sandwich/toast",
         "text": "통밀 식빵에 풍성한 로메인, 계란후라이, 베이컨, 토마토가 어우러진 한끼 든든 샌드위치",
         "price": "",
-        "image": "../../assets/images/menu/food/sandwich_toast_04.png",
+        "image": "../../../assets/images/menu/food/sandwich_toast_04.png",
         "servingSize": "제품영양정보 (총 중량 190g, 1회 제공량 190g 기준)",
         "nutritional": {
           "calorie": "441kcal",
@@ -1500,7 +1500,7 @@
         "category": "sandwich/toast",
         "text": "계란 2알을 그대로 으깨 푹신한 식빵에 담아낸 가성비 좋은 수제 콜드 샌드위치",
         "price": "",
-        "image": "../../assets/images/menu/food/sandwich_toast_05.png",
+        "image": "../../../assets/images/menu/food/sandwich_toast_05.png",
         "servingSize": "제품영양정보 (총 중량 250g, 1회 제공량 250g 기준)",
         "nutritional": {
           "calorie": "548kcal",
@@ -1518,7 +1518,7 @@
         "category": "sandwich/toast",
         "text": "터키햄과 모짜렐라치즈를 두둑하게 채운 대중적인 샌드위치",
         "price": "",
-        "image": "../../assets/images/menu/food/sandwich_toast_06.png",
+        "image": "../../../assets/images/menu/food/sandwich_toast_06.png",
         "servingSize": "제품영양정보 (총 중량 185g, 1회 제공량 185g 기준)",
         "nutritional": {
           "calorie": "450kcal",
@@ -1536,7 +1536,7 @@
         "category": "sandwich/toast",
         "text": "쫄깃한 올리브치아바타를 감자와 베이컨으로 채운 담백한 샌드위치",
         "price": "",
-        "image": "../../assets/images/menu/food/sandwich_toast_07.png",
+        "image": "../../../assets/images/menu/food/sandwich_toast_07.png",
         "servingSize": "제품영양정보 (총 중량 198g, 1회 제공량 198g 기준)",
         "nutritional": {
           "calorie": "560kcal",
@@ -1554,7 +1554,7 @@
         "category": "sandwich/toast",
         "text": "햄과 치즈를 차곡차곡 쌓아 올려 만든 프랑스식 샌드위치로 사르르 녹아내린 모짜렐라 치즈가 입안 가득 풍성한 맛",
         "price": "",
-        "image": "../../assets/images/menu/food/sandwich_toast_08.png",
+        "image": "../../../assets/images/menu/food/sandwich_toast_08.png",
         "servingSize": "제품영양정보 (총 중량 160g, 1회 제공량 160g 기준)",
         "nutritional": {
           "calorie": "457kcal",
@@ -1574,7 +1574,7 @@
         "category": "bakery",
         "text": "요거트 가나슈와 딸기 퓨레에 딸기 요거트 버터크림을 샌드한 꽃모양 뚱카롱",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_01.png",
+        "image": "../../../assets/images/menu/food/bakery_01.png",
         "servingSize": "제품영양정보 (총 중량 28g, 1회 제공량 28g)",
         "nutritional": {
           "calorie": "145kcal",
@@ -1592,7 +1592,7 @@
         "category": "bakery",
         "text": "진한 초콜릿 가나슈를 토핑 후 초콜릿 버터크림에 초코진주 크런치를 토핑하여 더욱 진한 초콜릿 맛과 다양한 식감까지 느낄 수 있는 뚱카롱*매장 상황에 따라, 제품이미지는 다를 수 있습니다.",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_01.png",
+        "image": "../../../assets/images/menu/food/bakery_01.png",
         "servingSize": "제품영양정보 (총 중량 30g, 1회 제공량 30g 기준)",
         "nutritional": {
           "calorie": "135kcal",
@@ -1610,7 +1610,7 @@
         "category": "bakery",
         "text": "시그니처 음료인 '딸기 치즈케익 할리치노' 를 뚱카롱으로 구현하여 진한 치즈케익과 딸기잼을 토핑 후 딸기치즈 버터크림을 샌드한 뚱카롱*매장 상황에 따라, 제품이미지는 다를 수 있습니다.",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_03.png",
+        "image": "../../../assets/images/menu/food/bakery_03.png",
         "servingSize": "제품영양정보 (총 중량 30g, 1회 제공량 30g 기준)",
         "nutritional": {
           "calorie": "185kcal",
@@ -1628,7 +1628,7 @@
         "category": "bakery",
         "text": "시그니처 음료인 '바닐라 딜라이트' 를 뚱카롱으로 구현하여 진한 바닐라 딜라이트 가나슈를 토핑 후 바닐라 딜라이트 버터크림을 샌드한 뚱카롱*매장 상황에 따라, 제품이미지는 다를 수 있습니다.",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_04.png",
+        "image": "../../../assets/images/menu/food/bakery_04.png",
         "servingSize": "제품영양정보 (총 중량 30g, 1회 제공량 30g 기준)",
         "nutritional": {
           "calorie": "125kcal",
@@ -1646,7 +1646,7 @@
         "category": "bakery",
         "text": "다크 청크 초콜릿이 토핑된 달콤한 초콜릿 휘낭시에",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_05.png",
+        "image": "../../../assets/images/menu/food/bakery_05.png",
         "servingSize": "제품영양정보 (총 중량 40g, 1회 제공량 40g)",
         "nutritional": {
           "calorie": "160kcal",
@@ -1664,7 +1664,7 @@
         "category": "bakery",
         "text": "진한 풍미의 버터가 가득한 클래식 휘낭시에",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_06.png",
+        "image": "../../../assets/images/menu/food/bakery_06.png",
         "servingSize": "제품영양정보 (총 중량 40g, 1회 제공량 40g)",
         "nutritional": {
           "calorie": "160kcal",
@@ -1682,7 +1682,7 @@
         "category": "bakery",
         "text": "데니쉬 시트에 포슬한 감자와 진한 풍미의 크림치즈, 짭쪼름한 베이컨이 더해져 누구나 맛있게 즐길 수 있는 데니쉬 제품",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_07.png",
+        "image": "../../../assets/images/menu/food/bakery_07.png",
         "servingSize": "제품영양정보 (총 중량 130g 1회 제공량 130g 기준)",
         "nutritional": {
           "calorie": "574kcal",
@@ -1700,7 +1700,7 @@
         "category": "bakery",
         "text": "데니쉬 시트에 고소하고 달콤한 스위트콘과 짭쪼름한 햄, 치즈가 가득 들어있어 단짠의 매력이 있는 데니쉬 제품",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_08.png",
+        "image": "../../../assets/images/menu/food/bakery_08.png",
         "servingSize": "제품영양정보 (총 중량 135g 1회 제공량 135g 기준)",
         "nutritional": {
           "calorie": "583kcal",
@@ -1718,7 +1718,7 @@
         "category": "bakery",
         "text": "찰지면서도 질기지 않은 보송보송함이 살아있는 할리스 베이글",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_09.png",
+        "image": "../../../assets/images/menu/food/bakery_09.png",
         "servingSize": "제품영양정보 (총 중량 138g, 1회 제공량 138g 기준)",
         "nutritional": {
           "calorie": "366kcal",
@@ -1736,7 +1736,7 @@
         "category": "bakery",
         "text": "플레인 베이글에 탱글탱글 달콤한 블루베리를 토핑한 제품",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_10.png",
+        "image": "../../../assets/images/menu/food/bakery_10.png",
         "servingSize": "제품영양정보 (총 중량 138g, 1회 제공량 138g 기준)",
         "nutritional": {
           "calorie": "371kcal",
@@ -1754,7 +1754,7 @@
         "category": "bakery",
         "text": "버터향이 가득한 촉촉한 비스켓 속 크림치즈가 들어간 풍미 가득한 비스켓",
         "price": "",
-        "image": "../../assets/images/menu/food/bakery_11.png",
+        "image": "../../../assets/images/menu/food/bakery_11.png",
         "servingSize": "제품영양정보 (총 중량 92g, 1회 제공량 92g 기준)",
         "nutritional": {
           "calorie": "399kcal",
@@ -1774,7 +1774,7 @@
         "category": "food",
         "text": "겉바속촉, 펄슈가를 토핑한 크로플에 달달한 아이스크림을 곁들인 제품",
         "price": "",
-        "image": "../../assets/images/menu/food/food_01.png",
+        "image": "../../../assets/images/menu/food/food_01.png",
         "servingSize": "제품영양정보 (총 중량 170g, 1회 제공량 170g 기준)",
         "nutritional": {
           "calorie": "459kcal",
@@ -1792,7 +1792,7 @@
         "category": "food",
         "text": "포르치니 버섯, 양송이 버섯의 깊은 풍미와 진한 트러플 풍미가 조화를 이룬 수프",
         "price": "",
-        "image": "../../assets/images/menu/food/food_02.png",
+        "image": "../../../assets/images/menu/food/food_02.png",
         "servingSize": "제품영양정보 (총 중량 362g, 1회 제공량 181g 총2회 제공량 기준)",
         "nutritional": {
           "calorie": "322kcal",
@@ -1810,7 +1810,7 @@
         "category": "food",
         "text": "부드럽고 포슬한 식감의 오믈렛과 아라비아따 소스로 구성된 오믈렛 라이스",
         "price": "",
-        "image": "../../assets/images/menu/food/food_03.png",
+        "image": "../../../assets/images/menu/food/food_03.png",
         "servingSize": "제품영양정보 (총 중량 243g, 1회 제공량 243g 기준)",
         "nutritional": {
           "calorie": "405kcal",
@@ -1828,7 +1828,7 @@
         "category": "food",
         "text": "소고기로 만든 한국인의 대표음식 불고기 퀘사디아와 체다, 고다, 모짜렐라 세 가지 치즈에 달콤한 토마토 소스, 치킨이 들어간 퀘사디아",
         "price": "",
-        "image": "../../assets/images/menu/food/food_04.png",
+        "image": "../../../assets/images/menu/food/food_04.png",
         "servingSize": "제품영양정보 (총 중량 180g, 1회 제공량 180g 기준)",
         "nutritional": {
           "calorie": "393kcal",
@@ -1846,7 +1846,7 @@
         "category": "food",
         "text": "탱글탱글한 새우와 오징어살이 토핑된 매콤한 토마토베이스의 리조또",
         "price": "",
-        "image": "../../assets/images/menu/food/food_05.png",
+        "image": "../../../assets/images/menu/food/food_05.png",
         "servingSize": "제품영양정보 (총 중량 241g, 1회 제공량 241g 기준)",
         "nutritional": {
           "calorie": "356kcal",
@@ -1864,7 +1864,7 @@
         "category": "food",
         "text": "닭가슴살, 버섯, 베이컨이 큼지막하게 토핑된 부드러운 풍미의 크림 리조또",
         "price": "",
-        "image": "../../assets/images/menu/food/food_06.png",
+        "image": "../../../assets/images/menu/food/food_06.png",
         "servingSize": "제품영양정보 (총 중량 241g, 1회 제공량 241g 기준)",
         "nutritional": {
           "calorie": "446kcal",
@@ -1882,7 +1882,7 @@
         "category": "food",
         "text": "겉은 바삭 속은 쫄깃한 바게트 속에 꿀과 버터가 녹아있는 부드럽고 달콤한 허니브레드",
         "price": "",
-        "image": "../../assets/images/menu/food/food_07.png",
+        "image": "../../../assets/images/menu/food/food_07.png",
         "servingSize": "제품영양정보 (총 중량 255g, 1회 제공량 128g 기준)",
         "nutritional": {
           "calorie": "469Kcal",
@@ -1904,7 +1904,7 @@
         "category": "product",
         "text": "우든 핸디 머그& 코스터로 구성된 북한산DI 한정판 MD",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_01.png"
+        "image": "../../../assets/images/menu/md_product/product_01.png"
       },
       {
         "name": "우든 핸디 머그&소서",
@@ -1912,7 +1912,7 @@
         "category": "product",
         "text": "우든 핸디 머그& 소서로 구성된 북한산DI 한정판 MD",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_02.png"
+        "image": "../../../assets/images/menu/md_product/product_02.png"
       },
       {
         "name": "북한산 더블월 텀블러 (노랑)",
@@ -1920,7 +1920,7 @@
         "category": "product",
         "text": "북한산 산개나리를 모티브로 표현한 북한산DI점 한정판 MD",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_03.png"
+        "image": "../../../assets/images/menu/md_product/product_03.png"
       },
       {
         "name": "북한산 더블월 텀블러 (초록)",
@@ -1928,7 +1928,7 @@
         "category": "product",
         "text": "북한산 산개나리를 모티브로 표현한 북한산DI점 한정판 MD",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_04.png"
+        "image": "../../../assets/images/menu/md_product/product_04.png"
       },
       {
         "name": "레터링 스텐 머그 (화이트)",
@@ -1937,7 +1937,7 @@
         "text": "보냉 효과가 있는 더블월 타입의 머그 제형과 레터링 로고 디자인의 스텐 머그 / 400ml /",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_05.png"
+        "image": "../../../assets/images/menu/md_product/product_05.png"
       },
       {
         "name": "레터링 스텐 머그 (그레이)",
@@ -1946,7 +1946,7 @@
         "text": "보냉 효과가 있는 더블월 타입의 머그 제형과 레터링 로고 디자인의 스텐 머그 / 400ml /",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_06.png"
+        "image": "../../../assets/images/menu/md_product/product_06.png"
       },
       {
         "name": "할리스 핏 홈트 세트",
@@ -1955,7 +1955,7 @@
         "text": "언제어디서나 가볍고 쉽게 나만의 홈트, 할리스 핏",
         "caution": "* 세트구성: 요가 매트 1830 x 610 x 6 (mm) 폼롤러 450 x 100 x 100 (mm) 마사지볼: 60 x 60 (mm)",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_07.png"
+        "image": "../../../assets/images/menu/md_product/product_07.png"
       },
       {
         "name": "할리스 핏 코르크 요가 매트",
@@ -1964,7 +1964,7 @@
         "text": "언제어디서나 가볍고 쉽게 나만의 홈트, 할리스 핏",
         "caution": "*요가 매트: 1830 x 610 x 6 (mm)",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_08.png"
+        "image": "../../../assets/images/menu/md_product/product_08.png"
       },
       {
         "name": "토끼 라운드 커피잔 세트",
@@ -1973,7 +1973,7 @@
         "text": "본 제품은 할리스와 아티스트가 콜라보한 제품으로, 라운드 소서와 머그가 set구성인 커피잔 세트입니다.",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_09.png"
+        "image": "../../../assets/images/menu/md_product/product_09.png"
       },
       {
         "name": "토끼 라운드 머그",
@@ -1982,7 +1982,7 @@
         "text": "본 제품은 할리스와 아티스트가 콜라보한 제품으로, 라운드 쉐입의 그립감이 좋은 머그입니다. / 용량 330ml /",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_10.png"
+        "image": "../../../assets/images/menu/md_product/product_10.png"
       },
       {
         "name": "토끼 프렌치 커피잔 세트",
@@ -1991,7 +1991,7 @@
         "text": "본 제품은 할리스와 아티스트가 콜라보한 제품으로, 클래식한 쉐입의 소서와 머그가 set구성인 커피잔 세트입니다.",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_11.png"
+        "image": "../../../assets/images/menu/md_product/product_11.png"
       },
       {
         "name": "토끼 프렌치 접시",
@@ -2000,7 +2000,7 @@
         "text": "본 제품은 할리스와 아티스트가 콜라보한 제품으로 클래식한 쉐입의 디저트 플레이트입니다.",
         "caution": "* 사이즈: 157x157x10mm / *전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_12.png"
+        "image": "../../../assets/images/menu/md_product/product_12.png"
       },
       {
         "name": "라운드 텀블러 (아이보리)",
@@ -2009,7 +2009,7 @@
         "text": "할리스 BI와 스마일을 감각적으로 구성한 로고 디자인 텀블러/ 350ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_13.png"
+        "image": "../../../assets/images/menu/md_product/product_13.png"
       },
       {
         "name": "라운드 텀블러 (블랙)",
@@ -2018,7 +2018,7 @@
         "text": "할리스 BI와 스마일을 감각적으로 구성한 로고 디자인 텀블러/ 350ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_14.png"
+        "image": "../../../assets/images/menu/md_product/product_14.png"
       },
       {
         "name": "로고 스텐 머그 (실버)",
@@ -2027,7 +2027,7 @@
         "text": "할리스 로고를 심플함과 감각적인 엠블럼 레이아웃으로 배치한 감성 머그형 텀블러 / 350ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_15.png"
+        "image": "../../../assets/images/menu/md_product/product_15.png"
       },
       {
         "name": "로고 스텐 머그 (블랙)",
@@ -2036,7 +2036,7 @@
         "text": "할리스 로고를 심플함과 감각적인 엠블럼 레이아웃으로 배치한 감성 머그형 텀블러 / 350ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_16.png"
+        "image": "../../../assets/images/menu/md_product/product_16.png"
       },
       {
         "name": "올웨이즈 포레스트 핸드크림&립밤 세트",
@@ -2044,7 +2044,7 @@
         "category": "product",
         "text": "- 건조해진 손에 빠르게 흡수되고 보습력이 좋은 시그니처 우드향의 핸드크림.<br>- 사계절 사용 가능한 제형과 사용감을 통해 푸석해진 입술의 각질을 잠재워 주는 립밤.<br>- 핸드크림 30ml / 립밤 4g",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_17.png"
+        "image": "../../../assets/images/menu/md_product/product_17.png"
       },
       {
         "name": "스트로우 텀블러 (라이트 블루)",
@@ -2053,7 +2053,7 @@
         "text": "뜨거운 음료도 담을 수 있는 스트로우 텀블러(라이트 블루) /용량 600m",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_18.png"
+        "image": "../../../assets/images/menu/md_product/product_18.png"
       },
       {
         "name": "스트로우 텀블러 (화이트)",
@@ -2062,7 +2062,7 @@
         "text": "뜨거운 음료도 담을 수 있는 스트로우 텀블러(화이트) /용량 600ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_19.png"
+        "image": "../../../assets/images/menu/md_product/product_19.png"
       },
       {
         "name": "스트로우 텀블러 (핑크)",
@@ -2071,7 +2071,7 @@
         "text": "뜨거운 음료도 담을 수 있는 스트로우 텀블러(핑크) /용량 600ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_20.png"
+        "image": "../../../assets/images/menu/md_product/product_20.png"
       },
       {
         "name": "스트로우 텀블러 (블랙)",
@@ -2080,7 +2080,7 @@
         "text": "뜨거운 음료도 담을 수 있는 스트로우 텀블러(블랙) /용량 600ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_21.png"
+        "image": "../../../assets/images/menu/md_product/product_21.png"
       },
       {
         "name": "아웃도어 미니저그 (핑크)",
@@ -2089,7 +2089,7 @@
         "text": "1리터 음료를 담을 수 있는 귀여운 디자인의 미니저그(핑크)/용량 1L",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_22.png"
+        "image": "../../../assets/images/menu/md_product/product_22.png"
       },
       {
         "name": "아웃도어 미니저그 (블랙)",
@@ -2098,7 +2098,7 @@
         "text": "1리터 음료를 담을 수 있는 귀여운 디자인의 미니저그(블랙)/용량 1L",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_23.png"
+        "image": "../../../assets/images/menu/md_product/product_23.png"
       },
       {
         "name": "캠핑머그 (올리브)",
@@ -2107,7 +2107,7 @@
         "text": "캠핑장뿐만 아니라 집, 사무실 어디서든 '캠핑 감성을 즐길 수 있는 스텐 머그+우드 뚜껑 세트 (올리브) / 용량: 350ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_24.png"
+        "image": "../../../assets/images/menu/md_product/product_24.png"
       },
       {
         "name": "캠핑머그 (블랙)",
@@ -2116,7 +2116,7 @@
         "text": "캠핑장뿐만 아니라 집, 사무실 어디서든 '캠핑 감성을 즐길 수 있는 스텐 머그+우드 뚜껑 세트 (블랙) / 용량: 350ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_25.png"
+        "image": "../../../assets/images/menu/md_product/product_25.png"
       },
       {
         "name": "스트랩 텀블러",
@@ -2125,7 +2125,7 @@
         "text": "인체공학적 디자인으로 휴대와 사용이 편리한 텀블러 / 용량: 470ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_26.png"
+        "image": "../../../assets/images/menu/md_product/product_26.png"
       },
       {
         "name": "핸들텀블러",
@@ -2134,7 +2134,7 @@
         "text": "핸들스트랩으로 휴대가 편리한 텀블러 / 용량: 470ml",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_27.png"
+        "image": "../../../assets/images/menu/md_product/product_27.png"
       },
       {
         "name": "핸들 파우치",
@@ -2143,7 +2143,7 @@
         "text": "그레이&핑크 컬러에 클래식한 할리스 로고를 적용한 할리스골프 핸들 파우치",
 
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_28.png"
+        "image": "../../../assets/images/menu/md_product/product_28.png"
       },
       {
         "name": "할리스골프 릴타월",
@@ -2151,7 +2151,7 @@
         "category": "product",
         "text": "릴와이어로 간편하게 휴대하는 할리스골프 릴타월.",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_29.png"
+        "image": "../../../assets/images/menu/md_product/product_29.png"
       },
       {
         "name": "할리스골프 4구세트",
@@ -2159,7 +2159,7 @@
         "category": "product",
         "text": "다양한 골프 아이콘을 적용한 골프볼과 클래식한 우드 골프티 세트",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_30.png"
+        "image": "../../../assets/images/menu/md_product/product_30.png"
       },
       {
         "name": "우드 브레드 플레이트&버터나이프 세트",
@@ -2167,7 +2167,7 @@
         "category": "product",
         "text": "내추럴한 원목의 느낌을 살린 핸드메이드 우드 브레드플레이트 & 버터나이프 세트",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_31.png"
+        "image": "../../../assets/images/menu/md_product/product_31.png"
       },
       {
         "name": "우드 시리얼볼 & 스푼 세트",
@@ -2175,7 +2175,7 @@
         "category": "product",
         "text": "내추럴한 원목의 느낌을 살린 핸드메이드 우드 시리얼볼 & 스푼 세트",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_32.png"
+        "image": "../../../assets/images/menu/md_product/product_32.png"
       },
       {
         "name": "티 텀블러 (민트)",
@@ -2184,7 +2184,7 @@
         "text": "조립형 티 인퓨저로 분리세척이 용이한 티 텀블러 (민트)/ 용량: 520ml(17oz)",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_33.png"
+        "image": "../../../assets/images/menu/md_product/product_33.png"
       },
       {
         "name": "티 텀블러 (핑크베이지)",
@@ -2193,7 +2193,7 @@
         "text": "조립형 티 인퓨저로 분리세척이 용이한 티 텀블러 (핑크베이지)/ 용량: 520ml(17oz)",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_34.png"
+        "image": "../../../assets/images/menu/md_product/product_34.png"
       },
       {
         "name": "드라이빙 머그 (화이트)",
@@ -2202,7 +2202,7 @@
         "text": "손잡이 위치가 높아 차량용 컵홀더 사용시 편리하고 내부 세라믹 코팅 처리된 고급 스테인리스 머그 / *보온·보냉 머그 / 용량: 600ml(20oz)",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_35.png"
+        "image": "../../../assets/images/menu/md_product/product_35.png"
       },
       {
         "name": "드라이빙 머그 (블랙)",
@@ -2211,7 +2211,7 @@
         "text": "손잡이 위치가 높아 차량용 컵홀더 사용시 편리하고 내부 세라믹 코팅 처리된 고급 스테인리스 머그 / *보온·보냉 머그 / 용량: 600ml(20oz)",
         "caution": "*전자레인지, 식기세척기 사용 불가",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_36.png"
+        "image": "../../../assets/images/menu/md_product/product_36.png"
       },
       {
         "name": "샌디 머그 (화이트)",
@@ -2220,7 +2220,7 @@
         "text": "자연 본연의 질감과 색깔이 고급스러운 머그 / 용량: 300ml(10oz)",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_37.png"
+        "image": "../../../assets/images/menu/md_product/product_37.png"
       },
       {
         "name": "샌디 머그 (비취)",
@@ -2229,7 +2229,7 @@
         "text": "자연 본연의 질감과 색깔이 고급스러운 머그 / 용량: 300ml(10oz)",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_38.png"
+        "image": "../../../assets/images/menu/md_product/product_38.png"
       },
       {
         "name": "샌디 원접시 (화이트)",
@@ -2238,7 +2238,7 @@
         "text": "메인 요리나 원플레이트 요리 그릇으로 활용도 좋은 접시 / 사이즈: 192x25mm",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_39.png"
+        "image": "../../../assets/images/menu/md_product/product_39.png"
       },
       {
         "name": "샌디 원접시 (비취)",
@@ -2247,7 +2247,7 @@
         "text": "메인 요리나 원플레이트 요리 그릇으로 활용도 좋은 접시 / 사이즈: 192x25mm",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_40.png"
+        "image": "../../../assets/images/menu/md_product/product_40.png"
       },
       {
         "name": "샌디 타원접시 (화이트)",
@@ -2256,7 +2256,7 @@
         "text": "길이감 있는 요리를 담기 좋은 접시 / 사이즈: 225x115x25mm",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_41.png"
+        "image": "../../../assets/images/menu/md_product/product_41.png"
       },
       {
         "name": "샌디 타원접시 (비취)",
@@ -2265,7 +2265,7 @@
         "text": "길이감 있는 요리를 담기 좋은 접시 / 사이즈: 225x115x25mm ",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_42.png"
+        "image": "../../../assets/images/menu/md_product/product_42.png"
       },
       {
         "name": "뉴시그니처 머그 (레드)",
@@ -2274,7 +2274,7 @@
         "text": "할리스 로고가 심플하게 들어간 고급스러운 머그 /용량 360ml(12oz)",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_43.png"
+        "image": "../../../assets/images/menu/md_product/product_43.png"
       },
       {
         "name": "뉴시그니처 머그 (화이트)",
@@ -2283,7 +2283,7 @@
         "text": "할리스 로고가 심플하게 들어간 고급스러운 머그 / 용량: 360ml(12oz)",
         "caution": "*전자레인지, 식기세척기 사용 가능",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_44.png"
+        "image": "../../../assets/images/menu/md_product/product_44.png"
       },
       {
         "name": "한손에 텀블러 (민트)",
@@ -2292,7 +2292,7 @@
         "text": "한손에 쏙 들어오는 초슬림 텀블러. / 이중잠금 방식의 원터치 뚜껑으로 사용이 편리함. / *보온·보냉 텀블러 / 용량: 180ml(6oz)",
         "caution": "*전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_45.png"
+        "image": "../../../assets/images/menu/md_product/product_45.png"
       },
       {
         "name": "한손에 텀블러 (라일락)",
@@ -2301,7 +2301,7 @@
         "text": "한손에 쏙 들어오는 초슬림 텀블러. / 이중잠금 방식의 원터치 뚜껑으로 사용이 편리함. / *보온·보냉 텀블러 / 용량: 180ml(6oz) / *전자레인지, 식기세척기 사용금지",
         "caution": "*전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_46.png"
+        "image": "../../../assets/images/menu/md_product/product_46.png"
       },
       {
         "name": "할리스 레드벨벳 립",
@@ -2309,7 +2309,7 @@
         "category": "product",
         "text": "할리스의 공간이 주는 따뜻한 인테리어의 느낌처럼 입술을 부드럽게 감싸는 소프트 벨벳 타입의 립스틱 (할리스 레드 벨벳 립 + H 벨벳 코듀로이 백)",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_47.png"
+        "image": "../../../assets/images/menu/md_product/product_47.png"
       },
       {
         "name": "SS 컵 텀블러 (윈터 레드 에디션)",
@@ -2318,7 +2318,7 @@
         "text": "한 겨울 함박눈이 내리는 숲속을 담은 시 즌 한정판 스테인리스 텀블러 / 용량: 360ml(12oz) / *전자레인지, 식기세척기 사용금지",
         "caution": "*전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_48.png"
+        "image": "../../../assets/images/menu/md_product/product_48.png"
       },
       {
         "name": "SS컵 텀블러 (그레이)",
@@ -2327,7 +2327,7 @@
         "text": "더블 월 구조의 뚜껑이 있는 컵 형태의 텀블러 (그레이) / 용량: 360ml(12oz)",
         "caution": "*전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_49.png"
+        "image": "../../../assets/images/menu/md_product/product_49.png"
       },
       {
         "name": "그라데이션 글라스 머그",
@@ -2336,7 +2336,7 @@
         "text": "은은한 그라데이션 컬러에 세련된 쉐입이 특징인 시즌 한정 글라스 머그 / 용량: 450ml(15oz)",
         "caution": "*전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_50.png"
+        "image": "../../../assets/images/menu/md_product/product_50.png"
       },
       {
         "name": "데일리 글라스 머그",
@@ -2345,7 +2345,7 @@
         "text": "화이트 골드의 로고 적용으로 고급스러움을 한층 더하고, 손잡이와 바디 모양이 특징을 가진 글라스머그 / 용량: 350ml(12oz)",
         "caution": "*전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_51.png"
+        "image": "../../../assets/images/menu/md_product/product_51.png"
       },
       {
         "name": "글라스 머그 G",
@@ -2354,7 +2354,7 @@
         "text": "할리스 로고가 심플하게 들어간 그립감 좋은 글라스 머그 그란데 사이즈 / 용량: 470ml(16oz)",
         "caution": "*전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_52.png"
+        "image": "../../../assets/images/menu/md_product/product_52.png"
       },
       {
         "name": "시그니처 머그 (8oz)",
@@ -2363,7 +2363,7 @@
         "text": "크라운의 사선을 유니크한 손잡이 형태로 표현한 머그 용량 : 240ml(8oz) / 전자레인지, 식기세척기 사용 금지",
         "caution": "*전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_53.png"
+        "image": "../../../assets/images/menu/md_product/product_53.png"
       },
       {
         "name": "시그니처 플레이트",
@@ -2371,7 +2371,7 @@
         "category": "product",
         "text": "오벌 쉐입으로 크라운의 꼭지점을 형상화한 플레이트 전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_54.png"
+        "image": "../../../assets/images/menu/md_product/product_54.png"
       },
       {
         "name": "시그니처 디저트 굽접시",
@@ -2379,7 +2379,7 @@
         "category": "product",
         "text": "굽 부분의 디자인을 포인트로 크라운을 형상화한 디저트 굽접시 전자레인지, 식기세척기 사용 금지",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_55.png"
+        "image": "../../../assets/images/menu/md_product/product_55.png"
       },
       {
         "name": "에스프레소 잔 세트",
@@ -2387,7 +2387,7 @@
         "category": "product",
         "text": "할리스커피 대표 색상에 로고가 심플하게 들어간 에스프레소 잔 세트",
         "price": "",
-        "image": "../../assets/images/menu/md_product/product_56.png"
+        "image": "../../../assets/images/menu/md_product/product_56.png"
       }
     ],
     "food": [
@@ -2397,7 +2397,7 @@
         "category": "food",
         "text": "견과류의 고소함, 부드럽고 중후한 풍미의 디카페인 블렌드 (네스프레소 호환)",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_01.png"
+        "image": "../../../assets/images/menu/md_food/food_01.png"
       },
       {
         "name": "(캡슐) 프리미엄 블렌드 10개입",
@@ -2405,7 +2405,7 @@
         "category": "food",
         "text": "화사한 산미와 과일의 달콤한, 깔끔한 후미를 즐길 수 있는 프리미엄 블렌드 (네스프레소 호환)",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_02.png"
+        "image": "../../../assets/images/menu/md_food/food_02.png"
       },
       {
         "name": "(캡슐) 이클립스 블렌드 10개입",
@@ -2413,7 +2413,7 @@
         "category": "food",
         "text": "다크초콜릿, 아몬드의 고소하고 산뜻한 풍미의 캡슐커피",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_03.png"
+        "image": "../../../assets/images/menu/md_food/food_03.png"
       },
       {
         "name": "(캡슐) 시그니처 블렌드 10개입",
@@ -2421,7 +2421,7 @@
         "category": "food",
         "text": "균형잡힌 바디와 부드럽고 중후한 풍미의 캡슐커피",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_04.png"
+        "image": "../../../assets/images/menu/md_food/food_04.png"
       },
       {
         "name": "할리스 그릴 닭가슴살",
@@ -2429,7 +2429,7 @@
         "category": "food",
         "text": "낱개 포장으로 간편하고 깔끔하게 즐기는 할리스 그릴 닭가슴살",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_05.png",
+        "image": "../../../assets/images/menu/md_food/food_05.png",
         "servingSize": "제품영양정보 (총 중량 300g, 1회 제공량 100g)",
         "nutritional": {
           "calorie": "100kcal",
@@ -2447,7 +2447,7 @@
         "category": "food",
         "text": "프랑스산 버터 풍미가 가득한 패스트리 타입의 달콤한 하트모양 파이",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_06.png",
+        "image": "../../../assets/images/menu/md_food/food_06.png",
         "servingSize": "제품영양정보 (총 중량 80g, 1회 제공량 80g)",
         "nutritional": {
           "calorie": "420kcal",
@@ -2465,7 +2465,7 @@
         "category": "food",
         "text": "바닐라 딜라이트 파우더의 깊고 진한 풍미의 커피로 간편한 파우치에 담은 제품",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_07.png",
+        "image": "../../../assets/images/menu/md_food/food_07.png",
         "servingSize": "제품영양정보 (총 중량 190ml, 1회 제공량 190ml)",
         "nutritional": {
           "calorie": "155kcal",
@@ -2483,7 +2483,7 @@
         "category": "food",
         "text": "복숭아 과즙과 얼그레이 향의 달콤한 조화로운 음료로 간편한 파우치에 담은 제품",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_08.png",
+        "image": "../../../assets/images/menu/md_food/food_08.png",
         "servingSize": "제품영양정보 (총 중량 230ml, 1회 제공량 230ml)",
         "nutritional": {
           "calorie": "132kcal",
@@ -2501,7 +2501,7 @@
         "category": "food",
         "text": "드립 추출방식으로 부드럽고 깔끔한 맛의 아메리카노를 간편한 파우치에 담은 제품",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_09.png",
+        "image": "../../../assets/images/menu/md_food/food_09.png",
         "servingSize": "제품영양정보 (총 중량 230ml, 1회 제공량 230ml)",
         "nutritional": {
           "calorie": "10kcal",
@@ -2518,7 +2518,7 @@
         "category": "food",
         "text": "얇고 바삭한 비스킷 속 부드러운 크림으로 간편하게 즐기는 스낵",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_10.png"
+        "image": "../../../assets/images/menu/md_food/food_10.png"
       },
       {
         "name": "녹차 샌드 웨이퍼",
@@ -2526,7 +2526,7 @@
         "category": "food",
         "text": "얇고 바삭한 비스킷 속 부드러운 크림으로 간편하게 즐기는 스낵",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_11.png"
+        "image": "../../../assets/images/menu/md_food/food_11.png"
       },
       {
         "name": "밀크 샌드웨이퍼",
@@ -2534,7 +2534,7 @@
         "category": "food",
         "text": "얇고 바삭한 비스킷 속 부드러운 크림으로 간편하게 즐기는 스낵",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_12.png"
+        "image": "../../../assets/images/menu/md_food/food_12.png"
       },
       {
         "name": "크랜베리 화이트 초코 쿠키",
@@ -2542,7 +2542,7 @@
         "category": "food",
         "text": "상큼한 크랜베리와 화이트 초콜릿이 조화로운 달콤상큼한 쿠키",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_13.png",
+        "image": "../../../assets/images/menu/md_food/food_13.png",
         "servingSize": "제품영양정보 (총 중량 80g, 1회 제공량 80g)",
         "nutritional": {
           "calorie": "373kcal",
@@ -2560,7 +2560,7 @@
         "category": "food",
         "text": "다크, 화이트, 블랙카카오 3가지 초코에 다크 초콜릿 청크를 가득 올린 진한 초코 쿠키",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_14.png",
+        "image": "../../../assets/images/menu/md_food/food_14.png",
         "servingSize": "제품영양정보 (총 중량 80g, 1회 제공량 80g)",
         "nutritional": {
           "calorie": "393kcal",
@@ -2578,7 +2578,7 @@
         "category": "food",
         "text": "미숫가루맛 베이스에 곡물 알갱이가 씹혀 고소하고 간편하게 즐기는 단백질 쉐이크",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_15.png",
+        "image": "../../../assets/images/menu/md_food/food_15.png",
         "servingSize": "제품영양정보 (총 중량 40g, 1회 제공량 40g 기준)",
         "nutritional": {
           "calorie": "179kcal",
@@ -2596,7 +2596,7 @@
         "category": "food",
         "text": "초코맛 베이스에 카카오닙스와 견과류의 씹는 재미가 있는 단백질 쉐이크",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_16.png",
+        "image": "../../../assets/images/menu/md_food/food_16.png",
         "servingSize": "제품영양정보 (총 중량 40g, 1회 제공량 40g 기준)",
         "nutritional": {
           "calorie": "179kcal",
@@ -2614,7 +2614,7 @@
         "category": "food",
         "text": "샤인머스캣 과즙을 넣어 풍미를 그대로 살리고, 톡톡 쏘는 탄산으로 청량감을 더한 발효음료",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_17.png",
+        "image": "../../../assets/images/menu/md_food/food_17.png",
         "servingSize": "제품영양정보 (총 제공량 315ml / 100ml 기준)",
         "nutritional": {
           "calorie": "48kcal",
@@ -2631,7 +2631,7 @@
         "category": "food",
         "text": "복숭아와 딸기의 상큼 달콤한 풍미와 톡톡 쏘는 탄산으로 청량감을 더한 발효음료",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_18.png",
+        "image": "../../../assets/images/menu/md_food/food_18.png",
         "servingSize": "제품영양정보 (총 제공량 315ml / 100ml 기준)",
         "nutritional": {
           "calorie": "48kcal",
@@ -2648,7 +2648,7 @@
         "category": "food",
         "text": "고소한 디카페인 원두와 마다가스카르산 바닐라빈이 어우러져 고급스러운 바닐라 풍미가 특징",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_19.png"
+        "image": "../../../assets/images/menu/md_food/food_19.png"
       },
       {
         "name": "디카페인 아메리카노 30T",
@@ -2656,7 +2656,7 @@
         "category": "food",
         "text": "사탕수수를 활용한 친환경적인 공법으로 카페인을 제거하여 커피의 자연스러운 산미와 풍미 살린 디카페인 스틱커피",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_20.png"
+        "image": "../../../assets/images/menu/md_food/food_20.png"
       },
       {
         "name": "디카페인 아메리카노 12T",
@@ -2664,7 +2664,7 @@
         "category": "food",
         "text": "사탕수수를 활용한 친환경적인 공법으로 카페인을 제거하여 커피의 자연스러운 산미와 풍미 살린 디카페인 스틱커피",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_21.png"
+        "image": "../../../assets/images/menu/md_food/food_21.png"
       },
       {
         "name": "시그니처 아메리카노 30T",
@@ -2672,7 +2672,7 @@
         "category": "food",
         "text": "깊고 풍부한 원두의 향과 부드러운 산미, 고소한 풍미가 어우러진 시그니처 아메리카노 스틱",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_22.png"
+        "image": "../../../assets/images/menu/md_food/food_22.png"
       },
       {
         "name": "시그니처 아메리카노 12T",
@@ -2680,7 +2680,7 @@
         "category": "food",
         "text": "깊고 풍부한 원두의 향과 부드러운 산미, 고소한 풍미가 어우러진 할리스커피 시그니처 아메리카노 스틱",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_23.png"
+        "image": "../../../assets/images/menu/md_food/food_23.png"
       },
       {
         "name": "아이스 콜드브루 30T",
@@ -2688,7 +2688,7 @@
         "category": "food",
         "text": "부드러운 콜드브루 커피의 맛과 향을 그대로 살려 찬물이나 우유에 바로 넣어 마실 수 있는 스틱 커피",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_24.png"
+        "image": "../../../assets/images/menu/md_food/food_24.png"
       },
       {
         "name": "아이스 콜드브루 10T",
@@ -2696,7 +2696,7 @@
         "category": "food",
         "text": "부드러운 콜드브루 커피의 맛과 향을 그대로 살려 찬물이나 우유에 바로 넣어 마실 수 있는 스틱 커피",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_25.png"
+        "image": "../../../assets/images/menu/md_food/food_25.png"
       },
       {
         "name": "바닐라 딜라이트 10T",
@@ -2704,7 +2704,7 @@
         "category": "food",
         "text": "마다가스카르산 바닐라빈을 사용하여 고급스러운 바닐라의 풍미가 특징, 커피 풍미를 높여 진한 바디감을 구현함",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_26.png"
+        "image": "../../../assets/images/menu/md_food/food_26.png"
       },
       {
         "name": "리얼 벨지안 초코 라떼 10T",
@@ -2712,7 +2712,7 @@
         "category": "food",
         "text": "벨기에산 초코칩을 함유하여 진한 다크초콜릿의 풍미가 특징",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_27.png"
+        "image": "../../../assets/images/menu/md_food/food_27.png"
       },
       {
         "name": "카페 라떼 10T",
@@ -2720,7 +2720,7 @@
         "category": "food",
         "text": "에스프레소의 진한 바디감에 부드럽고, 고소한 우유의 풍미가 어우러진 제품",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_28.png"
+        "image": "../../../assets/images/menu/md_food/food_28.png"
       },
       {
         "name": "헤이즐넛 아메리카노 12T",
@@ -2728,7 +2728,7 @@
         "category": "food",
         "text": "은은한 헤이즐넛 향과 달콤한 풍미가 어우러져 부드럽게 즐길 수 있는 헤이즐넛 아메리카노 스틱",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_29.png"
+        "image": "../../../assets/images/menu/md_food/food_29.png"
       },
       {
         "name": "시그니처 에스프레소 블렌드",
@@ -2736,7 +2736,7 @@
         "category": "food",
         "text": "할리스의 시그니처 블렌드로, 부드러운 산미와 균형감 있는 풍미, 중후한 바디가 특징적인 커피",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_30.png"
+        "image": "../../../assets/images/menu/md_food/food_30.png"
       },
       {
         "name": "데이드림",
@@ -2744,7 +2744,7 @@
         "category": "food",
         "text": "[스페셜티-블렌드] 커피를 상큼하게. 향긋한 꽃 향기와 베리가 함께 어우러진 새콤한 단맛이 입안 가득.",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_31.png"
+        "image": "../../../assets/images/menu/md_food/food_31.png"
       },
       {
         "name": "이클립스",
@@ -2752,7 +2752,7 @@
         "category": "food",
         "text": "[스페셜티-블렌드] 깊게, 더 짙게. 아몬드 초콜릿의 고소한 단맛 그리고 오래 감도는 깊고 짙은 여운.",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_32.png"
+        "image": "../../../assets/images/menu/md_food/food_32.png"
       },
       {
         "name": "과테말라 싱글오리진",
@@ -2760,7 +2760,7 @@
         "category": "food",
         "text": "달콤, 깔끔하게, 흑설탕의 달콤한 풍미 그리고 허브티와 초콜릿의 쌉싸름한 여운",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_33.png"
+        "image": "../../../assets/images/menu/md_food/food_33.png"
       },
       {
         "name": "시그니처 드립백",
@@ -2768,7 +2768,7 @@
         "category": "food",
         "text": "할리스 시그니처블랜드를 드립커피로 즐길 수 있도록 구현한 제품으로 부드러운 산미와 고소한 풍미가 특징",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_34.png"
+        "image": "../../../assets/images/menu/md_food/food_34.png"
       },
       {
         "name": "데이드림 드립백",
@@ -2776,7 +2776,7 @@
         "category": "",
         "text": "[스페셜티 드립백] 이제 가장 신선하고 맛있는 '할리스 스페셜티 커피'를 언제 어디서나 간편하게 즐기세요. 커피를 상큼하게. 향긋한 꽃 향기와 베리가 함께 어우러진 새콤한 단맛이 입안 가득.",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_35.png"
+        "image": "../../../assets/images/menu/md_food/food_35.png"
       },
       {
         "name": "이클립스 드립백",
@@ -2784,7 +2784,7 @@
         "category": "food",
         "text": "[스페셜티 드립백] 이제 가장 신선하고 맛있는 '할리스 스페셜티 커피'를 언제 어디서나 간편하게 즐기세요. 깊게, 더 짙게. 아몬드 초콜릿의 고소한 단맛 그리고 오래 감도는 깊고 짙은 여운.",
         "price": "",
-        "image": "../../assets/images/menu/md_food/food_36.png"
+        "image": "../../../assets/images/menu/md_food/food_36.png"
       }
     ]
   }

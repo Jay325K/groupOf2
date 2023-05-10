@@ -41,7 +41,7 @@ button {
 /* main */
 
 /* lnb */
-.lnb {
+/* .lnb {
   width: 240px;
   font-size: 24px;
   font-weight: 500;
@@ -52,11 +52,11 @@ button {
 .lnb li :hover {
   width: 240px;
   color: #c72f30;
-}
+} */
 
 /* menu content */
 .menu_content--wrap {
-  width: 940px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
@@ -66,7 +66,7 @@ button {
   margin-bottom: 20px;
 }
 .menu_category--wrap {
-  width: 700px;
+  width: 1200px;
   margin-bottom: 30px;
   padding: 10px 20px;
   border: 1px solid black;
@@ -93,7 +93,7 @@ button {
 
 /* drink list */
 .menu_list--wrap {
-  width: 700px;
+  width: 1200px;
 }
 .menu_list {
   display: flex;
@@ -111,7 +111,7 @@ button {
   color: #999;
 }
 .menu_list a {
-  width: 160px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,11 +121,11 @@ button {
   word-wrap: break-word;
 }
 .menu_list img {
-  width: 160px;
+  width: 250px;
 }
 
 .blank_item {
-  width: 160px;
+  width: 250px;
 }
 
 /* menu modal */
