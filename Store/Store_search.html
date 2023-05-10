@@ -16,7 +16,7 @@
             <header>header</header>
             <main>
                 <!-- lnb -->
-                <section class="sec_one">
+                <section class="sec_one"><!-- 
                     <div class="sec_one_wrap">
                         <h2><a href="#none">매장검색</a></h2>
 
@@ -31,151 +31,150 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                
-                <section class="sec_two">
-                    <div class="path">
-                        <p>Home > Store > 매장검색</p>
-                    </div>
+                 --></section>
+                <div class="section_wrap">
+                    <section class="sec_two">
+                        <div class="path">
+                            <p>Home > Store > 매장검색</p>
+                        </div>
 
-                    <div class="h2_wrap">
-                        <h2>매장검색</h2>
-                    </div>
+                        <div class="h2_wrap">
+                            <h2>매장검색</h2>
+                        </div>
 
-                    <div class="search_wrap">
-                        <!-- 지도 -->
-                        <div id="map" class="map"></div>
+                        <div class="search__search_table_wrap">
+                            <div class="search_wrap">
+                                <!-- 지도 -->
+                                <div id="map" class="map"></div>
 
-                         <!-- 매장 검색하는곳 -->
-                        <div class="search_Store">
-                            <button type="button" class="open_close">검색</button>
+                                <!-- 매장 검색하는곳 -->
+                                <div class="search_Store">
+                                    <button type="button" class="open_close">검색</button>
 
-                            <!-- 매장명, 매장주소로 찾기 -->
-                            <div class="search_Store_wrap screen_out">
-                                <div class="search_Store_button_wrap">
-                                    <h3><a href="#none">매장검색</a></h3>
-                                </div>
+                                    <!-- 매장명, 매장주소로 찾기 -->
+                                    <div class="search_Store_wrap screen_out">
+                                        <div class="search_Store_button_wrap">
+                                            <h3><a href="#none">매장검색</a></h3>
+                                        </div>
 
-                                <div class="search_Store_input_label">
-                                    <div class="input_label_detail">
-                                        <h4>매장찾기</h4>
-                                        <p>지점명 또는 주소를 입력하세요<br/> 지점명 입력시 마지막에 '점'을 입력해주세요</p>
-                                        <form action="" method="get">
-                                            <input type="text" id="get_Store_name" placeholder="ex)강남점 or 강남구 테헤란로92">
-                                            <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                        </form>
+                                        <div class="search_Store_input_label">
+                                            <div class="input_label_detail">
+                                                <h4>매장찾기</h4>
+                                                <p>지점명 또는 주소를 입력하세요<br/> 지점명 입력시 마지막에 '점'을 입력해주세요</p>
+                                                <form action="" method="get">
+                                                    <input type="text" id="get_Store_name" placeholder="ex)강남점 or 강남구 테헤란로92">
+                                                    <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    
+
+                                        <div class="locate_Store_button_wrap">
+                                            <h3><a href="#none">지역검색</a></h3>
+                                        </div>
+
+                                        <div class="locate_Store_input_label">
+                                            <div class="input_label_detail">
+                                                <h4>지역검색</h4>
+                                            </div>
+                                            <ul class="local_city">
+                                                <li><a href="#none">서울</a></li>
+                                                <li><a href="#none">경기</a></li>
+                                                <li><a href="#none">인천</a></li>
+                                                <li><a href="#none">강원</a></li>
+                                                <li><a href="#none">광주</a></li>
+                                                <li><a href="#none">대전</a></li>
+                                                <li><a href="#none">대구</a></li>
+                                                <li><a href="#none">부산</a></li>
+                                                <li><a href="#none">울산</a></li>
+                                                <li><a href="#none">세종</a></li>
+                                                <li><a href="#none">경남</a></li>
+                                                <li><a href="#none">경북</a></li>
+                                                <li><a href="#none">전남</a></li>
+                                                <li><a href="#none">전북</a></li>
+                                                <li><a href="#none">충남</a></li>
+                                                <li><a href="#none">충북</a></li>
+                                                <li><a href="#none">제주</a></li>
+                                            </ul>
+                                            <ul class="local_city_bor">
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            
+                            </div>
 
-                                <div class="locate_Store_button_wrap">
-                                    <h3><a href="#none">지역검색</a></h3>
-                                </div>
-
-                                <div class="locate_Store_input_label">
-                                    <div class="input_label_detail">
-                                        <h4>지역검색</h4>
-                                    </div>
-                                    <ul class="local_city">
-                                        <li><a href="#none">서울</a></li>
-                                        <li><a href="#none">경기</a></li>
-                                        <li><a href="#none">인천</a></li>
-                                        <li><a href="#none">강원</a></li>
-                                        <li><a href="#none">광주</a></li>
-                                        <li><a href="#none">대전</a></li>
-                                        <li><a href="#none">대구</a></li>
-                                        <li><a href="#none">부산</a></li>
-                                        <li><a href="#none">울산</a></li>
-                                        <li><a href="#none">세종</a></li>
-                                        <li><a href="#none">경남</a></li>
-                                        <li><a href="#none">경북</a></li>
-                                        <li><a href="#none">전남</a></li>
-                                        <li><a href="#none">전북</a></li>
-                                        <li><a href="#none">충남</a></li>
-                                        <li><a href="#none">충북</a></li>
-                                        <li><a href="#none">제주</a></li>
-                                    </ul>
-                                    <ul class="local_city_bor">
-                                    </ul>
+                            <div class="Store_table_wrap">
+                                <p>* 할리스 전 매장에서 무선인터넷 서비스 이용이 가능합니다 (단, 휴게소 및 특수매장 제외)</p>
+                                <div class="Store_table">
+                                    <table class="Store_detail_table">
+                                        <thead>
+                                            <tr>
+                                                <th>지역</th>
+                                                <th>매장명</th>
+                                                <th>주소</th>
+                                                <th>매장서비스</th>
+                                                <th>전화번호</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>서울 중구</td>
+                                                <td><a href="#none">케이지할리스에프앤비</a></td>
+                                                <td><a href="#none">서울 중구 통일로 92 KG타워 9층</a></td>
+                                                <td></td>
+                                                <td>02-2188-7100</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="Store_table_wrap">
-                        <p>* 할리스 전 매장에서 무선인터넷 서비스 이용이 가능합니다 (단, 휴게소 및 특수매장 제외)</p>
-                        <div class="Store_table">
-                            <table class="Store_detail_table">
-                                <thead>
-                                    <tr>
-                                        <th>지역</th>
-                                        <th>매장명</th>
-                                        <th>주소</th>
-                                        <th>매장서비스</th>
-                                        <th>전화번호</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>서울 중구</td>
-                                        <td><a href="#none">케이지할리스에프앤비</a></td>
-                                        <td><a href="#none">서울 중구 통일로 92 KG타워 9층</a></td>
-                                        <td></td>
-                                        <td>02-2188-7100</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </section>
+                    <section class="sec_three">
+                        <div class="sec_three_wrap">
+                            <h2>매장정보</h2>
 
-                <section class="sec_three">
-                    <div class="sec_three_wrap">
-                        <h2>매장정보</h2>
+                            <h3 class="Store_name">케이지할리스에프앤비</h3>
 
-                        <h3 class="Store_name">케이지할리스에프앤비</h3>
-
-                        <div class="sec_three_img_box">
-                            <img class="sec_three_main_img" src="Store_img_box/케이지할리스에프앤비/img_1.jpg" alt="">
-                            <div class="sub_img_box">
-                                <a href="#none"><img src="Store_img_box/케이지할리스에프앤비/img_1.jpg" alt=""></a>
-                                <a href="#none"><img src="Store_img_box/케이지할리스에프앤비/img_2.jpg" alt=""></a>
-                                <a href="#none"><img src="Store_img_box/케이지할리스에프앤비/img_3.jpg" alt=""></a>
+                            <div class="sec_three_img_box">
+                                <img class="sec_three_main_img" src="Store_img_box/케이지할리스에프앤비/img_1.jpg" alt="">
+                                <div class="sub_img_box">
+                                    <a href="#none"><img src="Store_img_box/케이지할리스에프앤비/img_1.jpg" alt=""></a>
+                                    <a href="#none"><img src="Store_img_box/케이지할리스에프앤비/img_2.jpg" alt=""></a>
+                                    <a href="#none"><img src="Store_img_box/케이지할리스에프앤비/img_3.jpg" alt=""></a>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="Store_introduce">
-                            <ul>
-                                <li>
-                                    <b>주소: </b>
-                                    <div class="addr">서울 중구 통일로 92 KG타워 9층</div>
-                                </li>
-                                <li>
-                                    <b>전화번호: </b>
-                                    <div class="Tel">02-2188-7100</div>
-                                </li>
-                                <li>
-                                    <b>영업시간: </b>
-                                    <div class="business_time"></div>
-                                </li>
-                                <li>
-                                    <b>매장 서비스: </b>
-                                    <div class="Store_Service"></div>
-                                </li>
-                                <li>
-                                    <b>주차 정보: </b>
-                                    <div class="parking_info"></div>
-                                </li>
-                            </ul>
-                        </div>  
-                        
-                        <div class="print_box">
-                            <button type="button">매장 정보 인쇄</button>
-                        </div>
+                            <div class="Store_introduce">
+                                <ul>
+                                    <li>
+                                        <b>주소: </b>
+                                        <div class="addr">서울 중구 통일로 92 KG타워 9층</div>
+                                    </li>
+                                    <li>
+                                        <b>전화번호: </b>
+                                        <div class="Tel">02-2188-7100</div>
+                                    </li>
+                                    <li>
+                                        <b>영업시간: </b>
+                                        <div class="business_time"></div>
+                                    </li>
+                                    <li>
+                                        <b>매장 서비스: </b>
+                                        <div class="Store_Service"></div>
+                                    </li>
+                                    <li>
+                                        <b>주차 정보: </b>
+                                        <div class="parking_info"></div>
+                                    </li>
+                                </ul>
+                            </div>
 
-                        <button type="button" class="hide">X</button>
-                    </div>
-                </section>
+                            <button type="button" class="hide">X</button>
+                        </div>
+                    </section>
+                </div>
             </main>
             <footer></footer>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c71727dc2f232aae9889de60b8fb6b55&libraries=services"></script>
