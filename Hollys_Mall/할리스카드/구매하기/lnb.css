@@ -1,0 +1,68 @@
+/********************section_one(lnb)********************/
+main .sec_one{
+    width: 220px;
+    padding-right: 20px;
+    transition: 0.5s;
+}
+/* lnb큰제목 */
+main .sec_one .sec_one_wrap .guide_wrap h3{
+    font-size: 1.34em;
+    letter-spacing: -1px;
+}
+main .sec_one_wrap .guide_wrap{
+    margin-bottom: 40px;
+}
+main .sec_one_wrap .guide_wrap>ul>li{
+    padding-bottom: 10px;
+    position: relative;
+}
+main .sec_one_wrap .guide_wrap>ul>li>a{
+    color: #2e2e2e;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+main .sec_one_wrap .guide_wrap>ul>li ul{
+    display: none;
+    height: 0;
+    padding-left: 10px ;
+    overflow: hidden;
+}
+main .sec_one_wrap .guide_wrap>ul>li ul.active{
+    display: block;
+    height: 70px;
+}
+
+main .sec_one_wrap .guide_wrap>ul>li ul a{
+    font-size: 0.9em;
+}
+
+/* event */
+main .sec_one .sec_one_wrap .event h2 {
+    font-size: 1em ;
+    letter-spacing: -1px;
+}
+main .sec_one .sec_one_wrap .event h2 a{
+    color: rgb(80, 80, 80);
+}
+main .sec_one .sec_one_wrap .event p{
+    font-size: 0.8em ;
+    letter-spacing: -1px;
+}
+
+/* img_box */
+main .sec_one .sec_one_wrap .event .img_box{
+    width: 190px;
+}
+main .sec_one .sec_one_wrap .event .img_box a{
+    display: block;
+    width: 100%;
+    padding: 30px 10px 30px 0;
+}
+main .sec_one .sec_one_wrap .event .img_box a:hover{
+    border: 0;
+}
+main .sec_one .sec_one_wrap .event .img_box a img{
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}

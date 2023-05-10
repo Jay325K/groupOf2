@@ -1,0 +1,134 @@
+header{
+    width: 100%;
+    min-width: 940px;
+    margin: auto;
+    height: 148px;
+    border: 1px solid;
+}
+/*********** main ***********/
+main{
+    width: 940px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/************** sec_two *************/
+main .sec_two{
+    position: relative;
+    width: 700px;
+    transition: 0.5s;
+    z-index: 1;
+    background: white;
+}
+main .sec_two .page_intro{
+    width: 100%;
+    margin-bottom: 30px;
+}
+main .sec_two .page_intro .page_path{
+    font-size: 0.75em;
+    color: gray;
+    padding: 15px 0;
+
+}
+main .sec_two .page_intro h2{
+    font-size: 2.2em;
+    padding: 5px 0;
+    letter-spacing: -2px;
+}
+
+/* 시설관련 */
+main .sec_two .space_wrap{
+    position: relative;
+    height: 460px;
+}
+
+/* 큰이미지 */
+main .sec_two .space_wrap .space_main_img{
+    position: absolute;
+    height: 60%;
+    width: 80%;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+main .sec_two .space_wrap .space_main_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 이미지 모음 */
+main .sec_two .space_wrap .space_menu{
+    display: flex;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding: 20px 0 20px;
+}
+main .sec_two .space_wrap .space_menu li>a{
+    color: gray;
+    position: relative;
+    padding-right: 50px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+main .sec_two .space_wrap .space_menu li>a:hover{
+    color: black;
+    border: 0;
+}
+/* 각각의 이미지 */
+main .sec_two .space_wrap .space_menu li>a::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 35px;
+    content: '▼';
+    font-size: 0.5em;
+}
+main .sec_two .space_wrap .space_menu .space_img_wrap{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    padding: 10px 0;
+}
+main .sec_two .space_wrap .space_menu .space_img_wrap a{
+
+    text-decoration: none;
+}
+main .sec_two .space_wrap .space_menu .space_img_wrap a:hover{
+    
+    border: 0;
+}
+main .sec_two .space_wrap .space_menu .space_img_wrap a:hover img{
+    box-shadow: 0 0 3px black;
+}
+main .sec_two .space_wrap button{
+    position: relative;
+    left: 50%;
+    top: 70%;
+    background: 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 2px 8px; 
+    font-size: 2em;
+    transform: translateX(calc(-15.5% * var(--dis)*-50 - 40px));
+    cursor: pointer;
+    box-shadow: 0 0 1px gray;
+}
+
+main .sec_two .space_wrap button:active{
+    
+    box-shadow: inset 0 0 3px gray;
+}
+/*********************footer*******************/
+footer{
+    width: 100%;
+    height: 300px;
+    
+    border: 1px solid;
+}
+
+

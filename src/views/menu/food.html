@@ -9,7 +9,7 @@
   </head>
   <body>
     <main id="main" class="main">
-      <section class="drink_content--wrap">
+      <section class="menu_content--wrap">
         <div class="lnb">
           <ul>
             <li><a href="./drink.html">음료</a></li>
@@ -17,45 +17,50 @@
             <li><a href="./md.html">MD</a></li>
           </ul>
         </div>
-        <section class="drink_content">
+        <section class="menu_content">
           <h2>음식</h2>
-          <section class="drink_category--wrap">
+          <section class="menu_category--wrap">
             <h3>분류</h3>
-            <section class="drink_category">
-              <label>
+            <section class="menu_category">
+              <label class="menu_category--checkbox">
                 <span>전체</span>
                 <input type="checkbox" checked />
               </label>
-              <label>
+              <label class="menu_category--checkbox">
                 <span>케이크</span>
                 <input type="checkbox" />
               </label>
-              <label>
-                <span>샌드위치·토스트·빵</span>
+              <label class="menu_category--checkbox">
+                <span>샌드위치·토스트</span>
                 <input type="checkbox" />
               </label>
-              <label>
+              <label class="menu_category--checkbox">
+                <span>빵</span>
+                <input type="checkbox" />
+              </label>
+              <label class="menu_category--checkbox">
                 <span>식사</span>
                 <input type="checkbox" />
               </label>
             </section>
           </section>
-          <section class="drink_list--wrap">
-            <ul class="drink_list"></ul>
+          <section class="menu_list--wrap">
+            <ul class="menu_list"></ul>
           </section>
-          <section class="drink_detail--wrap display_none">
-            <section class="drink_detail">
-              <button type="button" class="drink_detail--close_btn">
+          <section class="menu_modal--wrap display_none">
+            <section class="menu_modal">
+              <button type="button" class="menu_modal--close_btn">
                 <img src="../../assets/images/menu/icon/close.png" />
               </button>
-              <section class="drink_detail--desc"></section>
-              <section class="drink_nutritional--wrap">
-                <p>제품영양정보 (1회 제공량 / Regular 기준)</p>
-                <table class="drink_nutritional"></table>
+              <section class="menu_modal--detail"></section>
+              <section class="menu_modal--nutritional">
+                <section class="menu_servingsize"></section>
+                <table class="menu_nutritional"></table>
+                <section class="menu_allergy"></section>
               </section>
             </section>
           </section>
-          <section class="drink_page"></section>
+          <section class="menu_page"></section>
         </section>
       </section>
     </main>
