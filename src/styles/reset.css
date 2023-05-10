@@ -34,6 +34,12 @@ input, button{
 button{
 	cursor: pointer;
 }
+video {
+	display: block;
+	max-width: 120%;
+	height: auto;
+  }
+  
 
 /* 공통 클래스 */
 .screen_out {
