@@ -1,9 +1,5 @@
-@font-face {
-    font-family: 'MICEGothic Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
 
 /* 임시reset */
 *{
@@ -16,7 +12,7 @@ ul,ul li{
     list-style: none;
 }
 h1,h2,h3,h4,h5,h6,a,p,td{
-    font-family: 'MICEGothic Bold';
+    font-family: 'Noto Sans KR', sans-serif;
 }
 a{
     text-decoration: none;
