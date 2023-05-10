@@ -7,7 +7,7 @@ header{
 }
 /*********** main ***********/
 main{
-    width: 940px;
+    width: 1200px;
     margin: auto;
     padding: 40px 0;
     display: flex;
@@ -18,10 +18,11 @@ main{
 /************** sec_two *************/
 main .sec_two{
     position: relative;
-    width: 700px;
+    width: 1200px;
     transition: 0.5s;
     z-index: 1;
     background: white;
+    border: 1px solid;
 }
 
 main .sec_two .page_intro .page_path{

@@ -3,17 +3,17 @@ $(function(){
     let move_count=0;
     let move_length=0;
     let move_ul = $('form .img_slide');
-    $('.button_wrap button').on('click',function(){
+    $('button').on('click',function(){
 
         if($(this).hasClass('prev')==true){
             if(move_count>0){
-                move_length+=231;
+                move_length+=218.79;
                 move_ul.animate({left:move_length+'px'});
                 move_count--;
             }
         }else{
             if(move_count<this_count){
-                move_length-=231;
+                move_length-=218.79;
                 move_ul.animate({left:move_length+'px'});
                 move_count++;
             }

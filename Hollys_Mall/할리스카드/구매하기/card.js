@@ -1,9 +1,13 @@
 $(function(){
+
+
+
     /* 기본값 */
     loader("Hollys card","Hollys_card.html","Hollys_card.js");
 
     $('.design>div>a').on('click',function(){
         $('.design>div>a').next().addClass('screen_out');
+        $('.design>div>a').parent().removeClass('active');
         let card_floder_name = $(this).text()+ ' card';    /* 폴더명 */
 
         let card_html_file_name = $(this).text() +' card.html'; /* 가져올 html파일명 */
@@ -13,6 +17,7 @@ $(function(){
         card_js_file_name= card_js_file_name.split(' ').join('_');
 
         $(this).next().removeClass('screen_out');
+        $(this).parent().addClass('active');
         loader(card_floder_name, card_html_file_name, card_js_file_name);
 
     });
