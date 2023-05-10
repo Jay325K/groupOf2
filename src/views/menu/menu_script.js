@@ -9,7 +9,6 @@ const menuModalDetail = document.querySelector(".menu_modal--detail");
 const menuNutritional = document.querySelector(".menu_nutritional");
 const menuModalCloseBtn = document.querySelector(".menu_modal--close_btn");
 const menuServingsize = document.querySelector(".menu_servingsize");
-// const menuModal = document.querySelector(".menu_modal");
 const menuAllergy = document.querySelector(".menu_allergy");
 const menuCategoryArray = {
   drink: [
@@ -34,7 +33,6 @@ const getMenu = () => {
 const drinkPrintExec = async () => {
   try {
     const menu = await getMenu();
-    console.log(menu);
     if (drinkPageNum) {
       drinkPagePrintProcess(menu[pageName]);
     }

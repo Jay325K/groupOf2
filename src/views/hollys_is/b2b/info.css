@@ -35,38 +35,13 @@ li {
 
 /* main */
 
-/* lnb */
-.hollysis_lnb {
-  width: 240px;
-  font-size: 24px;
-  font-weight: 500;
-}
-.hollysis_lnb li {
-  width: 240px;
-}
-.hollysis_lnb li :hover {
-  width: 240px;
-  color: #c72f30;
-}
-
 /* about content */
 .info_content--wrap {
-  width: 940px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
-.info_content {
-  width: 700px;
-}
 .info_content h2 {
+  font-size: 72px;
   margin-bottom: 30px;
-}
-.info_content--office {
-  width: 700px;
-  height: 300px;
-  background: url(../../../assets/images/hollysis/b2b_01_waifu2x_art_noise1_scale.png)
-    no-repeat;
-  /* background: url(../../../assets/images/hollysis/3.png) no-repeat; */
-  background-size: cover;
-  background-position: 0 10%;
 }

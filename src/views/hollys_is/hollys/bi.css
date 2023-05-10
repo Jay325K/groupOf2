@@ -35,30 +35,14 @@ li {
 
 /* main */
 
-/* lnb */
-.hollysis_lnb {
-  width: 240px;
-  font-size: 24px;
-  font-weight: 500;
-}
-.hollysis_lnb li {
-  width: 240px;
-}
-.hollysis_lnb li :hover {
-  width: 240px;
-  color: #c72f30;
-}
-
 /* bi content */
 .bi_content--wrap {
-  width: 940px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
-.bi_content {
-  width: 700px;
-}
 .bi_content h2 {
+  font-size: 72px;
   margin-bottom: 30px;
 }
 .bi_download {
