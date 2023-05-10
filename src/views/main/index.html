@@ -66,12 +66,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh; 
-        }
-        .video{
             width: 100%;
-            /* margin: 0;
-            padding: 0; */
+            top: 0;
+            height: 100%; 
+        }
+        .video video{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            top: 0;
             object-fit: cover;
         }
 
@@ -88,12 +91,21 @@
         .min_text{
             position: absolute;
             right: 0;
-            top: 240px;
+            top: 250px;
             padding: 20px;
             backdrop-filter: blur(10px);
             color: white;
             font-size: 100px;
             font-weight: bold;
+        }
+
+        .cof_text{
+            color: rgb(255, 255, 255);
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        }
+        .min_text{
+            color: rgb(255, 255, 255);
+        -webkit-text-fill-color: #C72F30; /* Will override color (regardless of order) */
         }
 
     </style>
@@ -118,15 +130,15 @@
     <main>
 
         <div class="main_cont_wrap">
-            <section class="main_cont_1">
+            <section class="main_cont_1 active">
                 <div class="video">
                     <video src="../../assets/video/main.mp4" autoplay muted>
                         할리스 메인 동영상
                     </video>
                 </div>
-                <div class="cof_text">
+                <div class="cof_text" id="text">
                     커피의 즐거움을 만드는</div>
-                <div class="min_text">
+                <div class="min_text" id="text">
                     작은 차이의 미학
                 </div>
             </section>
@@ -144,6 +156,7 @@
             <a href=""><img src="" alt=""> </a>
             <a href=""><img src="" alt=""> </a>
         </div>
+        
         1
         2
         3
@@ -185,9 +198,23 @@
         COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
     </footer>
     <script>
-        // $(function () {
-
-        // })
+        $(function () {
+            /*글씨 위로 퍼트려지는 애니메이션*/
+            gsap.to('.cof_text',{
+            x:'20%',rotate:10,duration:0.85,scrollTrigger:{
+                trigger:'.cof_text',
+                scrub:true,
+                start:'top 40%'
+            }
+            })
+            gsap.to('.min_text',{
+            x:'-20%',rotate:-10,duration:0.85,scrollTrigger:{
+                trigger:'.min_text',
+                scrub:true,
+                start:'top 40%'
+            }
+            })
+        })
 
 
     </script>
