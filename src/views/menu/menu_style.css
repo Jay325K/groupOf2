@@ -1,0 +1,209 @@
+/* reset */
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+div,
+main,
+a,
+img,
+span,
+input,
+table,
+tr,
+th,
+td,
+button,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: 0;
+  background: initial;
+  cursor: pointer;
+}
+
+/* main */
+
+/* lnb */
+/* .lnb {
+  width: 240px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.lnb li {
+  width: 240px;
+}
+.lnb li :hover {
+  width: 240px;
+  color: #c72f30;
+} */
+
+/* menu content */
+.menu_content--wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu_content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.menu_category--wrap {
+  width: 1200px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.menu_category--wrap h3 {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.menu_category {
+  display: flex;
+  justify-content: space-around;
+}
+.menu_category--checkbox {
+  padding: 5px;
+  cursor: pointer;
+}
+.menu_category--checkbox:hover {
+  color: #999;
+}
+.menu_category li {
+  margin-right: 10px;
+}
+
+/* drink list */
+.menu_list--wrap {
+  width: 1200px;
+}
+.menu_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0;
+}
+.menu_list li {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.menu_list li:hover {
+  scale: 1.1;
+  color: #999;
+}
+.menu_list a {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_list span {
+  text-align: center;
+  word-wrap: break-word;
+}
+.menu_list img {
+  width: 250px;
+}
+
+.blank_item {
+  width: 250px;
+}
+
+/* menu modal */
+.menu_modal--wrap {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+.menu_modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  background: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.menu_modal--close_btn {
+  position: fixed;
+  top: -40px;
+  right: -40px;
+  font-size: 0px;
+}
+.menu_modal--close_btn img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu_modal--detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.menu_modal--detail p {
+  width: 500px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 5px;
+}
+.menu_modal--detail span {
+  margin-bottom: 10px;
+}
+.menu_modal--detail img {
+  width: 400px;
+}
+.menu_modal--nutritional p {
+  margin-bottom: 10px;
+}
+.menu_nutritional {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.menu_modal th,
+td {
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.display_none {
+  display: none;
+}
+
+.menu_page {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.menu_page span {
+  padding: 10px;
+  cursor: pointer;
+}
+.menu_page span:hover {
+  color: white;
+  background: #c72f30;
+}
