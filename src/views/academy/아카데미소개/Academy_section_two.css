@@ -10,7 +10,7 @@
 }
  /* 강사소개 제목글씨 */
 .container .sec_two .teacher_intro_wrap  h3{
-    font-size: 3em;
+    font-size: 3.5em;
     letter-spacing: -2px;
     border-bottom: 1px solid lightgray;
 }
@@ -76,7 +76,7 @@
 .sec_two .teacher_intro .teacher_detail_intro .say_it p{
     width: 70%;
     height: 100%;
-    font-size: 1.5em;
+    font-size: 2em;
 
     display: flex;
     align-items: center;
@@ -106,6 +106,7 @@
 .sec_two .teacher_intro .teacher_detail_intro .teacher_profile .info{
     width: 65%;
     padding: 20px;
+    font-size: 1.1em;
 }
 .sec_two .teacher_intro .teacher_detail_intro .teacher_profile .info ul{
     width: 100%;
@@ -172,7 +173,7 @@
     justify-content: center;
     align-items: center;
 
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 400;
 
     border-bottom: 1px solid gray;
@@ -187,6 +188,8 @@
     left: 36%;
 
     transform: translateX(-50%);
+
+    pointer-events: none;
 
     font-size: 1.5em;
     display: flex;
