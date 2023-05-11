@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+
+/* 임시reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ul,ul li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,a,p,td{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 1px solid;
+}
+.screen_out{
+    display: none;
+    text-indent: -99999999px;
+}

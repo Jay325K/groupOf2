@@ -1,0 +1,8 @@
+.sec_four{
+    width: 100%;
+}
+.sec_four .section_four_wrap{
+    width: 1200px;
+    margin: auto;
+    border: 1px solid;
+}
