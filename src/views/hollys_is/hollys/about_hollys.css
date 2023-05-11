@@ -50,11 +50,13 @@ body {
 }
 
 /* about content top */
-.about_content--sub_title {
+.about_content--sub_title--top {
+  color: #666;
   margin-bottom: 50px;
   font-size: 32px;
 }
-.about_content--sub_title span {
+.about_content--sub_title--top span {
+  color: black;
   font-weight: bold;
   font-size: 42px;
 }
@@ -70,10 +72,11 @@ body {
 .about_content--top_main p {
   font-size: 28px;
   font-weight: 700;
-  width: 400px;
+  width: 450px;
+  line-height: 1.5;
 }
 .about_content--top_main span {
-  text-decoration: underline #c72f30;
+  border-bottom: 5px solid #c72f30;
 }
 .about_content--top_detail {
   text-align: center;
@@ -83,6 +86,10 @@ body {
 /* about content mid */
 .about_content--mid {
   margin-bottom: 100px;
+}
+.about_content--sub_title {
+  margin-bottom: 50px;
+  font-size: 32px;
 }
 .about_content--mid_main {
   display: flex;
@@ -94,7 +101,7 @@ body {
   width: 400px;
 }
 .about_content--mid_main p {
-  width: 700px;
+  width: 750px;
 }
 .about_content--mid_main span {
   font-size: 28px;
@@ -128,7 +135,7 @@ body {
   margin-bottom: 50px;
 }
 .about_content--bottom_main p {
-  width: 700px;
+  width: 750px;
 }
 .about_content--bottom_main span {
   font-size: 28px;
@@ -146,7 +153,7 @@ body {
 }
 
 .about_content--bottom_sub p {
-  width: 700px;
+  width: 750px;
 }
 .about_content--bottom_sub span {
   font-size: 28px;

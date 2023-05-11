@@ -33,6 +33,10 @@ li {
   list-style: none;
 }
 
+/* font */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
 /* main */
 
 /* bi content */
@@ -41,33 +45,54 @@ li {
   margin: 0 auto;
   display: flex;
 }
+.bi_content {
+  width: 100%;
+}
 .bi_content h2 {
   font-size: 72px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+}
+.bi_sub--title {
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.bi_sub--title p {
+  font-size: 32px;
+  color: #4f4c4b;
+}
+.bi_sub--title h3 {
+  font-size: 60px;
+}
+.bi_download--btn a {
+  color: white;
+  padding: 10px 20px;
+  background: #c72f30;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.bi_border--bottom {
+  border-bottom: 5px solid #c72f30;
 }
 .bi_download {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 100px;
 }
-.bi_download--img {
-  display: flex;
-  justify-content: space-between;
+.bi_img {
+  height: 250px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  box-sizing: border-box;
 }
-.bi_download--img img {
-  width: 200px;
+.bi_img img {
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+  box-sizing: border-box;
 }
-.bi_download--img img:first-child {
-  margin-right: 90px;
-}
-.bi_download--btn {
-  padding: 5px 0 0 0;
-}
-.bi_download--btn a {
-  color: white;
-  padding: 5px 10px;
-  background: #c72f30;
-  border-radius: 5px;
+.bi_img img:first-child {
+  border-right: 1px solid black;
   box-sizing: border-box;
 }
 .bi_download--hollyscolor {
@@ -82,30 +107,35 @@ li {
   margin-bottom: 10px;
   text-align: center;
 }
-.bi_download--hollyscolor div {
-  width: 100px;
-  height: 100px;
+.bi_hollyscolor {
+  line-height: 1.6;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   background: #c72f30;
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: white;
   justify-content: center;
 }
-.bi_history {
+.bi_crown {
   margin-bottom: 100px;
 }
-.bi_history h3 {
-  margin-bottom: 20px;
+.bi_crown_content {
+  text-align: center;
 }
-.bi_history img {
+.bi_crown_content img {
   width: 700px;
-}
-.bi_crown {
   margin-bottom: 30px;
 }
-.bi_crown h3 {
-  margin-bottom: 20px;
+.bi_history {
+  margin-bottom: 50px;
 }
-.bi_crown img {
+.bi_history--img {
+  text-align: center;
+}
+.bi_history--img img {
   width: 700px;
 }

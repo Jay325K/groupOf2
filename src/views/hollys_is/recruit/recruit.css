@@ -1,0 +1,65 @@
+/* reset */
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+div,
+main,
+a,
+img,
+span,
+input,
+table,
+tr,
+th,
+td,
+button,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* font */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* main */
+
+/* about content */
+.recruit_content--wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.recruit_content h2 {
+  font-size: 72px;
+  margin-bottom: 100px;
+}
+
+.recruit_people--wrap h3 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.recruit_people {
+  display: flex;
+  text-align: center;
+}
+.recruit_people--content {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+}
