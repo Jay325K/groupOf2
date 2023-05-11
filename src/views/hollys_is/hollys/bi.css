@@ -1,5 +1,5 @@
 /* reset */
-body,
+/* body,
 ul,
 li,
 h1,
@@ -31,12 +31,10 @@ a {
 ul,
 li {
   list-style: none;
-}
+} */
 
 /* font */
-body {
-  font-family: "Noto Sans KR", sans-serif;
-}
+
 /* main */
 
 /* bi content */
