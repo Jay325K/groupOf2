@@ -20,18 +20,20 @@ main .container{
 
     width: 100%;
     min-width: 1200px;
-    height: 420px;
+    height: calc(100vh - 70px);
 
-    background: url(Academy_img_box/banner.png) no-repeat;
+    background: url(Academy_img_box/아카데미\ 소개.png) no-repeat;
     background-size: cover;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .container .banner_wrap .banner {
     position: relative;
     width: 1200px;
+    height: 200px;
 
     margin: auto;
     
@@ -49,19 +51,18 @@ main .container{
     position: relative;
 
     font-size: 3em;
-    
-    letter-spacing: 3px;
 
+    color: #fff;
 }
 .container .banner_wrap .banner .h2_deco{
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     content: '';
 
-    width: 340px;
-    height: 30px;
-    
-
+    width: 500px;
+    height: 3px;
     background: rgb(199, 47, 47);
     animation: animate 0.5s ease-in;
 }
@@ -86,29 +87,147 @@ main .container{
     padding-top: 80px;
     width: 100%;
 }
- /* 강사소개 글씨 */
-.container .sec_two .teacher_intro_wrap  h2{
-    font-size: 2em;
+ /* 강사소개 제목글씨 */
+.container .sec_two .teacher_intro_wrap  h3{
+    font-size: 3em;
     letter-spacing: -2px;
+    border-bottom: 1px solid lightgray;
 }
 .container .sec_two .teacher_intro_wrap  .teacher_intro{
+    position: relative;
     width: 100%;
-
+    height: 800px;
     padding: 20px;
-    border: 1px solid;
+    display: flex;
+}
+
+/* 자세한 강사소개 */
+.teacher_intro .teacher_detail_intro{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    border-bottom: 1px solid lightgray;
+}
+.teacher_intro .teacher_detail_intro::before{
+    position: absolute;
+    bottom: -1px;
+    left: calc(100% - 1px);
+    content: '';
+
+    width: 60%;
+    height: calc(50% - 1px);
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightslategray;
+
+}
+.teacher_intro .teacher_detail_intro .say_it{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border: 1px  lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.teacher_intro .teacher_detail_intro .say_it::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+
+    width: 20%;
+    height: 100%;
+
+    border-bottom: 1px solid lightslategray;
+
+}
+.teacher_intro .teacher_detail_intro .say_it img{
+    width: 22%;
+    height: 32%;
+}
+.teacher_intro .teacher_detail_intro .say_it img:nth-child(1){
+    transform: translateY(-30px);
+}
+.teacher_intro .teacher_detail_intro .say_it img:nth-last-child(1){
+    transform: translateY(30px);
+}
+.teacher_intro .teacher_detail_intro .say_it p{
+    width: 70%;
+    height: 100%;
+    font-size: 1.5em;
+
+    display: flex;
+    align-items: center;
+}
+
+/* 강사 프로필 */
+.teacher_intro .teacher_detail_intro .teacher_profile{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.teacher_intro .teacher_detail_intro .teacher_profile .show_teacher_img{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    border: 1px solid lightgray;
+    overflow: hidden;
+
+}
+.teacher_intro .teacher_detail_intro .teacher_profile .show_teacher_img img{
+    position: absolute;
+    left: -25%;
+    bottom: 0;
+    width: 150%;
+}
+
+.teacher_intro .teacher_detail_intro .teacher_profile .info{
+    width: 65%;
+    padding: 20px;
+}
+.teacher_intro .teacher_detail_intro .teacher_profile .info ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.teacher_intro .teacher_detail_intro .teacher_profile .info ul li{
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    border-bottom: 2px solid gray;
+    display: flex;
+} 
+.teacher_intro .teacher_detail_intro .teacher_profile .info ul li div:nth-child(1){
+    width: 20%;
+    margin-right: 10px;
 }
 /* 트레이너 카드 */
 .teacher_intro .card{
-    width: 100%;
+    width: 30%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .teacher_intro .card li{
+    width: 120px;
+    height: 200px;
+
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.teacher_intro .card li:hover{
+    border: 1px solid rgb(199, 47, 47);
+    box-shadow: 0 0 3px rgb(199, 47, 47);
+}
+.teacher_intro .card li a .teacher_info{
     position: relative;
-    width: 14%;
-    height: 300px;
-    border: 1px solid;
-    border-radius: 5px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 /* 트레이너 이미지 */
@@ -118,7 +237,6 @@ main .container{
     bottom: 0;
     width: 150%;
     height: 90%;
-    border: 1px solid;
 }
 /* 트레이너 이름 */
 .teacher_intro .card li .teacher_name{
@@ -133,22 +251,32 @@ main .container{
     justify-content: center;
     align-items: center;
 
-    letter-spacing: 1px;
-
+    font-size: 0.8em;
     font-weight: 400;
+
+    border-bottom: 1px solid gray;
+
+    color: black;
+}
+.teacher_intro .card .say_it{
+    width: 380px;
+    height: calc(50% - 20px);
+    position: absolute;
+    top: 20px;
+    left: 36%;
+
+    transform: translateX(-50%);
+
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+
+    transition: 0.3s;
 }
 
-/* 강사님 말씀 */
-.teacher_intro .teacher_say{
-    width: 
-    60%;
-    height: 300px;
-    margin: auto;
-    margin-top: 30px;
-    border: 1px solid;
+.card .say_it{
+    opacity: 0;
 }
-.teacher_intro .teacher_say .teacher_img{
-    width: 30%;
-    height: 100%;
-    border: 1px solid;
+.card .say_it.active{
+    opacity: 1;
 }
