@@ -5,7 +5,19 @@
     margin: 0;
     box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6,a,p,td{
+html::-webkit-scrollbar{
+    width: 5px;
+    
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background: rgb(199,47,47);
+    
+}
+html::-webkit-scrollbar-track{
+    background: rgba(199, 47, 47, 0.3);
+}
+h1,h2,h3,h4,h5,h6,a,p,td,span{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
