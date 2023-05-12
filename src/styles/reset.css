@@ -4,6 +4,10 @@
 	코딩하기 편한 값으로 변경
 */
 /*   *{ } = all elements   */
+html{
+  scroll-behavior: smooth;
+}
+
 body,
 h1,
 h2,
@@ -39,6 +43,7 @@ a {
   text-decoration: none;
 }
 ul,
+ol,
 li {
   list-style: none;
 }

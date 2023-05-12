@@ -1,7 +1,7 @@
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = {
         center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 4 // 지도의 확대 레벨
+        level: 3 // 지도의 확대 레벨
     };  
 
 // 지도를 생성합니다    
@@ -28,7 +28,11 @@ geocoder.addressSearch('서울특별시 종로구 삼일대로 395', function(re
 
         // 인포윈도우로 장소에 대한 설명을 표시합니다
         var infowindow = new kakao.maps.InfoWindow({
-            content: '<div id="marker_img" style="width:148px;text-align:center;padding:10px;font-size:0.8em; border:0;background:rgb(199,47,47);color:white">할리스에프앤비<br /> 커피아카데미</div>'
+            content: '<div id="marker_img" style="position:relative; text-align:center; padding:10px; font-size:1em; border:2px solid salmon; border-radius:50px; background:rgb(199,47,47);color:white">할리스에프앤비 커피아카데미</div>'
+        });
+        $(function(){
+            $('#marker_img').parent().css({'border':'0', 'background':'0'});
+            $('#marker_img').parent().parent().css({'border':'0', 'background':'0'});
         });
         infowindow.open(map, marker);
 
