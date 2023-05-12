@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 임시reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ul,li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,a,p,td{
+    font-family: 'MICEGothic Bold';
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+a:hover{
+    text-decoration: underline;
+}
+.screen_out{
+    display: none;
+}
+.Store_table{
+    height: 465px;
+    overflow: auto;
+}
+
+/* *************************************************** */
+header{
+    width: 100%;
+    min-width: 940px;
+    margin: auto;
+    height: 148px;
+    border: 1px solid;
+}
+table{
+    border-top: black;
+    border-bottom: black;
+    border-collapse: collapse;
+    overflow: auto;
+}
+td,th{
+    padding: 10px 5px;
+    width: 30px;
+    text-align: center;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 0.8em;
+}
+/*********** main ***********/
+main{
+    width: 100%;
+}
+/* lnb */
+/* main .sec_one{
+    width: 220px;
+    padding-right: 20px;
+    transform: translateX(200px);
+    transition: 0.5s;
+}
+main .sec_one.active{
+    transform: translateX(0px);
+    transition: 0.5s;
+} */
+/* 매장검색 */
+/* main .sec_one .sec_one_wrap>h2{
+    font-size: 1.44em;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+main .sec_one .sec_one_wrap>h2 a{
+    color: rgb(199, 47, 48);
+} */
+
+/* event */
+/* main .sec_one .sec_one_wrap .event h2 {
+    font-size: 1em ;
+    letter-spacing: -1px;
+    padding-bottom: 3px;
+}
+main .sec_one .sec_one_wrap .event h2 a{
+    color: rgb(80, 80, 80);
+}
+main .sec_one .sec_one_wrap .event p{
+    font-size: 0.8em ;
+    letter-spacing: -1px;
+} */
+
+/* img_box */
+/* main .sec_one .sec_one_wrap .event .img_box{
+    width: 190px;
+}
+main .sec_one .sec_one_wrap .event .img_box a{
+    display: block;
+    width: 100%;
+    padding: 30px 10px 30px 0;
+}
+main .sec_one .sec_one_wrap .event .img_box a img{
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+} */
+main .section_wrap{
+    position: relative;
+    width: 1200px;
+    height: 120vh;
+    margin: auto;
+    display: flex;
+    border: 1px solid blue;
+}
+
+
+/************** sec_two *************/
+main .section_wrap .sec_two{
+    position: relative;
+    width: 700px;
+    min-height: 100vh;
+    transform: translateX(250px);
+    transition: 0.5s;
+    z-index: 1;
+    background: white;
+}
+main .section_wrap .sec_two.active{
+    transform: translateX(0);
+    transition: 0.5s;
+}
+/* 경로 */
+main .section_wrap .sec_two .path{
+    width: 100%;
+    font-size: 0.75em;
+    color: rgb(94, 94, 94);
+    padding: 15px 0;
+}
+
+/* 매장검색 */
+main .section_wrap .sec_two .h2_wrap{
+    width: 100%;
+    font-size: 1.5em;
+    padding: 5px 0;
+    margin-bottom: 70px;
+    letter-spacing: -2px;
+}
+
+/* sec_two, sec_three 묶음 */
+main .section_wrap .sec_two .search__search_table_wrap{
+    position: absolute;
+    width: 100%;
+    top: 140px;
+}
+
+
+/* 매장 검색했을때 위치와 검색하는 곳 */
+main .section_wrap .sec_two .search_wrap{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+/* 지도 사이즈 */
+main .section_wrap .sec_two .search_wrap .map{
+    position: relative;
+    width: 100%;
+    height: 430px;
+    z-index: 0;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+
+/* 매장 검색하는곳 */
+main .section_wrap .sec_two .search_wrap .search_Store{
+    position: absolute;
+    top: 50%;
+    right: -30%;
+    transform: translateY(-50%) translateX(0px);
+    width: 30%;
+    height: 300px;
+    transition: 0.5s;
+    animation: load_end_animate 0.5s 1 alternate ease-in-out;
+    animation-delay: 1s;
+}
+@keyframes load_end_animate {
+    0%,100%{
+        transform: translateY(-50%) translateX(0px);
+    }
+    50%{
+        transform: translate(-50px,-50%);
+    }
+}
+main .section_wrap .sec_two .search_wrap .search_Store.active{
+    transform: translateY(-50%) translateX(-5px);
+    right: 0;
+    transition: 0.5s;
+}
+/* 매장 검색하는곳 열고 닫는곳 */
+main .section_wrap .sec_two .search_wrap .search_Store .open_close{
+    position: absolute;
+    background: rgb(199, 47, 47);
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+    width:20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+    left: -21px;
+}
+/* 매장명, 매장주소로 찾기 */
+main .section_wrap .sec_two .search_Store .search_Store_wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/************* 매장검색 버튼 ************/
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_button_wrap{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    font-size: 0.8em;
+    background: rgb(199, 47, 47);
+}
+/* 매장검색 버튼에 관한 내용들 */
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label{
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height: calc(100% - 42px);
+}
+/* 매장찾기, 지역검색 */
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label .input_label_detail,
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label .input_label_locate_search{
+    width: 100%;
+    position: absolute;
+    background: rgb(199, 47, 47);
+}
+/* 매장찾기 */
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label h4{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label p{
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+    padding: 20px 5px;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label input{
+    width: 100%;
+    padding: 5px;
+}
+/* 검색버튼 및 설명 */
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label form{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label a{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    border: 0;
+    padding: 2px;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label{
+    display: none;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label .input_label_detail h4{
+    color: white;
+}
+/* 지역검색 스크롤바 */
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label::-webkit-scrollbar{
+    width: 2px;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label::-webkit-scrollbar-thumb{
+    background-color: rgb(199, 47, 47);
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label .input_label_detail{
+    background: rgb(199, 47, 47); 
+}
+
+
+/************ 지역검색 ***************/
+/* 지역검색 버튼 */
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_button_wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 0.8em;
+    background: rgb(199, 48, 48);
+}
+
+/* 지역검색 버튼 누를시 나타나는 지역들 */
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label{
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height: calc(100% - 42px);
+    overflow: auto;
+
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label h4{
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label ul li:hover{
+    transition: 0.1s;
+    background: rgb(199, 47, 48);
+}
+main .section_wrap .sec_two .search_Store .locate_Store_input_label>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label>ul>li{
+    width: 47.8%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 2px;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+}
+
+/* 매장 리스트 설명 */
+main .section_wrap .sec_two .Store_table_wrap{
+    margin-top: 30px;
+}
+main .section_wrap .sec_two .Store_table_wrap p{
+    position: relative;
+    color: gray;
+}
+/* 매장 리스트 */
+main .section_wrap .sec_two .Store_table table{
+    position: relative;
+    border: 1px solid;
+    width: 100%;
+}
+main .section_wrap .sec_two .Store_table::-webkit-scrollbar{
+    width: 1px;
+}
+main .section_wrap .sec_two .Store_table::-webkit-scrollbar-thumb{
+    background-color: rgb(199, 47, 47);
+}
+
+/*************** section_three ***************/
+main .section_wrap .sec_three{
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 450px;
+    overflow: hidden;
+    transform: translateX(-250px);
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+main .section_wrap .sec_three.active{
+    transform: translateX(0px);
+    transition: 0.5s;
+    
+}
+main .section_wrap .sec_three .sec_three_wrap{
+    position: relative;
+    padding-bottom: 50px;
+    width: 100%;
+    border: 1px solid;
+}
+main .section_wrap .sec_three .sec_three_img_box{
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 40px ;
+}
+main .section_wrap .sec_three .sec_three_img_box>img{
+    position: relative;
+    top: 45px;
+    width: 100%;
+    height: 250px;
+    border: 1px solid lightgray;
+}
+main .section_wrap .sec_three .sec_three_img_box .sub_img_box{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+main .section_wrap .sec_three .sec_three_img_box .sub_img_box a{
+    width: 100%;
+    height: 100%;
+}
+main .section_wrap .sec_three .sec_three_img_box .sub_img_box a img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+}
+
+/* 매장 정보 */
+main .section_wrap .sec_three .Store_introduce{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin: auto;
+    margin-top: 50px;
+}
+main .section_wrap .sec_three .sec_three_wrap h3,
+main .section_wrap .sec_three .sec_three_wrap h2{
+    text-align: center;
+    padding: 10px;
+}
+main .section_wrap .sec_three .Store_introduce ul{
+    margin-top: 5px;
+}
+main .section_wrap .sec_three .Store_introduce ul li{
+    padding: 10px 0;
+    display: flex;
+}
+main .section_wrap .sec_three .Store_introduce ul li b{
+    width: 27%;
+    font-size: 0.8em;
+}
+main .section_wrap .sec_three .Store_introduce ul li div{
+    font-size: 0.8em;
+}
+main .section_wrap .sec_three .print_box{
+    width: 80%;
+    margin: auto;
+}
+
+/* 닫기버튼 */
+main .section_wrap .sec_three .sec_three_wrap>button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 8px;
+    font-size: 1.3em;
+    background: none;
+    border: 1px solid rgba(128, 128, 128, 0.562);
+    cursor: pointer;
+    border-radius: 5px;
+}
+main .section_wrap .sec_three .sec_three_wrap>button:active{
+    background: rgb(199, 47, 47);
+    color: white;
+}
+
+/*********************footer*******************/
+footer{
+    width: 100%;
+    height: 300px;
+    border: 1px solid;
+}

@@ -1,0 +1,36 @@
+body {
+  font-size: 16px;
+}
+/* about content */
+.recruit_content--wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.recruit_content h2 {
+  font-size: 72px;
+  margin-bottom: 100px;
+}
+
+.recruit_people--wrap h3 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.recruit_people {
+  display: flex;
+  text-align: center;
+}
+.recruit_people--content {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+.recruit_people--main {
+  height: 250px;
+  line-height: 1.8;
+}
+.recruit_people--main img {
+  width: 100px;
+  margin-bottom: 30px;
+}

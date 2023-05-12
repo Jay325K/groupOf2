@@ -4,23 +4,46 @@
 	코딩하기 편한 값으로 변경
 */
 /*   *{ } = all elements   */
-body, h1, h2, h3, p, div, ul, li, dl, dt, dd, form, fieldset, input, button{
-	margin:0;
-	padding:0
+body,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+span,
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+tr,
+th,
+td,
+table,
+form,
+fieldset,
+input,
+button {
+  margin: 0;
+  padding: 0;
 }
-body, input{
-	font-size:13px;
-	font-family: 'Noto Sans KR', sans-serif;
+body,
+input {
+  font-size: 13px;
+  font-family: "Noto Sans KR", sans-serif;
 }
-a{
-	color:#000; /* inherit */
-	text-decoration:none
+a {
+  color: #000; /* inherit */
+  text-decoration: none;
 }
-ul, li{
-	list-style:none
+ul,
+li {
+  list-style: none;
 }
-address{
-	font-style: normal
+address {
+  font-style: normal;
 }
 img {
 	border: 0;
@@ -30,29 +53,28 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-fieldset{
-	border: 0 none;
+fieldset {
+  border: 0 none;
 }
-input, button{
-	vertical-align: middle;
+input,
+button {
+  vertical-align: middle;
 }
-button{
-	cursor: pointer;
+button {
+  cursor: pointer;
 }
 video {
-	display: block;
-	max-width: 120%;
-	height: auto;
-  }
-  
+  display: block;
+  max-width: 120%;
+  height: auto;
+}
 
 /* 공통 클래스 */
 .screen_out {
-    overflow: hidden;
-    position: absolute;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
 }
-

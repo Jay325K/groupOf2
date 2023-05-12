@@ -1,0 +1,152 @@
+header{
+    width: 100%;
+    min-width: 940px;
+    margin: auto;
+    height: 70px;
+    border: 1px solid;
+}
+/*********** main ***********/
+main{
+    width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/************** sec_two *************/
+main .sec_two{
+    position: relative;
+    width: 1200px;
+    transition: 0.5s;
+    z-index: 1;
+    background: white;
+}
+main .sec_two .page_intro{
+    width: 100%;
+    margin-bottom: 30px;
+}
+main .sec_two .page_intro .page_path{
+    font-size: 0.75em;
+    color: gray;
+    padding: 15px 0;
+
+}
+main .sec_two .page_intro h2{
+    font-size: 2.2em;
+    padding: 5px 0;
+    letter-spacing: -2px;
+}
+
+/* 시설관련 */
+main .sec_two .space_wrap{
+    display: flex;
+    width: 100%;
+    height: 460px;
+}
+
+/* 이미지 모음 */
+main .sec_two .space_wrap .space_menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+main .sec_two .space_wrap .space_menu li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+main .sec_two .space_wrap .space_menu li>a{
+    position: relative;
+
+    width: 28%;
+    height: 50%;
+
+    border: 1px solid lightgray;
+    border-right: 0;
+
+    color: gray;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+main .sec_two .space_wrap .space_menu li>a::before{
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    right: 0px;
+    
+    width: 20px;
+    height: 18px;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    
+}
+main .sec_two .space_wrap .space_menu li>a:hover{
+    border: 1px solid gray;
+    border-right: 0;
+
+    background: rgb(199, 47, 47);
+    color: white;
+}
+/* 각각의 이미지 */
+main .sec_two .space_wrap .space_menu .space_img_wrap{
+    width: 70%;
+    left: 50%;
+    bottom: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+    animation: animate 0.5s ease-in-out;
+    
+}
+
+main .sec_two .space_wrap .space_menu .space_img_wrap a{
+
+    text-decoration: none;
+}
+main .sec_two .space_wrap .space_menu .space_img_wrap a:hover{
+    border: 0;
+}
+main .sec_two .space_wrap .space_menu .space_img_wrap a:hover img{
+    box-shadow: 0 0 3px black;
+}
+
+
+/* 큰이미지 */
+main .sec_two .space_wrap .space_main_img{
+    border: 1px solid lightgray;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+main .sec_two .space_wrap .space_main_img p{
+    padding: 30px 0;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+
+main .sec_two .space_wrap .space_main_img img{
+    width: 95%;
+    height: 80%;
+}
+/*********************footer*******************/
+footer{
+    width: 100%;
+    height: 300px;
+    
+    border: 1px solid;
+}
+
+
