@@ -23,7 +23,12 @@ address{
 	font-style: normal
 }
 img {
-	border: 0 none
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
 }
 fieldset{
 	border: 0 none;
