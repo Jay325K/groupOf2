@@ -1,0 +1,30 @@
+body {
+  font-size: 16px;
+}
+/* main */
+
+/* about content */
+.consulting_content--wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.consulting_title {
+  font-size: 72px;
+  margin-bottom: 50px;
+}
+.consulting_title--txt {
+  color: #4f4c4b;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.consulting_sub--title {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.consulting_main--img {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.consulting_process--img img {
+  width: 1000px;
+}
