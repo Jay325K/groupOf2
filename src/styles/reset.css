@@ -4,7 +4,7 @@
 	코딩하기 편한 값으로 변경
 */
 /*   *{ } = all elements   */
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -51,12 +51,12 @@ address {
   font-style: normal;
 }
 img {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: middle;
-	max-width: 100%;
-	height: auto;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
 fieldset {
   border: 0 none;

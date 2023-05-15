@@ -1,0 +1,13 @@
+body {
+  font-size: 16px;
+}
+
+/* my info content */
+.my_info--content_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.my_info--content_wrap h2 {
+  font-size: 72px;
+  margin-bottom: 100px;
+}

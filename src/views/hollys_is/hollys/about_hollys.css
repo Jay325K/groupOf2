@@ -1,42 +1,115 @@
-/* reset */
-body,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-section,
-div,
-main,
-a,
-img,
-span,
-input,
-table,
-tr,
-th,
-td,
-button,
-p {
-  margin: 0;
-  padding: 0;
+body {
+  font-size: 16px;
 }
 a {
-  text-decoration: none;
   color: inherit;
 }
-ul,
-li {
-  list-style: none;
+
+/* banner */
+.hollys_is--banner_wrap {
+  margin-bottom: 100px;
 }
-/* font */
-body {
-  font-family: "Noto Sans KR", sans-serif;
+.hollys_is--banner {
+  color: white;
+  height: 100vh;
+  background: url("../../../assets/images/hollysis/about_hollys_banner.jpg")
+    no-repeat;
+  background-size: cover;
+}
+.hollys_is--lnb--wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.hollys_is--lnb {
+  height: 200px;
+}
+.lnb_title--wrap {
+  margin-bottom: 45px;
+}
+.lnb_title {
+  color: white;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.lnb_title--under {
+  width: 700px;
+  height: 3px;
+  background: #c72f30;
+  animation: animate 0.5s ease-in;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  30% {
+    width: 350px;
+  }
+  50% {
+    width: 500px;
+  }
+  100% {
+    width: 650px;
+  }
+}
+.lnb_list--wrap {
+  display: flex;
+  justify-content: center;
+}
+.lnb_list {
+  display: flex;
+}
+.lnb_list > li > a {
+  font-weight: 800;
+  padding: 10px 50px;
+  margin-right: 10px;
+  background: rgba(128, 128, 128, 0.39);
+  transition: 0.3s;
+}
+.lnb_list > li > a:hover {
+  background: #c72f30;
+}
+.lnb_list--hollys,
+.lnb_list--b2b {
+  font-weight: 500;
+  font-size: 14px;
+  width: 144px;
+  height: 60px;
+  margin-top: 10px;
+  background: #00000073;
+  text-align: center;
+  animation-name: drop;
+  animation-duration: 0.15s;
+}
+@keyframes drop {
+  0% {
+    height: 0;
+  }
+}
+.lnb_list--b2b {
+  width: 161px;
+  height: 80px;
+}
+.lnb_list--hollys a,
+.lnb_list--b2b a {
+  display: block;
+  width: 100%;
+}
+.lnb_list--hollys a:hover,
+.lnb_list--b2b a:hover {
+  background: #666;
+}
+.hollys_is--banner .hollys_red {
+  background: #c72f30;
 }
 
+/* display none */
+.display_none {
+  display: none;
+}
 /* main */
 
 /* about content */
@@ -44,25 +117,20 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.about_content h2 {
-  font-size: 72px;
-  margin-bottom: 100px;
+.about_content--top {
+  margin-bottom: 200px;
 }
-
-/* about content top */
-.about_content--sub_title--top {
+.about_sub--title_top {
   color: #666;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 32px;
 }
-.about_content--sub_title--top span {
+.about_sub--title_top span {
   color: black;
   font-weight: bold;
-  font-size: 42px;
+  font-size: 40px;
 }
-.about_content--top {
-  margin-bottom: 100px;
-}
+
 .about_content--top_main {
   display: flex;
   justify-content: space-between;
@@ -85,10 +153,10 @@ body {
 
 /* about content mid */
 .about_content--mid {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
-.about_content--sub_title {
-  margin-bottom: 50px;
+.about_sub--title {
+  margin-bottom: 30px;
   font-size: 32px;
 }
 .about_content--mid_main {
@@ -123,6 +191,10 @@ body {
   padding: 2px 5px;
   border-radius: 5px;
   box-sizing: border-box;
+}
+.about_content--mid_sub--academy a:hover {
+  color: black;
+  background: rgba(128, 128, 128, 0.39);
 }
 .about_content--mid_sub p:last-child {
   color: #c72f30;

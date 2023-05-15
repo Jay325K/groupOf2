@@ -1,38 +1,116 @@
-/* reset */
-body,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-section,
-div,
-main,
-a,
-img,
-span,
-input,
-table,
-tr,
-th,
-td,
-button,
-p {
-  margin: 0;
-  padding: 0;
+body {
+  font-size: 16px;
 }
 a {
-  text-decoration: none;
   color: inherit;
 }
-ul,
-li {
-  list-style: none;
+
+/* banner */
+.hollys_is--banner_wrap {
+  margin-bottom: 100px;
+}
+.hollys_is--banner {
+  color: white;
+  height: 100vh;
+  background: url("../../../assets/images/hollysis/history_banner.jpg")
+    no-repeat;
+  background-position-y: 75%;
+  background-size: cover;
+}
+.hollys_is--lnb--wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.hollys_is--lnb {
+  height: 200px;
+}
+.lnb_title--wrap {
+  margin-bottom: 45px;
+}
+.lnb_title {
+  color: white;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.lnb_title--under {
+  width: 700px;
+  height: 3px;
+  background: #c72f30;
+  animation: animate 0.5s ease-in;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  30% {
+    width: 350px;
+  }
+  50% {
+    width: 500px;
+  }
+  100% {
+    width: 650px;
+  }
+}
+.lnb_list--wrap {
+  display: flex;
+  justify-content: center;
+}
+.lnb_list {
+  display: flex;
+}
+.lnb_list > li > a {
+  font-weight: 800;
+  padding: 10px 50px;
+  margin-right: 10px;
+  background: rgba(128, 128, 128, 0.39);
+  transition: 0.3s;
+}
+.lnb_list > li > a:hover {
+  background: #c72f30;
+}
+.lnb_list--hollys,
+.lnb_list--b2b {
+  font-weight: 500;
+  font-size: 14px;
+  width: 144px;
+  height: 60px;
+  margin-top: 10px;
+  background: #00000073;
+  text-align: center;
+  animation-name: drop;
+  animation-duration: 0.15s;
+}
+@keyframes drop {
+  0% {
+    height: 0;
+  }
+}
+.lnb_list--b2b {
+  width: 161px;
+  height: 80px;
+}
+.lnb_list--hollys a,
+.lnb_list--b2b a {
+  display: block;
+  width: 100%;
+}
+.lnb_list--hollys a:hover,
+.lnb_list--b2b a:hover {
+  background: #666;
+}
+.hollys_is--banner .hollys_red {
+  background: #c72f30;
 }
 
+/* display none */
+.display_none {
+  display: none;
+}
 /* main */
 
 /* lnb */
