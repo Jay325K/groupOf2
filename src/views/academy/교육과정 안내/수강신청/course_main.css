@@ -67,19 +67,24 @@ main .sec_two .my_info form fieldset .text_wrap .info_wrap{
     line-height: 30px;
 }
 
+main .sec_two .my_info form fieldset .text_wrap .info_wrap .info_left_justified{
+    width: 80%;
+    margin: auto;
+}
+
 /* 중앙에 정렬할 텍스트들 */
-main .sec_two .my_info form fieldset .text_wrap .info_wrap .center{
-    text-align: center;
+main .sec_two .my_info form fieldset .text_wrap .info_left_justified .center{
     font-size: 1.2em;
     color: rgb(199,47,48);
     padding-top: 50px;
 }
 
 /* 움직일부분 */
-main .sec_two .my_info form fieldset .text_wrap .info_wrap .move{
-    text-align: center;
+main .sec_two .my_info form fieldset .text_wrap .info_left_justified .move{
+    padding-top: 20px;
+    padding-left: 70px;
 }
-main .sec_two .my_info form fieldset .text_wrap .info_wrap .move p{
+main .sec_two .my_info form fieldset .text_wrap .info_left_justified .move p{
     font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif;
     font-size: 0.9em;
     letter-spacing: -1px;

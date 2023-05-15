@@ -1,0 +1,177 @@
+.planner_plan_wrap{
+    width: 100%;
+    display: flex;
+}
+
+/*********************planner**************************/
+
+/* 달력 */
+main .sec_two .planner_plan_wrap .planner_wrap{
+    width: 60%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+/* 달 */
+.planner_wrap .planner .year_month{
+    position: relative;
+}
+.planner_wrap .planner .year_month .month{
+    width: 100%;
+    font-size: 5em;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planner_wrap .planner .year_month .month a{
+    position: relative;
+    top: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.planner_wrap .planner .year_month .month a:hover,
+.planner_wrap .planner .year_month .year a:hover
+{
+    border: 0;
+    text-shadow: 0 0 3px black;
+}
+.planner_wrap .planner .year_month .month span{
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+/* 년 */
+.planner_wrap .planner .year_month .year{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+/* 요일 */
+.planner_wrap .planner .date__days .days ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.planner_wrap .planner .date__days .days ul li{
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* 일 */
+.planner_wrap .planner .date__days .date table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.planner_wrap .planner .date__days .date td{
+    position: relative;
+    height: 91px;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+}
+.planner_wrap .planner .date__days .date td:hover{
+    background: rgb(248, 248, 248);
+}
+.planner_wrap .planner .date__days .date td:nth-child(1){
+    border-left: 1px solid white;
+}
+.planner_wrap .planner .date__days .date td:nth-last-child(1){
+    border-right: 1px solid white;
+}
+.planner_wrap .planner .date__days .date td span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.85em;
+    letter-spacing: -2px;
+    color: rgb(83, 83, 83);
+    font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
+}
+
+
+/**************************plan****************************/
+main .sec_two .plan_wrap{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    border: 1px sol;
+}
+main .sec_two .plan_wrap .plan{
+    width: 100%;
+}
+main .sec_two .plan_wrap .plan a{
+    position: relative;
+    padding: 10px 0 0 20px;
+    width: 100%;
+    color: rgb(199, 47, 48);
+    display: flex;
+    font-size: 0.8em;
+    align-items: end;
+}
+main .sec_two .plan_wrap .plan a:hover{
+    text-decoration: underline;
+    border: 0;
+}
+main .sec_two .plan_wrap .plan a::before{
+    position: absolute;
+    content: '';
+    left: 4px;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    background: rgb(199, 47, 48);
+}
+main .sec_two .plan_wrap .plan .plan_accordion{
+    height: 0;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    overflow: hidden;
+}
+main .sec_two .plan_wrap .plan .plan_accordion.active{
+    height: 100%;
+}
+main .sec_two .plan_wrap .plan .plan_accordion table{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.plan_accordion tr{
+    display: flex;
+}
+.plan_accordion td,
+.plan_accordion th{
+    width: 50%;
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 1px solid lightgray;
+    
+}
+.plan_accordion td{
+    
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    color: rgb(131, 131, 131);
+    font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
+}
+.plan_accordion td span{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.plan_accordion td:nth-last-child(1),
+.plan_accordion th:nth-last-child(1){
+    width: 100%;
+}
