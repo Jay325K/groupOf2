@@ -1,0 +1,63 @@
+body {
+  font-size: 16px;
+}
+/* main */
+
+/* about content */
+.office_coffee--service_content--wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.office_coffee--service_title {
+  font-size: 72px;
+  margin-bottom: 50px;
+}
+.office_coffee--service_title--content {
+  font-size: 24px;
+  color: #4f4c4b;
+  margin-bottom: 100px;
+}
+.office_coffee--service_sub--title {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.office_coffee--service_cont {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.office_coffee--service_detail {
+  width: 500px;
+  text-align: center;
+}
+.office_coffee--service_detail:nth-child(2) {
+  margin-left: 100px;
+}
+.office_coffee--service_rental--img {
+  margin-bottom: 30px;
+}
+.office_coffee--service_img img {
+  width: 350px;
+}
+.office_coffee--service_txt {
+  width: 350px;
+  margin: 0 auto;
+  color: #4f4c4b;
+}
+.office_coffee--service_txt p:first-child {
+  color: black;
+  font-weight: 600;
+}
+.office_coffee--service_catering--img {
+  margin-bottom: 30px;
+}
+.office_coffee--service_catering--img img {
+  width: 500px;
+}
+.office_coffee--service_caterging--txt p {
+  color: #4f4c4b;
+  margin-bottom: 30px;
+}
+.office_coffee--service_caterging--txt ul {
+  color: black;
+}

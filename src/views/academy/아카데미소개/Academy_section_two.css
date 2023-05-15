@@ -1,0 +1,203 @@
+/************************section_two*************************/
+.container .sec_two{
+    width: 1200px;
+    margin: auto;
+}
+.container .sec_two .teacher_intro_wrap{
+    width: 1200px;
+    margin:20px 0;
+    padding: 80px 0;
+}
+ /* 강사소개 제목글씨 */
+.container .sec_two .teacher_intro_wrap  h3{
+    font-size: 3.5em;
+    letter-spacing: -2px;
+    border-bottom: 1px solid lightgray;
+}
+.container .sec_two .teacher_intro_wrap  .teacher_intro{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+    display: flex;
+}
+
+/* 자세한 강사소개 */
+.sec_two .teacher_intro .teacher_detail_intro{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    border-bottom: 1px solid lightgray;
+}
+.sec_two .teacher_intro .teacher_detail_intro::before{
+    position: absolute;
+    bottom: -1px;
+    left: calc(100% - 1px);
+    content: '';
+
+    width: 60%;
+    height: calc(50% - 1px);
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightslategray;
+
+}
+.sec_two .teacher_intro .teacher_detail_intro .say_it{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border: 1px  lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec_two .teacher_intro .teacher_detail_intro .say_it::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+
+    width: 20%;
+    height: 100%;
+
+    border-bottom: 1px solid lightslategray;
+
+}
+.sec_two .teacher_intro .teacher_detail_intro .say_it img{
+    width: 22%;
+    height: 32%;
+}
+.sec_two .teacher_intro .teacher_detail_intro .say_it img:nth-child(1){
+    transform: translateY(-30px);
+}
+.sec_two .teacher_intro .teacher_detail_intro .say_it img:nth-last-child(1){
+    transform: translateY(30px);
+}
+.sec_two .teacher_intro .teacher_detail_intro .say_it p{
+    width: 70%;
+    height: 100%;
+    font-size: 2em;
+
+    display: flex;
+    align-items: center;
+}
+
+/* 강사 프로필 */
+.sec_two .teacher_intro .teacher_detail_intro .teacher_profile{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.sec_two .teacher_intro .teacher_detail_intro .teacher_profile .show_teacher_img{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    border: 1px solid lightgray;
+    overflow: hidden;
+
+}
+.sec_two .teacher_intro .teacher_detail_intro .teacher_profile .show_teacher_img img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.sec_two .teacher_intro .teacher_detail_intro .teacher_profile .info{
+    width: 65%;
+    padding: 20px;
+    font-size: 1.1em;
+}
+.sec_two .teacher_intro .teacher_detail_intro .teacher_profile .info ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec_two .teacher_intro .teacher_detail_intro .teacher_profile .info ul li{
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    border-bottom: 2px solid gray;
+    display: flex;
+} 
+.sec_two .teacher_intro .teacher_detail_intro .teacher_profile .info ul li div:nth-child(1){
+    width: 20%;
+    margin-right: 10px;
+}
+/* 트레이너 카드 */
+.sec_two .teacher_intro .card{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sec_two .teacher_intro .card li{
+    width: 120px;
+    height: 200px;
+
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.sec_two .teacher_intro .card li:hover{
+    border: 1px solid rgb(199, 47, 47);
+    box-shadow: 0 0 3px rgb(199, 47, 47);
+}
+.sec_two .teacher_intro .card li a .teacher_info{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* 트레이너 이미지 */
+.sec_two .teacher_intro .card li img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* 트레이너 이름 */
+.sec_two .teacher_intro .card li .teacher_name{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1em;
+    font-weight: 400;
+
+    border-bottom: 1px solid gray;
+
+    color: black;
+}
+.sec_two .teacher_intro .card .say_it{
+    width: 380px;
+    height: calc(50% - 20px);
+    position: absolute;
+    top: 20px;
+    left: 36%;
+
+    transform: translateX(-50%);
+
+    pointer-events: none;
+
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.card .say_it{
+    opacity: 0;
+}
+.card .say_it.active{
+    opacity: 1;
+}
