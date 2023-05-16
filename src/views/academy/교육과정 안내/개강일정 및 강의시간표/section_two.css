@@ -1,15 +1,55 @@
+/* 개강일정 관련 */
+/************** sec_two *************/
+main .sec_two{
+    position: relative;
+    width: 1200px;
+    
+    background: white;
+
+    transition: 0.5s;
+    padding: 0 10px;
+    margin: auto;
+}
+main .sec_two .sec_two_container{
+    margin-top: 20px;
+    padding-top: 80px;
+}
+
+main .sec_two .page_intro{
+    width: 100%;
+    
+}
+main .sec_two .page_intro .page_path{
+    font-size: 0.75em;
+    color: gray;
+    padding: 15px 0;
+}
+main .sec_two .page_intro h2{
+    font-size: 2.2em;
+    padding: 5px 0;
+    letter-spacing: -2px;
+}
+
+
+
 .planner_plan_wrap{
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    
+    padding-top: 20px;
+    margin-top: 50px;
 }
 
 /*********************planner**************************/
 
 /* 달력 */
 main .sec_two .planner_plan_wrap .planner_wrap{
-    width: 60%;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    width: 55%;
+    border-top: 1px solid gray;
+    border-right: 1px solid lightgray;
+    padding: 20px 50px;
+    font-size: 1.2em;
 }
 
 /* 달 */
@@ -18,7 +58,7 @@ main .sec_two .planner_plan_wrap .planner_wrap{
 }
 .planner_wrap .planner .year_month .month{
     width: 100%;
-    font-size: 5em;
+    font-size: 3em;
     border-bottom: 1px solid gray;
     display: flex;
     justify-content: center;
@@ -47,7 +87,7 @@ main .sec_two .planner_plan_wrap .planner_wrap{
     position: absolute;
     left: 20px;
     bottom: 20px;
-    width: 100%;
+    width: 30%;
     font-size: 1.2em;
 }
 
@@ -70,8 +110,9 @@ main .sec_two .planner_plan_wrap .planner_wrap{
 }
 .planner_wrap .planner .date__days .date td{
     position: relative;
-    height: 91px;
+    height: 120px;
     border: 1px solid rgba(128, 128, 128, 0.342);
+    font-size: 1.2em;
 }
 .planner_wrap .planner .date__days .date td:hover{
     background: rgb(248, 248, 248);
@@ -86,27 +127,50 @@ main .sec_two .planner_plan_wrap .planner_wrap{
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 0.85em;
+    font-size: 1em;
     letter-spacing: -2px;
     color: rgb(83, 83, 83);
     font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
+}
+.planner_wrap .planner .date__days .date td a{
+    font-size: 0.88em;
+    letter-spacing: -1px;
+    font-size: 700;
 }
 
 
 /**************************plan****************************/
 main .sec_two .plan_wrap{
+    position: relative;
+    top: 0;
     width: 35%;
     display: flex;
     justify-content: center;
-    border: 1px sol;
+    flex-direction: column;
+    padding: 50px;
+    border-top: 1px solid gray;
+    font-size: 1.2em;
+}
+main .sec_two .plan_wrap h3{
+    height: 10%;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 10px;
+}
+main .sec_two .plan_wrap{
+    height: 100%;
 }
 main .sec_two .plan_wrap .plan{
+    position: relative;
     width: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 5px 0;
 }
 main .sec_two .plan_wrap .plan a{
     position: relative;
     padding: 10px 0 0 20px;
-    width: 100%;
+    width: 90%;
     color: rgb(199, 47, 48);
     display: flex;
     font-size: 0.8em;
@@ -126,11 +190,17 @@ main .sec_two .plan_wrap .plan a::before{
     height: 3px;
     background: rgb(199, 47, 48);
 }
+main .sec_two .plan_wrap .plan li{
+    border-bottom: 1px solid lightgray;
+}
+main .sec_two .plan_wrap .plan li:nth-last-child(1){
+    border: 0;
+}
 main .sec_two .plan_wrap .plan .plan_accordion{
     height: 0;
-    border-bottom: 1px solid gray;
     padding: 5px;
     overflow: hidden;
+    
 }
 main .sec_two .plan_wrap .plan .plan_accordion.active{
     height: 100%;
@@ -157,7 +227,6 @@ main .sec_two .plan_wrap .plan .plan_accordion table{
     
 }
 .plan_accordion td{
-    
     display: flex;
     justify-content: center;
     font-size: 0.8em;
@@ -167,8 +236,12 @@ main .sec_two .plan_wrap .plan .plan_accordion table{
     color: rgb(131, 131, 131);
     font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
 }
+.plan_accordion td>div{
+    width: 80%;
+    position: relative;
+    text-align: start;
+}
 .plan_accordion td span{
-    text-align: center;
     margin-bottom: 10px;
 }
 .plan_accordion td:nth-last-child(1),
