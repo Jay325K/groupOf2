@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="../../../styles/reset.css" />
     <link rel="stylesheet" href="../hollys_is_banner.css" />
     <link rel="stylesheet" href="./location.css" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2028a55cd775a831a2072e4b93a09318&libraries=services"
+    ></script>
   </head>
   <body>
     <main id="main" class="main">
@@ -65,15 +69,39 @@
             <a href="#none">커피클럽 로스팅 센터</a>
           </section>
           <section class="location_category--content">
-            <h3>본사</h3>
+            <!-- 본사 -->
+            <section>
+              <section class="location_address"></section>
+              <section class="location_franchisee"></section>
+            </section>
+            <section>
+              <section class="location_come"></section>
+              <section class="location_customer"></section>
+            </section>
+            <section class="location_come"></section>
+          </section>
+          <section class="location_category--content">
+            <!-- 아카데미 -->
             <section class="location_address"></section>
-            <section class="location_"></section>
+            <section class="location_come"></section>
+            <section class="location_email"></section>
+          </section>
+          <section class="location_category--content">
+            <!-- 로스팅 -->
+            <section class="location_address"></section>
+            <section class="location_tel"></section>
+            <section class="location_email"></section>
           </section>
           <section class="location_category--map_download"></section>
-          <section class="location_category--map"></section>
+          <section
+            class="location_category--map"
+            id="map"
+            style="width: 500px; height: 500px"
+          ></section>
         </section>
       </section>
     </main>
   </body>
+  <script src="./location.js"></script>
   <script src="../hollys_is_lnb_script.js"></script>
 </html>
