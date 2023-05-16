@@ -7,7 +7,7 @@
     min-width: 1200px;
     height: 100vh;
 
-    background: url(../../../../assets/images/curriculum/curriculum_banner.png) no-repeat;
+    background: url(../../../assets/images/curriculum/curriculum_banner.png) no-repeat;
     background-size: cover;
 
     display: flex;
