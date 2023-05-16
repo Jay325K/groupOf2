@@ -1,6 +1,10 @@
 body {
   font-size: 16px;
 }
+a {
+  color: inherit;
+}
+
 /* main */
 
 /* about content */
@@ -8,23 +12,19 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.office_coffee--service_title {
-  font-size: 72px;
-  margin-bottom: 50px;
-}
-.office_coffee--service_title--content {
+.office_coffee--service_desc {
   font-size: 24px;
   color: #4f4c4b;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .office_coffee--service_sub--title {
-  font-size: 48px;
-  margin-bottom: 50px;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 .office_coffee--service_cont {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .office_coffee--service_detail {
   width: 500px;
