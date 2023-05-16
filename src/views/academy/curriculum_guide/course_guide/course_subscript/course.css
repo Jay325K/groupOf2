@@ -56,6 +56,7 @@ main .sec_two .my_info form fieldset{
     width: 80%;
     margin: auto;
     padding: 40px 20px;
+    border: 1px solid;
 }
 main .sec_two .my_info form fieldset .text_wrap{
     padding-top: 30px;

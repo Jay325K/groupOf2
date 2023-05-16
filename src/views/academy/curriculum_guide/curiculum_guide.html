@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="stylesheet" href="class_time_main.css">
+    <link href="../../../favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="section_one.css">
+    <link rel="stylesheet" href="section_two_common.css">
+    <link rel="stylesheet" href="section_two_planner.css">
+    <link rel="stylesheet" href="section_two_course_guide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../../../jquery/jquery.js"></script>
+    <script src="lnb_src.js"></script>
+    <title>할리스 아카데미-개강일정 및 강의시간표</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <article class="container">
+            <section class="sec_one" id="sec_one">
+                <div class="banner_wrap">
+                    <div class="banner">
+                        <div class="banner_txt">
+                            <span class="h2_deco"></span>
+                            <h2>교육과정 안내</h2>
+                        </div>
+                        
+                        <div class="lnb">
+                            <ul>
+                                <li><a onclick='ajax_load("course_guide/course_guide")' href="#none">수강신청 안내</a></li>
+                                <li><a onclick='ajax_load("planner/class_time");' href="#none">개강 일정표</a></li>
+                                <li><a onclick='ajax_load("");' href="#none">수강신청 내역</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec_two" id="class_calendar">
+                <div class="sec_two_container" id="sec_two_container">
+                    <div class="page_intro">
+                        <h2>수강신청 안내</h2>
+                    </div>
+                    
+                    <div class="sec_two_content" id="sec_two_content">
+                        <div class="course_guide_wrap">
+                            <ul class="menu_ul">
+                                <li>
+                                    <h3><a href="#none" style="--left_move:0">커피홀릭</a></h3>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#none" style="--left_move:150">커피 브루잉</a></h3>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#none" style="--left_move:300">커피 매니아</a></h3>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#none" style="--left_move:450">에스프레소 심화&메뉴</a></h3>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#none" style="--left_move:600">라떼아트</a></h3>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#none" style="--left_move:750">바리스타 2급 Master</a></h3>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#none" style="--left_move:900">바리스타 실기특강 2급</a></h3>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#none" style="--left_move:1050">바리스타 실기특강 1급</a></h3>
+                                </li>
+                            </ul>
+                            <div class="btn_bg"></div>
+
+                            <div class="show_ul">
+                                <ul class="move_ul">
+                                    <li>
+                                        <div class="course">
+                                            <h4>커피홀릭(Coffee-holic, 취미)</h4>
+                                                <div class="Coffee_holic">
+                                                <p>커피홀릭 클래스는 커피를 사랑하는 모든 분들을 위한 과정이며, 누구나 부담없이 재미있게 즐길 수 있는 클래스 입니다.</p>
+                                                <div>
+                                                    <table>
+                                                        <tr>
+                                                            <th>수강대상</th>
+                                                            <th>수강시간</th>
+                                                            <th>총 교육시간</th>
+                                                            <th>총 교육기간</th>
+                                                            <th>수강료</th>
+                                                        </tr>                                                    <tr>
+                                                            <td>
+                                                                커피에 대해
+                                                                흥미를 느끼고
+                                                                더 알고자하는
+                                                                모든 분
+                                                            </td>                                                        <td>
+                                                                오후(14:00~16:00)<br/>
+                                                                한밤(19:00~21:00)<br/>
+                                                                매월 수강시간 상이
+                                                                개강일정 참고
+                                                            </td>                                                        <td>
+                                                                총 8시간<br/>
+                                                                (2h x 4회)
+                                                            </td>
+                                                            <td>
+                                                                4주<br/>
+                                                                (주 1회)
+                                                            </td>
+                                                            <td>
+                                                                4주(주 1회)<br/>
+                                                                20만원(교재비, 재료비 일체 포함)
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>     
+
+                                                <div class="detail_course">
+                                                    <h5>상세 교육내용</h5>
+                                                    <p>- 각 과정은 독립된 과정으로 선수과정 없이 수강 가능</p>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>1강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/coffee_brewing.png" alt="">
+                                                            </div>
+                                                            
+                                                            <div>
+                                                                - 커피 이론 <br/>
+                                                                - 다양한 산지<br/>
+                                                                - 커피 맛보기
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>2강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/Siphon.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 에스프레소 이론<br/>
+                                                                - 에스프레소 추출
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>3강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/hand_drip.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 핸드드립 이론<br/>
+                                                                - 핸드드립
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>4강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/Steaming_milk.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 밀크스티밍<br/>
+                                                                - 메뉴 만들기
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="course">
+                                            <h4>커피 브루잉(Coffee Brewing, 핸드드립)</h4>
+                                                <div class="Coffee_holic">
+                                                <p>핸드드립 도구를 사용하여 추출의 다양성을 배우고 경험할 수 있는 과정입니다. 다양한 드리퍼와 추출 변수, 다양한 추출방법 등에 따른 커피 맛의 특징을 알아가며 커피 추출에 대한 정확하고 체계적인 접근을 원하시는 분들을 위한 클래스 입니다.</p>
+                                                <div>
+                                                    <table>
+                                                        <tr>
+                                                            <th>수강대상</th>
+                                                            <th>수강시간</th>
+                                                            <th>총 교육시간</th>
+                                                            <th>총 교육기간</th>
+                                                            <th>수강료</th>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                다양한 추출 도구를 사용하여 커피 브루잉에 대해 체계적으로 접근하고자 하는 분
+                                                            </td>  
+
+                                                            <td>
+                                                                오후(14:00~16:00)<br/>
+                                                                한밤(19:00~21:00)<br/>
+                                                                매월 수강시간 상이
+                                                                개강일정 참고
+                                                            </td>  
+
+                                                            <td>
+                                                                총 8시간<br/>
+                                                                (2h x 4회)
+                                                            </td>
+
+                                                            <td>
+                                                                4주<br/>
+                                                                (주 1회)
+                                                            </td>
+
+                                                            <td>
+                                                                50만원<br/>
+                                                                (교재비, 재료비 일체 포함)
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>     
+
+                                                <div class="detail_course">
+                                                    <h5>상세 교육내용</h5>
+                                                    <p>- 각 과정은 독립된 과정으로 선수과정 없이 수강 가능</p>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>1강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/coffee_brewing.png" alt="">
+                                                            </div>
+                                                            
+                                                            <div>- 커피브루잉 이론</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>2강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/Siphon.png" alt="">
+                                                            </div>
+
+                                                            <div>- 다양한 도구를 이용한
+                                                                 - 브루잉의 변수(Clever & Siphon)</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>3강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/hand_drip.png" alt="">
+                                                            </div>
+
+                                                            <div>- 핸드드립 이론
+                                                                 - 핸드드립</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>4강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/Steaming_milk.png" alt="">
+                                                            </div>
+
+                                                            <div>- 밀크스티밍
+                                                                 - 메뉴 만들기</div>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="course">3</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="course">
+                                            <h4>에스프레소 심화&메뉴(Espresso Advance & Menu)</h4>
+                                                <div class="Coffee_holic">
+                                                <p>
+                                                    에스프레소 마스터 클래스는 커피를 사랑하는 고객에서 에스프레소 추출 전문가로 거듭나기 위한 과정입니다.<br/>
+                                                    에스프레소 전문가로서 갖춰야 할 커피에 관한 이론과 다양한 추출 변수 등을 배우고,<br/>
+                                                    에스프레소 향미 평가와 장비 관리는 물론 다양한 카페 메뉴와 본인의 시그니처 메뉴 제조도 배울 수 있습니다.
+                                                    <br/><br/>
+                                                    창업을 준비하시는 분, 바리스타 자격증 취득을 목적으로 하시는 분, 다양한 카페 메뉴 제조를 원하시는 분을 위한
+                                                    강좌입니다.
+                                                </p>
+                                                <div>
+                                                    <table>
+                                                        <tr>
+                                                            <th>수강대상</th>
+                                                            <th>수강시간</th>
+                                                            <th>총 교육시간</th>
+                                                            <th>총 교육기간</th>
+                                                            <th>수강료</th>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                에스프레소에 대한 심도있는 교육으로 에스프레소 추출 전문가가 되고자 하는 분
+                                                            </td>  
+
+                                                            <td>
+                                                                오후(14:00~16:00)<br/>
+                                                                한밤(19:00~21:00)<br/>
+                                                                매월 수강시간 상이
+                                                                개강일정 참고
+                                                            </td>  
+
+                                                            <td>
+                                                                총 8시간<br/>
+                                                                (2h x 4회)
+                                                            </td>
+
+                                                            <td>
+                                                                4주<br/>
+                                                                (주 1회)
+                                                            </td>
+
+                                                            <td>
+                                                                30만원<br/>
+                                                                (교재비, 실습, 린넨, 앞치마 일체 포함)
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>     
+
+                                                <div class="detail_course">
+                                                    <h5>상세 교육내용</h5>
+                                                    <p>- 각 과정은 독립된 과정으로 선수과정 없이 수강 가능</p>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>1강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/coffee_brewing.png" alt="">
+                                                            </div>
+                                                            
+                                                            <div>
+                                                                - 에스프레소 심화<br/>
+                                                                - 에스프레소 머신<br/>
+                                                                - 에스프레소 블렌딩<br/>
+                                                                - 에스프레소 맛 알아가기
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>2강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/Siphon.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 에스프레소의 이해<br/>
+                                                                - 에스프레소 추출 실습<br/>
+                                                                - 추출변수 실습(분쇄도/추출시간/추출양 외)
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>3강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/hand_drip.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 스티밍의 완성<br/>
+                                                                - 우유에 따른 스티밍<br/>
+                                                                - 부재료의 이해(소스, 시럽, 파우더 등 부재료에 따른 메뉴 제조)
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>4강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/Steaming_milk.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 음료의 이해<br/>
+                                                                - 메뉴 제조의 이해<br/>
+                                                                - 다양한 도구를 활용<br/>
+                                                                - 한 메뉴 제조<br/>
+                                                                - 시그니처 메뉴 제조
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="course">5</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="course">6</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="course">
+                                            <h4>바리스타 실기특강 2급</h4>
+                                                <div class="Coffee_holic">
+                                                <p>바리스타 실기특강 클래스는 한국커피협회의 바리스타 2급 자격증을 준비하시는 분들을 위한 클래스입니다.<br/>
+                                                매장에서 근무하시며 자격증을 준비하시는 분, 커피의 다양한 과정 중, 자격증 취득이 1차 목표이신 분들을 위한 클래스입니다.<br/>
+                                                반드시 커피교육을 10시간이상 받으셨거나, 매장 근무 경력이 있으신 분들만 강 가능하십니다.</p>
+                                                <div>
+                                                    <table>
+                                                        <tr>
+                                                            <th>수강대상</th>
+                                                            <th>수강시간</th>
+                                                            <th>총 교육시간</th>
+                                                            <th>총 교육기간</th>
+                                                            <th>수강료</th>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                바리스타 2급 자격증 취득을 목표로 하시는 분
+                                                            </td>  
+
+                                                            <td>
+                                                                오후(14:00~16:00)<br/>
+                                                                한밤(19:00~21:00)<br/>
+                                                                매월 수강시간 상이
+                                                                개강일정 참고
+                                                            </td>  
+
+                                                            <td>
+                                                                총 8시간<br/>
+                                                                (2h x 4회)
+                                                            </td>
+
+                                                            <td>
+                                                                4주<br/>
+                                                                (주 1회)
+                                                            </td>
+
+                                                            <td>
+                                                                20만원<br/>
+                                                                (교재비, 재료비 일체 포함)
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>     
+
+                                                <div class="detail_course">
+                                                    <h5>상세 교육내용</h5>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>1강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/coffee_brewing.png" alt="">
+                                                            </div>
+                                                            
+                                                            <div>
+                                                                - 시험용 머신의 이해<br />
+                                                                - 시험 규정 이해<br />
+                                                                - 5분 준비과정
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>2강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/Siphon.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 10분 시연과정<br />
+                                                                - 카푸치노 실습
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>3강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/hand_drip.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 준비과정<br />
+                                                                - 시연과정의 연속 실습<br />
+                                                                - 카푸치노 실습
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="img_box">
+                                                                <h6>4강</h6>
+                                                                <img src="../../../assets/images/curriculum/curriculum_guide_img_box/Steaming_milk.png" alt="">
+                                                            </div>
+
+                                                            <div>
+                                                                - 과정 총정리 및<br />
+                                                                - 개별 피드백
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="course">8</div>
+                                    </li>
+
+                                    <li>
+                                        <div class="course">수강신청</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <a href="#none" id="btn_subscript" class="btn_subscript">온라인 수강신청</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+    <script src="course_guide.js"></script>
+</body>
+</html>

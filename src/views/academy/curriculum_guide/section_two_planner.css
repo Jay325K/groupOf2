@@ -1,36 +1,4 @@
 /* 개강일정 관련 */
-/************** sec_two *************/
-main .sec_two{
-    position: relative;
-    width: 1200px;
-    
-    background: white;
-
-    transition: 0.5s;
-    padding: 0 10px;
-    margin: auto;
-}
-main .sec_two .sec_two_container{
-    margin-top: 20px;
-    padding-top: 80px;
-}
-
-main .sec_two .page_intro{
-    width: 100%;
-    
-}
-main .sec_two .page_intro .page_path{
-    font-size: 0.75em;
-    color: gray;
-    padding: 15px 0;
-}
-main .sec_two .page_intro h2{
-    font-size: 2.2em;
-    padding: 5px 0;
-    letter-spacing: -2px;
-}
-
-
 
 .planner_plan_wrap{
     width: 100%;
@@ -213,11 +181,11 @@ main .sec_two .plan_wrap .plan .plan_accordion table{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.plan_accordion tr{
+.sec_two .plan_wrap .plan_accordion tr{
     display: flex;
 }
-.plan_accordion td,
-.plan_accordion th{
+.sec_two .plan_wrap .plan_accordion td,
+.sec_two .plan_wrap .plan_accordion th{
     width: 50%;
     text-align: center;
     letter-spacing: -1px;
@@ -226,7 +194,7 @@ main .sec_two .plan_wrap .plan .plan_accordion table{
     border: 1px solid lightgray;
     
 }
-.plan_accordion td{
+.sec_two .plan_wrap .plan_accordion td{
     display: flex;
     justify-content: center;
     font-size: 0.8em;
@@ -236,15 +204,15 @@ main .sec_two .plan_wrap .plan .plan_accordion table{
     color: rgb(131, 131, 131);
     font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
 }
-.plan_accordion td>div{
+.sec_two .plan_wrap .plan_accordion td>div{
     width: 80%;
     position: relative;
     text-align: start;
 }
-.plan_accordion td span{
+.sec_two .plan_wrap .plan_accordion td span{
     margin-bottom: 10px;
 }
-.plan_accordion td:nth-last-child(1),
-.plan_accordion th:nth-last-child(1){
+.sec_two .plan_wrap .plan_accordion td:nth-last-child(1),
+.sec_two .plan_wrap .plan_accordion th:nth-last-child(1){
     width: 100%;
 }
