@@ -3,8 +3,8 @@
     width: 100%;
 }
 /* 메뉴 ul */
+
 .sec_two .course_guide_wrap .menu_ul{
-    margin-top: 20px;
     
     display: flex;
     justify-content: space-between;
@@ -12,19 +12,44 @@
     transition: 0.5s;
 }
 .sec_two .course_guide_wrap .menu_ul li{
+    position: relative;
     width: 100%;
 
     padding: 10px 10px;
-    border: 1px solid;
+    border: 1px solid lightgray;
 
     font-size: 0.8em;
 
     text-align: center;
+    z-index: 1;
 }
+.sec_two .course_guide_wrap .menu_ul li:nth-child(1){
+    border-left: 0;
+}
+.sec_two .course_guide_wrap .menu_ul li:nth-last-child(1){
+    border-right: 0;
+}
+
+.sec_two .course_guide_wrap .menu_ul li a{
+    transition: 0.5s;
+}
+/* 메뉴 ul 움직이는 백그라운드 색 */
+.sec_two .course_guide_wrap>.btn_bg{
+    position: absolute;
+    top: 0;
+
+    width: 150px;
+    height:38px ;
+
+    background: #c72f2f;
+
+    transition: 0.5s;
+}
+
 
 /* 슬라이더 ul */
 .sec_two .course_guide_wrap .show_ul{
-     overflow: hidden; 
+    overflow: hidden; 
 }
 .sec_two .course_guide_wrap .show_ul .move_ul{
     position: relative;
@@ -34,14 +59,19 @@
     justify-content: space-between;
 
     transition: 0.5s;
-
 }
 .sec_two .course_guide_wrap .move_ul>li{
     width: 100%;
 }
 .sec_two .course_guide_wrap .move_ul>li .course{
-    margin-top: 50px;
+    height: 100%;
+    padding-top: 50px;
 }
+.sec_two .course_guide_wrap .move_ul>li .course *{
+    box-sizing: border-box;
+}
+
+
 .sec_two .course_guide_wrap .move_ul>li a{
     position: absolute;
     left: calc(1px*var(--left_move));
@@ -55,10 +85,8 @@
 
     font-size: 0.8em;
 }
-.sec_two .course_guide_wrap .move_ul>li>div{
-    padding-top: 39.09px;
-    width: 1200px;
-}
+
+
 .sec_two .course_guide_wrap .course h4{
     font-size: 1.8em;
     font-weight: 400;

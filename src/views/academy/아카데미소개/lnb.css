@@ -15,6 +15,7 @@ main .sec_one_wrap .guide_wrap{
 main .sec_one_wrap .guide_wrap>ul>li{
     padding-bottom: 10px;
     position: relative;
+    font-size: 16px;
 }
 main .sec_one_wrap .guide_wrap>ul>li>a{
     color: #2e2e2e;

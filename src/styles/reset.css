@@ -35,23 +35,28 @@ input,
 button {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body,
 input {
   font-size: 13px;
   font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
 }
 a {
   color: #000; /* inherit */
   text-decoration: none;
+  box-sizing: border-box;
 }
 ul,
 ol,
 li {
   list-style: none;
+  box-sizing: border-box;
 }
 address {
   font-style: normal;
+  box-sizing: border-box;
 }
 img {
   border: 0;
@@ -60,6 +65,7 @@ img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
+  box-sizing: border-box;
 }
 fieldset {
   border: 0 none;
@@ -67,6 +73,7 @@ fieldset {
 input,
 button {
   vertical-align: middle;
+  box-sizing: border-box;
 }
 button {
   cursor: pointer;
@@ -75,6 +82,7 @@ video {
   display: block;
   max-width: 120%;
   height: auto;
+  box-sizing: border-box;
 }
 
 /* 공통 클래스 */
