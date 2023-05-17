@@ -3,6 +3,7 @@
     width: 100%;
 }
 /* 메뉴 ul */
+
 .sec_two .course_guide_wrap .menu_ul{
     
     display: flex;
@@ -24,7 +25,6 @@
 /* 슬라이더 ul */
 .sec_two .course_guide_wrap .show_ul{
     overflow: hidden; 
-    border: 1px solid red;
 }
 .sec_two .course_guide_wrap .show_ul .move_ul{
     position: relative;
@@ -42,7 +42,6 @@
 .sec_two .course_guide_wrap .move_ul>li .course{
     height: 100%;
     padding-top: 50px;
-    border: 1px solid blue;
 }
 .sec_two .course_guide_wrap .move_ul>li .course *{
     box-sizing: border-box;
