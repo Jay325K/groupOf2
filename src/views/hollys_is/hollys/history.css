@@ -21,6 +21,9 @@ a {
   font-size: 32px;
   margin-bottom: 30px;
 }
+.history_content--txt {
+  margin-bottom: 30px;
+}
 .history_content p {
   color: #4f4c4b;
 }
