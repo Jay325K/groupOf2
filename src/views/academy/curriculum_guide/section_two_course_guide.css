@@ -4,7 +4,6 @@
 }
 /* 메뉴 ul */
 .sec_two .course_guide_wrap .menu_ul{
-    margin-top: 20px;
     
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,8 @@
 
 /* 슬라이더 ul */
 .sec_two .course_guide_wrap .show_ul{
-     overflow: hidden; 
+    overflow: hidden; 
+    border: 1px solid red;
 }
 .sec_two .course_guide_wrap .show_ul .move_ul{
     position: relative;
@@ -40,8 +40,15 @@
     width: 100%;
 }
 .sec_two .course_guide_wrap .move_ul>li .course{
-    margin-top: 50px;
+    height: 100%;
+    padding-top: 50px;
+    border: 1px solid blue;
 }
+.sec_two .course_guide_wrap .move_ul>li .course *{
+    box-sizing: border-box;
+}
+
+
 .sec_two .course_guide_wrap .move_ul>li a{
     position: absolute;
     left: calc(1px*var(--left_move));
@@ -54,10 +61,6 @@
     text-align: center;
 
     font-size: 0.8em;
-}
-.sec_two .course_guide_wrap .move_ul>li>div{
-    padding-top: 39.09px;
-    width: 1200px;
 }
 .sec_two .course_guide_wrap .course h4{
     font-size: 1.8em;
