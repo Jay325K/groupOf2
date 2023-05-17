@@ -4,39 +4,88 @@ const locationCategoryContent = document.querySelector(
 );
 const locationAddress = document.querySelector(".location_address");
 
-const getData = () => {
-  const response = fetch("./location.json");
-  return response.then((res) => res.json());
-};
-
-const printExec = async (category) => {
-  const data = await getData();
-
+const printExec = (category) => {
   if (category === "본사") {
-    headOfficePrint(data, category);
+    headOfficePrint();
   } else if (category === "아카데미") {
-    academyPrint(data);
+    academyPrint(category);
   } else if (category === "커피클럽 로스팅 센터") {
-    roastingCenterPrint(data);
+    roastingCenterPrint(category);
   }
 };
 
-const headOfficePrint = (data, category) => {
+const headOfficePrint = () => {
+  console.log("??!");
   locationCategoryContent.innerHTML = `
-    <h3>본사</h3>
-    <section>
-    <p><span>주소 : </span><span>${data.headOffice["address"]}</span></p>
-    </section>
-    `;
+  <h3>본사</h3>
+  <section class="location_head--office_content">
+              <section class="location_head--office_address">
+                <p>
+                  <span>주소 : </span
+                  ><span
+                    >서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</span
+                  >
+                </p>
+                <p><span>5호선 서대문역 6번 출구 250m</span></p>
+              </section>
+              <section class="location_head--office_tel">
+                <p><span>가맹문의 : </span><span>02-6350-7229</span></p>
+                <p><span>고객센터 : </span><span>02-2188-7100</span></p>
+              </section>
+            </section>
+            <section class="location_head--office_email">
+              <p>
+                <span>점포개발팀</span><span>develop@hollyscoffee.com</span>
+              </p>
+              <p><span>B2B팀</span><span>b2b@hollyscoffee.com</span></p>
+              <p><span>브랜딩팀</span><span>mkt@hollyscoffee.com</span></p>
+              <p><span>인사총무팀</span><span>hr_ga@hollyscoffee.com</span></p>
+              <p><span>구매팀</span><span>buyer@hollyscoffee.com</span></p>
+            </section>
+  `;
 };
 const academyPrint = () => {
-  console.log("아카데미");
+  locationCategoryContent.innerHTML = `
+  <h3>아카데미</h3>
+            <section class="location_address">
+              <p>
+                <span>주소 : </span
+                ><span>서울특별시 종로구 삼일대로 395 종로빌딩 5층</span>
+              </p>
+              <p>1. 지하철 1,3,5호선 '종로 3가역' 15번 출구에서 도보 5분</p>
+              <p>
+                2. 지하철 1호선 ‘종각역’ 4번 출구 혹은 종각 지하 쇼핑센터 12번
+                출구에서 도보 3분
+              </p>
+            </section>
+            <section class="location_email">
+              <p><span>이메일 : </span><span>academy@hollyscoffee.com</span></p>
+            </section>
+  `;
 };
 const roastingCenterPrint = () => {
-  console.log("커피클럽 로스팅 센터");
+  locationCategoryContent.innerHTML = `
+  <h3>커피클럽 로스팅 센터</h3>
+            <section>
+              <section class="location_address">
+                <p>
+                  <span>주소 : </span
+                  ><span>경기도 파주시 문산읍 돈유3로 87, 1~2층</span>
+                </p>
+              </section>
+              <section class="location_tel">
+                <p><span>전화번호 : </span><span>070-7734-3785</span></p>
+              </section>
+            </section>
+            <section class="location_email">
+              <p>
+                <span>이메일 : </span><span>roasting@hollyscoffee.com</span>
+              </p>
+            </section>`;
 };
 
 window.addEventListener("DOMContentLoaded", () => {
+  // window.print();
   const headOffice = "본사";
   printExec(headOffice);
 });
@@ -44,6 +93,8 @@ locationCategory.addEventListener("click", (e) => {
   const category = e.target.textContent;
   printExec(category);
 });
+
+// 카카오 맵 api
 var mapContainer = document.getElementById("map"), // 지도를 표시할 div
   mapOption = {
     center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표

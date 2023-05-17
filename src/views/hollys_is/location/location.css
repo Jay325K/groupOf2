@@ -17,6 +17,11 @@ a {
 .location_content--wrap {
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 100px;
+}
+.location_category--map {
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .location_head--office_content {
   display: flex;
