@@ -22,9 +22,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../../../jquery/jquery.js"></script>
     <script src="lnb_src.js"></script>
+    <script src="course_guide.js"></script>
     <title>할리스 아카데미-개강일정 및 강의시간표</title>
 </head>
-<body>
+<body onload="after_load()">
     <header></header>
     <main>
         <article class="container">
@@ -38,9 +39,9 @@
                         
                         <div class="lnb">
                             <ul>
-                                <li><a href="#none">수강신청 안내</a></li>
-                                <li><a href="#none">개강 일정표</a></li>
-                                <li><a href="#none">수강신청 내역</a></li>
+                                <li><a href="#none" tabindex="1">수강신청 안내</a></li>
+                                <li><a href="#none" tabindex="1">개강 일정표</a></li>
+                                <li><a href="#none" tabindex="1">수강신청 내역</a></li>
                             </ul>
                         </div>
                     </div>
@@ -57,35 +58,35 @@
                         <div class="course_guide_wrap">
                             <ul class="menu_ul">
                                 <li>
-                                    <h3><a href="#none" style="--left_move:0">커피홀릭</a></h3>
+                                    <h3><a href="#none" style="--left_move:0" tabindex="2">커피홀릭</a></h3>
                                 </li>
 
                                 <li>
-                                    <h3><a href="#none" style="--left_move:150">커피 브루잉</a></h3>
+                                    <h3><a href="#none" style="--left_move:150"tabindex="2">커피 브루잉</a></h3>
                                 </li>
 
                                 <li>
-                                    <h3><a href="#none" style="--left_move:300">커피 매니아</a></h3>
+                                    <h3><a href="#none" style="--left_move:300"tabindex="2">커피 매니아</a></h3>
                                 </li>
 
                                 <li>
-                                    <h3><a href="#none" style="--left_move:450">에스프레소 심화&메뉴</a></h3>
+                                    <h3><a href="#none" style="--left_move:450"tabindex="2">에스프레소 심화&메뉴</a></h3>
                                 </li>
 
                                 <li>
-                                    <h3><a href="#none" style="--left_move:600">라떼아트</a></h3>
+                                    <h3><a href="#none" style="--left_move:600"tabindex="2">라떼아트</a></h3>
                                 </li>
 
                                 <li>
-                                    <h3><a href="#none" style="--left_move:750">바리스타 2급 Master</a></h3>
+                                    <h3><a href="#none" style="--left_move:750"tabindex="2">바리스타 2급 Master</a></h3>
                                 </li>
 
                                 <li>
-                                    <h3><a href="#none" style="--left_move:900">바리스타 실기특강 2급</a></h3>
+                                    <h3><a href="#none" style="--left_move:900"tabindex="4">바리스타 실기특강 2급</a></h3>
                                 </li>
 
                                 <li>
-                                    <h3><a href="#none" style="--left_move:1050">바리스타 실기특강 1급</a></h3>
+                                    <h3><a href="#none" style="--left_move:1050"tabindex="4">바리스타 실기특강 1급</a></h3>
                                 </li>
                             </ul>
                             <div class="btn_bg"></div>
@@ -323,9 +324,8 @@
 
                                     <li>
                                         <div class="course">
-                                            <h4>커피 매니아(Coffee Mania, 로스팅 클래스)</h4>
                                                 <div class="Coffee_Mania">
-
+                                                <h4>커피 매니아(Coffee Mania, 로스팅 클래스)</h4>
                                                 <div class="locate_of_class">
                                                     <div class="class_seoul">
                                                         <div class="class_locate">
@@ -685,9 +685,8 @@
 
                                     <li>
                                         <div class="course">
-                                            <h4>라떼아트(Latte art)</h4>
                                             <div class="Latte_art">
-
+                                                <h4>라떼아트(Latte art)</h4>
                                                 <div class="level_of_class">
                                                     <div class="class_beginner">
                                                         <div class="class_level">
@@ -1068,8 +1067,8 @@
                                                                     </li>
                                                                 </ul>
                                                             </div>
-                                                            <a href="#none" class="prev"><i class="fa-solid fa-caret-left"></i></a>
-                                                            <a href="#none" class="next"><i class="fa-solid fa-caret-right"></i></a>
+                                                            <a href="#none" class="prev" tabindex="3"><i class="fa-solid fa-caret-left"></i></a>
+                                                            <a href="#none" class="next" tabindex="3"><i class="fa-solid fa-caret-right"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1204,7 +1203,7 @@
                                         <div class="course">
                                             <div class="brista_string_1">
                                                 <div class="class_name">
-                                                    <h4>바리스타 실기특강</h4>
+                                                    <h4>바리스타 실기특강 1급</h4>
                                                 </div>
                                                 <div class="class_intro">
                                                     <p>바리스타 실기특강 1급 클래스는 커피머신과 그라인더에 대한 이해, 원두의 관능적 구분, 에스프레소 추출, 라떼아트 등 중급 이상의 바리스타 스킬 취득을 원하시는 분들을 위한 클래스이며, 한국커피협회에서 진행되는 바리스타 1급 자격을 취득할 수 있도록 준비해 드립니다.</p>
@@ -1365,8 +1364,9 @@
                                                                     </li>
                                                                 </ul>
                                                             </div>
-                                                            <a href="#none" class="prev"><i class="fa-solid fa-caret-left"></i></a>
-                                                            <a href="#none" class="next"><i class="fa-solid fa-caret-right"></i></a>
+                                                            
+                                                            <a href="#none" class="prev" tabindex="4"><i class="fa-solid fa-caret-left"></i></a>
+                                                            <a href="#none" class="next" tabindex="4"><i class="fa-solid fa-caret-right"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1375,12 +1375,19 @@
                                     </li>
 
                                     <li>
-                                        <div class="course">수강신청</div>
+                                        <div class="course">
+                                            <div class="brista_string_1">
+                                                <div class="class_name">
+                                                    <h4>온라인 수강신청</h4>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
                             
-                            <a href="#none" id="btn_subscript" class="btn_subscript">온라인 수강신청</a>
+                            <a href="#none" id="btn_subscript" class="btn_subscript" tabindex="5">온라인 수강신청</a>
                         </div>
                         
                     </div>
@@ -1389,6 +1396,7 @@
         </article>
     </main>
     <footer></footer>
-    <script src="course_guide.js"></script>
+
+    
 </body>
 </html>

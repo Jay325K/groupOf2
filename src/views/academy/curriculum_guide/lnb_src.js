@@ -2,7 +2,7 @@
     $(function(){
         $('.lnb ul li a').on('click',function(){
             if($(this).parent().index()==0){
-                $.ajax({
+                 $.ajax({
                     url: 'course_guide/course_guide.html',	// HTML 파일 가져올 경로
                     dataType: "html",
                     success: function (html){
@@ -15,7 +15,7 @@
                             }
                         });
                     }
-                });
+                }); 
             }else if($(this).parent().index()==1){
                 $.ajax({
                     url: 'planner/class_time.html',	// HTML 파일 가져올 경로
