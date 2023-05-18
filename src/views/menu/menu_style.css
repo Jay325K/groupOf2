@@ -113,17 +113,19 @@ a {
   font-size: 40px;
   margin-bottom: 30px;
 }
+.menu_category--title {
+  font-size: 32px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+}
 .menu_category--wrap {
   width: 1200px;
   margin-bottom: 30px;
   padding: 10px 20px;
   border: 1px solid black;
   box-sizing: border-box;
-}
-.menu_category--wrap h3 {
-  font-size: 32px;
-  border-bottom: 1px solid black;
-  padding: 10px;
 }
 .menu_category {
   padding: 10px 10px 0;
@@ -187,17 +189,17 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 700px;
-  height: 700px;
+  /* width: 700px; */
+  /* height: 750px; */
   background: white;
   padding: 30px;
   box-sizing: border-box;
 }
 .menu_modal--close_btn {
   position: fixed;
-  top: -40px;
-  right: -40px;
-  font-size: 0px;
+  top: -50px;
+  right: -50px;
+  background: transparent;
 }
 .menu_modal--close_btn img {
   width: 50px;
@@ -205,28 +207,37 @@ a {
 }
 
 .menu_modal--detail {
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 30px;
 }
-.menu_modal--detail p {
-  width: 500px;
-  border-bottom: 1px solid #999;
-  margin-bottom: 5px;
+.modal_menu--title {
+  font-size: 24px;
+}
+.modal_menu--title_en {
+  border-bottom: 1px solid #6666;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.modal_menu--img {
+  width: 300px;
+}
+.modal_menu--desc {
+  color: #666;
 }
 .menu_modal--detail span {
   margin-bottom: 10px;
 }
-.menu_modal--detail img {
-  width: 400px;
-}
+
 .menu_modal--nutritional p {
   margin-bottom: 10px;
 }
 .menu_nutritional {
   border-collapse: collapse;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 .menu_modal th,
 td {
@@ -235,18 +246,36 @@ td {
   text-align: center;
   border: 1px solid #000;
 }
+.menu_modal th:first-child {
+  width: 50px;
+}
 .display_none {
   display: none;
+}
+.menu_modal--gift {
+  text-align: center;
+}
+.menu_modal--gift_btn {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background: #c72f30;
+  color: white;
+  border-radius: 5px;
 }
 .menu_page {
   text-align: center;
   margin-bottom: 30px;
 }
-.menu_page span {
+.menu_page button {
   padding: 10px;
   cursor: pointer;
 }
-.menu_page span:hover {
+.menu_page button:hover {
+  color: white;
+  background: #c72f30;
+}
+.hollys_red {
   color: white;
   background: #c72f30;
 }
@@ -269,4 +298,8 @@ td {
 }
 .drink_new--desc {
   font-size: 24px;
+  color: #666;
+}
+.drink_new--img img {
+  width: 500px;
 }

@@ -4,12 +4,14 @@ const menuCategory = document.querySelector(".menu_category");
 const menuCategoryCheckbox = document.querySelectorAll(
   ".menu_category--checkbox"
 );
+const pageBtn = document.querySelector("hollys");
 const menuModalWrap = document.querySelector(".menu_modal--wrap");
 const menuModalDetail = document.querySelector(".menu_modal--detail");
 const menuNutritional = document.querySelector(".menu_nutritional");
 const menuModalCloseBtn = document.querySelector(".menu_modal--close_btn");
 const menuServingsize = document.querySelector(".menu_servingsize");
 const menuAllergy = document.querySelector(".menu_allergy");
+const menuModalGift = document.querySelector(".menu_modal--gift");
 const menuCategoryArray = {
   drink: [
     "coffee/decaffeine",
@@ -21,8 +23,8 @@ const menuCategoryArray = {
   md: ["product", "food"],
 };
 let menuListArray = [];
-let drinkCategoryChecked = [true];
-let drinkPageNum = "1";
+let menuCategoryChecked = [true];
+let pageNum = "1";
 let pageName = "";
 
 const getMenu = () => {
@@ -33,7 +35,7 @@ const getMenu = () => {
 const menuPrintExec = async () => {
   try {
     const menu = await getMenu();
-    if (drinkPageNum) {
+    if (pageNum) {
       menuPrintProcess(menu[pageName]);
     }
   } catch (error) {
@@ -41,7 +43,6 @@ const menuPrintExec = async () => {
   }
 };
 const menuPrintProcess = (menu) => {
-  drinkListArray = [];
   menuListArray = [];
   menuList.innerHTML = "";
   menuPage.innerHTML = "";
@@ -49,86 +50,93 @@ const menuPrintProcess = (menu) => {
   menuListGenerate(menu);
   const pageCount = Math.ceil(menuListArray.length / 20);
 
-  for (let i = 1; i <= pageCount; i++) {
-    if (pageCount != 1)
-      menuPage.innerHTML += `<button><span>${i}</span></button>`;
-  }
+  pagePrint(pageCount);
   menuPrint();
 };
 const menuListGenerate = (menu) => {
-  if (drinkCategoryChecked[0]) {
+  if (menuCategoryChecked[0]) {
     menuCategoryArray[pageName].forEach((e) => {
-      menuListArray = [...menuListArray, ...menu[e]];
+      menuListArray.push(...menu[e]);
     });
-  } else if (drinkCategoryChecked[0] == false) {
-    drinkCategoryChecked.forEach((e, index) => {
+  } else if (menuCategoryChecked[0] == false) {
+    menuCategoryChecked.forEach((e, index) => {
       if (e) {
-        menuListArray = [
-          ...menuListArray,
-          ...menu[menuCategoryArray[pageName][index - 1]],
-        ];
+        menuListArray.push(...menu[menuCategoryArray[pageName][index - 1]]);
       }
     });
   }
 };
+const pagePrint = (pageCount) => {
+  for (let i = 1; i <= pageCount; i++) {
+    if (pageCount != 1)
+      menuPage.innerHTML += `<button type="button" class="hollys">${i}</button>`;
+  }
+};
 const menuPrint = () => {
-  for (let i = (parseInt(drinkPageNum) - 1) * 20; i < 20 * drinkPageNum; i++) {
+  for (let i = (parseInt(pageNum) - 1) * 20; i < 20 * pageNum; i++) {
     if (!menuListArray[i]) {
-      menuList.innerHTML += `<li class="blank_item"></li>`;
+      const createBlank = document.createElement("li");
+      createBlank.classList.add("blank_item");
+      menuList.insertAdjacentElement("beforeend", createBlank);
     } else if (menuListArray[i]) {
-      menuList.innerHTML += `<li><a href="#none"><img src="${menuListArray[i].image}" alt=""><span>${menuListArray[i].name}</span></a></li>`;
+      const createItem = document.createElement("li");
+      createItem.innerHTML = `<a href="#none"><img src="${menuListArray[i].image}" alt=""><span>${menuListArray[i].name}</span></a>`;
+      menuList.insertAdjacentElement("beforeend", createItem);
     }
   }
 };
-const modalPrintExec = async (name) => {
-  try {
-    const menu = await getMenu();
-    modalPrintProcess(menu[pageName], name);
-    menuModalWrap.classList.remove("display_none");
-  } catch (error) {
-    console.log(error);
-  }
+const modalPrintExec = (name) => {
+  modalPrintProcess(name);
+  menuModalWrap.classList.remove("display_none");
 };
-
-const modalPrintProcess = (menu, name) => {
-  menuListArray = [];
-  menuCategoryArray[pageName].forEach((e) => {
-    menuListArray = [...menuListArray, ...menu[e]];
-  });
+const modalPrintProcess = (name) => {
   const nameFilter = menuListArray.filter((data) => data["name"] === name)[0];
   modalPrint(nameFilter);
-  menuAllergy.innerHTML = `<p>알레르기 유발요인 : ${nameFilter.allergy}<br>
+  if (nameFilter.allergy) {
+    menuAllergy.innerHTML = `<p>알레르기 유발요인 : ${nameFilter.allergy}<br>
   ※ 식품 등의 표시 · 광고의 관한 법률에 의거하여 알레르기 표시항목에 한해서만 표기함</p>`;
+  }
 };
 const modalPrint = (data) => {
   menuModalDetail.innerHTML = `
-  <img src="${data.image}" alt="" />
-  <h3>${data.name}</h3>
-  <p>${data.nameEn}</p>
-  <p>${data.text}</p>
-  ${data.caution ? `<p>${data.caution}</p>` : ""}
+  <img src="${data.image}" alt=""  class="modal_menu--img"/>
+  <p class="modal_menu--title">${data.name}</p>
+  <p class="modal_menu--title_en">${data.nameEn}</p>
+  <p class="modal_menu--desc">${data.text}</p>
   `;
+  if (data.caution) {
+    menuModalDetail.innerHTML += `
+    <p class="modal_menu--caution">${data.caution}</p>`;
+  }
   if (data.nutritional) {
-    drinkNutritionalPrint(data);
+    menuNutritionalPrint(data);
+  }
+  if (data.price !== "") {
+    menuModalGift.innerHTML = `<a href="../gift/gift.html" class="menu_modal--gift_btn">GIFT</a>`;
+  } else {
+    menuModalGift.innerHTML = "";
   }
 };
-const drinkNutritionalPrint = (data) => {
-  const nameFilterKeys = Object.keys(data.nutritional);
-  console.log(menuServingsize);
+const menuNutritionalPrint = (data) => {
+  const nutritionalKeys = Object.keys(data.nutritional);
+  servingSizePrint(data);
+
+  menuNutritional.innerHTML += `  
+  ${nutritionalStaticPrint(nutritionalKeys)}
+  ${nutritionalTable(data, nutritionalKeys)}
+  `;
+};
+const servingSizePrint = (data) => {
   menuServingsize.innerHTML = `${
     data.servingSize ? `<p>${data.servingSize}</p>` : ""
   }
   `;
-  menuNutritional.innerHTML += `  
-  ${drinkNutritionalStaticPrint(nameFilterKeys)}
-  ${test(data, nameFilterKeys)}
-  `;
 };
-const drinkNutritionalStaticPrint = (keys) => {
+const nutritionalStaticPrint = (nutritionalKeys) => {
   return `
   <tbody>
   <tr>
-  ${keys.length == 6 ? "" : "<th></th>"}
+  ${nutritionalKeys.length !== 6 ? "<th></th>" : ""}
   <th>칼로리</td>
   <th>당류</th>
   <th>단백질</th>
@@ -137,26 +145,33 @@ const drinkNutritionalStaticPrint = (keys) => {
   <th>카페인</th>
   </tr>`;
 };
-const test = (data, keys) => {
+const nutritionalTable = (data, nutritionalKeys) => {
   let returnText;
-  if (keys.length == 6) {
-    returnText = "<tr>";
-    keys.forEach((key) => {
-      returnText += `<td>${data.nutritional[key]}</td>`;
-    });
-    returnText += "</tr></tbody>";
-  } else {
-    returnText = "";
-    keys.forEach((key) => {
-      const nutritionalKeys = Object.keys(data.nutritional[key]);
-      returnText += `<tr><th>${key}</th>`;
-      nutritionalKeys.forEach((e) => {
-        returnText += `<td>${data.nutritional[key][e]}</td>`;
-      });
-    });
-    returnText += "</tr></tbody>";
-  }
+  if (nutritionalKeys.length == 6)
+    returnText = drinkNutritional(data, nutritionalKeys);
+  else returnText = noDrinkNutritional(data, nutritionalKeys);
   return returnText;
+};
+const drinkNutritional = (data, nutritionalKeys) => {
+  let text;
+  text = "<tr>";
+  nutritionalKeys.forEach((key) => {
+    text += `<td>${data.nutritional[key]}</td>`;
+  });
+  text += "</tr></tbody>";
+  return text;
+};
+const noDrinkNutritional = (data, nutritionalKeys) => {
+  let text = "";
+  nutritionalKeys.forEach((key) => {
+    const nutritionalKeys = Object.keys(data.nutritional[key]);
+    text += `<tr><th>${key}</th>`;
+    nutritionalKeys.forEach((e) => {
+      text += `<td>${data.nutritional[key][e]}</td>`;
+    });
+  });
+  text += "</tr></tbody>";
+  return text;
 };
 window.addEventListener("DOMContentLoaded", () => {
   const pageSlash = window.location.pathname.split("/");
@@ -165,34 +180,35 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 menuPage.addEventListener("click", (e) => {
-  if (drinkPageNum !== e.target.innerHTML && e.target.localName == "span") {
-    drinkPageNum = e.target.innerHTML;
+  if (pageNum !== e.target.innerHTML && e.target.localName == "button") {
+    pageNum = e.target.innerHTML;
     menuPrintExec();
+    menuCategory.scrollIntoView();
   }
 });
 menuCategory.addEventListener("change", () => {
-  drinkPageNum = 1;
+  pageNum = 1;
 
   if (
     menuCategoryCheckbox[0].lastElementChild.checked == true &&
-    drinkCategoryChecked[0] == true
+    menuCategoryChecked[0] == true
   ) {
     menuCategoryCheckbox[0].lastElementChild.checked = false;
-    drinkCategoryChecked[0] = false;
+    menuCategoryChecked[0] = false;
   } else if (
     menuCategoryCheckbox[0].lastElementChild.checked == true &&
-    drinkCategoryChecked[0] == false
+    menuCategoryChecked[0] == false
   ) {
     menuCategoryCheckbox[0].lastElementChild.checked = true;
-    drinkCategoryChecked[0] = true;
+    menuCategoryChecked[0] = true;
     for (let i = 1; i < menuCategoryCheckbox.length; i++) {
-      drinkCategoryChecked[i] = false;
+      menuCategoryChecked[i] = false;
       menuCategoryCheckbox[i].lastElementChild.checked = false;
     }
   }
 
   for (let i = 0; i < menuCategoryCheckbox.length; i++) {
-    drinkCategoryChecked[i] = menuCategoryCheckbox[i].lastElementChild.checked;
+    menuCategoryChecked[i] = menuCategoryCheckbox[i].lastElementChild.checked;
   }
   menuPrintExec();
 });
@@ -202,7 +218,6 @@ menuList.addEventListener("click", (e) => {
     modalPrintExec(e.target.nextElementSibling.innerText);
   } else if (e.target.localName === "span") {
     modalPrintExec(e.target.innerHTML);
-    console.log(e.target.innerHTML);
   }
 });
 menuModalCloseBtn.addEventListener("click", () => {

@@ -4,9 +4,9 @@
       {
         "name": "디카페인 아메리카노",
         "nameEn": "Americano (Decaf blend)",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "듀얼브루 원액으로 만든 부드러운 풍미와 균형잡힌 바디감의 디카페인 아메리카노",
-        "price": "",
+        "price": "4,900원",
         "image": "../../../assets/images/menu/drink/drink_1.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -31,9 +31,9 @@
       {
         "name": "디카페인 카페 라떼",
         "nameEn": "Caffe Latte (Decaf blend)",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "듀얼브루 원액으로 만든 부드러운 풍미와 균형 잡힌 바디감의 디카페인 카페 라떼",
-        "price": "",
+        "price": "5,600원",
         "image": "../../../assets/images/menu/drink/drink_2.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -59,7 +59,7 @@
       {
         "name": "디카페인 바닐라 딜라이트",
         "nameEn": "Vanilla Delight (Decaf blend)",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "듀얼브루 원액으로 만들어 더욱 부드럽고 편안해진 바닐라 딜라이트",
         "caution": "*바닐라 딜라이트 제조에 사용되는 파우더에 카페인이 일부 함유되어 있음",
         "price": "",
@@ -88,10 +88,10 @@
       {
         "name": "프리미엄 블렌드 아메리카노",
         "nameEn": "Premium Blend Americano",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "화사한 산미와 과일과 같은 달콤함, 깔끔한 후미를 즐길수 있는 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "4,900원",
         "image": "../../../assets/images/menu/drink/drink_4.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -116,10 +116,10 @@
       {
         "name": "프리미엄 블렌드 딥라떼",
         "nameEn": "Premium Blend Deep Latte",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "풍성한 우유 거품 위에 프리미엄 블렌드 리스트레또 샷이 더해져 깊은 커피 풍미를 느낄 수 있는 라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "5,600원",
         "image": "../../../assets/images/menu/drink/drink_5.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -145,10 +145,10 @@
       {
         "name": "콜드브루 딜라이트",
         "nameEn": "Cold Brew Delight",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "실키한 연유베이스에 콜드브루를 넣어 부담없이 즐기는 라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "6,400원",
         "image": "../../../assets/images/menu/drink/drink_6.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -166,10 +166,10 @@
       {
         "name": "콜드브루 라떼",
         "nameEn": "Cold Brew Latte",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "콜드브루 커피의 풍부한 풍미와 우유의 고소함이 더해진 라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "5,600원",
         "image": "../../../assets/images/menu/drink/drink_7.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -187,10 +187,10 @@
       {
         "name": "콜드브루",
         "nameEn": "Cold Brew",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "콜드브루 전용 블렌드를 상온의 물로 오랜시간 추출해 달콤한 산미와 부드러운 바디감이 살아있는 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "5,100원",
         "image": "../../../assets/images/menu/drink/drink_8.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -207,10 +207,10 @@
       {
         "name": "바닐라딜라이트",
         "nameEn": "Vanilla Delight",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "카페라떼에 바닐라빈으로 만든 바닐라 파우더를 더해 더욱 풍부하고 감미로운 할리스만의 바닐라라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "6,100원",
         "image": "../../../assets/images/menu/drink/drink_9.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -236,7 +236,7 @@
       {
         "name": "리스트레또 딜라이트",
         "nameEn": "Ristretto Delight",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "달콤한 연유와 고소한 할리스 원두, 크리미한 바디가 절묘하게 어우러진 시즌 스페셜 메뉴",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
@@ -265,10 +265,10 @@
       {
         "name": "카라멜 마키아또",
         "nameEn": "Caramel Macchiato",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "진한 에스프레소에 바닐라 시럽과 카라멜소스가 더해진 카라멜 커피음료의 대표",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "6,100원",
         "image": "../../../assets/images/menu/drink/drink_11.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -294,10 +294,10 @@
       {
         "name": "카페모카",
         "nameEn": "Caffe Mocha",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "진한 에스프레소와 우유, 달콤 쌉싸름한 초콜릿이 어우러진 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "5,700원",
         "image": "../../../assets/images/menu/drink/drink_12.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -323,7 +323,7 @@
       {
         "name": "카푸치노",
         "nameEn": "Cappuccino",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "에스프레소에 실키하고 폭신폭신한 우유 거품이 풍부하게 더해진 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
@@ -344,10 +344,10 @@
       {
         "name": "카페 라떼",
         "nameEn": "Caffe Latte",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "진한 에스프레소에 우유를 넣어 풍부한 커피향을 부드럽게 즐길 수 있는 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "5,200원",
         "image": "../../../assets/images/menu/drink/drink_14.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -373,10 +373,10 @@
       {
         "name": "아메리카노",
         "nameEn": "Caffe Americano",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "진한 에스프레소의 맛과 향을 부드럽게 즐길 수 있는 아메리칸 스타일의 커피",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "4,500원",
         "image": "../../../assets/images/menu/drink/drink_15.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -401,7 +401,7 @@
       {
         "name": "아포가토",
         "nameEn": "Affogato",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "바닐라 아이스크림과 리스트레또 더블샷이 어우러져 부드럽고 진한 맛의 아포가토",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
@@ -422,7 +422,7 @@
       {
         "name": "에스프레소",
         "nameEn": "Espresso",
-        "category": ["coffee/decaffeine"],
+        "category": "",
         "text": "강렬한 첫 맛, 풍부한 바디감, 깔끔한 뒷 맛이 특징인 커피의 심장",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
@@ -444,10 +444,10 @@
       {
         "name": "제주 말차 라떼",
         "nameEn": "Jeju Matcha Latte",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "6,000원",
         "image": "../../../assets/images/menu/drink/drink_18.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -473,7 +473,7 @@
       {
         "name": "민트초코",
         "nameEn": "Mint Chocolate",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "진한 민트 맛이 특징인 상쾌하면서 부드러운 맛의 민트 초코 라떼",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_19.png",
@@ -501,10 +501,10 @@
       {
         "name": "밀크티라떼",
         "nameEn": "Milk Tea Latte",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "향긋한 홍차에 우유의 고소함과 부드러움을 더한 티라떼",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "6,000원",
         "image": "../../../assets/images/menu/drink/drink_20.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -530,7 +530,7 @@
       {
         "name": "핫/아이스초코",
         "nameEn": "Chocolate HOT/ICED",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "진한 초콜렛과 우유가 어우러져 달콤한 초콜릿 음료",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_21.png",
@@ -558,9 +558,9 @@
       {
         "name": "화이트초코",
         "nameEn": "White Chocolate",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "화이트 초콜릿에 따뜻한 우유가 더해진 달콤한 음료",
-        "price": "",
+        "price": "5,600원",
         "image": "../../../assets/images/menu/drink/drink_22.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -586,9 +586,9 @@
       {
         "name": "유자 캐모마일",
         "nameEn": "Yuzu Chamomile",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "은은한 향의 캐모마일과 유자차를 같이 느낄 수 있는 티베리에이션 음료",
-        "price": "",
+        "price": "5,500원",
         "image": "../../../assets/images/menu/drink/drink_23.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -613,9 +613,9 @@
       {
         "name": "복숭아 얼그레이",
         "nameEn": "Peach Earl Grey",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "달콤한 복숭아와 얼그레이의 베르가못 향의 조화, 깔끔하면서도 달콤한 티베리에이션 음료",
-        "price": "",
+        "price": "5,500원",
         "image": "../../../assets/images/menu/drink/drink_24.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -641,9 +641,9 @@
       {
         "name": "홍자몽차",
         "nameEn": "Red Grapefruit Tea",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "자몽과일 특유의 달콤 쌉싸름한 맛을 즐길 수 있는 과일차",
-        "price": "",
+        "price": "5,300원",
         "image": "../../../assets/images/menu/drink/drink_25.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -668,7 +668,7 @@
       {
         "name": "제주 한라봉 감귤차",
         "nameEn": "jeju Hanrabong tangerine tea",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "향긋한 한라봉과 감귤이 어우러져 상큼하면서도 달콤한 과일차",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_26.png",
@@ -695,9 +695,9 @@
       {
         "name": "고흥 유자차",
         "nameEn": "Goheung Yuzu Tea",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "고흥 유자의 풍미를 살린 할리스 유자차",
-        "price": "",
+        "price": "4,900원",
         "image": "../../../assets/images/menu/drink/drink_27.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -722,9 +722,9 @@
       {
         "name": "해남 녹차",
         "nameEn": "Green Tea",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "고소한 감칠맛과 부드러운 목넘김이 좋은 땅끝 마음 해남에서 재배한 녹차(유기농 녹차잎 사용)",
-        "price": "",
+        "price": "4,500원",
         "image": "../../../assets/images/menu/drink/drink_28.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -749,9 +749,9 @@
       {
         "name": "페퍼민트",
         "nameEn": "Peppermint",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "입안 가득 깔끔한 청량감으로 기분까지 상쾌한 허브차",
-        "price": "",
+        "price": "4,500원",
         "image": "../../../assets/images/menu/drink/drink_29.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -776,9 +776,9 @@
       {
         "name": "캐모마일",
         "nameEn": "Chamomile",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "캐모마일 꽃잎을 그대로 말려 노란색의 향긋한 꽃향이 그대로 살아 있는 허브차",
-        "price": "",
+        "price": "4,500원",
         "image": "../../../assets/images/menu/drink/drink_30.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -803,9 +803,9 @@
       {
         "name": "얼그레이",
         "nameEn": "Earl Grey",
-        "category": ["latte/choco/tea"],
+        "category": "",
         "text": "스리랑카 캔디 지방에서 재배된 홍차에 시칠리아의 감귤,베르가못향이 조화된 감미로운 홍차",
-        "price": "",
+        "price": "4,500원",
         "image": "../../../assets/images/menu/drink/drink_31.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -832,10 +832,10 @@
       {
         "name": "제주 말차 할리치노",
         "nameEn": "Jeju Matcha Hollyccino",
-        "category": ["hollyccino/crush"],
+        "category": "",
         "text": "제주산 말차 파우더로 만들어 깊고 진한 말차 본연의 풍미를 살린 할리치노",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
-        "price": "",
+        "price": "6,300원",
         "image": "../../../assets/images/menu/drink/drink_32.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -853,9 +853,9 @@
       {
         "name": "피치 딸기 크러쉬",
         "nameEn": "Peach Strawberry Crush",
-        "category": ["hollyccino/crush"],
+        "category": "",
         "text": "과즙 가득한 복숭아 슬러쉬 안에 톡톡 씹히는 딸기 과육이 더해진 음료",
-        "price": "",
+        "price": "5,900원",
         "image": "../../../assets/images/menu/drink/drink_33.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -873,9 +873,9 @@
       {
         "name": "민트 초코칩 할리치노",
         "nameEn": "Mint Chocochip Hollyccino",
-        "category": ["hollyccino/crush"],
+        "category": "",
         "text": "초코칩이 콕콕 박힌 상쾌하면서 청량한 민트 맛의 블렌디드 음료",
-        "price": "",
+        "price": "6,300원",
         "image": "../../../assets/images/menu/drink/drink_35.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -893,9 +893,9 @@
       {
         "name": "딸기 치즈케이크 할리치노",
         "nameEn": "Strawberry Cheese Cake Hollyccino",
-        "category": ["hollyccino/crush"],
+        "category": "",
         "text": "치즈케익맛 아이스블렌디드 음료에 상큼한 딸기를 토핑한 할리스 시그니처 메뉴",
-        "price": "",
+        "price": "6,300원",
         "image": "../../../assets/images/menu/drink/drink_36.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준",
         "nutritional": {
@@ -913,7 +913,7 @@
       {
         "name": "플레인 요거트 할리치노",
         "nameEn": "Iyote-Plain",
-        "category": ["hollyccino/crush"],
+        "category": "",
         "text": "저지방우유에 유산균이 살아있는 요거트를 더한 슬러쉬",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_37.png",
@@ -933,7 +933,7 @@
       {
         "name": "다크초코칩 할리치노",
         "nameEn": "Dark Chocochip Hollyccino",
-        "category": ["hollyccino/crush"],
+        "category": "",
         "text": "벨기에산 리얼 다크초콜릿이 씹히는 시원하고 진한 초콜릿 음료",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_38.png",
@@ -953,7 +953,7 @@
       {
         "name": "콜드브루 할리치노",
         "nameEn": "Coldbrew Hollyccino",
-        "category": ["hollyccino/crush"],
+        "category": "",
         "text": "콜드브루와 우유, 얼음이 갈린 할리치노",
         "caution": "*'고카페인 함유' 제품으로 어린이, 임신부, 카페인 민감자는 섭취에 주의하여 주시기 바랍니다",
         "price": "",
@@ -976,9 +976,9 @@
       {
         "name": "토마토 통통 주스",
         "nameEn": "Tomato Juice",
-        "category": ["smoothie/juice/sparkling", "new"],
+        "category": "new",
         "text": "신선한 토마토를 그대로 갈아 만든 주스에 토마토를 듬뿍 토핑한 생과일 주스",
-        "price": "",
+        "price": "6,500원",
         "image": "../../../assets/images/menu/drink/drink_40.png",
         "servingSize": "제품영양정보 (1회 제공량/ Grande / 472ml 기준)",
         "nutritional": {
@@ -995,9 +995,9 @@
       {
         "name": "키위 생생 주스",
         "nameEn": "Kiwi Juice",
-        "category": ["smoothie/juice/sparkling", "new"],
+        "category": "new",
         "text": "신선한 키위를 그대로 갈아 만든 주스에 키위를 듬뿍 토핑한 생과일 주스",
-        "price": "",
+        "price": "6,500원",
         "image": "../../../assets/images/menu/drink/drink_41.png",
         "servingSize": "제품영양정보 (1회 제공량/ Grande / 472ml 기준)",
         "nutritional": {
@@ -1014,9 +1014,9 @@
       {
         "name": "샤인머스캣 봉봉 스무디",
         "nameEn": "Shine Muscat Smoothie",
-        "category": ["smoothie/juice/sparkling", "new"],
+        "category": "new",
         "text": "상큼하고 청량한 샤인머스캣 스무디에 샤인머스캣 구슬 아이스크림을 토핑한 스무디",
-        "price": "",
+        "price": "6,800원",
         "image": "../../../assets/images/menu/drink/drink_42.png",
         "servingSize": "제품영양정보 (총 중량 337g, 1회 제공량 337g 기준)",
         "nutritional": {
@@ -1034,9 +1034,9 @@
       {
         "name": "딸기 스무디",
         "nameEn": "Strawberry Smoothie",
-        "category": ["smoothie/juice/sparkling"],
+        "category": "",
         "text": "딸기 본연의 맛을 살려 갈아 만든 과일 스무디",
-        "price": "",
+        "price": "6,300원",
         "image": "../../../assets/images/menu/drink/drink_43.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -1053,7 +1053,7 @@
       {
         "name": "애플망고 스무디",
         "nameEn": "Apple mango Smoothie",
-        "category": ["smoothie/juice/sparkling"],
+        "category": "",
         "text": "상큼 달콤한 애플망고 과육을 갈아 만든 과일 스무디",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_34.png",
@@ -1072,9 +1072,9 @@
       {
         "name": "사과 비트 착즙 주스",
         "nameEn": "Apple Beet Juice",
-        "category": ["smoothie/juice/sparkling"],
+        "category": "",
         "text": "사과, 비트, 파인애플이 어우러진 건강한 과채 주스",
-        "price": "",
+        "price": "5,700원",
         "image": "../../../assets/images/menu/drink/drink_44.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -1091,9 +1091,9 @@
       {
         "name": "오렌지 당근 착즙 주스",
         "nameEn": "Orange Carrot Juice",
-        "category": ["smoothie/juice/sparkling"],
+        "category": "",
         "text": "오렌지, 당근, 사과가 어우러진 달콤한 과채 주스",
-        "price": "",
+        "price": "5,700원",
         "image": "../../../assets/images/menu/drink/drink_45.png",
         "servingSize": "제품영양정보 (1회 제공량 / Regular / 354ml 기준)",
         "nutritional": {
@@ -1110,7 +1110,7 @@
       {
         "name": "청포도케일 착즙 주스",
         "nameEn": "Green Grape Kale Juice",
-        "category": ["smoothie/juice/sparkling"],
+        "category": "",
         "text": "청포도, 케일, 밀싹이 어우러진 산뜻한 과채 주스",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_46.png",
@@ -1129,7 +1129,7 @@
       {
         "name": "복숭아 자두 스파클링",
         "nameEn": "Peach Plum Sparkling",
-        "category": ["smoothie/juice/sparkling"],
+        "category": "",
         "text": "청량감 가득한 탄산수와 복숭아, 자두가 상큼달콤하게 어우러진 스파클링 음료",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_47.png",
@@ -1149,7 +1149,7 @@
       {
         "name": "청포도 스파클링",
         "nameEn": "Green Grape SPARKLING",
-        "category": ["smoothie/juice/sparkling"],
+        "category": "",
         "text": "청량감 가득한 탄산수와 탱글탱글한 청포도가 상큼달콤하게 어우러진 스파클링 음료",
         "price": "",
         "image": "../../../assets/images/menu/drink/drink_48.png",
@@ -1174,7 +1174,7 @@
         "nameEn": "Double Berry Chocolate So Sweet Box",
         "category": "cake",
         "text": "블루베리, 크랜베리 토핑에 진한 초코 생크림과 중간중간 씹히는 초코 크런치가 매력적인 달콤한 초코 생크림 케이크",
-        "price": "",
+        "price": "6,700원",
         "image": "../../../assets/images/menu/food/cake_01.png",
         "servingSize": "제품영양정보 (총 중량 161g, 1회 제공량 161g)",
         "nutritional": {
@@ -1192,7 +1192,7 @@
         "nameEn": "Carnation Cake",
         "category": "cake",
         "text": "부드러운 생크림과 딸기 필링이 샌딩된 케이크에 카네이션 슈가 플라워가 활짝 피어난 딸기 생크림 케이크",
-        "price": "",
+        "price": "37,000원",
         "image": "../../../assets/images/menu/food/cake_02.png",
         "servingSize": "제품영양정보 (총 중량 971g, 1회 제공량 139g)",
         "nutritional": {
@@ -1210,7 +1210,7 @@
         "nameEn": "Strawberry Crumble So Sweet Box Partypack",
         "category": "cake",
         "text": "상큼한 베리필링과 부드러운 크림치즈 무스에 고소한 크럼블이 어우러지는 홀케이크",
-        "price": "",
+        "price": "39,000원",
         "image": "../../../assets/images/menu/food/cake_03.png",
         "servingSize": "제품영양정보 (총 중량 1,001g, 1회 제공량 167g )",
         "nutritional": {
@@ -1228,7 +1228,7 @@
         "nameEn": "Strawberry Crumble So Sweet Box",
         "category": "cake",
         "text": "상큼한 베리필링과 부드러운 크림치즈 무스에 고소한 크럼블이 어우러지는 케이크",
-        "price": "",
+        "price": "6,500원",
         "image": "../../../assets/images/menu/food/cake_04.png",
         "servingSize": "제품영양정보 (총 중량 168g, 1회 제공량 168g)",
         "nutritional": {
@@ -1246,7 +1246,7 @@
         "nameEn": "Triple Chocolate Cake",
         "category": "cake",
         "text": "밀크, 다크, 화이트 3가지 초콜릿 맛을 즐길 수 있는 달콤한 초코 무스 케이크",
-        "price": "",
+        "price": "5,900원",
         "image": "../../../assets/images/menu/food/cake_05.png",
         "servingSize": "제품영양정보 (총 중량 101g, 1회 제공량 101g)",
         "nutritional": {
@@ -1264,7 +1264,7 @@
         "nameEn": "Triple Berry Fresh Cream Cake",
         "category": "cake",
         "text": "부드러운 생크림과 달콤한 딸기가 샌딩된 케이크 위에 블루베리와 크랜베리를 토핑한 케이크",
-        "price": "",
+        "price": "5,900원",
         "image": "../../../assets/images/menu/food/cake_06.png",
         "servingSize": "제품영양정보 (총 중량 101g, 1회 제공량 101g)",
         "nutritional": {
@@ -1282,7 +1282,7 @@
         "nameEn": "Tiramisu So Sweet box Partypack",
         "category": "cake",
         "text": "마스카포네 치즈무스와 커피시럽의 촉촉한 시트, 진한 발로나 코코아 파우더가 조화로운 오리지널 티라미스의 홀사이즈 케이크",
-        "price": "",
+        "price": "39,000원",
         "image": "../../../assets/images/menu/food/cake_07.png",
         "servingSize": "제품영양정보 (총 중량 789g, 1회 제공량 132g)",
         "nutritional": {
@@ -1300,7 +1300,7 @@
         "nameEn": "Cookies and cream So Sweet box Partypack",
         "category": "cake",
         "text": "진한 크림치즈와 블랙쿠키가 부드럽게 어우러진 쿠키앤크림 홀사이즈 케이크",
-        "price": "",
+        "price": "39,000원",
         "image": "../../../assets/images/menu/food/cake_08.png",
         "servingSize": "제품영양정보 (총 중량 801g, 1회 제공량 134g)",
         "nutritional": {
@@ -1318,7 +1318,7 @@
         "nameEn": "Cookies and cream So Sweet box",
         "category": "cake",
         "text": "진한 크림치즈와 블랙쿠키가 부드럽게 어우러진 쿠키앤크림 케이크",
-        "price": "",
+        "price": "6,500원",
         "image": "../../../assets/images/menu/food/cake_09.png",
         "servingSize": "제품영양정보 (총 중량 135g, 1회 제공량 135g)",
         "nutritional": {
@@ -1336,7 +1336,7 @@
         "nameEn": "Tiramisu So Sweet box",
         "category": "cake",
         "text": "마스카포네 치즈무스와 커피시럽의 촉촉한 시트, 진한 발로나 코코아 파우더가 조화로운 오리지널 티라미스 케이크",
-        "price": "",
+        "price": "6,500원",
         "image": "../../../assets/images/menu/food/cake_10.png",
         "servingSize": "제품영양정보 (총 중량 133g, 1회 제공량 133g)",
         "nutritional": {
@@ -1354,7 +1354,7 @@
         "nameEn": "Vanilla Delight Cake",
         "category": "cake",
         "text": "할리스 시그니처 메뉴인 '바닐라 딜라이트'를 갸또 스타일 케이크로 구현한 디저트",
-        "price": "",
+        "price": "5,900원",
         "image": "../../../assets/images/menu/food/cake_11.png",
         "servingSize": "제품영양정보 (총 중량 141g, 1회 제공량 141g)",
         "nutritional": {
@@ -1390,7 +1390,7 @@
         "nameEn": "New York Cheese",
         "category": "cake",
         "text": "부드럽고 촉촉한 식감과 진한 크림 치즈 맛의 구움 치즈케이크(홀사이즈)",
-        "price": "",
+        "price": "5,900원",
         "image": "../../../assets/images/menu/food/cake_13.png",
         "servingSize": "제품영양정보 (총 중량 880g, 1회 제공량 100g 기준)",
         "nutritional": {
@@ -1427,7 +1427,7 @@
         "nameEn": "Ham and Cheese Scrambled Eggs Toast",
         "category": "sandwich/toast",
         "text": "부드럽고 촉촉한 브리오슈 식빵에 스크램블 에그와 햄, 치즈를 넣어 구운 토스트",
-        "price": "",
+        "price": "4,900원",
         "image": "../../../assets/images/menu/food/sandwich_toast_01.png",
         "servingSize": "제품영양정보 (총 중량 100g, 1회 제공량 100g 기준)",
         "nutritional": {
@@ -1445,7 +1445,7 @@
         "nameEn": "Soft Jambon Beurre",
         "category": "sandwich/toast",
         "text": "고소한 버터, 겹겹이 쌓은 햄에 양배추 피클과 트러플오일이 더해진 소프트한 잠봉뵈르 샌드위치",
-        "price": "",
+        "price": "6,500원",
         "image": "../../../assets/images/menu/food/sandwich_toast_02.png",
         "servingSize": "제품영양정보 (총 중량 175g, 1회 제공량 175g 기준)",
         "nutritional": {
@@ -1463,7 +1463,7 @@
         "nameEn": "Cranberry Chicken Sandwich",
         "category": "sandwich/toast",
         "text": "통밀 식빵에 부드러운 치킨과 상큼함이 매력적인 크랜베리가 만나 톡톡 튀는 샌드위치",
-        "price": "",
+        "price": "6,000원",
         "image": "../../../assets/images/menu/food/sandwich_toast_03.png",
         "servingSize": "제품영양정보 (총 중량 240g, 1회 제공량 240g 기준)",
         "nutritional": {
@@ -1481,7 +1481,7 @@
         "nameEn": "B.E.L.T Club Sandwich",
         "category": "sandwich/toast",
         "text": "통밀 식빵에 풍성한 로메인, 계란후라이, 베이컨, 토마토가 어우러진 한끼 든든 샌드위치",
-        "price": "",
+        "price": "6,000원",
         "image": "../../../assets/images/menu/food/sandwich_toast_04.png",
         "servingSize": "제품영양정보 (총 중량 190g, 1회 제공량 190g 기준)",
         "nutritional": {
@@ -1499,7 +1499,7 @@
         "nameEn": "Egg Mayo Sandwich",
         "category": "sandwich/toast",
         "text": "계란 2알을 그대로 으깨 푹신한 식빵에 담아낸 가성비 좋은 수제 콜드 샌드위치",
-        "price": "",
+        "price": "4900원",
         "image": "../../../assets/images/menu/food/sandwich_toast_05.png",
         "servingSize": "제품영양정보 (총 중량 250g, 1회 제공량 250g 기준)",
         "nutritional": {
@@ -1573,7 +1573,7 @@
         "nameEn": "Strawberry Yogurt Macaron",
         "category": "bakery",
         "text": "요거트 가나슈와 딸기 퓨레에 딸기 요거트 버터크림을 샌드한 꽃모양 뚱카롱",
-        "price": "",
+        "price": "3,900원",
         "image": "../../../assets/images/menu/food/bakery_01.png",
         "servingSize": "제품영양정보 (총 중량 28g, 1회 제공량 28g)",
         "nutritional": {
@@ -1591,7 +1591,7 @@
         "nameEn": "Double Chocolate Macaron",
         "category": "bakery",
         "text": "진한 초콜릿 가나슈를 토핑 후 초콜릿 버터크림에 초코진주 크런치를 토핑하여 더욱 진한 초콜릿 맛과 다양한 식감까지 느낄 수 있는 뚱카롱*매장 상황에 따라, 제품이미지는 다를 수 있습니다.",
-        "price": "",
+        "price": "2,900원",
         "image": "../../../assets/images/menu/food/bakery_01.png",
         "servingSize": "제품영양정보 (총 중량 30g, 1회 제공량 30g 기준)",
         "nutritional": {
@@ -1609,7 +1609,7 @@
         "nameEn": "Strawberry Cheese Cake Macaron",
         "category": "bakery",
         "text": "시그니처 음료인 '딸기 치즈케익 할리치노' 를 뚱카롱으로 구현하여 진한 치즈케익과 딸기잼을 토핑 후 딸기치즈 버터크림을 샌드한 뚱카롱*매장 상황에 따라, 제품이미지는 다를 수 있습니다.",
-        "price": "",
+        "price": "2,900원",
         "image": "../../../assets/images/menu/food/bakery_03.png",
         "servingSize": "제품영양정보 (총 중량 30g, 1회 제공량 30g 기준)",
         "nutritional": {
@@ -1627,7 +1627,7 @@
         "nameEn": "Vanilla Delight Macaron",
         "category": "bakery",
         "text": "시그니처 음료인 '바닐라 딜라이트' 를 뚱카롱으로 구현하여 진한 바닐라 딜라이트 가나슈를 토핑 후 바닐라 딜라이트 버터크림을 샌드한 뚱카롱*매장 상황에 따라, 제품이미지는 다를 수 있습니다.",
-        "price": "",
+        "price": "2,900원",
         "image": "../../../assets/images/menu/food/bakery_04.png",
         "servingSize": "제품영양정보 (총 중량 30g, 1회 제공량 30g 기준)",
         "nutritional": {
@@ -1645,7 +1645,7 @@
         "nameEn": "Chocolate Financier",
         "category": "bakery",
         "text": "다크 청크 초콜릿이 토핑된 달콤한 초콜릿 휘낭시에",
-        "price": "",
+        "price": "2,300원",
         "image": "../../../assets/images/menu/food/bakery_05.png",
         "servingSize": "제품영양정보 (총 중량 40g, 1회 제공량 40g)",
         "nutritional": {
@@ -1663,7 +1663,7 @@
         "nameEn": "Classic Financier",
         "category": "bakery",
         "text": "진한 풍미의 버터가 가득한 클래식 휘낭시에",
-        "price": "",
+        "price": "2,300원",
         "image": "../../../assets/images/menu/food/bakery_06.png",
         "servingSize": "제품영양정보 (총 중량 40g, 1회 제공량 40g)",
         "nutritional": {
@@ -1681,7 +1681,7 @@
         "nameEn": "Bacon Potato Danish",
         "category": "bakery",
         "text": "데니쉬 시트에 포슬한 감자와 진한 풍미의 크림치즈, 짭쪼름한 베이컨이 더해져 누구나 맛있게 즐길 수 있는 데니쉬 제품",
-        "price": "",
+        "price": "4,500원",
         "image": "../../../assets/images/menu/food/bakery_07.png",
         "servingSize": "제품영양정보 (총 중량 130g 1회 제공량 130g 기준)",
         "nutritional": {
@@ -1699,7 +1699,7 @@
         "nameEn": "Corn Cheese Danish",
         "category": "bakery",
         "text": "데니쉬 시트에 고소하고 달콤한 스위트콘과 짭쪼름한 햄, 치즈가 가득 들어있어 단짠의 매력이 있는 데니쉬 제품",
-        "price": "",
+        "price": "4,500원",
         "image": "../../../assets/images/menu/food/bakery_08.png",
         "servingSize": "제품영양정보 (총 중량 135g 1회 제공량 135g 기준)",
         "nutritional": {
@@ -1753,7 +1753,7 @@
         "nameEn": "Cream Cheese Scone & strawberry Jam",
         "category": "bakery",
         "text": "버터향이 가득한 촉촉한 비스켓 속 크림치즈가 들어간 풍미 가득한 비스켓",
-        "price": "",
+        "price": "3,500원",
         "image": "../../../assets/images/menu/food/bakery_11.png",
         "servingSize": "제품영양정보 (총 중량 92g, 1회 제공량 92g 기준)",
         "nutritional": {
@@ -1791,7 +1791,7 @@
         "nameEn": "Truffle Mushroom Soup Bowl",
         "category": "food",
         "text": "포르치니 버섯, 양송이 버섯의 깊은 풍미와 진한 트러플 풍미가 조화를 이룬 수프",
-        "price": "",
+        "price": "6,900원",
         "image": "../../../assets/images/menu/food/food_02.png",
         "servingSize": "제품영양정보 (총 중량 362g, 1회 제공량 181g 총2회 제공량 기준)",
         "nutritional": {
@@ -1809,7 +1809,7 @@
         "nameEn": "Souffle Omelet Rice",
         "category": "food",
         "text": "부드럽고 포슬한 식감의 오믈렛과 아라비아따 소스로 구성된 오믈렛 라이스",
-        "price": "",
+        "price": "6,900원",
         "image": "../../../assets/images/menu/food/food_03.png",
         "servingSize": "제품영양정보 (총 중량 243g, 1회 제공량 243g 기준)",
         "nutritional": {
@@ -1881,7 +1881,7 @@
         "nameEn": "Honey Baguette Bowl",
         "category": "food",
         "text": "겉은 바삭 속은 쫄깃한 바게트 속에 꿀과 버터가 녹아있는 부드럽고 달콤한 허니브레드",
-        "price": "",
+        "price": "6,300원",
         "image": "../../../assets/images/menu/food/food_07.png",
         "servingSize": "제품영양정보 (총 중량 255g, 1회 제공량 128g 기준)",
         "nutritional": {
@@ -1954,7 +1954,7 @@
         "category": "product",
         "text": "언제어디서나 가볍고 쉽게 나만의 홈트, 할리스 핏",
         "caution": "* 세트구성: 요가 매트 1830 x 610 x 6 (mm) 폼롤러 450 x 100 x 100 (mm) 마사지볼: 60 x 60 (mm)",
-        "price": "",
+        "price": "59,000원",
         "image": "../../../assets/images/menu/md_product/product_07.png"
       },
       {
@@ -1963,7 +1963,7 @@
         "category": "product",
         "text": "언제어디서나 가볍고 쉽게 나만의 홈트, 할리스 핏",
         "caution": "*요가 매트: 1830 x 610 x 6 (mm)",
-        "price": "",
+        "price": "39,000원",
         "image": "../../../assets/images/menu/md_product/product_08.png"
       },
       {
@@ -2043,7 +2043,7 @@
         "nameEn": "Always Forest Hand cream & Lip balm set",
         "category": "product",
         "text": "- 건조해진 손에 빠르게 흡수되고 보습력이 좋은 시그니처 우드향의 핸드크림.<br>- 사계절 사용 가능한 제형과 사용감을 통해 푸석해진 입술의 각질을 잠재워 주는 립밤.<br>- 핸드크림 30ml / 립밤 4g",
-        "price": "",
+        "price": "27,000원",
         "image": "../../../assets/images/menu/md_product/product_17.png"
       },
       {
@@ -2428,7 +2428,7 @@
         "nameEn": "HOLLYS GRILLED CHICKEN BREAST",
         "category": "food",
         "text": "낱개 포장으로 간편하고 깔끔하게 즐기는 할리스 그릴 닭가슴살",
-        "price": "",
+        "price": "5,900원",
         "image": "../../../assets/images/menu/md_food/food_05.png",
         "servingSize": "제품영양정보 (총 중량 300g, 1회 제공량 100g)",
         "nutritional": {
@@ -2446,7 +2446,7 @@
         "nameEn": "Heart Pie",
         "category": "food",
         "text": "프랑스산 버터 풍미가 가득한 패스트리 타입의 달콤한 하트모양 파이",
-        "price": "",
+        "price": "4,000원",
         "image": "../../../assets/images/menu/md_food/food_06.png",
         "servingSize": "제품영양정보 (총 중량 80g, 1회 제공량 80g)",
         "nutritional": {
@@ -2464,7 +2464,7 @@
         "nameEn": "Hollys Vanilla Delight",
         "category": "food",
         "text": "바닐라 딜라이트 파우더의 깊고 진한 풍미의 커피로 간편한 파우치에 담은 제품",
-        "price": "",
+        "price": "18,500원",
         "image": "../../../assets/images/menu/md_food/food_07.png",
         "servingSize": "제품영양정보 (총 중량 190ml, 1회 제공량 190ml)",
         "nutritional": {
@@ -2482,7 +2482,7 @@
         "nameEn": "Hollys Peach Earl Grey",
         "category": "food",
         "text": "복숭아 과즙과 얼그레이 향의 달콤한 조화로운 음료로 간편한 파우치에 담은 제품",
-        "price": "",
+        "price": "16,500원",
         "image": "../../../assets/images/menu/md_food/food_08.png",
         "servingSize": "제품영양정보 (총 중량 230ml, 1회 제공량 230ml)",
         "nutritional": {
@@ -2500,7 +2500,7 @@
         "nameEn": "Hollys Americano",
         "category": "food",
         "text": "드립 추출방식으로 부드럽고 깔끔한 맛의 아메리카노를 간편한 파우치에 담은 제품",
-        "price": "",
+        "price": "16,500원",
         "image": "../../../assets/images/menu/md_food/food_09.png",
         "servingSize": "제품영양정보 (총 중량 230ml, 1회 제공량 230ml)",
         "nutritional": {
@@ -2517,7 +2517,7 @@
         "nameEn": "Strawberry Sand wafer",
         "category": "food",
         "text": "얇고 바삭한 비스킷 속 부드러운 크림으로 간편하게 즐기는 스낵",
-        "price": "",
+        "price": "2,500원",
         "image": "../../../assets/images/menu/md_food/food_10.png"
       },
       {
@@ -2525,7 +2525,7 @@
         "nameEn": "Greentea Sand wafer",
         "category": "food",
         "text": "얇고 바삭한 비스킷 속 부드러운 크림으로 간편하게 즐기는 스낵",
-        "price": "",
+        "price": "2,500원",
         "image": "../../../assets/images/menu/md_food/food_11.png"
       },
       {
@@ -2533,7 +2533,7 @@
         "nameEn": "Milk Sandwafer",
         "category": "food",
         "text": "얇고 바삭한 비스킷 속 부드러운 크림으로 간편하게 즐기는 스낵",
-        "price": "",
+        "price": "2,500원",
         "image": "../../../assets/images/menu/md_food/food_12.png"
       },
       {
@@ -2541,7 +2541,7 @@
         "nameEn": "Cranberry White Chocolate Cookie",
         "category": "food",
         "text": "상큼한 크랜베리와 화이트 초콜릿이 조화로운 달콤상큼한 쿠키",
-        "price": "",
+        "price": "2,800원",
         "image": "../../../assets/images/menu/md_food/food_13.png",
         "servingSize": "제품영양정보 (총 중량 80g, 1회 제공량 80g)",
         "nutritional": {
@@ -2559,7 +2559,7 @@
         "nameEn": "Triple Chocolate Cookie",
         "category": "food",
         "text": "다크, 화이트, 블랙카카오 3가지 초코에 다크 초콜릿 청크를 가득 올린 진한 초코 쿠키",
-        "price": "",
+        "price": "2,800원",
         "image": "../../../assets/images/menu/md_food/food_14.png",
         "servingSize": "제품영양정보 (총 중량 80g, 1회 제공량 80g)",
         "nutritional": {
@@ -2577,7 +2577,7 @@
         "nameEn": "Easy Shake Grain",
         "category": "food",
         "text": "미숫가루맛 베이스에 곡물 알갱이가 씹혀 고소하고 간편하게 즐기는 단백질 쉐이크",
-        "price": "",
+        "price": "2,700원",
         "image": "../../../assets/images/menu/md_food/food_15.png",
         "servingSize": "제품영양정보 (총 중량 40g, 1회 제공량 40g 기준)",
         "nutritional": {
@@ -2595,7 +2595,7 @@
         "nameEn": "Easy Shake Choco",
         "category": "food",
         "text": "초코맛 베이스에 카카오닙스와 견과류의 씹는 재미가 있는 단백질 쉐이크",
-        "price": "",
+        "price": "2,700원",
         "image": "../../../assets/images/menu/md_food/food_16.png",
         "servingSize": "제품영양정보 (총 중량 40g, 1회 제공량 40g 기준)",
         "nutritional": {
@@ -2647,7 +2647,7 @@
         "nameEn": "Decaffeine Vanilla Delight 10T",
         "category": "food",
         "text": "고소한 디카페인 원두와 마다가스카르산 바닐라빈이 어우러져 고급스러운 바닐라 풍미가 특징",
-        "price": "",
+        "price": "7,400원",
         "image": "../../../assets/images/menu/md_food/food_19.png"
       },
       {
