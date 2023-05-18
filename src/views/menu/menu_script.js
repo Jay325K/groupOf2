@@ -23,39 +23,39 @@ const menuCategoryArray = {
 let menuListArray = [];
 let drinkCategoryChecked = [true];
 let drinkPageNum = "1";
-let pageName = [];
+let pageName = "";
 
 const getMenu = () => {
   const response = fetch("../menu_list.json");
   return response.then((res) => res.json());
 };
 
-const drinkPrintExec = async () => {
+const menuPrintExec = async () => {
   try {
     const menu = await getMenu();
     if (drinkPageNum) {
-      drinkPagePrintProcess(menu[pageName]);
+      menuPrintProcess(menu[pageName]);
     }
   } catch (error) {
     console.log(error);
   }
 };
-const drinkPagePrintProcess = (menu) => {
+const menuPrintProcess = (menu) => {
   drinkListArray = [];
   menuListArray = [];
   menuList.innerHTML = "";
   menuPage.innerHTML = "";
 
-  drinkListGenerate(menu);
+  menuListGenerate(menu);
   const pageCount = Math.ceil(menuListArray.length / 20);
 
   for (let i = 1; i <= pageCount; i++) {
     if (pageCount != 1)
       menuPage.innerHTML += `<button><span>${i}</span></button>`;
   }
-  drinkPagePrint();
+  menuPrint();
 };
-const drinkListGenerate = (menu) => {
+const menuListGenerate = (menu) => {
   if (drinkCategoryChecked[0]) {
     menuCategoryArray[pageName].forEach((e) => {
       menuListArray = [...menuListArray, ...menu[e]];
@@ -71,7 +71,7 @@ const drinkListGenerate = (menu) => {
     });
   }
 };
-const drinkPagePrint = () => {
+const menuPrint = () => {
   for (let i = (parseInt(drinkPageNum) - 1) * 20; i < 20 * drinkPageNum; i++) {
     if (!menuListArray[i]) {
       menuList.innerHTML += `<li class="blank_item"></li>`;
@@ -161,13 +161,13 @@ const test = (data, keys) => {
 window.addEventListener("DOMContentLoaded", () => {
   const pageSlash = window.location.pathname.split("/");
   pageName = pageSlash[pageSlash.length - 1].split(".")[0];
-  drinkPrintExec();
+  menuPrintExec();
 });
 
 menuPage.addEventListener("click", (e) => {
   if (drinkPageNum !== e.target.innerHTML && e.target.localName == "span") {
     drinkPageNum = e.target.innerHTML;
-    drinkPrintExec();
+    menuPrintExec();
   }
 });
 menuCategory.addEventListener("change", () => {
@@ -194,7 +194,7 @@ menuCategory.addEventListener("change", () => {
   for (let i = 0; i < menuCategoryCheckbox.length; i++) {
     drinkCategoryChecked[i] = menuCategoryCheckbox[i].lastElementChild.checked;
   }
-  drinkPrintExec();
+  menuPrintExec();
 });
 
 menuList.addEventListener("click", (e) => {
