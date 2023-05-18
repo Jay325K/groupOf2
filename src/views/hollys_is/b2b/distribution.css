@@ -1,6 +1,10 @@
 body {
   font-size: 16px;
 }
+a {
+  color: inherit;
+}
+
 /* main */
 
 /* about content */
@@ -8,12 +12,8 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.distribution_title {
-  font-size: 72px;
-  margin-bottom: 100px;
-}
 .distribution_sub--title {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 50px;
 }
 .distribution_cont {
@@ -41,11 +41,11 @@ body {
   font-weight: 600;
 }
 .distribution_material--sub_title {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 30px;
 }
 .distribution_sub--title_txt {
-  font-size: 24px;
+  font-size: 18px;
   color: #4f4c4b;
   margin-bottom: 50px;
 }

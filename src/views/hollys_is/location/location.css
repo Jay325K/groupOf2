@@ -1,0 +1,35 @@
+body {
+  font-size: 16px;
+}
+a {
+  color: inherit;
+}
+
+/* banner */
+.hollys_is--banner {
+  background: url("../../../assets/images/hollysis/location_banner.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position-y: 85%;
+}
+
+/* main */
+.location_content--wrap {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.location_category--map {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.location_head--office_content {
+  display: flex;
+  margin-bottom: 30px;
+}
+.location_head--office_address {
+  margin-right: 96px;
+}
+.location_head--office_email {
+  display: flex;
+}
