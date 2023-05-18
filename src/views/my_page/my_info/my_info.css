@@ -1,13 +1,40 @@
 body {
   font-size: 16px;
 }
+a {
+  color: inherit;
+}
 
-/* my info content */
-.my_info--content_wrap {
+/* page route */
+.page_route--wrap {
   width: 1200px;
   margin: 0 auto;
 }
-.my_info--content_wrap h2 {
-  font-size: 72px;
-  margin-bottom: 100px;
+.page_route {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* main */
+.my_info--title_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.my_info--title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.my_info--desc_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.my_info--content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.my_info--content_wrap {
+  width: 1200px;
+  margin: 0 auto;
 }

@@ -1,0 +1,64 @@
+body {
+  font-size: 16px;
+}
+a {
+  color: inherit;
+}
+span {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* page route */
+.page_route--wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page_route {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* main */
+.my_academy--title_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.my_academy--title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.my_academy--content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.my_academy--content_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.my_academy--content_title,
+.my_academy--content_list--cont {
+  display: flex;
+  margin-bottom: 10px;
+}
+.my_academy--content_title span:first-child,
+.my_academy--content_list--cont span:first-child {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+.my_academy--content_title span:nth-child(2),
+.my_academy--content_list--cont span:nth-child(2) {
+  display: inline-block;
+  width: 1000px;
+  text-align: center;
+}
+.my_academy--content_title span:last-child,
+.my_academy--content_list--cont span:last-child {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}

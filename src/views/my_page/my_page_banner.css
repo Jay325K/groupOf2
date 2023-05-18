@@ -5,7 +5,7 @@
 .my_page--banner {
   color: white;
   height: 100vh;
-  background: url("../../assets/images/hollysis/info_banner.jpg") no-repeat;
+  background: url("../../assets/images/my_page/my_page_banner.jpg") no-repeat;
   background-size: cover;
 }
 .my_page--lnb--wrap {
