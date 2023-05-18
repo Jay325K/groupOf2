@@ -7,6 +7,7 @@
     
     padding-top: 20px;
     margin-top: 50px;
+    border-bottom: 1px solid lightgray;
 }
 
 /*********************planner**************************/
@@ -16,7 +17,6 @@ main .sec_two .planner_plan_wrap .planner_wrap{
     width: 55%;
     border-top: 1px solid gray;
     border-right: 1px solid lightgray;
-    padding: 20px 50px;
     font-size: 1.2em;
 }
 
@@ -117,6 +117,7 @@ main .sec_two .plan_wrap{
     flex-direction: column;
     padding: 50px;
     border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
     font-size: 1.2em;
 }
 main .sec_two .plan_wrap h3{

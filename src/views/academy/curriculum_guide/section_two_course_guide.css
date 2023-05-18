@@ -12,7 +12,6 @@
     transition: 0.5s;
 }
 .sec_two .course_guide_wrap .menu_ul li{
-    position: relative;
     width: 100%;
 
     padding: 10px 10px;
@@ -30,9 +29,58 @@
     border-right: 0;
 }
 
-.sec_two .course_guide_wrap .menu_ul li a{
+.sec_two .course_guide_wrap .menu_ul li h3 a{
     transition: 0.5s;
 }
+
+/* 바리스타 마스터 상세보기 버튼 */
+.menu_ul li .prev{
+    position: absolute;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+
+    width: 70px;
+    height: 100%;
+
+    backdrop-filter: blur(5px);
+
+    border:0;
+}
+ .menu_ul li .next{
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to left, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+
+    width: 70px;
+    height: 100%;
+
+    backdrop-filter: blur(5px);
+
+    border:0;
+}
+
+ .menu_ul li .prev i,
+ .menu_ul li .next i{
+    font-size: 4em;
+    
+    transition: 0.15s;
+}
+ .menu_ul li .prev:hover i,
+ .menu_ul li .next:hover i{
+    color: #c72f2f;
+}
+
+
 /* 메뉴 ul 움직이는 백그라운드 색 */
 .sec_two .course_guide_wrap>.btn_bg{
     position: absolute;
@@ -94,3 +142,5 @@
     border-bottom: 2px solid gray;
     padding-bottom: 5px;
 }
+
+
