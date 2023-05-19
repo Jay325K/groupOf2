@@ -22,6 +22,8 @@
     <!-- gsap -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <!-- inclue -->
+    <script src="../../jquery/include-html.min.js"></script>
 
 
     <style>
@@ -76,12 +78,13 @@
             overflow: hidden;
         }
         .main_cont {
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
         }
 
-        .main_cont > * {
+        /* .main_cont > * {
         position: relative;
         z-index: 2;
         }
@@ -90,14 +93,25 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+        } */
+        .main_cont > *{
+        display: flex;
+        align-items: center; /* 수직 가운데 정렬 */
+        justify-content: center; /* 수평 가운데 정렬 */
         }
+
+        .main_cont > video {
+        max-width: 130%;
+        max-height: 130%;
+        height: auto;
+        }
+
 
         .cof_text {
         position: absolute;
         right: 0;
         top: 140px;
         padding: 20px;
-        backdrop-filter: blur(10px);
         color: white;
         font-size: 100px;
         font-weight: bold;
@@ -108,13 +122,12 @@
         right: 0;
         top: 250px;
         padding: 20px;
-        backdrop-filter: blur(10px);
         color: white;
         font-size: 100px;
         font-weight: bold;
         }
         .fp-tableCell{
-            padding:0; 
+            padding: 0px;
         }
 
     </style>
@@ -189,17 +202,7 @@
         news news 바로가기
         [공고] 제3자 배정 유상증자 신주발행 공고 05-03 -->
         <footer class="section fp-auto-height">
-            개인정보처리방침 변경 안내 10-06
-            중간배당 기준일 공고 10-14
-            창업안내 창업안내
-            고객문의 고객문의
-            HOLLYS LIVE facebook
-    
-            개인정보처리방침 서비스이용약관 멤버십이용약관 할리스카드이용약관 고객문의 고객설문 사이트맵 BI 소개
-            법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호
-            주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)
-    
-            COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
+            <div data-include="../../footer_header/footer.html"></div>
         </footer>
     </main>
     

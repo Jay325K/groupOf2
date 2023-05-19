@@ -12,7 +12,7 @@ $(function () {
         //options here
         autoScrolling:true,
         scrollHorizontally: true,
-        navigation:true,    
-        navigationPosition:'right'
+        // navigation:true,    
+        // navigationPosition:'right'
     });
 });
