@@ -54,7 +54,7 @@
                         <ul class="card_category_img_box"> <!-- display:flex; align-item:center; gap:20px -->
                             <li>
                                 <img src="../../assets/images/hollysmall/card_img/Hollys card/giftCard_201903130229352821.png" alt="">
-                                <div class="check"><i class="fa-solid fa-check"></i></div>
+                                <div class="check"></div>
                                 <a href="#none" class="select_card_img_name">Hollys Red</a>
                             </li>
 
@@ -190,8 +190,7 @@
                                 </ul>
                             </div>
 
-                            <div class="img_background"></div>
-                            <img src="../../assets/images/hollysmall/card_img/Season card/giftCard_201903130230036421.png" alt="">
+                            <img src="../../assets/images/hollysmall/card_img/Season card/giftCard_201903130230036421.png" alt="" class="my_select_card_show_img">
 
                         </div>
                     </div>
@@ -205,13 +204,13 @@
                                             <div>받을인원</div>
                                             <div>
                                                 <label for="gift_me">나에게 선물하기</label>
-                                                <input type="checkbox" id="gift_me" >
+                                                <input type="checkbox" id="gift_me" checked>
                                             </div>
                                         </th>
                                         <td>
                                             <div>
                                                 <label for="total_number">몇명에게 선물하시겠습니까?</label>
-                                                <input type="text" id="total_number" placeholder="5">
+                                                <input type="text" id="total_number" placeholder="5" maxlength="1" value="1" readonly="readonly">
                                             </div>
                                             <div>
                                                 * 최대 5명까지 선택 가능합니다.
@@ -249,80 +248,16 @@
                                                 <li>
                                                     <div>
                                                         <label for="receiver">이름</label>
-                                                        <input type="text" id="receiver">
+                                                        <input type="text" id="receiver" maxlength="6" value="박주현" readonly>
                                                     </div>
-                                                
+                                                    
                                                     <div>
                                                         <label for="tel_number">전화번호</label>
                                                         <input type="text" id="tel_number" value="010" readonly="readonly">-
                                                         <label for="tel_middle_number" class="screen_out">전화번호 중간자리</label>
-                                                        <input type="tel" id="tel_middle_number" minlength="4" maxlength="4">-
+                                                        <input type="tel" id="tel_middle_number" minlength="4" maxlength="4" value="2388" readonly>-
                                                         <label for="tel_last_number" class="screen_out">전화번호 뒷자리</label>
-                                                        <input type="tel" id="tel_last_number" minlength="4" maxlength="4">
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div>
-                                                        <label for="receiver">이름</label>
-                                                        <input type="text" id="receiver">
-                                                    </div>
-                                                
-                                                    <div>
-                                                        <label for="tel_number">전화번호</label>
-                                                        <input type="text" id="tel_number" value="010" readonly="readonly">-
-                                                        <label for="tel_middle_number" class="screen_out">전화번호 중간자리</label>
-                                                        <input type="tel" id="tel_middle_number" minlength="4" maxlength="4">-
-                                                        <label for="tel_last_number" class="screen_out">전화번호 뒷자리</label>
-                                                        <input type="tel" id="tel_last_number" minlength="4" maxlength="4">
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div>
-                                                        <label for="receiver">이름</label>
-                                                        <input type="text" id="receiver">
-                                                    </div>
-                                                
-                                                    <div>
-                                                        <label for="tel_number">전화번호</label>
-                                                        <input type="text" id="tel_number" value="010" readonly="readonly">-
-                                                        <label for="tel_middle_number" class="screen_out">전화번호 중간자리</label>
-                                                        <input type="tel" id="tel_middle_number" minlength="4" maxlength="4">-
-                                                        <label for="tel_last_number" class="screen_out">전화번호 뒷자리</label>
-                                                        <input type="tel" id="tel_last_number" minlength="4" maxlength="4">
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div>
-                                                        <label for="receiver">이름</label>
-                                                        <input type="text" id="receiver">
-                                                    </div>
-                                                
-                                                    <div>
-                                                        <label for="tel_number">전화번호</label>
-                                                        <input type="text" id="tel_number" value="010" readonly="readonly">-
-                                                        <label for="tel_middle_number" class="screen_out">전화번호 중간자리</label>
-                                                        <input type="tel" id="tel_middle_number" minlength="4" maxlength="4">-
-                                                        <label for="tel_last_number" class="screen_out">전화번호 뒷자리</label>
-                                                        <input type="tel" id="tel_last_number" minlength="4" maxlength="4">
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <div>
-                                                        <label for="receiver">이름</label>
-                                                        <input type="text" id="receiver">
-                                                    </div>
-                                                
-                                                    <div>
-                                                        <label for="tel_number">전화번호</label>
-                                                        <input type="text" id="tel_number" value="010" readonly="readonly">-
-                                                        <label for="tel_middle_number" class="screen_out">전화번호 중간자리</label>
-                                                        <input type="tel" id="tel_middle_number" minlength="4" maxlength="4">-
-                                                        <label for="tel_last_number" class="screen_out">전화번호 뒷자리</label>
-                                                        <input type="tel" id="tel_last_number" minlength="4" maxlength="4">
+                                                        <input type="tel" id="tel_last_number" minlength="4" maxlength="4" value="0662" readonly>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -332,7 +267,8 @@
                                             <div>메세지 입력</div>
                                         </th>
                                         <td>
-                                            <textarea name="message" id="message" cols="30" rows="10" maxlength="100" minlength="0"></textarea>
+                                            <textarea name="message" id="message" cols="30" rows="10" maxlength="100" minlength="0" style="resize: none;" placeholder="100글자 까지만 입력 가능합니다."></textarea>
+                                            <div>0/100</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -381,18 +317,75 @@
                     </div>
                 </div>
 
-                <div class="page_step_contents">
-                    <div class="result_wrap">
+                <div class="page_step_contents"> <!-- width:100% =1200px -->
+                    <div class="result_wrap">   <!-- width:100% = 1200px -->
                         <div class="order_check">
-                            <div class="my_infomation"></div>
-                            <div class="my_order"></div>
-                            <div class="receiver_list"></div>
-                        </div>
-                        <div class="card_message">
-                            <div class="my_select_card_wrap">
+                            <div class="my_infomation">
+                                <p>주문자 정보</p>
+                                <div>
+                                    <div>
+                                        <p>이름: <span class="input_name">박주현</span></p>
+                                        <p>전화번호: <span class="input_tel_num">01023880662</span></p>
+                                        <p>이메일: <span class="input_email">skswngussla@naver.com</span></p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="my_order">
+                                <p>주문 내역</p>
+                                <div>
+                                    <div>
+                                        <p>카드이름: <span class="my_select_card_name"></span></p>
+                                        <p>금액: <span class="card_amount">10,000원</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="receiver_list">
+                                <p>받는사람</p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>이름</th>
+                                            <th>전화번호</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="name_list">
+                                                <p>박주현</p>
+                                            </td>
+                                            <td class="telnum_list">
+                                                <p>010-2388-0662</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+
+                        <div class="card_message">
+                            <div class="my_select_card_wrap">
+                                <div class="my_select_card_text"> <!-- display:flex; justify-contents:center; align-items:center; -->
+                                    <p></p>
+                                </div>
+
+                                <div class="my_selected_card_img"> <!-- display:flex; justify-contents:center; align-items:center; -->
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+
+                            <div class="my_message">
+                                메세지:
+                                <p class="my_message_text">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page_move_btn_wrap">
+                        <a href="#none" class="prev_step">이전</a>
+                        <a href="#none" class="pay">결제하기</a>
                     </div>
                 </div>
             </li>
