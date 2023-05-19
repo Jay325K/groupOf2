@@ -24,13 +24,17 @@ for(let x=0; x<btn__.length; x++){
 }
 
 /* 5초마다 다른 카드 보여주기 */
-setInterval(function(){
-    if(count==9){
-        num=0;
-        document.querySelector('.hollys_card_design_wrap .card_box ul').style.transform='translateX('+num+'px)';
-        count=0;
-    }else{
-        document.querySelector('.hollys_card_design_wrap .card_box ul').style.transform='translateX('+(num -= 250)+'px)';
-        count++;
+    let another_card= setInterval(function(){
+        if(count==9){
+            num=0;
+            document.querySelector('.hollys_card_design_wrap .card_box ul').style.transform='translateX('+num+'px)';
+            count=0;
+        }else{
+            document.querySelector('.hollys_card_design_wrap .card_box ul').style.transform='translateX('+(num -= 250)+'px)';
+            count++;
+        }
+    },5000);
+
+    document.querySelector('.buy_btn').onclick=function(){
+        clearInterval(another_card);
     }
-},5000);
