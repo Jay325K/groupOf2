@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>할리스 : 위치</title>
+    <link rel="stylesheet" href="../../../styles/reset.css" />
+    <link rel="stylesheet" href="../hollys_is_banner.css" />
+    <link rel="stylesheet" href="./location.css" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2028a55cd775a831a2072e4b93a09318&libraries=services"
+    ></script>
+  </head>
+  <body>
+    <main id="main" class="main">
+      <section class="hollys_is--banner_wrap">
+        <section class="hollys_is--banner">
+          <section class="hollys_is--lnb--wrap">
+            <section class="hollys_is--lnb">
+              <section class="lnb_title--wrap">
+                <h2 class="lnb_title">할리스 위치</h2>
+                <div class="lnb_title--under"></div>
+              </section>
+              <section class="lnb_list--wrap">
+                <ul class="lnb_list">
+                  <li>
+                    <a href="#none" class="lnb_list--hollys_btn"> 할리스 </a>
+                    <ul class="lnb_list--hollys display_none">
+                      <li>
+                        <a href="../hollys/about_hollys.html">ABOUT HOLLYS</a>
+                      </li>
+                      <li><a href="../hollys/history.html">HISTORY</a></li>
+                      <li><a href="../hollys/bi.html">BI</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../location/location.html">할리스 위치</a></li>
+                  <li><a href="../recruit/recruit.html">채용안내</a></li>
+                  <li>
+                    <a href="#none" class="lnb_list--b2b_btn">B2B사업</a>
+                    <ul class="lnb_list--b2b display_none">
+                      <li><a href="../b2b/info.html">B2B 소개</a></li>
+                      <li>
+                        <a href="../b2b/office_coffee_service.html"
+                          >오피스 커피 서비스</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../b2b/distribution.html">신채널 유통</a>
+                      </li>
+                      <li>
+                        <a href="../b2b/consulting.html">사내카페 컨설팅</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="location_content--wrap">
+        <section class="location_content">
+          <p class="location_guide">할리스로 오시는 길을 알려드립니다.</p>
+          <section class="location_category--and_map">
+            <section class="location_category">
+              <ul>
+                <li><a href="#none">본사</a></li>
+                <li><a href="#none">아카데미</a></li>
+                <li><a href="#none">커피클럽 로스팅 센터</a></li>
+              </ul>
+            </section>
+            <section
+              class="location_category--map"
+              id="map"
+              style="width: 1000px; height: 500px"
+            ></section>
+          </section>
+          <section class="location_category--content"></section>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="./location.js"></script>
+  <script src="../hollys_is_lnb_script.js"></script>
+</html>

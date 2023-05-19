@@ -25,9 +25,6 @@ footer{
     border-top: 1px solid;
 
 }
-
-#marker_img{
-}
 /******************** section_one *******************/
 /* banner img */
 .container .banner_wrap{
@@ -37,7 +34,7 @@ footer{
     min-width: 1200px;
     height: 100vh;
 
-    background: url(Academy_img_box/아카데미\ 소개.png) no-repeat;
+    background: url(../../../assets/images/Academy_img_box/banner.png) no-repeat;
     background-size: cover;
 
     display: flex;
@@ -105,7 +102,7 @@ footer{
 .container .banner_wrap .banner h2{
     position: relative;
 
-    font-size: 5em;
+    font-size: 4em;
     color: #fff;
 }
 .container .banner_wrap .banner .h2_deco{

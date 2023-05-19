@@ -4,20 +4,6 @@
     font-weight: 700;
     font-style: normal;
 }
-
-/* 임시reset */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
-ul,li{
-    list-style: none;
-}
-h1,h2,h3,h4,h5,h6,a,p,td{
-    font-family: 'MICEGothic Bold';
-}
 a{
     text-decoration: none;
     text-align: center;
@@ -25,12 +11,13 @@ a{
 a:hover{
     text-decoration: underline;
 }
-.screen_out{
-    display: none;
-}
 .Store_table{
-    height: 465px;
+    height: 450px;
     overflow: auto;
+}
+
+.Store_table tr,td{
+    padding: 10px;
 }
 
 /* *************************************************** */
@@ -60,59 +47,9 @@ td,th{
 main{
     width: 100%;
 }
-/* lnb */
-/* main .sec_one{
-    width: 220px;
-    padding-right: 20px;
-    transform: translateX(200px);
-    transition: 0.5s;
-}
-main .sec_one.active{
-    transform: translateX(0px);
-    transition: 0.5s;
-} */
-/* 매장검색 */
-/* main .sec_one .sec_one_wrap>h2{
-    font-size: 1.44em;
-    margin-bottom: 40px;
-    letter-spacing: -1px;
-}
-main .sec_one .sec_one_wrap>h2 a{
-    color: rgb(199, 47, 48);
-} */
-
-/* event */
-/* main .sec_one .sec_one_wrap .event h2 {
-    font-size: 1em ;
-    letter-spacing: -1px;
-    padding-bottom: 3px;
-}
-main .sec_one .sec_one_wrap .event h2 a{
-    color: rgb(80, 80, 80);
-}
-main .sec_one .sec_one_wrap .event p{
-    font-size: 0.8em ;
-    letter-spacing: -1px;
-} */
-
-/* img_box */
-/* main .sec_one .sec_one_wrap .event .img_box{
-    width: 190px;
-}
-main .sec_one .sec_one_wrap .event .img_box a{
-    display: block;
-    width: 100%;
-    padding: 30px 10px 30px 0;
-}
-main .sec_one .sec_one_wrap .event .img_box a img{
-    width: 100%;
-    padding-bottom: 30px;
-    border-bottom: 1px solid lightgray;
-} */
 main .section_wrap{
     position: relative;
     width: 1200px;
-    height: 120vh;
     margin: auto;
     display: flex;
     border: 1px solid blue;
@@ -123,7 +60,7 @@ main .section_wrap{
 main .section_wrap .sec_two{
     position: relative;
     width: 700px;
-    min-height: 100vh;
+    height: 1080px;
     transform: translateX(250px);
     transition: 0.5s;
     z-index: 1;

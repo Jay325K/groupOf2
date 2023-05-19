@@ -1,0 +1,101 @@
+/******************** section_one *******************/
+/* banner img */
+.container .banner_wrap{
+    position: relative;
+
+    width: 100%;
+    min-width: 1200px;
+    height: 100vh;
+
+    background: url(../../../src/assets/images/hollysmall/Hollys_mall_bnanner.png) no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .banner_wrap .banner {
+    position: relative;
+    width: 1200px;
+    height: 200px;
+
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.container .banner .lnb{
+    position: absolute;
+    left: 0;
+
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .banner .lnb ul{
+    position: relative;
+    top: 70%;
+    width: 40%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .banner .lnb ul li{
+    width: 30%;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.container .banner .lnb ul li:hover{
+    background: rgb(199, 47, 47);
+}
+.container .banner  .lnb ul li a{
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* banner text */
+.container .banner_wrap .banner .path{
+    position: absolute;
+    top: 80px;
+    left: 46.5%;
+    transform: translateX(-50%);
+}
+.container .banner_wrap .banner h2{
+    position: relative;
+
+    font-size: 5em;
+    color: #fff;
+}
+.container .banner_wrap .banner .h2_deco{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+
+    width: 500px;
+    height: 3px;
+    background: rgb(199, 47, 47);
+    animation: animate 0.5s ease-in;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        width: 340px;
+    }
+}

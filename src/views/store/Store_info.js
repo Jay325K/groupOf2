@@ -17,15 +17,15 @@ request.onload = function() {
         /* 매장검색 & 지역검색*/
         /* 매장검색 버튼누를시 */
         $('.search_Store_button_wrap a').on('click focus',function(){
-            $('.search_Store_input_label').removeClass('screen_out');
-            $('.locate_Store_input_label').addClass('screen_out');
+            $('.search_Store_input_label .input_label_detail').removeClass('screen_out');
+            $('.locate_Store_input_label .input_label_detail').addClass('screen_out');
             $('.locate_Store_input_label').css('display','none');
         });
 
         /* 지역검색 버튼누를시 */
         $('.locate_Store_button_wrap a').on('click focus',function(){
-            $('.locate_Store_input_label').removeClass('screen_out');
-            $('.search_Store_input_label').addClass('screen_out');
+            $('.locate_Store_input_label .input_label_detail').removeClass('screen_out');
+            $('.search_Store_input_label .input_label_detail').addClass('screen_out');
             $('.locate_Store_input_label').css('display','block');
         });
 
@@ -239,7 +239,7 @@ request.onload = function() {
                 ps.keywordSearch(('할리스 '+search_keyword), placesSearchCB);
                 console.log(search_keyword);
             }else{
-                ps.keywordSearch(search_keyword, placesSearchCB);
+                ps.keywordSearch('할리스 '+search_keyword, placesSearchCB);
                 console.log(search_keyword);
             }
 

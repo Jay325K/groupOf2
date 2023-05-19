@@ -1,18 +1,25 @@
 body {
   font-size: 16px;
 }
+a {
+  color: inherit;
+}
+
+/* banner */
+.hollys_is--banner {
+  background: url("../../../assets/images/hollysis/recruit_banner.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
 /* about content */
 .recruit_content--wrap {
   width: 1200px;
   margin: 0 auto;
 }
-.recruit_content h2 {
-  font-size: 72px;
-  margin-bottom: 100px;
-}
 .recruit_sub--title {
-  font-size: 48px;
-  margin-bottom: 50px;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 .recruit_people--wrap {
   margin-bottom: 100px;
@@ -136,4 +143,6 @@ body {
 }
 .recruit_recruit--img img {
   width: 680px;
+  border: 1px solid #6666;
+  box-sizing: border-box;
 }

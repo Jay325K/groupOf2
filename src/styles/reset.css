@@ -4,7 +4,7 @@
 	코딩하기 편한 값으로 변경
 */
 /*   *{ } = all elements   */
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -12,6 +12,9 @@ body,
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 a,
 img,
@@ -32,31 +35,37 @@ input,
 button {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body,
 input {
   font-size: 13px;
   font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
 }
 a {
   color: #000; /* inherit */
   text-decoration: none;
+  box-sizing: border-box;
 }
 ul,
 ol,
 li {
   list-style: none;
+  box-sizing: border-box;
 }
 address {
   font-style: normal;
+  box-sizing: border-box;
 }
 img {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: middle;
-	max-width: 100%;
-	height: auto;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 fieldset {
   border: 0 none;
@@ -64,6 +73,7 @@ fieldset {
 input,
 button {
   vertical-align: middle;
+  box-sizing: border-box;
 }
 button {
   cursor: pointer;
@@ -73,6 +83,7 @@ video {
   max-width: 130%;
   max-height: 130%;
   height: auto;
+  box-sizing: border-box;
 }
 
 /* 공통 클래스 */

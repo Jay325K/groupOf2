@@ -1,6 +1,10 @@
 body {
   font-size: 16px;
 }
+a {
+  color: inherit;
+}
+
 /* main */
 
 /* about content */
@@ -9,28 +13,28 @@ body {
   margin: 0 auto;
 }
 .info_title {
-  font-size: 72px;
-  margin-bottom: 50px;
+  font-size: 40px;
+  margin-bottom: 100px;
 }
 .info_title--content {
   font-size: 24px;
   color: #4f4c4b;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .info_content--cont {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .info_content--detail {
   width: 600px;
 }
 .info_content--title {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 30px;
 }
 .info_content--sub_title {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 30px;
 }
 .info_content--txt {

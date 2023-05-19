@@ -1,0 +1,104 @@
+/* banner */
+.my_page--banner_wrap {
+  margin-bottom: 100px;
+}
+.my_page--banner {
+  color: white;
+  height: 100vh;
+  background: url("../../assets/images/my_page/my_page_banner.jpg") no-repeat;
+  background-size: cover;
+}
+.my_page--lnb--wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.my_page--lnb {
+  height: 200px;
+}
+.lnb_title--wrap {
+  margin-bottom: 45px;
+}
+.lnb_title {
+  color: white;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.lnb_title--under {
+  width: 1200px;
+  height: 3px;
+  background: #c72f30;
+  animation: animate 0.5s ease-in;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  30% {
+    width: 350px;
+  }
+  50% {
+    width: 500px;
+  }
+  100% {
+    width: 650px;
+  }
+}
+.lnb_list--wrap {
+  display: flex;
+  justify-content: center;
+}
+.lnb_list {
+  display: flex;
+}
+.lnb_list > li > a {
+  font-weight: 800;
+  padding: 10px 50px;
+  margin-right: 10px;
+  background: rgba(128, 128, 128, 0.39);
+  transition: 0.3s;
+}
+.lnb_list > li > a:hover {
+  background: #c72f30;
+}
+.lnb_list--hollys,
+.lnb_list--b2b {
+  font-weight: 500;
+  font-size: 14px;
+  width: 144px;
+  height: 60px;
+  margin-top: 10px;
+  background: #00000073;
+  text-align: center;
+  animation-name: drop;
+  animation-duration: 0.15s;
+}
+@keyframes drop {
+  0% {
+    height: 0;
+  }
+}
+.lnb_list--b2b {
+  width: 161px;
+  height: 80px;
+}
+.lnb_list--hollys a,
+.lnb_list--b2b a {
+  display: block;
+  width: 100%;
+}
+.lnb_list--hollys a:hover,
+.lnb_list--b2b a:hover {
+  background: #666;
+}
+.my_page--banner .hollys_red {
+  background: #c72f30;
+}
+
+/* display none */
+.display_none {
+  display: none;
+}
