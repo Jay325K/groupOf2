@@ -70,7 +70,8 @@ button {
 }
 video {
   display: block;
-  max-width: 120%;
+  max-width: 130%;
+  max-height: 130%;
   height: auto;
 }
 
