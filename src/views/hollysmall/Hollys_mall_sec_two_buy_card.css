@@ -1,0 +1,325 @@
+.buy_wrap{
+    width: 100%; /* 1200px */
+}
+/* class = page_info */
+.buy_wrap .page_info{
+    width: 100%;  /* 1200px */
+    padding-top: 70px;
+}
+
+.buy_wrap .page_info .page_name{
+    font-size: 3em;
+}
+
+
+/* show_ul */
+
+.buy_wrap .show_ul_page{
+    width: 100%; /* 1200px */
+}
+.buy_wrap .show_ul_page>ul{
+    width: 300%; /* 3600px */
+
+    display: flex;
+}
+.buy_wrap .show_ul_page>ul .card_container{
+    width: 100%;
+}
+.buy_wrap .show_ul_page>ul .card_container .page_move_btn_wrap{
+    position: relative;
+    left: calc(100% - 20px);
+
+    transform: translateX(-100%);
+
+    width: 200px;
+
+    margin: 10px 0;
+
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.buy_wrap .show_ul_page>ul .card_container .page_move_btn_wrap a{
+
+    width: 100px;
+
+    box-shadow: 0 0 2px black;
+    
+    padding: 7px 20px;
+
+    display: flex;
+    justify-content: center;
+    
+}
+.buy_wrap .show_ul_page>ul .card_container .page_step{
+    border: 1px solid gray;
+    padding: 20px;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+.buy_wrap .show_ul_page>ul .card_container .page_step span{
+    width: 180px;
+    height: 90px;
+
+    background: #e2e2e2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-size: 1.2em;
+    font-weight: 700;
+
+    margin-right: -30px;
+
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+}
+
+/* step 정보 */
+.buy_wrap .step_intro{
+    width: 100%;    /* 1200px */
+
+    margin-top: 50px;
+}
+.buy_wrap .step_intro .step_name{
+    text-align: center;
+
+    font-size: 2.5em;
+
+    padding: 10px;
+    border: 1px solid gray;
+}
+.buy_wrap .step_intro .step_explain{
+    text-align: center;
+    
+    font-size: 1.2em;
+
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+
+/* step 컨텐츠 */
+.buy_wrap .page_step_contents{
+    width: 100%;    /* 1200px */
+
+    margin-top: 50px;
+}
+/*************************card_container첫번째 카드 디자인 선택******************************/
+/* 카드들 */
+.buy_wrap .page_step_contents .card_category{
+    width: 100%;    /* 1200px */
+    display: flex;
+}
+
+.buy_wrap .page_step_contents .card_category_name{
+    width: 15%;     /* 180px */
+
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+
+    font-size: 1.5em;
+    font-weight: 400;
+
+    letter-spacing: 3px;
+}
+.buy_wrap .page_step_contents .card_category_name p{
+    padding: 10px;
+    border-bottom: 1px solid #bebebe;
+}
+.buy_wrap .page_step_contents .card_category_img_box{
+    width: 85%;     /* 1020px */
+
+    padding: 10px;
+    padding-left: 30px;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+    display: flex;
+}
+/* 카드 정보 */
+.buy_wrap .page_step_contents .card_category_img_box li{
+    position: relative;
+
+    margin-right: 30px;
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    transition: 0.5s;
+}
+.buy_wrap .page_step_contents .card_category_img_box li img{
+    width: 210px;
+    height: 100%;
+}
+.buy_wrap .page_step_contents .card_category_img_box li .check{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 5em;
+
+    color: #0005;
+}
+
+.buy_wrap .page_step_contents .card_category_img_box li .select_card_img_name{
+    position: absolute;
+
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    padding: 8px 0;
+
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: 0.2s;
+}
+.buy_wrap .page_step_contents .card_category_img_box li:hover .select_card_img_name{
+    opacity: 1;
+
+    background: #0003;
+
+    backdrop-filter: blur(2px);
+
+    transition: 0.2s;
+
+    font-size: 1.4em;
+    
+    text-shadow: 1px 1px 5px #0005 ,-1px -1px 5px #0005, 1px -1px 5px #0005 , -1px 1px 5px #0005;
+}
+
+/*************************card_container두번째 결제 정보 입력******************************/
+/* 결제창 내가 선택한 카드 이미지 */
+.buy_wrap .page_step_contents .page_my_selected_card_img_wrap{
+    position: relative;
+
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid lightgray;
+}
+.buy_wrap .page_step_contents .page_my_selected_card_img_wrap .page_my_selected_card_img .card_img_background{
+    width: 100%;
+    height: 100%;
+}
+.buy_wrap .page_step_contents .page_my_selected_card_img_wrap .page_my_selected_card_img .card_img_background ul{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+}
+.buy_wrap .page_step_contents .page_my_selected_card_img_wrap .page_my_selected_card_img .card_img_background ul li{
+    width: 100%;
+    height: 100%;
+
+    padding: 3px;
+
+    display: flex;
+
+    filter: blur(5px);
+}
+.buy_wrap .page_step_contents .page_my_selected_card_img_wrap .page_my_selected_card_img .card_img_background ul li img{
+    width: 100%;
+    height: 77px;
+
+    display: flex;
+}
+
+.buy_wrap .page_step_contents .page_my_selected_card_img_wrap .page_my_selected_card_img>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 0 1px 1px #000;
+    border-radius: 10px;
+
+    width: 240px;
+    height: 160px;
+}
+.buy_wrap .page_step_contents .page_my_selected_card_img_wrap .page_my_selected_card_img .img_background{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(#fff,transparent,#fff);
+}
+
+
+
+/* 결제정보 입력 */
+.buy_wrap .page_step_contents .gift_info_table_wrap{
+    width: 100%;
+
+    margin-top: 37px;
+}
+.buy_wrap .page_step_contents .gift_info_table_wrap .gift_info_table{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.buy_wrap .page_step_contents .gift_info_table_wrap .gift_info_table table{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+.buy_wrap .page_step_contents .gift_info_table_wrap .gift_info_table table th,
+.buy_wrap .page_step_contents .gift_info_table_wrap .gift_info_table table td{
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid #b1b1b1;
+}
+.buy_wrap .page_step_contents .gift_info_table_wrap .gift_info_table table th:nth-last-child(1),
+.buy_wrap .page_step_contents .gift_info_table_wrap .gift_info_table table td:nth-last-child(1){
+    border-right: 0;
+}
+.buy_wrap .page_step_contents .gift_info_table_wrap .gift_info_table table td input{
+    width: 100px;
+    text-align: center;
+}
+.buy_wrap .page_step_contents .gift_info_table_wrap .gift_info_table table td ul li{
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+}
+
+/***********************************결제 정보 확인***********************************/
+.buy_wrap .page_step_contents .result_wrap{
+    width: 100%;
+
+    border: 1px solid;
+}
