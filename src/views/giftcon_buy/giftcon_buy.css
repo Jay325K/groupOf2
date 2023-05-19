@@ -1,0 +1,154 @@
+body {
+  font-size: 16px;
+}
+button {
+  padding: 0;
+  border: 0;
+  background: inherit;
+}
+a {
+  color: inherit;
+}
+
+/* banner */
+.giftcon_buy--banner {
+  color: white;
+  height: 100vh;
+  background: url("../../assets/images/giftcon_buy/giftcon_buy_banner.jpg")
+    no-repeat;
+  background-position-y: 20%;
+  background-size: cover;
+}
+.giftcon_buy--banner_wrap {
+  margin-bottom: 100px;
+}
+.giftcon_buy--banner_title--wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.giftcon_buy--banner_title--height {
+  height: 200px;
+}
+.giftcon_buy--banner_title {
+  color: white;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.giftcon_buy--banner_title--under {
+  width: 500px;
+  height: 3px;
+  background: #c72f30;
+  animation: animate 0.5s ease-in;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    width: 350px;
+  }
+}
+
+/* main */
+
+/* page route */
+.page_route--wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page_route {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* content */
+
+/* giftcon_buy--content */
+.giftcon_buy--content_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* giftcon_buy--process */
+.giftcon_buy--process {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border: 1px solid #666;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.giftcon_buy--ing,
+.giftcon_buy--stay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 90px;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.giftcon_buy--ing {
+  color: white;
+  background: #c72f30;
+  margin-right: -30px;
+}
+.giftcon_buy--stay {
+  background: #e2e2e2;
+}
+/* giftcon_buy--content_title */
+.giftcon_buy--content_title--wrap {
+  margin-bottom: 30px;
+}
+.giftcon_buy--content_title {
+  font-size: 28px;
+}
+/* giftcon_buy--product */
+.giftcon_buy--product {
+  padding: 10px 50px;
+  border: 1px solid #666;
+  margin-bottom: 200px;
+  box-sizing: border-box;
+}
+.giftcon_buy--product_detail {
+  padding: 0 30px 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.giftcon_buy--product_img {
+  width: 550px;
+}
+.giftcon_buy--product_img img {
+  width: 300px;
+}
+.giftcon_buy--product_txt {
+  width: 550px;
+  line-height: 2;
+}
+.product_product--name {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* giftcon_buy--product_caution */
+.giftcon_buy--product_caution--detail {
+  color: #666;
+}
+.giftcon_buy--product_customer {
+  color: #c72f30;
+  font-weight: 500;
+}
+.giftcon_buy--product_customer span:first-child {
+  margin-right: 10px;
+}
+.giftcon_buy--product_receipt--detail {
+  display: flex;
+}
+/* giftcon_buy--payment */
+.giftcon_buy--payment {
+  display: flex;
+}

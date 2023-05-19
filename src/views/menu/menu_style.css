@@ -257,11 +257,17 @@ td {
 }
 .menu_modal--gift_btn {
   display: inline-block;
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  padding: 5px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.menu_modal--gift_btn:hover {
   background: #c72f30;
   color: white;
-  border-radius: 5px;
+  border: 1px solid #c72f30;
 }
 .menu_page {
   text-align: center;
