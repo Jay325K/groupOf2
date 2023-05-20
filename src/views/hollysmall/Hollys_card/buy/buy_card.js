@@ -146,3 +146,9 @@ document.querySelectorAll('.prev_step').forEach((e,idx)=>{
         move_ul.style.transform='translateX('+distance+'px)';
     }
 })
+
+/* 결제정보 확인창에서 카드선택 화면 누를시 */
+document.querySelector('.prev_select_design').onclick=()=>{
+    distance=0;
+    move_ul.style.transform='translateX('+distance+'px)'
+}

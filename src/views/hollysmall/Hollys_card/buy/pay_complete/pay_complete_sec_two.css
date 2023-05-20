@@ -1,0 +1,122 @@
+.pay_complete_wrap{
+    width: 100%; /* 1200px */
+}
+/* class = page_info */
+.pay_complete_wrap .page_info{
+    width: 100%;  /* 1200px */
+    padding-top: 70px;
+}
+
+.pay_complete_wrap .page_info .page_name{
+    font-size: 3em;
+}
+
+
+.pay_complete_wrap>ul{
+    width: 100%; /* 3600px */
+
+    display: flex;
+
+    transition: 0.5s;
+}
+.pay_complete_wrap>ul .card_container{
+    width: 100%;
+}
+.pay_complete_wrap>ul .card_container .page_move_btn_wrap{
+    position: relative;
+    left: calc(50%);
+
+    transform: translateX(-75%);
+
+    width: 200px;
+
+    margin: 30px 0;
+
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.pay_complete_wrap>ul .card_container .page_move_btn_wrap a{
+
+    width: 100px;
+
+    box-shadow: 0 0 2px black;
+    
+    padding: 7px 20px;
+
+    display: flex;
+    justify-content: center;
+    
+}
+.pay_complete_wrap>ul .card_container .page_step{
+    border: 1px solid gray;
+    padding: 20px;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+.pay_complete_wrap>ul .card_container .page_step span{
+    width: 180px;
+    height: 90px;
+
+    background: #e2e2e2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-size: 1.2em;
+    font-weight: 700;
+
+    margin-right: -30px;
+
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+}
+
+/* step 정보 */
+.pay_complete_wrap .step_intro{
+    width: 100%;    /* 1200px */
+
+    margin-top: 50px;
+}
+.pay_complete_wrap .step_intro .step_name{
+    text-align: center;
+
+    font-size: 2.5em;
+
+    padding: 10px;
+    border: 1px solid gray;
+}
+.pay_complete_wrap .step_intro .step_explain{
+    text-align: center;
+    
+    font-size: 1.2em;
+
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+
+/* step 컨텐츠 */
+.pay_complete_wrap .page_step_contents{
+    width: 100%;    /* 1200px */
+
+    margin-top: 50px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.pay_complete_wrap .page_step_contents>div{
+    padding: 100px 0;
+
+    text-align: center;
+
+    font-size: 1.5em;
+    font-weight: 100;
+
+    color: gray;
+}
