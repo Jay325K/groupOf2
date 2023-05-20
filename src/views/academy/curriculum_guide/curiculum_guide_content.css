@@ -1,6 +1,6 @@
 .show_curriculum_content_wrap{
     width: 100%; /* 1200px */
-    margin-top: 70px;
+    padding-top: 70px;
 }
 /* class = page_info */
 .show_curriculum_content_wrap .page_info{
