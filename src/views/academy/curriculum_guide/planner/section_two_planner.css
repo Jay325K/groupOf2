@@ -1,0 +1,235 @@
+.sec_two{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+/* class = page_info */
+.page_info{
+    width: 100%;  /* 1200px */
+}
+
+.page_info .page_name{
+    font-size: 3em;
+    
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+/* 개강일정 관련 */
+
+.planner_plan_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 20px;
+    margin-top: 50px;
+    border-bottom: 1px solid lightgray;
+}
+
+/*********************planner**************************/
+
+/* 달력 */
+main .sec_two .planner_plan_wrap .planner_wrap{
+    width: 55%;
+    border-top: 1px solid gray;
+    border-right: 1px solid lightgray;
+    font-size: 1.2em;
+}
+
+/* 달 */
+.planner_wrap .planner .year_month{
+    position: relative;
+}
+.planner_wrap .planner .year_month .month{
+    width: 100%;
+    font-size: 3em;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planner_wrap .planner .year_month .month a{
+    position: relative;
+    top: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.planner_wrap .planner .year_month .month a:hover,
+.planner_wrap .planner .year_month .year a:hover
+{
+    border: 0;
+    text-shadow: 0 0 3px black;
+}
+.planner_wrap .planner .year_month .month span{
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+/* 년 */
+.planner_wrap .planner .year_month .year{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 30%;
+    font-size: 1.2em;
+}
+
+/* 요일 */
+.planner_wrap .planner .date__days .days ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.planner_wrap .planner .date__days .days ul li{
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* 일 */
+.planner_wrap .planner .date__days .date table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.planner_wrap .planner .date__days .date td{
+    position: relative;
+    height: 120px;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    font-size: 1.2em;
+}
+.planner_wrap .planner .date__days .date td:hover{
+    background: rgb(248, 248, 248);
+}
+.planner_wrap .planner .date__days .date td:nth-child(1){
+    border-left: 1px solid white;
+}
+.planner_wrap .planner .date__days .date td:nth-last-child(1){
+    border-right: 1px solid white;
+}
+.planner_wrap .planner .date__days .date td span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1em;
+    letter-spacing: -2px;
+    color: rgb(83, 83, 83);
+    font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
+}
+.planner_wrap .planner .date__days .date td a{
+    font-size: 0.88em;
+    letter-spacing: -1px;
+    font-size: 700;
+}
+
+
+/**************************plan****************************/
+main .sec_two .plan_wrap{
+    position: relative;
+    top: 0;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 1.2em;
+}
+main .sec_two .plan_wrap h3{
+    height: 10%;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 10px;
+}
+main .sec_two .plan_wrap{
+    height: 100%;
+}
+main .sec_two .plan_wrap .plan{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 5px 0;
+}
+main .sec_two .plan_wrap .plan a{
+    position: relative;
+    padding: 10px 0 0 20px;
+    width: 90%;
+    color: rgb(199, 47, 48);
+    display: flex;
+    font-size: 0.8em;
+    align-items: end;
+}
+main .sec_two .plan_wrap .plan a:hover{
+    text-decoration: underline;
+    border: 0;
+}
+main .sec_two .plan_wrap .plan a::before{
+    position: absolute;
+    content: '';
+    left: 4px;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    background: rgb(199, 47, 48);
+}
+main .sec_two .plan_wrap .plan li{
+    border-bottom: 1px solid lightgray;
+}
+main .sec_two .plan_wrap .plan li:nth-last-child(1){
+    border: 0;
+}
+main .sec_two .plan_wrap .plan .plan_accordion{
+    height: 0;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+main .sec_two .plan_wrap .plan .plan_accordion.active{
+    height: 100%;
+}
+main .sec_two .plan_wrap .plan .plan_accordion table{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.sec_two .plan_wrap .plan_accordion tr{
+    display: flex;
+}
+.sec_two .plan_wrap .plan_accordion td,
+.sec_two .plan_wrap .plan_accordion th{
+    width: 50%;
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 1px solid lightgray;
+    
+}
+.sec_two .plan_wrap .plan_accordion td{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    color: rgb(131, 131, 131);
+    font-family: 나눔고딕, NanumGothic, ng, 돋움, arial, helvetica, sans-serif !important;
+}
+.sec_two .plan_wrap .plan_accordion td>div{
+    width: 80%;
+    position: relative;
+    text-align: start;
+}
+.sec_two .plan_wrap .plan_accordion td span{
+    margin-bottom: 10px;
+}
+.sec_two .plan_wrap .plan_accordion td:nth-last-child(1),
+.sec_two .plan_wrap .plan_accordion th:nth-last-child(1){
+    width: 100%;
+}

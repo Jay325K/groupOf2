@@ -64,8 +64,9 @@
 }
 .show_ul>ul>li>a{
     position: absolute; /* .show_ul 따라감 */
-    top: 0;
     left: var(--absolute_move);
+
+    transform: translateY(-38px);
 
     width: 150px;
 
