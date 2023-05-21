@@ -1,56 +1,113 @@
-<div class="page_intro">
-    <h2>개강일정 및 강의시간표</h2>
-</div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../styles/reset.css">
+    <link rel="shortcut icon" href="../../../favicon.png">
+    <link rel="stylesheet" href="../curiculum_guide_section_one.css">
+    <link rel="stylesheet" href="../curiculum_guide_section_two.css">
+    <link rel="stylesheet" href="../header_main_footer.css">
+    <link rel="stylesheet" href="../planner/section_two_planner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<div class="sec_two_content" id="sec_two_content">
-    <div class="planner_plan_wrap">
-        <div class="planner_wrap" id="planner_wrap">
-            <div class="planner">
-                <h3 class="screen_out">달력</h3>
-                <div class="year_month">
-                    <div class="month">
-                        <a href="#none" class="month_prev" id="month_prev"><i class="fa-solid fa-chevron-left fa-xs" style="color: #c72f30;"></i></a>
-            
-                        <span class="show_month">5월</span>
-            
-                        <a href="#none" class="month_next" id="month_next"><i class="fa-solid fa-chevron-right fa-xs" style="color: #c72f30;"></i></a>
-                    </div>
-            
-                    <div class="year">
-                        <a href="#none" class="year_prev" id="year_prev"><i class="fa-solid fa-chevron-left fa-xs" style="color: #c72f30;"></i></a>
-            
-                        <span class="show_year">2023년</span>
-            
-                        <a href="#none" class="year_next" id="year_next"><i class="fa-solid fa-chevron-right fa-xs" style="color: #c72f30;"></i></a>
-                    </div>
-                </div>
-            
-                <div class="date__days">
-                    <div class="days">
-                        <ul>
-                            <li>일</li>
-                            <li>월</li>
-                            <li>화</li>
-                            <li>수</li>
-                            <li>목</li>
-                            <li>금</li>
-                            <li>토</li>
-                        </ul>
-                    </div>
-            
-                    <div class="date">
-                        <table></table>
+    <script src="../../../../jquery/jquery.js"></script>
+    <script src="class_time.js"></script>
+    <title>할리스 아카데미-개강일정 및 강의시간표</title>
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <article class="article container" id="article">
+            <section class="sec_one banner_tab" id="banner_tab">
+                <div class="banner_wrap">
+                    <div class="banner">
+                        <div class="banner_txt">
+                            <span class="h2_deco"></span>
+                            <h2>교육과정 안내</h2>
+                        </div>
+                        
+                        <div class="lnb" id="lnb">
+                            <ul>
+                                <li><a href="../curiculum_guide.html">수강신청 안내</a></li>
+                                <li><a href="#content">개강 일정</a></li>
+                                <li><a href="../course_register_list/course_register_list.html" class="purchase list">수강신청 내역</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="plan_wrap" id="plan_wrap">
-            <h3>일정 목록</h3>
-            <div>
-                <ul class="plan">
-                    
-                </ul>
-            </div>   
-        </div>
-    </div>
-</div>
+            </section>
+
+            <section class="sec_two content" id="content">  <!-- width:1200px -->
+                <div class="page_info"> <!-- width: 100% ==1200px -->
+                    <div class="path">  <!-- width: 100% ==1200px -->
+                        홈 > 사이트맵 > 아카데미 > 교육과정안내 > 개강일정
+                    </div>
+            
+                    <div class="page_name"> <!-- width: 100% ==1200px -->
+                        <h3>개강 일정</h3>
+                    </div>
+                </div>
+                
+                <div class="sec_two_content" id="sec_two_content">
+                    <div class="planner_plan_wrap">
+                        <div class="planner_wrap" id="planner_wrap">
+                            <div class="planner">
+                                <h3 class="screen_out">달력</h3>
+                                <div class="year_month">
+                                    <div class="month">
+                                        <a href="#none" class="month_prev" id="month_prev"><i class="fa-solid fa-chevron-left fa-xs" style="color: #c72f30;"></i></a>
+                            
+                                        <span class="show_month">5월</span>
+                            
+                                        <a href="#none" class="month_next" id="month_next"><i class="fa-solid fa-chevron-right fa-xs" style="color: #c72f30;"></i></a>
+                                    </div>
+                            
+                                    <div class="year">
+                                        <a href="#none" class="year_prev" id="year_prev"><i class="fa-solid fa-chevron-left fa-xs" style="color: #c72f30;"></i></a>
+                            
+                                        <span class="show_year">2023년</span>
+                            
+                                        <a href="#none" class="year_next" id="year_next"><i class="fa-solid fa-chevron-right fa-xs" style="color: #c72f30;"></i></a>
+                                    </div>
+                                </div>
+                            
+                                <div class="date__days">
+                                    <div class="days">
+                                        <ul>
+                                            <li>일</li>
+                                            <li>월</li>
+                                            <li>화</li>
+                                            <li>수</li>
+                                            <li>목</li>
+                                            <li>금</li>
+                                            <li>토</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <div class="date">
+                                        <table></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan_wrap" id="plan_wrap">
+                            <h3>일정 목록</h3>
+                            <div>
+                                <ul class="plan">
+                                    
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </article>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

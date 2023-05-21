@@ -1,0 +1,88 @@
+.hollys_card_buy_list_guide_wrap{
+    width: 100%; /* 1200px */
+}
+/* class = page_info */
+.hollys_card_buy_list_guide_wrap .page_info{
+    width: 100%;  /* 1200px */
+    padding-top: 70px;
+}
+
+.hollys_card_buy_list_guide_wrap .page_info .page_name{
+    font-size: 3em;
+
+    padding-bottom: 5px;
+    border-bottom: 1px solid #808080;
+}
+
+/* contents 시작 */
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list{
+    width: 90%;
+
+    margin: auto;
+    padding: 50px 0;
+}
+/* table 선 */
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table th,
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table td{
+    width: 15%;
+
+    border-top: 1px solid;
+    border-left: 1px solid;
+    padding: 5px 0;
+
+    text-align: center;
+}
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table th{
+    padding: 10px 0;
+}
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table tr:nth-child(n +10){
+    border-bottom: 1px solid;
+}
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table th:nth-last-child(1),
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table td:nth-last-child(1){
+    width: 40%;
+    border-right: 1px solid;
+}
+
+
+/* 받는사람 정보 */
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table td .recipient_info{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* 받는 사람 정보에서 이름과 사람 사이에 구분선 */
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table td .recipient_info p:nth-child(2){
+    position: relative;
+}
+.hollys_card_buy_list_guide_wrap .hollys_card_buy_list table td .recipient_info p:nth-child(2)::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: '';
+
+    transform: translateX(-10%);
+
+    width: 100%;
+    height: 100%;
+    
+    border-left: 1px solid #d3d3d3;
+}
+
+
+.hollys_card_buy_list_guide_wrap .page_length{
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px 0;
+
+    font-size: 1.3em;
+}

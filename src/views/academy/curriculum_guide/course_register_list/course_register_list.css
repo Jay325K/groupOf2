@@ -1,0 +1,71 @@
+.course_register_list_wrap{
+    width: 100%; /* 1200px */
+
+    padding-top: 70px;
+}
+/* page_info */
+.course_register_list_wrap .page_info{
+    width: 100%;  /* 1200px */
+}
+
+.course_register_list_wrap .page_info .page_name{
+    font-size: 3em;
+    
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+.course_register_list_wrap .course_register_list{
+    width: 80%;
+
+    padding-top: 50px;
+    margin: auto;
+}
+.course_register_list_wrap .course_register_list table{
+    width: 100%;
+
+    border-collapse: collapse;
+    border-bottom: 1px solid gray;
+}
+
+.course_register_list_wrap .course_register_list table th,
+.course_register_list_wrap .course_register_list table td{
+    text-align: center;
+
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+
+
+    padding: 10px 0;
+}
+.course_register_list_wrap .course_register_list table th:nth-child(1),
+.course_register_list_wrap .course_register_list table td:nth-child(1){
+    border-left: 0;
+}
+.course_register_list_wrap .course_register_list table td .register_none{
+    width: 200px;
+
+    margin: 60px auto;
+
+    padding: 10px 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.course_register_list_wrap .course_register_list>a{
+    display: block;
+
+    width: 150px;
+
+    text-align: center;
+
+    margin:30px auto;
+    padding: 10px;
+    border: 1px solid gray;
+
+}
+.course_register_list_wrap .course_register_list>a:active{
+    border: 1px solid #c72f2f;
+    background: #c72f2f;
+    color: #fff;
+}
