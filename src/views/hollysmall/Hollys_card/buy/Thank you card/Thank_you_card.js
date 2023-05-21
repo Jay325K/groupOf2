@@ -4,7 +4,7 @@ $(function(){
     let move_length=0;
     let move_ul = $('form .img_slide');
     $('button').on('click',function(){
-
+        /* 이전 다음 버튼 누를시 슬라이드 이동 */
         if($(this).hasClass('prev')==true){
             if(move_count>0){
                 move_length+=218.79;
