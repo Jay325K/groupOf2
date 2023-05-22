@@ -45,10 +45,8 @@ request.onload = function() {
 
             if($('.search_Store').hasClass('active')==true){
                 $('.open_close').text('닫기');
-                $('.search_Store_wrap').css('display','flex');
             }else{
                 $('.open_close').text('검색');
-                $('.search_Store_wrap').css({'display':'none'});
             }
         });
 

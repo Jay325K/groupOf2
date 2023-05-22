@@ -20,7 +20,7 @@ geocoder.addressSearch('서울특별시 종로구 삼일대로 395', function(re
 
         var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
 
-        var imageSrc = '../../../assets/images/hollysis/location.png', // 마커이미지의 주소입니다    
+        var imageSrc = '../../../assets/images/hollysis/location_01.png', // 마커이미지의 주소입니다    
         imageSize = new kakao.maps.Size(40, 55) // 마커이미지의 크기입니다
 
         // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다

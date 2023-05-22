@@ -5,7 +5,7 @@
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = {
                 center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
+                level: 4 // 지도의 확대 레벨
             };  
         
         // 지도를 생성합니다    
@@ -54,7 +54,11 @@
             // 마커에 클릭이벤트를 등록합니다
             kakao.maps.event.addListener(marker, 'click', function() {
                 // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
-                infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
+                infowindow.setContent('<div id="marker_img" style="position:relative; width:200px; text-align:center; padding:10px; font-size:0.9em; border:2px solid salmon; border-radius:50px; background:rgb(199,47,47);color:white">' + place.place_name + '</div>');
+                $(function(){
+                    $('#marker_img').parent().css({'border':'0', 'background':'0'});
+                    $('#marker_img').parent().parent().css({'border':'0', 'background':'0'});
+                });
                 infowindow.open(map, marker);
             });
         }
