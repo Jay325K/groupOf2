@@ -8,10 +8,14 @@ card_list_wrap.forEach(e=>{
         e.children[1].innerHTML='<i class="fa-solid fa-check"></i>';
 
         let check_img_src= e.children[0].getAttribute('src'); //카드 이미지 주소값
+        let check_img_alt= e.children[0].getAttribute('alt'); //카드 이미지 alt값
         let check_img_name = e.children[2].innerText;         //카드 이름
 
         document.querySelector('.page_my_selected_card_img_wrap .my_select_card_show_img').setAttribute('src',check_img_src);
         document.querySelector('.result_wrap .card_message .my_select_card_wrap .my_selected_card_img img').setAttribute('src',check_img_src);
+
+        document.querySelector('.page_my_selected_card_img_wrap .my_select_card_show_img').setAttribute('alt',check_img_alt);
+        document.querySelector('.result_wrap .card_message .my_select_card_wrap .my_selected_card_img img').setAttribute('alt',check_img_alt);
 
         document.querySelector('.result_wrap .my_order>div>div>p .my_select_card_name').innerHTML=check_img_name;
         document.querySelector('.result_wrap .card_message .my_select_card_wrap .my_select_card_text p').innerHTML=check_img_name;
