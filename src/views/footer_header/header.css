@@ -130,7 +130,7 @@ header .header_first .gnb_right .gnb .depth-02 {
   height: 200px;
   left: 0;
   top: 70px;
-  background: url(h_images/depth2.png) no-repeat;
+  background: url(/GIt_GUI/groupOf2/src/assets/images/header/depth2.png) no-repeat;
 }
 header .header_first .gnb_right .gnb .depth-02 ul{
   width: 110px;
