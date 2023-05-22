@@ -239,3 +239,16 @@ menuModalCloseBtn.addEventListener("click", () => {
 menuModalGift.addEventListener("click", () => {
   localStorage.setItem("giftInfo", JSON.stringify(giftInfo));
 });
+
+const headerID = document.getElementById("header");
+const getHeader = () => {
+  const response = fetch("../../footer_header/header.html");
+  return response.then((res) => res.text());
+};
+
+const header = async () => {
+  data = await getHeader();
+  headerID.innerHTML = data;
+};
+header();
+// console.log(headerID.innerHTML);

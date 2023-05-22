@@ -16,6 +16,9 @@ const giftconBuyPayDetailDelivery = document.querySelector(
 const giftconBuyPayDetailTotal = document.querySelector(
   ".giftcon_buy--pay_detail--total"
 );
+const giftconBuyResultHome = document.querySelector(
+  ".giftcon_buy--result_home"
+);
 const { prName, img, price } = JSON.parse(localStorage.getItem("giftInfo"));
 const shippingFee = "2,500";
 
@@ -41,7 +44,13 @@ const productPayPrint = () => {
   giftconBuyPayDetailDelivery.textContent = `${shippingFee}원`;
   giftconBuyPayDetailTotal.textContent = `${moneyTotalArr}원`;
 };
-window.addEventListener("DOMContentLoaded", () => {
-  productPrint();
-  productPayPrint();
+window.addEventListener("DOMContentLoaded", (e) => {
+  const nowPage = e.target.location.pathname.slice(23, -5);
+  if (nowPage === "giftcon_buy") {
+    productPrint();
+    productPayPrint();
+  }
+});
+giftconBuyResultHome.addEventListener("click", () => {
+  localStorage.removeItem("giftInfo");
 });

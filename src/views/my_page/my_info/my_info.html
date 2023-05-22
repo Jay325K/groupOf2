@@ -24,15 +24,16 @@
                   <li>
                     <a href="#none" class="lnb_list--hollys_btn">MY 멤버십</a>
                   </li>
-                  <li><a href="../location/location.html">MY 쿠폰</a></li>
-                  <li><a href="../recruit/recruit.html">MY 할리스카드</a></li>
+                  <li><a href="../my_coupon/my_coupon.html">MY 쿠폰</a></li>
                   <li>
-                    <a href="#none" class="lnb_list--b2b_btn">MY 매장</a>
+                    <a href="../my_hollys_card/my_hollys_card.html"
+                      >MY 할리스카드</a
+                    >
                   </li>
                   <li>
-                    <a href="../recruit/recruit.html">MY 아카데미</a>
+                    <a href="../my_academy/my_academy.html">MY 아카데미</a>
                   </li>
-                  <li><a href="../recruit/recruit.html">회원정보 관리</a></li>
+                  <li><a href="../my_info/my_info.html">회원정보 관리</a></li>
                 </ul>
               </section>
             </section>
@@ -52,19 +53,33 @@
         </p>
       </section>
       <section class="my_info--content_wrap">
-        <section>
-          <form action="" method="" id="" name="">
+        <section class="my_info--content">
+          <form action="" method="" id="my_info--user_check" name="">
             <div>
-              <label>아이디</label>
-              <input type="text" value="id" disabled />
+              <label for="my_info--uid">아이디</label>
+              <input
+                type="text"
+                id="uid"
+                class="my_info--uid"
+                value="admin012"
+                disabled
+              />
             </div>
             <div>
-              <label>비밀번호</label>
-              <input type="password" />
+              <label for="u_password">비밀번호</label>
+              <input
+                type="password"
+                id="u_password"
+                class="my_info--u_password"
+              />
+            </div>
+            <div class="my_info--click_btn--wrap">
+              <button type="submit" class="my_info--click_btn">확인</button>
             </div>
           </form>
         </section>
       </section>
     </main>
   </body>
+  <script src="./my_info.js"></script>
 </html>
