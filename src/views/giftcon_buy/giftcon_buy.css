@@ -9,6 +9,9 @@ button {
 a {
   color: inherit;
 }
+input {
+  box-sizing: border-box;
+}
 
 /* banner */
 .giftcon_buy--banner {
@@ -109,9 +112,9 @@ a {
 }
 /* giftcon_buy--product */
 .giftcon_buy--product {
-  padding: 10px 50px;
+  padding: 20px 50px;
   border: 1px solid #666;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   box-sizing: border-box;
 }
 .giftcon_buy--product_detail {
@@ -148,7 +151,83 @@ a {
 .giftcon_buy--product_receipt--detail {
   display: flex;
 }
-/* giftcon_buy--payment */
+
+/* giftcon_buy--payment_wrap */
+.giftcon_buy--payment_wrap {
+  border: 1px solid #666;
+  box-sizing: border-box;
+  padding: 20px 50px 0;
+  margin-bottom: 30px;
+}
+.giftcon_buy--sub_title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 .giftcon_buy--payment {
   display: flex;
+}
+.giftcon_buy--money {
+  width: 550px;
+  padding: 0 0 50px 0;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+.giftcon_buy--receiver_wrap {
+  margin-bottom: 30px;
+}
+.giftcon_buy--receiver_wrap label {
+  width: 100px;
+  display: inline-block;
+}
+.receiver_name {
+  width: 200px;
+}
+.giftcon_buy--receiver_tel input:nth-child(2) {
+  text-align: center;
+  width: 45px;
+  margin-right: 6px;
+}
+.giftcon_buy--receiver_tel input:nth-child(3),
+.giftcon_buy--receiver_tel input:nth-child(4) {
+  width: 60px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+.giftcon_buy--pay {
+  display: flex;
+  flex-direction: column;
+}
+.giftcon_buy--pay label {
+  margin-bottom: 10px;
+}
+.giftcon_buy--pay input {
+  margin-right: 10px;
+}
+.giftcon_buy--pay img {
+  width: 100px;
+}
+.giftcon_buy--pay_detail--wrap {
+  width: 550px;
+  padding: 0 0 0 50px;
+  box-sizing: border-box;
+}
+.giftcon_buy--pay_detail {
+  display: flex;
+  justify-content: space-between;
+}
+.giftcon_buy--pay_btn--wrap {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.giftcon_buy--pay_btn {
+  border: 1px solid #666;
+  padding: 5px 30px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.giftcon_buy--pay_btn:hover {
+  color: white;
+  background: #c72f30;
+  border: 1px solid #c72f30;
+  box-sizing: border-box;
 }

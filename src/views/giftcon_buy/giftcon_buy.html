@@ -98,33 +98,66 @@
           <section class="giftcon_buy--payment">
             <section class="giftcon_buy--money">
               <form action="" method="" id="" name="">
-                <h4>받는 이</h4>
-                <div>
-                  <label>이름<input type="text" /></label>
-                  <label>휴대폰 번호<input type="tel" /></label>
+                <h4 class="giftcon_buy--sub_title">받는 이</h4>
+                <div class="giftcon_buy--receiver_wrap">
+                  <div class="giftcon_buy--receiver_name">
+                    <label for="receiver_name">이름</label>
+                    <input
+                      type="text"
+                      id="receiver_name"
+                      class="receiver_name"
+                    />
+                  </div>
+                  <div class="giftcon_buy--receiver_tel">
+                    <label for="receiver_tel">휴대폰 번호</label>
+                    <input
+                      type="text"
+                      id="receiver_tel"
+                      value="010"
+                      disabled
+                    />-<input type="tel" id="receiver_tel" />-<input
+                      type="tel"
+                      id="receiver_tel"
+                    />
+                  </div>
                 </div>
-                <h4>결제 수단</h4>
-                <div>
-                  <label><input type="radio" name="pay" />네이버페이</label>
-                  <label><input type="radio" name="pay" />카카오페이</label>
+                <h4 class="giftcon_buy--sub_title">결제 수단</h4>
+                <div class="giftcon_buy--pay">
+                  <label
+                    ><input type="radio" name="pay" /><img
+                      src="../../assets/images/giftcon_buy/naver_pay.png"
+                      alt="네이버 페이"
+                  /></label>
+                  <label
+                    ><input type="radio" name="pay" /><img
+                      src="../../assets/images/giftcon_buy/kakao_pay.png"
+                      alt="카카오 페이"
+                  /></label>
                   <label><input type="radio" name="pay" />카드 간편결제</label>
                   <label><input type="radio" name="pay" />계좌 간편결제</label>
                   <label><input type="radio" name="pay" />일반 간편결제</label>
                 </div>
               </form>
             </section>
-            <section class="giftcon_buy--payment_details">
-              <h4>결제상세</h4>
-              <p>주문금액</p>
-              <p>상품금액</p>
-              <p>배송비</p>
-              <p>총 결제금액</p>
+            <section class="giftcon_buy--pay_detail--wrap">
+              <h4 class="giftcon_buy--sub_title">결제상세</h4>
+              <section class="giftcon_buy--pay_detail">
+                <section class="giftcon_buy--pay_detail--keys">
+                  <p>상품금액</p>
+                  <p>배송비</p>
+                  <p>총 결제금액</p>
+                </section>
+                <section class="giftcon_buy--pay_detail--values">
+                  <p class="giftcon_buy--pay_detail--product_price"></p>
+                  <p class="giftcon_buy--pay_detail--shipping_fee"></p>
+                  <p class="giftcon_buy--pay_detail--total"></p>
+                </section>
+              </section>
             </section>
           </section>
-
-          <section>
-            <button type="button">결제하기</button>
-          </section>
+        </section>
+        <section class="giftcon_buy--pay_btn--wrap">
+          <button type="button" class="giftcon_buy--pay_btn">결제하기</button>
         </section>
       </section>
     </main>
