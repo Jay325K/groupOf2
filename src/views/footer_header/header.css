@@ -19,6 +19,7 @@
 header {
   position: fixed;
   width: 100%;
+  min-width: 1200px;
   height: 70px;
   z-index: 999;
 }
@@ -130,7 +131,7 @@ header .header_first .gnb_right .gnb .depth-02 {
   height: 200px;
   left: 0;
   top: 70px;
-  background: url(../../assets/images/header/depth2.png) no-repeat;
+  background: #4F4C4B url(../../assets/images/header/depth2.png) no-repeat;
 }
 header .header_first .gnb_right .gnb .depth-02 ul{
   width: 110px;
