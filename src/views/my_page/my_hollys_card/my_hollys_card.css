@@ -4,6 +4,10 @@ body {
 a {
   color: inherit;
 }
+button {
+  border: 0;
+  background: inherit;
+}
 
 /* page route */
 .page_route--wrap {
@@ -30,6 +34,17 @@ a {
   margin: 0 auto 30px;
   text-align: end;
 }
+.my_hollys_card--btn {
+  border: 1px solid #666;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.my_hollys_card--btn:hover {
+  color: white;
+  border: 1px solid #c72f30;
+  background: #c72f30;
+}
 .my_coupon--content {
   display: flex;
   flex-wrap: wrap;
@@ -42,11 +57,22 @@ a {
 .my_coupon--coupon {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 .my_coupon--coupon_img--wrap {
-  margin-bottom: 30px;
   margin-right: 30px;
 }
 .my_coupon--coupon_img {
   width: 200px;
+}
+.my_coupon--coupon button {
+  border: 1px solid #666;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.my_coupon--coupon button:hover {
+  color: white;
+  border: 1px solid #c72f30;
+  background: #c72f30;
 }
