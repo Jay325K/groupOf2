@@ -1,0 +1,252 @@
+.show_curriculum_content_wrap .brista_master_content_wrap{
+    width: 100%; /* 1200px */
+    height: 100%;
+}
+
+/* 강좌이름 */
+.show_curriculum_content_wrap .brista_master_content_wrap .class_name{
+    width: 100%;
+    
+    font-size: 1.5em;
+
+    padding-top: 30px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid lightgray;
+}
+/* 강좌소개 */
+.show_curriculum_content_wrap .brista_master_content_wrap .class_intro{
+    width: 100%;
+
+    padding: 10px;
+}
+/* 테이블 */
+.show_curriculum_content_wrap .brista_master_content_wrap .class_table{
+    width: 80%;
+
+    margin: auto;
+    padding-top: 50px;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .class_table table{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .class_table th,
+.show_curriculum_content_wrap .brista_master_content_wrap .class_table td{
+    text-align: center;
+
+    border: 1px solid gray;
+    padding:10px 0px;
+}
+/* 상세교육내용 */
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course{
+    width: 90%;
+
+    margin: auto;
+    padding-top: 50px;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_txt_box{
+    width: 100%;
+
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+
+    font-size: 1.5em;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_explain{
+    width: 100%;
+}
+
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level{
+    position: relative;
+    width: 90%;
+
+    margin: auto;
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+    display: flex;
+    justify-content: space-between;
+    
+    overflow: hidden;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .curiculum_show_ul{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+    position: absolute;
+
+}
+
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level ul{
+    position: absolute;
+    left: 10%;
+
+    width: 200%;
+
+    display: flex;
+
+    transition: 0.5s;
+}
+
+/* 상세교육내용 자세한 강의내용 */
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level ul li{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level ul li>div{
+    width: 100%;
+}
+/* 강의 관련 이미지 */
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level ul li .img_box{
+    position: relative;
+
+    width: 90%;
+
+    margin-top: 20px;
+
+    display: flex;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level ul li .img_box img{
+    width: 100%;
+    height: 90%;
+
+    margin: auto;
+    border-radius: 5px;
+
+    overflow: hidden;
+
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level ul li .img_box>div{
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    padding: 10px 20px;
+
+    background: #0007;
+    color: #fff;
+
+    width: 100%;
+    height: 50%;
+
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level ul li .img_box>div h6{
+    font-size: 1.2em;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level ul li .img_box>div p{
+    font-size: 0.9em;
+}
+
+/* 슬라이드 이전 다음 버튼 */
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level>a{
+    position: relative;
+    width: 8%;
+    height: 200px;
+
+    display: block;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3em;
+
+    
+}
+/* 이전 */
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .prev{
+    position: relative;
+    border-left: 1px solid lightgray ;
+
+    background: linear-gradient(to right, #fff, #fff, transparent);
+    backdrop-filter: blur(5px);
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .prev::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    border-right: 2px solid lightgray;
+
+    transition: 0.3s;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .prev::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    border-right: 2px solid lightgray;
+}
+
+/* 다음 */
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .next{
+    position: relative;
+    border-right: 1px solid lightgray ;
+
+    background: linear-gradient(to left, #fff, #fff, transparent);
+    backdrop-filter: blur(2px);
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .next::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    border-left: 2px solid lightgray;
+
+    transition: 0.3s;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .next::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    border-left: 2px solid lightgray;
+
+    transition: 0.3s;
+}
+/* 슬라이드 버튼 이펙트들 */
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .next:active{
+    color: #c72f2f;
+
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .prev:active{
+    color: #c72f2f;
+
+}
+
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .next:hover::before,
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .next:hover::after{
+    height: 10%;
+}
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .prev:hover::before,
+.show_curriculum_content_wrap .brista_master_content_wrap .detail_course .detail_curiculum_level .prev:hover::after{
+    height: 10%;
+}

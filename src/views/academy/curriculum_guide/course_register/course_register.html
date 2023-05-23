@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../../styles/reset.css">
+    <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+
+    <link rel="stylesheet" href="course_register.css">
+
+    <link rel="stylesheet" href="../curiculum_guide_section_one.css">
+    <link rel="stylesheet" href="../curiculum_guide_section_two.css">
+    <link rel="stylesheet" href="../header_main_footer.css">
+
+    <script src="course_register.js"></script>
+
+    <title>할리스 아카데미 - 수강신청</title>
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <article class="article container" id="article">
+            <section class="sec_one banner_tab" id="banner_tab">
+                <div class="banner_wrap">
+                    <div class="banner">
+                        <div class="banner_txt">
+                            <span class="h2_deco"></span>
+                            <h2>교육과정 안내</h2>
+                        </div>
+                        
+                        <div class="lnb" id="lnb">
+                            <ul>
+                                <li><a href="../curiculum_guide.html">수강신청 안내</a></li>
+                                <li><a href="../planner/class_time.html" target="_blank">개강 일정</a></li>
+                                <li><a href="../course_register_list/course_register_list.html" class="purchase list">수강신청 내역</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec_two content" id="content">  <!-- width:1200px -->
+                <div class="course_register_wrap">
+                    <div class="page_info"> <!-- width: 100% ==1200px -->
+                        <div class="path">  <!-- width: 100% ==1200px -->
+                            홈 > 사이트맵 > 아카데미 > 교육과정안내 > 수강신청안내 > 수강신청
+                        </div>
+                
+                        <div class="page_name"> <!-- width: 100% ==1200px -->
+                            <h3>수강신청</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="course_register">
+                        <form action="#" method="get" name="info" id="course_register_form" onchange="form_onchange()">
+                            <fieldset>
+                                <legend>수강신청서</legend>
+                                <span class="complete_underline"></span>
+
+                                <div class="text_wrap">
+                                    <div class="info_wrap">
+        
+                                        <div class="info_left_justified">
+
+                                            <p class="center"><strong>레드 아카데미를 신청하고싶어요!</strong></p>
+                                            <div class="move">
+                                                <p>제 <label for="name">이름</label>은
+                                                    <input type="text" id="name"> 입니다!
+                                                </p>
+        
+                                                <p>제가 듣고싶은 강좌는
+                                                    <select name="course_name" id="course_name" class="long_text">
+                                                        <option value="선택">선택</option>
+                                                        <option value="커피 홀릭">커피 홀릭</option>
+                                                        <option value="커피 브루잉">커피 브루잉</option>
+                                                        <option value="커피 매니아">커피 매니아</option>
+                                                        <option value="에스프레소 심화&메뉴">에스프레소 심화&메뉴</option>
+                                                        <option value="라떼아트">라떼아트</option>
+                                                        <option value="바리스타 2급 Master">바리스타 2급 Master</option>
+                                                        <option value="바리스타 실기특강 2급">바리스타 실기특강 2급</option>
+                                                        <option value="바리스타 실기특강 1급">바리스타 실기특강 1급</option>
+                                                        
+                                                    </select>(으)로
+                                                </p>
+                                            
+                                                <p>
+                                                    저와 함께 신청할 사람은 총
+                                                    <select name="group_num" id="group_num">
+                                                        <option value="">선택</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                    </select>
+                                                    명입니다!
+                                                </p>
+                                            </div>
+                                            
+                                            <p class="center"><strong>저와의 연락수단을 남겨놓을게요!</strong></p>
+        
+                                            <div class="move">
+                                                <p>
+                                                    핸드폰번호는
+                                                    <label for="start_number" class="screen_out">앞번호</label>
+                                                    <input type="text" id="start_number" name="start_number" value="010" readonly>-
+                                                    <label for="middle_number" class="screen_out">중간번호</label>
+                                                    <input type="text" id="middle_number" name="middle_number" maxlength="4">-
+                                                    <label for="end_number" class="screen_out">마지막번호</label>
+                                                    <input type="text" id="end_number" name="end_number" maxlength="4">
+                                                    이구요,
+                                                </p>
+
+                                                <p>
+                                                    <label for="email">이메일</label>은
+                                                    <input type="email" class="long_text" id="email">입니다!  
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="payment_wrap">
+                                            <p class="payment_left">
+                                                강좌의 결제는<span class="big_size">[</span>
+                                            </p>
+                                            <p class="payment_middle">
+                                                <div class="flex_colum">
+                                                    <label for="online">온라인(무통장) 입금<input type="radio" id="online" name="payment" checked /></label>
+                                                    <label for="now">즉시 결제(신용카드)<input type="radio" id="now" name="payment" /></label>
+                                                </div>
+                                            </p>
+                                            <p class="payment_right">
+                                                <span class="big_size">]</span>(으)로 할게요!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="button_wrap">
+                                            <button type="submit" onclick="GoToEnroll();">신청하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

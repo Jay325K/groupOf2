@@ -1,7 +1,6 @@
 $(function(){
     planner_in_infomation();
     
-
     $.ajax({
         type:'get', //http 타입
         url:'calendar_plan.json', //호출url

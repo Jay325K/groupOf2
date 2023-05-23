@@ -1,0 +1,150 @@
+.login_wrap{    /* 하위 섹션들 중앙정렬 */
+
+    width: 440px;
+    min-height: 50vh;
+
+    padding: 70px 0;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    gap: 30px;
+
+}
+/* 로그인 텍스트  */
+.login_wrap .login_txt_box{
+    width: 100%;
+
+    text-align: center;
+
+
+    font-size: 1.8em;
+}
+
+/* 아이디 비밀번호 입력란 */
+.login_wrap .login_input_wrap{
+    width: 100%;
+
+}
+.login_wrap .login_input_wrap form{
+    width: 100%;
+
+    padding: 10px 0;
+
+}
+.login_wrap .login_input_wrap form>div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5px 0;
+}
+.login_wrap .login_input_wrap form>div div{
+    position: relative;
+    width: 100%;
+
+    margin: 5px 0;
+
+}
+.login_wrap .login_input_wrap form>div div label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+
+    background: #fff;
+    color: #808080;
+
+    transition: 0.5s;
+}
+.login_wrap .login_input_wrap form>div div input{
+    width: 100%;
+
+    margin: auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+    border: 0;
+    
+    outline: 1px solid #d3d3d3;
+}
+.login_wrap .login_input_wrap form>div div input:focus{
+    outline: 1px solid #000;
+}
+.login_wrap .login_input_wrap form>div div input:focus + label,
+.login_wrap .login_input_wrap form>div div label.active{
+    transform: translateY(-180%);
+
+    color: #000;
+
+    font-size: 0.8em;
+}
+.login_wrap .login_input_wrap form>div a{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 2px 6px;
+    border: 1px solid #808080;
+    border-radius: 50px;
+
+    color: #808080;
+}
+.login_wrap .login_input_wrap form>div a{
+    display: none;
+}
+
+/* 로그인 버튼 */
+.login_wrap .login_btn_wrap{
+    width: 100%;
+
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+.login_wrap .login_btn_wrap button{
+
+    width: 100%;
+
+    padding: 20px 0;
+    border: 0;
+    border-radius: 3px;
+
+    font-size: 1.4em;
+    font-weight: 700;
+
+    background: #c72f2f;
+    color: #fff;
+}
+.login_wrap .login_btn_wrap button:active{
+    background: #c72f2f;
+}
+/* 아이디/비밀번호 찾기, 회원가입 */
+.login_wrap .search_sign_up_wrap{
+    transform: translateY(-20px);
+    width: 100%;
+
+    display: flex;
+}
+.login_wrap .search_sign_up_wrap>div{
+    width: 50%;
+
+    margin-top: 10px;
+    padding-left: 50px;
+    border-left: 1px solid #808080;
+}
+.login_wrap .search_sign_up_wrap>div:nth-child(1){
+    padding-right: 30px;
+    text-align: end;
+}
+.login_wrap .search_sign_up_wrap>div:nth-child(1){
+    border: 0;
+}

@@ -1,0 +1,119 @@
+.show_curriculum_content_wrap .coffee_holic_content_wrap{
+    width: 100%; /* 1200px */
+    height: 100%;
+}
+
+/* 강좌이름 */
+.show_curriculum_content_wrap .coffee_holic_content_wrap .class_name{
+    width: 100%;
+    
+    font-size: 1.5em;
+
+    padding-top: 30px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid lightgray;
+}
+/* 강좌소개 */
+.show_curriculum_content_wrap .coffee_holic_content_wrap .class_intro{
+    width: 100%;
+
+    padding: 10px;
+}
+/* 테이블 */
+.show_curriculum_content_wrap .coffee_holic_content_wrap .class_table{
+    width: 80%;
+
+    margin: auto;
+    padding-top: 50px;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .class_table table{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .class_table th,
+.show_curriculum_content_wrap .coffee_holic_content_wrap .class_table td{
+    text-align: center;
+
+    border: 1px solid gray;
+    padding:10px 0px;
+}
+/* 상세교육내용 */
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course{
+    width: 90%;
+
+    margin: auto;
+    padding-top: 50px;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_txt_box{
+    width: 100%;
+
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+
+    font-size: 1.5em;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_explain{
+    width: 100%;
+}
+
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level{
+    width: 100%;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level ul{
+    width: 100%; /* 1200px */
+
+    display: flex;
+}
+
+/* 상세교육내용 자세한 강의내용 */
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level ul li{
+    width: 25%; /* 300px */
+
+    display: flex;
+    justify-content: center;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level ul li>div{
+    width: 100%;
+}
+/* 강의 관련 이미지 */
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level ul li .img_box{
+    position: relative;
+
+    width: 90%;
+
+    margin-top: 20px;
+
+    display: flex;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level ul li .img_box img{
+    width: 80%;
+
+    margin: auto;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level ul li .img_box>div{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    padding: 10px 20px;
+
+    background: #0007;
+    color: #fff;
+
+    width: 80%;
+    height: 50%;
+
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level ul li .img_box>div h6{
+    font-size: 1.2em;
+}
+.show_curriculum_content_wrap .coffee_holic_content_wrap .detail_course .detail_curiculum_level ul li .img_box>div p{
+    font-size: 0.9em;
+}

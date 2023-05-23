@@ -16,66 +16,82 @@ a:hover{
     overflow: auto;
 }
 
-.Store_table tr,td{
+.Store_table .Store_detail_table th,
+.Store_table .Store_detail_table td{
     padding: 10px;
+    font-size: 1em;
 }
 
 /* *************************************************** */
 header{
+    position: fixed;
+    top: 0;
+
     width: 100%;
-    min-width: 940px;
+    height: 70px;
+    min-width: 1200px;
+
     margin: auto;
-    height: 148px;
-    border: 1px solid;
+
+    background: #c72f2f30;
+
+    z-index: 999;
 }
 table{
-    border-top: black;
-    border-bottom: black;
+    border-top: #000;
+    border-bottom: #000;
     border-collapse: collapse;
     overflow: auto;
 }
 td,th{
-    padding: 10px 5px;
-    width: 30px;
-    text-align: center;
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
-    font-size: 0.8em;
+    border-right: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid #808080;
 }
 /*********** main ***********/
 main{
     width: 100%;
+    min-width: 1200px;
 }
 main .section_wrap{
     position: relative;
     width: 1200px;
+
     margin: auto;
+    padding-top: 30px;
+
     display: flex;
-    border: 1px solid blue;
+
+    overflow: hidden;
+}
+/* 경로 */
+/* class = page_info */
+main .page_info{
+    width: 1200px;  /* 1200px */
+
+    padding-top: 70px;
+    margin: auto;
 }
 
+main .page_info .page_name{
+    font-size: 3em;
+
+    padding-bottom: 3px;
+    border-bottom: 1px solid #808080;
+}
 
 /************** sec_two *************/
 main .section_wrap .sec_two{
     position: relative;
-    width: 700px;
+    width: 100%;
     height: 1080px;
-    transform: translateX(250px);
     transition: 0.5s;
     z-index: 1;
-    background: white;
+    background: #fff;
 }
 main .section_wrap .sec_two.active{
-    transform: translateX(0);
+    width: 750px;
     transition: 0.5s;
-}
-/* 경로 */
-main .section_wrap .sec_two .path{
-    width: 100%;
-    font-size: 0.75em;
-    color: rgb(94, 94, 94);
-    padding: 15px 0;
 }
 
 /* 매장검색 */
@@ -91,7 +107,6 @@ main .section_wrap .sec_two .h2_wrap{
 main .section_wrap .sec_two .search__search_table_wrap{
     position: absolute;
     width: 100%;
-    top: 140px;
 }
 
 
@@ -109,7 +124,7 @@ main .section_wrap .sec_two .search_wrap .map{
     width: 100%;
     height: 430px;
     z-index: 0;
-    border: 1px solid;
+    border: 1px solid #d3d3d3;
     margin-bottom: 10px;
 }
 
@@ -117,23 +132,16 @@ main .section_wrap .sec_two .search_wrap .map{
 main .section_wrap .sec_two .search_wrap .search_Store{
     position: absolute;
     top: 50%;
-    right: -30%;
-    transform: translateY(-50%) translateX(0px);
-    width: 30%;
+    left: calc(-20%);
+    transform: translateY(-50%) translateX(-0px);
+    width: 20%;
     height: 300px;
     transition: 0.5s;
-    animation: load_end_animate 0.5s 1 alternate ease-in-out;
-    animation-delay: 1s;
-}
-@keyframes load_end_animate {
-    0%,100%{
-        transform: translateY(-50%) translateX(0px);
-    }
-    50%{
-        transform: translate(-50px,-50%);
-    }
 }
 main .section_wrap .sec_two .search_wrap .search_Store.active{
+    width: 30%;
+
+    left: 5px;
     transform: translateY(-50%) translateX(-5px);
     right: 0;
     transition: 0.5s;
@@ -141,7 +149,7 @@ main .section_wrap .sec_two .search_wrap .search_Store.active{
 /* 매장 검색하는곳 열고 닫는곳 */
 main .section_wrap .sec_two .search_wrap .search_Store .open_close{
     position: absolute;
-    background: rgb(199, 47, 47);
+    background: #c72f2f;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-left: 1px solid rgba(0, 0, 0, 0.3);
@@ -150,9 +158,9 @@ main .section_wrap .sec_two .search_wrap .search_Store .open_close{
     width:20px;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    border-top-left-radius: 5px ;
-    border-bottom-left-radius: 5px ;
-    left: -21px;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    right: -21px;
 }
 /* 매장명, 매장주소로 찾기 */
 main .section_wrap .sec_two .search_Store .search_Store_wrap{
@@ -167,8 +175,11 @@ main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_butto
     text-align: center;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.212);
-    font-size: 0.8em;
-    background: rgb(199, 47, 47);
+    font-size: 1em;
+    background: #c72f2f;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_button_wrap a{
+    color: #fff;
 }
 /* 매장검색 버튼에 관한 내용들 */
 main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label{
@@ -182,17 +193,19 @@ main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input
 main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label .input_label_locate_search{
     width: 100%;
     position: absolute;
-    background: rgb(199, 47, 47);
+    background: #c72f2f;
 }
 /* 매장찾기 */
-main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label h4{
+main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label h5{
     padding: 10px;
     text-align: center;
-    color: white;
+    color: #fff;
+
+    font-size: 1.2em;
 }
 main .section_wrap .sec_two .search_Store .search_Store_wrap .search_Store_input_label p{
-    font-size: 0.7em;
-    color: white;
+    font-size: 0.9em;
+    color: #fff;
     text-align: center;
     padding: 20px 5px;
 }
@@ -219,17 +232,17 @@ main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input
     display: none;
 }
 main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label .input_label_detail h4{
-    color: white;
+    color: #fff;
 }
 /* 지역검색 스크롤바 */
 main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label::-webkit-scrollbar{
     width: 2px;
 }
 main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label::-webkit-scrollbar-thumb{
-    background-color: rgb(199, 47, 47);
+    background-color: #c72f2f;
 }
 main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label .input_label_detail{
-    background: rgb(199, 47, 47); 
+    background: #c72f2f; 
 }
 
 
@@ -243,8 +256,11 @@ main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_butto
     text-align: center;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: 0.8em;
-    background: rgb(199, 48, 48);
+    font-size: 1em;
+    background: #c72f2f;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_button_wrap a{
+    color: #fff;
 }
 
 /* 지역검색 버튼 누를시 나타나는 지역들 */
@@ -255,15 +271,21 @@ main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input
     height: calc(100% - 42px);
     overflow: auto;
 
+    font-size: 1em;
 }
-main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label h4{
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label h5{
     padding: 10px;
     text-align: center;
-    color: black;
+    color: #fff;
+
+    font-size: 1.2em;
 }
 main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label ul li:hover{
     transition: 0.1s;
-    background: rgb(199, 47, 48);
+    background: #c72f2f;
+}
+main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label ul li:hover a{
+    color: #fff;
 }
 main .section_wrap .sec_two .search_Store .locate_Store_input_label>ul{
     display: flex;
@@ -271,12 +293,14 @@ main .section_wrap .sec_two .search_Store .locate_Store_input_label>ul{
     justify-content: space-between;
 }
 main .section_wrap .sec_two .search_Store .search_Store_wrap .locate_Store_input_label>ul>li{
-    width: 47.8%;
+    width: 48%;
     border: 1px solid rgba(0, 0, 0, 0.3);
     margin: 2px;
     text-align: center;
-    padding: 5px;
-    background-color: white;
+    padding: 10px;
+    background-color: #fff;
+
+    font-size: 1.2em;
 }
 
 /* 매장 리스트 설명 */
@@ -285,7 +309,7 @@ main .section_wrap .sec_two .Store_table_wrap{
 }
 main .section_wrap .sec_two .Store_table_wrap p{
     position: relative;
-    color: gray;
+    color: #808080;
 }
 /* 매장 리스트 */
 main .section_wrap .sec_two .Store_table table{
@@ -297,19 +321,23 @@ main .section_wrap .sec_two .Store_table::-webkit-scrollbar{
     width: 1px;
 }
 main .section_wrap .sec_two .Store_table::-webkit-scrollbar-thumb{
-    background-color: rgb(199, 47, 47);
+    background-color: #c72f2f;
 }
 
 /*************** section_three ***************/
 main .section_wrap .sec_three{
     position: absolute;
-    top: 140px;
     right: 0;
+
     width: 450px;
+
     overflow: hidden;
-    transform: translateX(-250px);
+
+    transform: translateX(400px);
+
     display: flex;
     align-items: center;
+
     transition: 0.5s;
 }
 main .section_wrap .sec_three.active{
@@ -321,7 +349,8 @@ main .section_wrap .sec_three .sec_three_wrap{
     position: relative;
     padding-bottom: 50px;
     width: 100%;
-    border: 1px solid;
+
+    border: 1px solid #d3d3d3;
 }
 main .section_wrap .sec_three .sec_three_img_box{
     position: relative;
@@ -335,7 +364,7 @@ main .section_wrap .sec_three .sec_three_img_box>img{
     top: 45px;
     width: 100%;
     height: 250px;
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
 }
 main .section_wrap .sec_three .sec_three_img_box .sub_img_box{
     position: absolute;
@@ -352,16 +381,18 @@ main .section_wrap .sec_three .sec_three_img_box .sub_img_box a{
 main .section_wrap .sec_three .sec_three_img_box .sub_img_box a img{
     width: 100%;
     height: 100%;
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
 }
 
 /* 매장 정보 */
 main .section_wrap .sec_three .Store_introduce{
     width: 80%;
     padding: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     margin: auto;
     margin-top: 50px;
+
+    font-size: 1.2em;
 }
 main .section_wrap .sec_three .sec_three_wrap h3,
 main .section_wrap .sec_three .sec_three_wrap h2{
@@ -400,8 +431,8 @@ main .section_wrap .sec_three .sec_three_wrap>button{
     border-radius: 5px;
 }
 main .section_wrap .sec_three .sec_three_wrap>button:active{
-    background: rgb(199, 47, 47);
-    color: white;
+    background: #c72f2f;
+    color: #fff;
 }
 
 /*********************footer*******************/

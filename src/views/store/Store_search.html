@@ -5,62 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="../../assets/images/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="Store_search.css">
+    <link rel="stylesheet" href="Store_sec_one.css">
     <link rel="stylesheet" href="../../styles/reset.css">
     <script src="../../jquery/jquery.js"></script>
     <script src="Store_info.js"></script>
 
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=56dc0313a64611fe8a398e28978188c0&libraries=services"></script>
+    
     <title>Store Search</title>
         </head>
         <body>
             <header>header</header>
             <main>
                 <!-- lnb -->
-                <section class="sec_one"><!-- 
-                    <div class="sec_one_wrap">
-                        <h2><a href="#none">매장검색</a></h2>
-
-                        <div class="event">
-                            <div>
-                                <h2><a href="#none">Membership</a></h2>
-                                <p>할리스 멤버십 'CROWN'으로<br />다양한 혜택을 즐겨보세요</p>
+                <section class="sec_one banner_tab" id="banner_tab">
+                    <div class="banner_wrap">
+                        <div class="banner">
+                            <div class="banner_txt">
+                                <span class="h2_deco"></span>
+                                <h2>매장 찾기</h2>
                             </div>
-
-                            <div class="img_box">
-                                <a href="#none"><img src="img_box/bg_banner_crown1.gif" alt="Hollys Membership"></a>
+                            
+                            <div class="lnb" id="lnb">
+                                <ul>
+                                    <li><a href="#contents_start">매장검색</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                 --></section>
-                <div class="section_wrap">
+                </section>
+
+                <div class="page_info" id="contents_start"> <!-- width: 100% ==1200px -->
+                    <div class="path">  <!-- width: 100% ==1200px -->
+                        홈 > 사이트맵 > 매장찾기 > 매장검색
+                    </div>
+            
+                    <div class="page_name"> <!-- width: 100% ==1200px -->
+                        <h3>할리스 카드</h3>
+                    </div>
+                </div>
+
+                <div class="section_wrap" id="contents">
                     <section class="sec_two">
-                        <div class="path">
-                            <p>Home > Store > 매장검색</p>
-                        </div>
-
-                        <div class="h2_wrap">
-                            <h2>매장검색</h2>
-                        </div>
-
                         <div class="search__search_table_wrap">
                             <div class="search_wrap">
                                 <!-- 지도 -->
                                 <div id="map" class="map"></div>
 
                                 <!-- 매장 검색하는곳 -->
-                                <div class="search_Store">
-                                    <button type="button" class="open_close">검색</button>
+                                <div class="search_Store active">
+                                    <button type="button" class="open_close">닫기</button>
 
                                     <!-- 매장명, 매장주소로 찾기 -->
                                     <div class="search_Store_wrap">
                                         <div class="search_Store_button_wrap">
-                                            <h3><a href="#none">매장검색</a></h3>
+                                            <h4><a href="#none">매장검색</a></h4>
                                         </div>
 
                                         <div class="search_Store_input_label">
                                             <div class="input_label_detail">
-                                                <h4>매장찾기</h4>
+                                                <h5>매장찾기</h5>
                                                 <p>지점명 또는 주소를 입력하세요<br/> 지점명 입력시 마지막에 '점'을 입력해주세요</p>
                                                 <form action="" method="get">
                                                     <input type="text" id="get_Store_name" placeholder="ex)강남점 or 강남구 테헤란로92">
@@ -71,12 +77,12 @@
                                     
 
                                         <div class="locate_Store_button_wrap">
-                                            <h3><a href="#none">지역검색</a></h3>
+                                            <h4><a href="#none">지역검색</a></h4>
                                         </div>
 
                                         <div class="locate_Store_input_label">
                                             <div class="input_label_detail">
-                                                <h4>지역검색</h4>
+                                                <h5>지역검색</h5>
                                             </div>
                                             <ul class="local_city">
                                                 <li><a href="#none">서울</a></li>
@@ -134,9 +140,9 @@
 
                     <section class="sec_three">
                         <div class="sec_three_wrap">
-                            <h2>매장정보</h2>
+                            <h3>매장정보</h3>
 
-                            <h3 class="Store_name">케이지할리스에프앤비</h3>
+                            <h4 class="Store_name">케이지할리스에프앤비</h4>
 
                             <div class="sec_three_img_box">
                                 <img class="sec_three_main_img" src="Store_img_box/케이지할리스에프앤비/img_1.jpg" alt="">
@@ -178,7 +184,7 @@
                 </div>
             </main>
             <footer></footer>
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c71727dc2f232aae9889de60b8fb6b55&libraries=services"></script>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=74a94afd9f737c91cf3fe910bba47be8&libraries=services"></script>
             <script src="map.js"></script>
 </body>
 </html>

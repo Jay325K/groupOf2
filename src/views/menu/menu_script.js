@@ -4,7 +4,7 @@ const menuCategory = document.querySelector(".menu_category");
 const menuCategoryCheckbox = document.querySelectorAll(
   ".menu_category--checkbox"
 );
-const pageBtn = document.querySelector("hollys");
+
 const menuModalWrap = document.querySelector(".menu_modal--wrap");
 const menuModalDetail = document.querySelector(".menu_modal--detail");
 const menuNutritional = document.querySelector(".menu_nutritional");
@@ -21,6 +21,11 @@ const menuCategoryArray = {
   ],
   food: ["cake", "sandwich/toast", "bakery", "food"],
   md: ["product", "food"],
+};
+let giftInfo = {
+  prName: "",
+  img: "",
+  price: "",
 };
 let menuListArray = [];
 let menuCategoryChecked = [true];
@@ -91,11 +96,17 @@ const modalPrintExec = (name) => {
 };
 const modalPrintProcess = (name) => {
   const nameFilter = menuListArray.filter((data) => data["name"] === name)[0];
+  giftInfoSet(nameFilter);
   modalPrint(nameFilter);
   if (nameFilter.allergy) {
     menuAllergy.innerHTML = `<p>알레르기 유발요인 : ${nameFilter.allergy}<br>
   ※ 식품 등의 표시 · 광고의 관한 법률에 의거하여 알레르기 표시항목에 한해서만 표기함</p>`;
   }
+};
+const giftInfoSet = (data) => {
+  giftInfo.prName = data.name;
+  giftInfo.img = data.image;
+  giftInfo.price = data.price;
 };
 const modalPrint = (data) => {
   menuModalDetail.innerHTML = `
@@ -112,7 +123,7 @@ const modalPrint = (data) => {
     menuNutritionalPrint(data);
   }
   if (data.price !== "") {
-    menuModalGift.innerHTML = `<a href="../gift/gift.html" class="menu_modal--gift_btn">GIFT</a>`;
+    menuModalGift.innerHTML = `<a href="../../giftcon_buy/giftcon_buy.html" class="menu_modal--gift_btn">GIFT</a>`;
   } else {
     menuModalGift.innerHTML = "";
   }
@@ -224,3 +235,20 @@ menuModalCloseBtn.addEventListener("click", () => {
   menuNutritional.innerHTML = "";
   menuModalWrap.classList.add("display_none");
 });
+
+menuModalGift.addEventListener("click", () => {
+  localStorage.setItem("giftInfo", JSON.stringify(giftInfo));
+});
+
+const headerID = document.getElementById("header");
+const getHeader = () => {
+  const response = fetch("../../footer_header/header.html");
+  return response.then((res) => res.text());
+};
+
+const header = async () => {
+  data = await getHeader();
+  headerID.innerHTML = data;
+};
+header();
+// console.log(headerID.innerHTML);

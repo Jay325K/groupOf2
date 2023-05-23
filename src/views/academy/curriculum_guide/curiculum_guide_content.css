@@ -1,0 +1,89 @@
+.show_curriculum_content_wrap{
+    width: 100%; /* 1200px */
+    padding-top: 70px;
+}
+/* class = page_info */
+.show_curriculum_content_wrap .page_info{
+    width: 100%;  /* 1200px */
+}
+
+.show_curriculum_content_wrap .page_info .page_name{
+    font-size: 3em;
+    
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+.show_curriculum_content_wrap .online_course_apply{
+    display: block;
+
+    width: 150px;
+
+    margin: 20px auto;
+    padding: 10px 0;
+    box-shadow: 0 0 1px 0 black;
+
+    text-align: center;
+}
+.show_curriculum_content_wrap .online_course_apply:active{
+    color: white;
+    box-shadow:inset 0 0 1px 0 black;
+    background: #c72f2f;
+}
+/* 컨텐츠 시작 */
+.show_ul{
+    position: relative;
+
+    margin-top: 30px;
+    width: 100%;
+
+    overflow: hidden;
+}
+.show_ul .menu_bg_color{
+    position: absolute;
+
+    width: 150px;
+    height: 38px;
+
+
+    background: #c72f2f;
+
+    transition: 0.3s;
+}
+
+.show_ul>ul{
+    width: 900%;
+
+    display: flex;
+
+    margin-top: 38px;
+
+    transition: 0.3s;
+}
+.show_ul>ul>li{
+    width: 1200px;
+}
+.show_ul>ul>li>a{
+    position: absolute; /* .show_ul 따라감 */
+    left: var(--absolute_move);
+
+    transform: translateY(-38px);
+
+    width: 150px;
+
+    border: 1px solid lightgray;
+    padding: 10px 0;
+
+    font-size: 0.9em;
+
+    text-align: center;
+
+    color: black;
+    
+    transition: 0.3s;
+}
+.show_ul>ul>li>a.active{
+    color: #fff;
+}
+.show_ul>ul>li>div{
+    height: 400px;
+}
