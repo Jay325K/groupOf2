@@ -41,7 +41,7 @@ window.onload=()=>{
         }else{
             // 전체 약관동의 체크시 모든 체크박스 체크
             //체크 후 해제시 모든 체크박스 체크 해제
-            document.querySelector('.general_conditions_agree>form').addEventListener('change',function(){
+            e.children[0].children[0].addEventListener('change',function(){
 
                 if(e.children[0].children[0].checked){
                     list.forEach(el=>{
@@ -53,81 +53,8 @@ window.onload=()=>{
                     })
                 }
             })
-
-
-            
-            
         }
-
-        /* 탭키로 엔터키로 체크박스 누를시 */
-        e.addEventListener('keypress',function(event){
-            let keypress_count = e.children[0].children[0];
-            let checked_length =0;
-            //keypress_count.dataset.keypressCount; //커스텀 속성 데이터 가져오기
-            //keypress_count.setAttribute('data-keypress-count','1'); //커스텀 속성 데이터 변경
-        
-            if(event.keyCode==13){
-
-                if(keypress_count.dataset.keypressCount=='0'){
-                    if(idx==0){
-                        keypress_count.checked=true;
-                        keypress_count.setAttribute('data-keypress-count','1');
-
-                        for(let y=0; y<list.length; y++){
-                            list[y].children[0].children[0].checked=true;
-                            list[y].children[0].children[0].setAttribute('data-keypress-count','1');
-                        }
-                    }else{
-                        keypress_count.checked=true;
-                        keypress_count.setAttribute('data-keypress-count','1');
-
-                        for(let y=0; y<list.length; y++){
-                            if(list[y].children[0].children[0].checked==true){
-                                checked_length++;
-                            }
-            
-                            if(checked_length==3){
-                                list[0].children[0].children[0].checked=true;
-                            }else{
-                                list[0].children[0].children[0].checked=false;
-                            }
-                        }
-                    }
-                    
-                }else{
-                    if(idx==0){
-                        keypress_count.checked=false;
-                        keypress_count.setAttribute('data-keypress-count','0');
-
-                        for(let y=0; y<list.length; y++){
-                            list[y].children[0].children[0].checked=false;
-                            list[y].children[0].children[0].setAttribute('data-keypress-count','0');
-                        }
-                    }else{
-                        keypress_count.checked=false;
-                        keypress_count.setAttribute('data-keypress-count','0');
-
-                        for(let y=0; y<list.length; y++){
-                            if(list[y].children[0].children[0].checked==true){
-                                checked_length++;
-                            }
-            
-                            if(checked_length==3){
-                                list[0].children[0].children[0].checked=true;
-                            }else{
-                                list[0].children[0].children[0].checked=false;
-                            }
-                        }
-                    }
-                }
-            }
-        })
-
-        
-
     })
-
-    
     
 }
     
