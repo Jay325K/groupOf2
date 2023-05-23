@@ -1,0 +1,209 @@
+.contract_wrap{
+    width: 440px;
+
+    margin: auto;
+    padding: 70px 0;
+}
+/* 회원가입 텍스트 */
+.contract_wrap .contract_text{
+    width: 100%;
+
+    text-align: center;
+    font-size: 1.8em;
+}
+.contract_wrap .general_conditions_agree{
+    width: 100%;
+
+    padding-top: 30px;
+}
+/* 약관동의 텍스트 */
+.contract_wrap .general_conditions_agree>h3{
+    width: 100%;
+
+    font-size: 1.8em;
+
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    border-top: 1px solid #808080;
+    padding-top: 15px;
+}
+/* 본인은 ~ 동의합니다 텍스트 */
+.contract_wrap .general_conditions_agree>p{
+    font-size: 1.4em;
+
+    text-align: center;
+
+    width: 100%;
+
+    margin: auto;
+    margin-top: 10px;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 15px;
+}
+/* 컨텐츠 묶음 */
+.contract_wrap .general_conditions_agree form{
+    width: 100%;
+
+    margin-top: 60px;
+}
+.contract_wrap .general_conditions_agree form>ul{
+    width: 100%;
+    padding:  30px 0;
+}
+/* 전체동의 버튼 */
+.contract_wrap .general_conditions_agree form>ul>li:nth-child(1){
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.contract_wrap .general_conditions_agree form>ul>li{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px 10px;
+
+    font-size: 1.1em;
+
+}
+.contract_wrap .general_conditions_agree form>ul>li .agree_check_box{
+    position: relative;
+    width: 95%;
+
+    display: flex;
+    gap: 10px;
+
+    font-size: 1.1em;
+
+}
+.contract_wrap .general_conditions_agree form>ul>li .agree_check_box input{
+    border-radius: 50%;   
+    padding: 0 20px;
+}
+.contract_wrap .general_conditions_agree form>ul>li .agree_check_box input p{
+    padding-left:200px;
+}
+
+
+
+
+
+
+/* 팝업  */
+
+.contract_wrap .popup_wrap.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: #0007;
+
+    z-index: 999999;
+
+}
+
+.contract_wrap .popup_wrap.active .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 450px;
+    height: 700px;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    transform: translate(-50%, -50%);
+
+    
+
+}
+/* 팝업 이름 */
+.contract_wrap .popup_wrap.active .popup .popup_name{
+    text-align: center;
+
+    font-size: 1.5em;
+    font-weight: 700;
+
+    padding: 20px;
+    border-bottom: 3px solid #808080;
+    margin-bottom: 10px;
+
+    letter-spacing: -1px;
+}
+/* 팝업 내용 */
+.contract_wrap .popup_wrap.active .popup .popup_contents{
+
+    width: 100%;
+    height: 85%;
+
+    overflow: auto;
+    text-overflow: clip;
+    white-space: wrap;
+
+    text-align: start;
+
+    font-size: 1em;
+    font-weight: 400;
+
+    padding: 20px;
+}
+.contract_wrap .popup_wrap.active .popup .popup_contents h3{
+    text-align: center;
+}
+.contract_wrap .popup_wrap.active .popup .popup_contents h4{
+    margin-top: 50px;
+}
+.contract_wrap .popup_wrap.active .popup .popup_contents h5{
+    margin-top: 20px;
+
+    font-size: 1.4em;
+}
+.contract_wrap .popup_wrap.active .popup .popup_contents p{
+
+    font-size: 1.2em;
+
+}
+
+.contract_wrap .popup_wrap.active .popup>a{
+    position: absolute;
+
+    top: -30px;
+    right: -30px;
+
+    font-size: 2em;
+
+    color: #fff;
+}
+
+
+/* 다음버튼 */
+.contract_wrap .general_conditions_agree>a{
+
+    display: block;
+
+    text-align: center;
+
+    font-size: 1.8em;
+    font-weight: 800;
+
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-top: 50px;
+
+    letter-spacing: 2px;
+
+    background: #eeeeee;
+    color: #808080;
+}
+
+.contract_wrap .general_conditions_agree>a.active{
+    background: #c72f2f;
+    color: #fff;
+}
