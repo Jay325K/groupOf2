@@ -104,3 +104,62 @@ button {
   color: #666;
   margin-left: 10px;
 }
+
+/* my_membership--content_management--wrap */
+.my_membership--content_management--menu {
+  display: flex;
+  margin-bottom: 50px;
+}
+.my_membership--content_management--menu_crown,
+.my_membership--content_management--menu_card {
+  width: 600px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #666;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+/*  */
+.my_membership--content_management--crown {
+  height: 300px;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+.my_membership--content_management--crown_assortment {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c9c9c9;
+}
+.my_membership--content_management--crown_assortment--txt {
+  width: 300px;
+}
+/*  */
+.my_membership--content_management--membership {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.my_membership--content_management--membership_re,
+.my_membership--content_management--membership_register,
+.my_membership--content_management--membership_stop {
+  display: flex;
+  justify-content: space-between;
+}
+.my_membership--content_management--membership_txt {
+  font-weight: 500;
+}
+.my_membership--content_management--membership_link {
+  padding: 5px 20px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.my_membership--content_management--membership_link:hover {
+  color: white;
+  background: #c72f30;
+  border: 1px solid #c72f30;
+}
