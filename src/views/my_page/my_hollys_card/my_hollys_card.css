@@ -20,58 +20,116 @@ button {
   margin-bottom: 50px;
 }
 
-/* main */
-.my_coupon--title_wrap {
+/* hollys card 공통 */
+.my_hollys--card_title--wrap {
   width: 1200px;
   margin: 0 auto;
 }
-.my_coupon--title {
+.my_hollys--card_title {
   font-size: 32px;
   margin-bottom: 30px;
 }
-.my_hollys_card--btn_wrap {
+
+/* my_hollys_card.html */
+.my_hollys--card_btn--wrap {
   width: 1200px;
   margin: 0 auto 30px;
   text-align: end;
 }
-.my_hollys_card--btn {
+.my_hollys--card_btn {
   border: 1px solid #666;
   padding: 10px 20px;
   border-radius: 5px;
   box-sizing: border-box;
 }
-.my_hollys_card--btn:hover {
+.my_hollys--card_btn:hover {
   color: white;
   border: 1px solid #c72f30;
   background: #c72f30;
 }
-.my_coupon--content {
+.my_hollys--card_content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.my_coupon--content_wrap {
+.my_hollys--card_content--wrap {
   width: 1200px;
   margin: 0 auto;
 }
-.my_coupon--coupon {
+.my_hollys--card_card {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
-.my_coupon--coupon_img--wrap {
+.my_hollys--card_card--img_wrap {
   margin-right: 30px;
 }
-.my_coupon--coupon_img {
+.my_hollys--card_card--img {
   width: 200px;
 }
-.my_coupon--coupon button {
+.my_hollys--card_card button {
   border: 1px solid #666;
   padding: 5px 10px;
   border-radius: 3px;
   box-sizing: border-box;
 }
-.my_coupon--coupon button:hover {
+.my_hollys--card_card button:hover {
+  color: white;
+  border: 1px solid #c72f30;
+  background: #c72f30;
+}
+
+/* my_hollys_card_write.html */
+.my_hollys--card_write--content_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.my_hollys--card_title--desc {
+  color: #666;
+  margin-bottom: 30px;
+}
+.my_hollys--card_write--register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.my_hollys--card_write--register label {
+  display: block;
+  margin-bottom: 10px;
+}
+.my_hollys--card_write--card_num--wrap {
+  margin-bottom: 30px;
+}
+.my_hollys--card_write--register input {
+  text-align: center;
+  font-size: 16px;
+  width: 150px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.my_hollys--card_write--register input:first-child {
+  margin-left: 0;
+}
+.my_hollys--card_write--num_img--wrap {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.my_hollys--card_write--num_img {
+  width: 800px;
+}
+.my_hollys--card_write--complete_btn--wrap {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.my_hollys--card_write--complete_btn {
+  border: 1px solid #666;
+  background: inherit;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.my_hollys--card_write--complete_btn:hover {
   color: white;
   border: 1px solid #c72f30;
   background: #c72f30;

@@ -1,0 +1,106 @@
+body {
+  font-size: 16px;
+}
+a {
+  color: inherit;
+}
+button {
+  border: 0;
+  background: inherit;
+}
+
+/* page route */
+.page_route--wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page_route {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* my membership page */
+.my_membership--title_wrap {
+  width: 1200px;
+  margin: 0 auto 30px;
+}
+.my_membership--title {
+  font-size: 32px;
+}
+.my_membership--content_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.my_membership--content_now--wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  border: 1px solid #666;
+  box-sizing: border-box;
+}
+.my_membership--content_now--grade_wrap,
+.my_membership--content_grade--coupon_wrap {
+  width: 550px;
+  padding: 0px 0 0 50px;
+}
+.my_membership--content_grade--coupon_wrap {
+  border-left: 1px solid #666;
+  box-sizing: border-box;
+}
+.my_membership--content_now--grade {
+  font-size: 18px;
+}
+.silver_color {
+  font-size: 24px;
+  color: rgb(110, 110, 110);
+}
+.my_membership--content_benefit--link {
+  color: #c72f30;
+  text-decoration: underline;
+}
+.my_membership--content_benefit--link:hover {
+  color: #666;
+}
+.my_membership--coupon {
+  height: 100%;
+  display: inline-block;
+}
+.my_membership--coupon:hover {
+  color: #c72f30;
+  text-decoration: underline;
+}
+.my_membership--content_free--wrap {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.my_membership--content_free {
+  font-size: 18px;
+}
+.my_membership--content_free--crown {
+  width: 50px;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+.my_membership--content_free--cup {
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+/* my_membership--content_caution--wrap */
+.my_membership--content_caution--wrap {
+  margin-bottom: 50px;
+}
+.my_membership--content_caution--title {
+  color: #c72f30;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.my_membership--content_caution--sub_title {
+  font-weight: 500;
+}
+.my_membership--content_caution--txt {
+  color: #666;
+  margin-left: 10px;
+}
