@@ -29,11 +29,14 @@ header .header_first {
   justify-content: space-between;
   transition: 0.5s;
 }
+header .header_first:hover{
+  background: #fff;
+}
 header .header_first.active {
   background: rgb(199, 47, 47);
 }
 header .header_first.active .gnb_wrap ul a {
-  color: white;
+  color: #fff;
 }
 
 /***     logo     ***/
@@ -154,6 +157,9 @@ header .header_first .gnb_right .gnb .depth-02 ul li a{
   color: #fff;
   font-size: 14px;
   line-height: 2;
+}
+header .header_first .gnb_right .gnb .depth-02 ul li a:hover{
+  text-decoration: underline;
 }
 
 
