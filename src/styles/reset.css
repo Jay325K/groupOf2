@@ -63,7 +63,6 @@ img {
   margin: 0;
   padding: 0;
   vertical-align: middle;
-  max-width: 100%;
   height: auto;
   box-sizing: border-box;
 }
@@ -85,6 +84,7 @@ video {
   height: auto;
   box-sizing: border-box;
 }
+
 
 /* 공통 클래스 */
 .screen_out {
