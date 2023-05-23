@@ -35,7 +35,7 @@ header{
 
     background: #c72f2f30;
 
-    z-index: 999;
+    z-index: 10;
 }
 table{
     border-top: #000;

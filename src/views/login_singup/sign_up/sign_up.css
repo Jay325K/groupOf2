@@ -1,0 +1,53 @@
+.sign_up_wrap{
+    width: 440px;
+
+    margin: auto;
+    border: 1px solid;
+}
+/* 회원가입 텍스트 */
+.sign_up_wrap .sign_up_text{
+    width: 100%;
+
+    text-align: center;
+    font-size: 1.8em;
+
+    border: 1px solid;
+}
+.sign_up_wrap .general_conditions_agree{
+    width: 100%;
+}
+/* 약관동의 텍스트 */
+.sign_up_wrap .general_conditions_agree h3{
+    font-size: 1.8em;
+
+    text-align: center;
+
+    border: 1px solid;
+}
+/* 본인은 ~ 동의합니다 텍스트 */
+.sign_up_wrap .general_conditions_agree p{
+    font-size: 1.4em;
+
+    text-align: center;
+
+    border: 1px solid;
+}
+/* 켄텐츠 묶음 */
+.sign_up_wrap .general_conditions_agree form{
+    width: 100%;
+}
+.sign_up_wrap .general_conditions_agree form>ul{
+    width: 100%;
+
+    border: 1px solid blue;
+}
+.sign_up_wrap .general_conditions_agree form>ul>li{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px 10px;
+
+    font-size: 1.1em;
+}
+.sign_up_wrap .general_conditions_agree form>ul>li>a{
+}
