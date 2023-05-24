@@ -1,20 +1,3 @@
-/***     skip menu     ***/
-.skip_menu {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  background: #333;
-  color: #fff;
-  height: 30px;
-  top: -40px;
-  padding-top: 10px;
-}
-.skip_menu:focus {
-  top: 0;
-  text-decoration: underline;
-  z-index: 99999;
-}
-
 /***     header     ***/
 header {
   position: fixed;
@@ -30,7 +13,7 @@ header .header_first {
   justify-content: space-between;
   transition: 0.5s;
 }
-header .header_first:hover{
+header .header_first{
   background: #fff;
 }
 header .header_first.active {
