@@ -13,7 +13,7 @@ header .header_first {
   justify-content: space-between;
   transition: 0.5s;
 }
-header .header_first:hover{
+header .header_first{
   background: #fff;
 }
 header .header_first.active {
