@@ -88,7 +88,8 @@ header .header_first.active .gnb_right .header_top ul li a{
   color: #fff;
 }
 header .header_first.active .gnb_right .gnb_wrap .gnb .depth-01 li a:hover{
-  border-bottom: 5px solid #fff;
+  text-decoration: underline;
+  color: #fff;
 }
 header .header_first.active .gnb_right .header_top ul li::after{
   content: ' | ';
@@ -119,7 +120,7 @@ header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a{
   align-items: center;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a:hover{
-  border-bottom: 5px solid #c72f2f;
+  color:rgb(199, 47, 47);
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 ul {
   display: flex;
