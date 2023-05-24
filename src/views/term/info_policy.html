@@ -5,32 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info policy</title>
-    <!--reset css-->
-    <link rel="stylesheet" href="../../styles/reset.css">
-    <!--main css-->
-    <link rel="stylesheet" href="./info_policy.css">
-    <!-- main js -->
-    <script src="../../jquery/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#infoterms').change(function(){
-                var val = $(this).val();
-                //alert(val);
+        <!--        reset css        -->
+        <link rel="stylesheet" href="/reset/reset.css">
 
-                if(val=='9'){
-                    $('.term_contents .text').find('.8').hide();
-                    $('.term_contents .text').find('.9').show();
-                }else if(val=='8'){
-                    $('.term_contents .text').find('.8').show();
-                    $('.term_contents .text').find('.9').hide();
-                }
-            })
-        })
-    </script>
+        <!--        header css        -->
+        <link rel="stylesheet" href="/src/views/footer_header/header.css">
+    
+        <!--        main css        -->
+        <link rel="stylesheet" href="./info_policy.css">
+    
+        <!--        footer css        -->
+        <link rel="stylesheet" href="/src/views/footer_header/footer.css">
+    
+        <!--        header footer js        -->
+        <script src="/src/jquery/jquery-3.6.4.min.js"></script>
+        <script src="/src/views/footer_header/header_call.js"></script>
+        <!--        policy js        -->
+        <script src="/src/views/term/policy.js"></script>
 </head>
 <body>
     <!--  header  -->
-    <header>header</header>
+    <header id="header"></header>
 
     <!--  main  -->
     <main id="main" class="main">        
@@ -38,10 +33,10 @@
             <div class="banner">
                 <h2>HOLLYS</h2>
                 <ul class="lnb">
-                    <li class="active"><a href="./info_policy.html">개인정보처리방침</a></li>
-                    <li><a href="./service_term.html">서비스이용약관</a></li>
-                    <li><a href="./membership_term.html">멤버십이용약관</a></li>
-                    <li><a href="./card_term.html">할리스카드이용약관</a></li>
+                    <li class="active"><a href="info_policy.html">개인정보처리방침</a></li>
+                    <li><a href="service_term.html">서비스이용약관</a></li>
+                    <li><a href="membership_term.html">멤버십이용약관</a></li>
+                    <li><a href="card_term.html">할리스카드이용약관</a></li>
                 </ul>
             </div>
         </section>
@@ -49,8 +44,8 @@
         <div class="content">
             <div class="location">
                 <span><a href="#none">Home</a></span>
-                <span><a href="./info_policy.html">HOLLYS</a></span>
-                <span><a href="./info_policy.html">개인정보처리방침</a></span>
+                <span><a href="info_policy.html">HOLLYS</a></span>
+                <span><a href="info_policy.html">개인정보처리방침</a></span>
             </div>
 
             <div class="info_policy">
@@ -633,7 +628,7 @@
     </main>
 
     <!--  footer  -->
-    <footer>footer</footer>
+    <footer id="footer">footer</footer>
 
 </body>
 </html>

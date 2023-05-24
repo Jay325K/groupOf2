@@ -1,16 +1,9 @@
-/**     header     **/
-header{
-  height: 70px;
-  border: 1px solid red;
-  box-sizing: border-box;
-}
-
 /**     main     **/
 
 /**     banner     **/
 main .banner_wrap{
   height: 899px;
-  background: url(../../assets/images/policy_img/service_banner.png);  
+  background: url(/src/assets/images/policy_img/service_banner.png);  
   position: relative;
 }
 main .banner_wrap .banner{
@@ -92,14 +85,3 @@ main .content .service_term .term_service .term_contents .text {
 .space {
   padding-left: 10px;
 }
-
-
-
-
-/**     footer     **/
-footer{
-  height: 300px;
-  border: 1px solid red;
-  box-sizing: border-box;
-}
-
