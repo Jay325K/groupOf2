@@ -1,15 +1,13 @@
 $(function(){
+    let origin=window.pageYOffset;
+    add_active(origin);
+
+
     /***   sticky gnb   ***/
     window.addEventListener('scroll',function(){
         let scroll = window.pageYOffset;
+        add_active(scroll);
 
-        if(scroll>0){
-            $('.header').addClass('active');
-            $('.header_first').addClass('active'); 
-        }else{
-            $('.header').removeClass('active');
-            $('.header_first').removeClass('active'); 
-        }
     });
 
     /***   depth-02   ***/
@@ -25,6 +23,17 @@ $(function(){
         window_resize();
     })
 });
+
+function add_active(scroll){
+    if(scroll>0){
+        $('.header').addClass('active');
+        $('.header_first').addClass('active'); 
+    }else{
+        $('.header').removeClass('active');
+        $('.header_first').removeClass('active'); 
+    }
+}
+
 
 function window_resize(){
     if(window.innerWidth<1920 && window.innerWidth>1050){
