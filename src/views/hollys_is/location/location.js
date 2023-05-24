@@ -31,13 +31,13 @@ const headOfficePrint = () => {
   </section>
   </section>
   <section class="location_head--office_email">
-  <p>
-  <span>점포개발팀</span><span>develop@hollyscoffee.com</span>
-  </p>
-  <p><span>B2B팀</span><span>b2b@hollyscoffee.com</span></p>
-  <p><span>브랜딩팀</span><span>mkt@hollyscoffee.com</span></p>
-  <p><span>인사총무팀</span><span>hr_ga@hollyscoffee.com</span></p>
-  <p><span>구매팀</span><span>buyer@hollyscoffee.com</span></p>
+  <section>
+  <p>점포개발팀</p><p>develop@hollyscoffee.com</p>
+  </section>
+  <section><p>B2B팀</p><p>b2b@hollyscoffee.com</p></section>
+  <section><p>브랜딩팀</p><p>mkt@hollyscoffee.com</p></section>
+  <section><p>인사총무팀</p><p>hr_ga@hollyscoffee.com</p></section>
+  <section><p>구매팀</p><p>buyer@hollyscoffee.com</p></section>
   </section>
   `;
   kakaoMap(address);

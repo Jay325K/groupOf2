@@ -1,6 +1,3 @@
-body {
-  font-size: 16px;
-}
 a {
   color: inherit;
 }
@@ -32,6 +29,7 @@ a {
   width: 350px;
 }
 .distribution_txt {
+  font-size: 16px;
   width: 300px;
   margin: 0 auto;
   color: #4f4c4b;

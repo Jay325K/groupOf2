@@ -1,6 +1,3 @@
-body {
-  font-size: 16px;
-}
 a {
   color: inherit;
 }
@@ -37,8 +34,9 @@ button {
   text-align: end;
 }
 .my_hollys--card_btn {
+  font-size: 16px;
   border: 1px solid #666;
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -54,7 +52,7 @@ button {
 }
 .my_hollys--card_content--wrap {
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 .my_hollys--card_card {
   display: flex;

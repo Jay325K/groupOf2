@@ -55,6 +55,7 @@
   display: flex;
 }
 .lnb_list > li > a {
+  font-size: 16px;
   font-weight: 800;
   padding: 10px 50px;
   margin-right: 10px;
