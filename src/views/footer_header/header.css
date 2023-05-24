@@ -91,8 +91,7 @@ header .header_first.active .gnb_right .header_top ul li:last-child:after{
 
 /***     gnb depth-01     ***/
 header .header_first .gnb_right .gnb_wrap .gnb {
-  margin-top: 5px;
-  padding: 15px 0;
+  padding: 15px 0 0 0;
 }
 header .header_first .gnb_right .gnb_wrap .gnb a {
   font-size: 19px;

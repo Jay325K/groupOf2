@@ -38,6 +38,7 @@ main .banner_wrap .lnb li{
 }
 main .banner_wrap .lnb li:hover{
   background: #c72f30;
+  transition: 0.5s ;
 }
 main .banner_wrap .lnb li.active{
   background: #c72f30;
