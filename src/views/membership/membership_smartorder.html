@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membership_smartorder</title>
+    <!--        reset css        -->
+    <link rel="stylesheet" href="../reset.css">
+    <!--        membership smartorder css        -->
+    <link rel="stylesheet" href="smartorder.css">
+    <!--        membership smartorder js        -->
+    <script src="../jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.next').click(function(){
+                $('.list_wrap ul').css({'translateX':-700})
+            })
+            $('.prev').click(function(){
+                $('.list_wrap ul')
+            })
+        })
+    </script>
+    <!--        membership smartorder slider js        
+    <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    script>
+        $( document ).ready( function() {
+            $( '.slider' ).bxSlider({
+                infiniteLoop:true,
+            });
+        } );
+    </script>-->
+</head>
+<body>
+    <!--  header  -->
+    <header>header</header>
+
+    <!--  main  -->
+    <main id="main" class="main">
+        <section class="banner_wrap">
+            <div class="banner">
+                <h2>Membership</h2>
+                <ul class="lnb">
+                    <li><a href="membership_benefit.html">Membership</a></li>
+                    <li class="active"><a href="membership_smartorder.html">Mobile App</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="content">
+            <div class="location">
+                <span><a href="#none">Home</a></span>
+                <span><a href="membership_benefit.html">Membership</a></span>
+                <span><a href="membership_smartorder.html">할리스 모바일 앱</a></span>
+            </div>
+
+            <div class="slogun_wrap">
+                <div class="slogun_text">
+                    <dl>
+                        <dt>할리스 모바일 앱</dt>
+                        <dd>할리스의 모든 서비스를 
+                            <br>
+                            앱 하나로 경험할 수 있는 멤버십 서비스 입니다.</dd>
+                    </dl>
+                    <p>
+                        매장에서 이용할 수 있는 스마트오더,<br>
+                        집에서 배달할 수 있는 딜리버리,<br>
+                        충전해서 현금처럼 사용하는 할리스카드 등<br>
+                        완전히 새로워진 할리스 앱을 만나보실 수 있습니다.
+                    </p>
+                </div>
+                <div class="slogun_img">
+                    <img src="m_images/hollys_coffee.jpg" alt="슬로건 관련 이미지">
+                </div>
+            </div>
+
+            <div class="hollys_box_list">
+                <ul class="box_list">
+                    <li>
+                        <dl>
+                            <img src="m_images/order_icon.svg" alt="스마트오더"> 
+                            <dt>스마트오더</dt>
+                            <dd>줄서지 않고 주문하세요!</dd>
+                        </dl>
+                    </li>
+                    <li>                    
+                        <dl>
+                            <img src="m_images/deliver_icon.svg" alt="딜리버리">
+                            <dt>딜리버리</dt>
+                            <dd>집에서 편리하고 다양하게 
+                                <br>
+                                할리스를 즐기세요</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <img src="m_images/cake_icon.svg" alt="홀케이크예약">
+                            <dt>홀케이크 예약</dt>
+                            <dd>다양한 케이크를
+                                <br>
+                                원하는 매장에서, 원하는 시간에
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>                    
+                        <dl>
+                            <img src="m_images/membership_icon.svg" alt="멤버십">
+                            <dt>멤버십</dt>
+                            <dd>할리스 CROWN이 쌓이면 
+                                <br>
+                                무료 커피 쿠폰을 드려요</dd>
+                        </dl>
+                    </li>
+                    <li>                    
+                        <dl>
+                            <img src="m_images/card_icon.svg" alt="기프트카드">
+                            <dt>기프트카드</dt>
+                            <dd>할리스의 다양한 상품을
+                                <br>
+                                온라인에서도 구입하여 
+                                <br>
+                                사용 또는 선물할 수 있어요</dd>
+                        </dl>
+                    </li>
+                    <li>                    
+                        <dl>
+                            <img src="m_images/gift_icon.svg" alt="선물하기">
+                            <dt>선물하기</dt>
+                            <dd>소중한 분께 할리스 카드로
+                                <br>
+                                마음을 전하세요</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="slider">
+                <div class="list_wrap">
+                    <ul>
+                        <li><img src="m_images/app1.png" alt="어플 안내1"></li>
+                        <li><img src="m_images/app2.png" alt="어플 안내2"></li>
+                        <li><img src="m_images/app3.png" alt="어플 안내3"></li>
+                        <li><img src="m_images/app4.png" alt="어플 안내4"></li>
+                        <li><img src="m_images/app5.png" alt="어플 안내5"></li>
+                        <li><img src="m_images/app6.png" alt="어플 안내6"></li>
+                    </ul>
+                </div>
+                <div class="cont">
+                    <a href="#none" class="prev"><img src="m_images/prev.png" alt="prev"></a>
+                    <a href="#none" class="next"><img src="m_images/next.png" alt="next"></a>
+                </div>
+            </div>
+            <!--<div class="slider">
+                <div><img src="m_images/app1.png" alt=""></div>
+                <div><img src="m_images/app2.png" alt=""></div>
+                <div><img src="m_images/app3.png" alt=""></div>
+                <div><img src="m_images/app4.png" alt=""></div>
+                <div><img src="m_images/app5.png" alt=""></div>
+                <div><img src="m_images/app6.png" alt=""></div>
+            </div>-->
+
+            <div class="app_down">
+                <h2>스마트오더 앱 다운로드</h2>
+                <ul>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.kr.hollyscoffee">
+                        <img src="m_images/playstore.svg" alt="플레이스토어">
+                        <span>Google play</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://itunes.apple.com/kr/app/apple-store/id956138792?mt=8">
+                        <img src="m_images/white_apple.png" alt="애플스토어">
+                        <span>App store</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!--  footer  -->
+    <footer>footer</footer>
+
+</body>
+</html>
