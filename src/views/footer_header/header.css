@@ -101,15 +101,22 @@ header .header_first.active .gnb_right .header_top ul li:last-child:after{
 
 /***     gnb depth-01     ***/
 header .header_first .gnb_right .gnb_wrap .gnb {
-  padding: 15px 0 ;
+  height: 49px;
 }
 header .header_first .gnb_right .gnb_wrap .gnb a {
+  display: block;
+
+  height: 100%;
+
   font-size: 19px;
   font-weight: bold;
   color: #000;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a{
-  padding-bottom: 5px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a:hover{
   border-bottom: 5px solid #c72f2f;
