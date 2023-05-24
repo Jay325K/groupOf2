@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>membership_benefit</title>
     <!--        reset css        -->
-    <link rel="stylesheet" href="../reset.css">
-    <!--        membership benefit css        -->
+    <link rel="stylesheet" href="/reset/reset.css">
+
+    <!--        header css        -->
+    <link rel="stylesheet" href="/src/views/footer_header/header.css">
+
+    <!--        main css        -->
     <link rel="stylesheet" href="benefit.css">
-    
+
+    <!--        footer css        -->
+    <link rel="stylesheet" href="/src/views/footer_header/footer.css">
+
+    <!--        header footer js        -->
+    <script src="/src/jquery/jquery-3.6.4.min.js"></script>
+    <script src="/src/views/sitemap/header.js"></script>
 </head>
 <body>
     <!--  header  -->
-    <header>header</header>
+    <header id="header"></header>
 
     <!--  main  -->
     <main id="main" class="main">
@@ -39,7 +49,7 @@
                 <div class="grade">
                     <div class="silver">
                         <div class="grade">
-                            <img src="m_images/membership_silver.png" alt="silver">
+                            <img src="/src/assets/images/membership/membership_silver.png" alt="silver">
                             <div class="con">멤버십 회원 가입 시</div>
                             <p>SILVER</p>
                         </div>
@@ -59,7 +69,7 @@
 
                     <div class="gold">
                         <div class="grade">
-                            <img src="m_images/membership_gold.png" alt="gold">
+                            <img src="/src/assets/images/membership/membership_gold.png" alt="gold">
                             <div class="con">CROWN 12개 적립 시</div>
                             <p>GOLD</p>
                         </div>
@@ -78,7 +88,7 @@
 
                     <div class="red">
                         <div class="grade">
-                            <img src="m_images/membership_red.png" alt="red">
+                            <img src="/src/assets/images/membership/membership_red.png" alt="red">
                             <div class="con">CROWN 48개 적립 시</div>
                             <p>RED</p>
                         </div>
@@ -97,7 +107,7 @@
 
                     <div class="dia">
                         <div class="grade">
-                            <img src="m_images/membership_dia.png" alt="dia">
+                            <img src="/src/assets/images/membership/membership_dia.png" alt="dia">
                             <div class="con">연간 구매금액 상위 1%</div>
                             <p>DIAMOND</p>
                         </div>
@@ -116,54 +126,6 @@
                     </div>
                 </div>
             </div>
-            <!--<ul>
-                <li class="m_silver">
-                    <img src="m_images/membership_silver.png" alt="실버">
-                    <p style="color:#A9A9A9" class="bold">SILVER</p> 
-                    <p>멤버십 회원 가입 시</p>
-                    <ul>
-                        <li>크라운 12개 적립 시<br> 아메리카노 (R) 무료 쿠폰</li><br>
-                        <li>3만원 이상 자동충전 설정 후<br> 발생 시 마다 아메리카노 1+1 쿠폰<br> 즉시 발행 (1일 1회 한정)</li><br>
-                        <li>멤버십에 현금영수증 정보 등록 후 할리스카드 이용 시 자동 소득공제</li>
-                    </ul>
-                </li>
-                <li class="m_gold">
-                    <img src="m_images/membership_gold.png" alt="골드">
-                    <p style="color:#C5A56C" class="bold">GOLD</p> 
-                    <p>CROWN 12개 적립 시</p>
-                    <ul>
-                        <li class="silver">SILVER 혜택 모두 포함</li><br>
-                        <li>크라운 12개 적립 시<br>
-                            아메리카노 (R) 무료 쿠폰</li><br>
-                        <li>커피음료 무료 사이즈업
-                            또는 샷 / 시럽 무료 추가 중 택 1 (1일 1회 1잔 한정)</li>
-                    </ul>
-                </li>
-                <li class="m_red">
-                    <img src="m_images/membership_red.png" alt="레드">
-                    <p style="color:#ba000c" class="bold">RED</p> 
-                    <p>CROWN 48개 적립 시</p>
-                    <ul>
-                        <li class="gold">GOLD 혜택 모두 포함</li><br>
-                        <li>크라운 12개 적립 시<br> 제조 음료 (R) 무료 쿠폰</li><br>
-                        <li>생일 축하 미니 케이크<br> 무료 쿠폰 증정</li>
-                    </ul>
-                </li>
-                <li class="m_dia">
-                    <img src="m_images/membership_dia.png" alt="다이아몬드">
-                    <p style="color:#000018" class="bold">DIAMOND</p> 
-                    <p>연간 구매금액 상위 1%</p>
-                    <ul>
-                        <li class="red"><span style="color:#ba000c">RED</span> 혜택 모두 포함</li><br>
-                        <li>홀케이크 무료 쿠폰 증정<br>
-                            (겨울 시즌 출시 기간 개별 알림)</li><br>
-                        <li>플래너 무료 쿠폰 증정<br>
-                            (출시 여부 및 일정에 따라 개별 알림)</li><br>
-                        <li>시즌 스페셜 혜택 제공<br>
-                            (이벤트 일정에 따라 개별 알림)</li>
-                    </ul>
-                </li>
-            </ul>-->
 
             <div class="notice">
                 <h3>유의사항</h3>
@@ -194,6 +156,6 @@
 
 
     <!--  footer  -->
-    <footer>footer</footer>
+    <footer id="footer"></footer>
 </body>
 </html>

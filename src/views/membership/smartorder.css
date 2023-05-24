@@ -1,16 +1,9 @@
-/**     header     **/
-header{
-    height: 70px;
-    width: 100%;
-    box-sizing: border-box;
-}
-  
 /**     main     **/
 
 /**     banner     **/
 main .banner_wrap{
     height: 899px;
-    background: url(m_images/membership.png);  
+    background: url(/src/assets/images/membership/smartorder.png);  
     position: relative;
 }
 main .banner_wrap .banner{
@@ -42,7 +35,11 @@ main .banner_wrap .banner{
     align-items: center;
     background: rgba(150, 150, 150, 0.39);
   }
-  main .banner_wrap .lnb li:nth-child(1){
+  main .banner_wrap .lnb li:hover{
+    background: #c72f30;
+    transition: 0.5s ;
+}
+    main .banner_wrap .lnb li:nth-child(1){
     margin-right: 30px;
   }
   main .banner_wrap .lnb li.active{
@@ -132,11 +129,6 @@ main .content .hollys_box_list .box_list li dd{
     font-size: 18px;
 }
 
-/**     contents - smart_order     
-main .content .bx-wrapper{
-    margin: auto;
-    max-width: 700px !important;
-}**/
 /**     contents - smart_order     **/
 main .content .slider{
     position: relative;
@@ -195,18 +187,3 @@ main .content .app_down ul li a{
     font-weight: bold;
     color: #fff;
 }
-
-
-
-
-
-
-/**     footer     **/
-footer{
-    height: 300px;
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid rgb(199,47,47);
-}
-  
-  
