@@ -14,7 +14,7 @@ header .header_first {
   transition: 0.5s;
 }
 header .header_first{
-  background: #fff;
+  background: white;
 }
 header .header_first.active {
   background: rgb(199, 47, 47);
