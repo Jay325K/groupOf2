@@ -52,7 +52,7 @@ request.onload = function() {
 
 
         /* 버튼 누를시 section_three 숨김 */
-        $('.hide').on('click',function(){
+        $('.hide_sec_three').on('click',function(){
             $('.sec_one, .sec_two, .sec_three').removeClass('active');
         });
 

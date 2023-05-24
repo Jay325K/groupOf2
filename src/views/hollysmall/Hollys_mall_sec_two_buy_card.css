@@ -451,6 +451,8 @@
 .buy_wrap .page_step_contents .result_wrap .card_message>div .my_selected_card_img img{
     border-radius: 10px;
     border: 1px solid;
+
+    width: 100%;
 }
 
 .buy_wrap .page_step_contents .result_wrap .card_message>.my_message{
