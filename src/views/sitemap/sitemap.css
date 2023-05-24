@@ -1,0 +1,123 @@
+
+/**     main     **/
+
+/**     banner     **/
+main .banner_wrap{
+  height: 899px;
+  background: url(/src/assets/images/sitemap/sitemap_banner.png);  
+  position: relative;
+}
+main .banner_wrap .banner{
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .banner_wrap h2{
+  width: 400px;
+  color: #fff;
+  font-size: 65px;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 3px solid rgb(199,47,47);
+}
+main .banner_wrap .lnb{
+  margin-top: 30px;
+  height: 60px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .banner_wrap .lnb li{
+  padding: 10px 15px;
+  align-items: center;
+  background: rgba(150, 150, 150, 0.39);
+}
+main .banner_wrap .lnb li:hover{
+  background: #c72f30;
+}
+main .banner_wrap .lnb li.active{
+  background: #c72f30;
+}
+main .banner_wrap .lnb li a{
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/**     contents     **/
+main .content{
+  width: 1200px;
+  margin: auto;
+}
+
+/**     location     **/
+main .content .location span::after{
+  content: ' >';
+}
+main .content .location span:last-child::after{
+  content: ' ';
+}
+main .content a:hover {
+  text-decoration: underline;
+}
+
+main .content .sitemap_wrap h2{
+  font-size: 40px;
+  padding: 50px 0 40px 0;
+}
+
+/**     contents main     **/
+main .content .sitemap_wrap{
+  margin-bottom: 100px;
+}
+main .content .sitemap_wrap .sitemap{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+main .content .sitemap_wrap .sitemap>div{
+  display: flex;
+  min-height: 150px;
+  border-bottom: 1px solid #b6b6b6;
+}
+main .content .sitemap_wrap .sitemap>div h3{
+  width: 20%;
+  padding: 20px 5px;
+  text-align: center;
+  background: #EFEFEF;
+}
+main .content .sitemap_wrap .sitemap>div dl{
+  width: 80%;
+  padding: 20px 30px;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 40px;
+}
+main .content .sitemap_wrap .sitemap>div dl dt{
+  width: 0;
+  height: 0;
+  text-indent: -999px;
+}
+main .content .sitemap_wrap .sitemap>div dl dd{
+  width: 33.3%;
+}
+main .content .sitemap_wrap .sitemap>div dl dd a{
+  font-weight: bold;
+  color: #303030;
+}
+main .content .sitemap_wrap .sitemap>div dl dd ul{
+  margin: 10px 0 0 10px ;
+}
+main .content .sitemap_wrap .sitemap>div dl dd ul li::before{
+  content: '- ';
+  color: #8b8b8b;
+}
+main .content .sitemap_wrap .sitemap>div dl dd ul li a{
+  color: #8b8b8b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+

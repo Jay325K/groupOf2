@@ -1,0 +1,212 @@
+/**     header     **/
+header{
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+/**     main     **/
+
+/**     banner     **/
+main .banner_wrap{
+    height: 899px;
+    background: url(m_images/membership.png);  
+    position: relative;
+}
+main .banner_wrap .banner{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main .banner_wrap h2{
+    width: 500px;
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 3px solid rgb(199,47,47);
+  }
+  main .banner_wrap .lnb{
+    margin-top: 30px;
+    height: 60px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .banner_wrap .lnb li{
+    padding: 10px 15px;
+    align-items: center;
+    background: rgba(150, 150, 150, 0.39);
+  }
+  main .banner_wrap .lnb li:nth-child(1){
+    margin-right: 30px;
+  }
+  main .banner_wrap .lnb li.active{
+    background: #c72f30;
+  }
+  main .banner_wrap .lnb li a{
+    color: #fff;
+    font-weight: bold;
+  }
+    
+
+/**     contents     **/
+main .content {
+    width: 1200px;
+    margin: auto;
+}
+
+/**     location     **/
+main .content .location span::after{
+    content: ' >';
+}
+main .content .location span:last-child::after{
+    content: ' ';
+}
+
+
+/**     contents - slogun wrap     **/
+main .content .slogun_wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 100px 0;
+}
+main .content .slogun_wrap .slogun_text dl dt{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+main .content .slogun_wrap .slogun_text dl dd{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+main .content .slogun_wrap .slogun_text p{
+    color: #333333;
+    font-weight: 700;
+}
+main .content .slogun_wrap .slogun_img img{
+    margin-top: 50px;
+    width: 500px;
+}
+
+/**     contents - box list     **/
+main .content .hollys_box_list{
+    position: relative;
+    display: block;
+}
+main .content .hollys_box_list .box_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 120px !important;
+}
+main .content .hollys_box_list .box_list li{
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+main .content .hollys_box_list .box_list li dl{
+    text-align: center;
+    display: block;
+    height: 300px;
+    margin: auto;
+    border: 1px solid #b6b6b6;
+}
+main .content .hollys_box_list .box_list li dl img{
+    padding: 30px 0 0 0;
+    width: 50px;
+}
+main .content .hollys_box_list .box_list li dt{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 20px 0 ;
+}
+main .content .hollys_box_list .box_list li dd{
+    line-height: 2;
+    color: #333333;
+    font-size: 18px;
+}
+
+/**     contents - smart_order     
+main .content .bx-wrapper{
+    margin: auto;
+    max-width: 700px !important;
+}**/
+/**     contents - smart_order     **/
+main .content .slider{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 120px !important;
+}
+main .content .slider .list_wrap{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+main .content .slider .list_wrap ul{
+    display: flex;
+    /*transform: translateX(-700px);*/
+}
+main .content .slider .cont a{
+    position: absolute;
+}
+main .content .slider .cont .prev{
+    left: 220px;
+    top: 40%;
+}
+main .content .slider .cont .next{
+    right: 208px;
+    top: 40%;
+}
+
+
+/**     contents - app_down     **/
+main .content .app_down{
+    margin: 150px 0;
+    display: flex;
+    justify-content: space-between;
+}
+main .content .app_down h2{
+    font-size: 40px;
+}
+main .content .app_down ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+main .content .app_down ul li{
+    background: #333;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+}
+main .content .app_down ul li img{
+    width: 22px;
+}
+main .content .app_down ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+
+
+/**     footer     **/
+footer{
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(199,47,47);
+}
+  
+  
