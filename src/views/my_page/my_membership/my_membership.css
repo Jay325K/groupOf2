@@ -163,3 +163,14 @@ button {
   background: #c72f30;
   border: 1px solid #c72f30;
 }
+.my_membership--content_management--crown_notice {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.my_membership--content_management--crown_notice--none_img {
+  width: 100px;
+  margin-bottom: 10px;
+}

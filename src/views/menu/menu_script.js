@@ -243,12 +243,12 @@ menuModalGift.addEventListener("click", () => {
 const headerID = document.getElementById("header");
 const getHeader = () => {
   const response = fetch("../../footer_header/header.html");
-  return response.then((res) => res.json());
+  return response.then((res) => res.text());
 };
 
 const header = async () => {
   data = await getHeader();
-  console.log(data);
+
   headerID.innerHTML = data;
 };
 header();
