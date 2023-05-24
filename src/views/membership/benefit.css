@@ -11,7 +11,7 @@ header {
 /**     banner     **/
 main .banner_wrap {
   height: 899px;
-  background: url(m_images/membership.png);
+  background: url(/src/assets/images/membership/membership.png);
   position: relative;
 }
 main .banner_wrap .banner {
@@ -42,6 +42,10 @@ main .banner_wrap .lnb li {
   padding: 10px 15px;
   align-items: center;
   background: rgba(150, 150, 150, 0.39);
+}
+main .banner_wrap .lnb li:hover{
+  background: #c72f30;
+  transition: 0.5s ;
 }
 main .banner_wrap .lnb li:nth-child(1) {
   margin-right: 30px;
@@ -139,61 +143,6 @@ main .content .m_benefit > div div .text .plus_ben{
   margin-top: 40px;
 }
 
-/*
-main .content .m_benefit .container{
-  font-weight: bold;
-}
-main .content .m_benefit .container div{
-  padding: 5px;
-  font-size: 17px;
-}
-
-
-main .content .m_benefit .grade {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #d9d9d9;
-}
-main .content .m_benefit .grade>ul {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-}
-main .content .m_benefit .grade>ul>li {
-  width: 140px;
-}*/
-/*
-main .content .m_benefit .grade .m_silver>ul {
-  padding-top: 30px;
-}
-main .content .m_benefit .grade .m_gold > ul {
-  padding-top: 30px;
-}
-main .content .m_benefit .grade .m_red > ul {
-  padding-top: 30px;
-}
-main .content .m_benefit .grade .m_dia > ul {
-  padding-top: 30px;
-}
-
-main .content .m_benefit .grade .m_gold .silver {
-  background: #a9a9a9;
-  padding: 15px 10px;
-  color: whitesmoke;
-}
-main .content .m_benefit .grade .m_red .gold {
-  background: #c5a56c;
-  padding: 15px 10px;
-  color: whitesmoke;
-}
-main .content .m_benefit .grade .m_dia .red {
-  border-top: 1px solid #c5a56c;
-  border-bottom: 1px solid #c5a56c;
-  padding: 15px 10px;
-}
-main .content .m_benefit .grade .bold {
-  font-size: 16px;
-  font-weight: bolder;
-}*/
 
 /**     notice     **/
 main .content .notice {
@@ -222,12 +171,4 @@ main .content .notice ul ul li {
   width: 0;
   height: 0;
   text-indent: -999px;
-}
-
-/**     footer     **/
-footer {
-  height: 300px;
-  width: 100%;
-  border: 1px solid #000;
-  box-sizing: border-box;
 }

@@ -6,35 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>membership_smartorder</title>
     <!--        reset css        -->
-    <link rel="stylesheet" href="../reset.css">
-    <!--        membership smartorder css        -->
+    <link rel="stylesheet" href="/reset/reset.css">
+
+    <!--        header css        -->
+    <link rel="stylesheet" href="/src/views/footer_header/header.css">
+
+    <!--        main css        -->
     <link rel="stylesheet" href="smartorder.css">
+
+    <!--        footer css        -->
+    <link rel="stylesheet" href="/src/views/footer_header/footer.css">
+
     <!--        membership smartorder js        -->
-    <script src="../jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.next').click(function(){
-                $('.list_wrap ul').css({'translateX':-700})
-            })
-            $('.prev').click(function(){
-                $('.list_wrap ul')
-            })
-        })
-    </script>
-    <!--        membership smartorder slider js        
-    <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    script>
-        $( document ).ready( function() {
-            $( '.slider' ).bxSlider({
-                infiniteLoop:true,
-            });
-        } );
-    </script>-->
+    <script src="/src/jquery/jquery-3.6.4.min.js"></script>
+    <script src="/src/views/footer_header/header.js"></script>
 </head>
 <body>
     <!--  header  -->
-    <header>header</header>
+    <header id="header"></header>
 
     <!--  main  -->
     <main id="main" class="main">
@@ -71,7 +60,7 @@
                     </p>
                 </div>
                 <div class="slogun_img">
-                    <img src="m_images/hollys_coffee.jpg" alt="슬로건 관련 이미지">
+                    <img src="/src/assets/images/membership/hollys_coffee.jpg" alt="슬로건 관련 이미지">
                 </div>
             </div>
 
@@ -79,14 +68,14 @@
                 <ul class="box_list">
                     <li>
                         <dl>
-                            <img src="m_images/order_icon.svg" alt="스마트오더"> 
+                            <img src="/src/assets/images/membership/order_icon.svg" alt="스마트오더"> 
                             <dt>스마트오더</dt>
                             <dd>줄서지 않고 주문하세요!</dd>
                         </dl>
                     </li>
                     <li>                    
                         <dl>
-                            <img src="m_images/deliver_icon.svg" alt="딜리버리">
+                            <img src="/src/assets/images/membership/deliver_icon.svg" alt="딜리버리">
                             <dt>딜리버리</dt>
                             <dd>집에서 편리하고 다양하게 
                                 <br>
@@ -95,7 +84,7 @@
                     </li>
                     <li>
                         <dl>
-                            <img src="m_images/cake_icon.svg" alt="홀케이크예약">
+                            <img src="/src/assets/images/membership/cake_icon.svg" alt="홀케이크예약">
                             <dt>홀케이크 예약</dt>
                             <dd>다양한 케이크를
                                 <br>
@@ -105,7 +94,7 @@
                     </li>
                     <li>                    
                         <dl>
-                            <img src="m_images/membership_icon.svg" alt="멤버십">
+                            <img src="/src/assets/images/membership/membership_icon.svg" alt="멤버십">
                             <dt>멤버십</dt>
                             <dd>할리스 CROWN이 쌓이면 
                                 <br>
@@ -114,7 +103,7 @@
                     </li>
                     <li>                    
                         <dl>
-                            <img src="m_images/card_icon.svg" alt="기프트카드">
+                            <img src="/src/assets/images/membership/card_icon.svg" alt="기프트카드">
                             <dt>기프트카드</dt>
                             <dd>할리스의 다양한 상품을
                                 <br>
@@ -125,7 +114,7 @@
                     </li>
                     <li>                    
                         <dl>
-                            <img src="m_images/gift_icon.svg" alt="선물하기">
+                            <img src="/src/assets/images/membership/gift_icon.svg" alt="선물하기">
                             <dt>선물하기</dt>
                             <dd>소중한 분께 할리스 카드로
                                 <br>
@@ -138,17 +127,17 @@
             <div class="slider">
                 <div class="list_wrap">
                     <ul>
-                        <li><img src="m_images/app1.png" alt="어플 안내1"></li>
-                        <li><img src="m_images/app2.png" alt="어플 안내2"></li>
-                        <li><img src="m_images/app3.png" alt="어플 안내3"></li>
-                        <li><img src="m_images/app4.png" alt="어플 안내4"></li>
-                        <li><img src="m_images/app5.png" alt="어플 안내5"></li>
-                        <li><img src="m_images/app6.png" alt="어플 안내6"></li>
+                        <li><img src="/src/assets/images/membership/app1.png" alt="어플 안내1"></li>
+                        <li><img src="/src/assets/images/membership/app2.png" alt="어플 안내2"></li>
+                        <li><img src="/src/assets/images/membership/app3.png" alt="어플 안내3"></li>
+                        <li><img src="/src/assets/images/membership/app4.png" alt="어플 안내4"></li>
+                        <li><img src="/src/assets/images/membership/app5.png" alt="어플 안내5"></li>
+                        <li><img src="/src/assets/images/membership/app6.png" alt="어플 안내6"></li>
                     </ul>
                 </div>
                 <div class="cont">
-                    <a href="#none" class="prev"><img src="m_images/prev.png" alt="prev"></a>
-                    <a href="#none" class="next"><img src="m_images/next.png" alt="next"></a>
+                    <a href="#none" class="prev"><img src="/src/assets/images/membership/prev.png" alt="prev"></a>
+                    <a href="#none" class="next"><img src="/src/assets/images/membership/next.png" alt="next"></a>
                 </div>
             </div>
             <!--<div class="slider">
@@ -165,13 +154,13 @@
                 <ul>
                     <li>
                         <a href="https://play.google.com/store/apps/details?id=com.kr.hollyscoffee">
-                        <img src="m_images/playstore.svg" alt="플레이스토어">
+                        <img src="/src/assets/images/membership/playstore.svg" alt="플레이스토어">
                         <span>Google play</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://itunes.apple.com/kr/app/apple-store/id956138792?mt=8">
-                        <img src="m_images/white_apple.png" alt="애플스토어">
+                        <img src="/src/assets/images/membership/white_apple.png" alt="애플스토어">
                         <span>App store</span>
                         </a>
                     </li>
@@ -181,7 +170,7 @@
     </main>
 
     <!--  footer  -->
-    <footer>footer</footer>
+    <footer id="footer"></footer>
 
 </body>
 </html>
