@@ -119,7 +119,7 @@ header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a{
   align-items: center;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a:hover{
-  border-bottom: 5px solid #c72f2f;
+  color:rgb(199, 47, 47);
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 ul {
   display: flex;
