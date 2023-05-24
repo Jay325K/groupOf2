@@ -1,5 +1,6 @@
 .buy_wrap{
     width: 100%; /* 1200px */
+    padding-bottom: 40px;
 }
 /* class = page_info */
 .buy_wrap .page_info{

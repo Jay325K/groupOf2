@@ -29,7 +29,7 @@
     width: 100%;
 
     border-collapse: collapse;
-    border-top: 1px solid;
+    border-top: 2px solid;
     border-bottom: 1px solid;
 }
 .hollys_card_guide table tr{
@@ -41,15 +41,20 @@
 .hollys_card_guide table tr td{
     width: 100%;
 
-    border: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+
     padding: 10px 0;
 
     font-size: 1.3em;
     font-weight: 400;
+
 }
 .hollys_card_guide table tr th:nth-child(1),
 .hollys_card_guide table tr td:nth-child(1){
     width: 150%;
+
+    border-left: 0;
 }
 
 /* 할리스 카드안내 이미지 */
@@ -60,9 +65,9 @@
     display: flex;
     justify-content: center;
 }
-.hollys_card_guide table tr td .img_box img{
-    height: 100%;
 
+.hollys_card_guide table tr td .img_box img{
+    width: 100%;
 }
 
 /* class = hollys_card_text_guide */ /* 할리스 텍스트 안내 */
