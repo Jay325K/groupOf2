@@ -184,6 +184,7 @@ const noDrinkNutritional = (data, nutritionalKeys) => {
   text += "</tr></tbody>";
   return text;
 };
+
 window.addEventListener("DOMContentLoaded", () => {
   const pageSlash = window.location.pathname.split("/");
   pageName = pageSlash[pageSlash.length - 1].split(".")[0];
@@ -239,16 +240,3 @@ menuModalCloseBtn.addEventListener("click", () => {
 menuModalGift.addEventListener("click", () => {
   localStorage.setItem("giftInfo", JSON.stringify(giftInfo));
 });
-
-const headerID = document.getElementById("header");
-const getHeader = () => {
-  const response = fetch("../../footer_header/header.html");
-  return response.then((res) => res.text());
-};
-
-const header = async () => {
-  data = await getHeader();
-
-  headerID.innerHTML = data;
-};
-header();
