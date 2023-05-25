@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
     $.ajax({
         url: '/src/views/footer_header/header.html',
         dataType: 'html',

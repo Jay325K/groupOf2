@@ -30,6 +30,11 @@ root
 Network Trash Folder
 Temporary Items
 .apdisk
+src/views/main/beforeFullpage.html
+src/views/main/reFullpage.html
+src/views/main/reFullpage.css
+src/views/main/reFullpage.js
+src/views/main/beforeFullpage.css
 
 ### macOS Patch ###
 # iCloud generated files
