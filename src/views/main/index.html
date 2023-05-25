@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<html lang="ko">
 <head>
-    <title>메인 페이지</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="main.js"></script>
+    <!-- <link rel="stylesheet" href="../footer_header/header.html"> -->
     <script src="../../jquery/jquery-3.6.4.min.js"></script>
+    <script src="../../jquery/jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <!-- header footer -->
+    <link rel="stylesheet" href="../footer_header/footer.css">
+    <script src="../footer_header/header_call.js"></script>
+    <link rel="stylesheet" href="../footer_header/header.css">
+    
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-
+   
 </head>
-
-<body>
-
-    <div>
-        <header>
-        </header>
-
-        <main>
-
-
-            <section class="main_cont" id="main1"> <!-- width:100% height:100vh position:relative-->
+<body>  
+    <header class="header" id="header"></header>
+    <main>
+        <article>
+            <section id="main1" class="main_cont">
                 <div> <!--width:100% height:100% -->
-                    <video src="../../assets/video/main.mp4" autoplay muted>
+                    <video src="../../assets/video/main.mp4" autoplay muted loop>
                         메인 영상
                     </video>
                 </div>
 
-                <div class="text1"> <!-- width:100%; position:absolut-->
+                <div class="text1 text-fade-in"> <!-- width:100%; position:absolut-->
                     <div class="cof_text"> <!-- position:relative-->
                         <span>커피의 즐거움을 만드는</span>
                     </div>
@@ -44,35 +44,50 @@
                 </div>
             </section>
 
-            <section class="main_cont" id="main2">
+            <section id="main2" class="main_cont">
                 <a href="#none"><img src="../../assets/images/main/foodFontFin.png" alt="이달의 메뉴"> </a>
-                <div class="win_text">
-                    겨울을 빨갛게 물들이는
+                <div class="text2">
+                    <div class="win_text">
+                        겨울을 빨갛게 물들이는
+                    </div>
+                    <div class="dep_text">
+                        DEEP RED
+                    </div>
                 </div>
-                <div class="dep_text">
-                    DEEP RED
+                <div class="menuT">
+                    <div class="tatCh">
+                        타트 체리 스무디
+                    </div>
+                    <div class="macron">
+                        레드벨벳 뚱카롱
+                    </div>
                 </div>
             </section>
 
-            <section class="main_cont" id="main3">
-                <a href="#none"><img src="../../assets/images/main/mdFontFin.png" alt="이달의 md상품"> </a>
-                <div class="hol_text">
-                    HOLLYS
+            <section id="main3" class="main_cont">
+                <a href="#none" style="height: 100vh;"><img src="../../assets/images/main/mdFontFin.png" alt="이달의 md상품" style="height: 100vh;"> </a>
+                <div class="text3">
+                    <div class="hol_text">
+                        HOLLYS
+                    </div>
+                    <div class="dep2_text">
+                        DEEP RED EDITION
+                    </div>
                 </div>
-                <div class="dep2_text">
-                    DEEP RED EDITION
+                <div class="star">
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star1" class="star1"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star2" class="star2"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star3" class="star3"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star4" class="star4"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star5" class="star5"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star6" class="star6"></a>
                 </div>
             </section>
 
+        </article>
+    </main>
+    <footer class="footer" id="footer"></footer>  
 
-            <footer>
-
-            </footer>
-        </main>
-    </div>
-
-
-
+    
 </body>
-
-</html>
+</html> 

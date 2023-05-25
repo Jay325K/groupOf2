@@ -1,173 +1,291 @@
-        video{
-            box-sizing: border-box;
-        }
+header {
+    position: fixed;
+    /* min-width: 1200px;  
+    width: 100%;
+    height: 70px; */
 
-        header{
-            position: fixed;
-            top: 0;
-            z-index: 99;
-            width: 100%;
-            -webkit-box-sizing: border-box;
-        }
-        footer{
-            width: 100%;
-        }
-        
-        /* 메인 콘텐츠 */
-        
-        main{
-            overflow: hidden;
-        }
-        .main_cont {
-            width: 100%;
-            min-width: 100%;
-            /* min-width: 1920px; */
-            min-height: 100vh;
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-        }
-        .main_cont > div:first-child{
-            width: 100%;
-            height: 100%;
-        }
+    z-index: 50;
 
-        .main_cont > *{
-        display: flex;
-        align-items: center; /* 수직 가운데 정렬 */
-        justify-content: center; /* 수평 가운데 정렬 */
-        }
+    /* border: 1px solid;
 
-        .main_cont > video {
-            width: 100%;
-        max-width: 130%;
-        height: auto;
-        z-index: -1;
-        }
+    background: #808080; */
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    min-height: 899px;
+    height: 100vh;
+}
+
+article {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2697px;
+    min-height: 899px;
+
+    transition: 0.5s;
+
+}
+
+section {
+    width: 100%;
+    min-height: 899px;
+    height: 100vh;
+    transition: 1s;
+}
+
+.main_cont {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    position: relative;
+}
+
+.main_cont>div:first-child {
+    width: 100%;
+    height: 100%;
+}
+
+.main_cont>* {
+    display: flex;
+    align-items: center;
+    /* 수직 가운데 정렬 */
+    justify-content: center;
+    /* 수평 가운데 정렬 */
+}
+
+.main_cont>video {
+    width: 100%;
+    max-width: 130%;
+    height: auto;
+    z-index: -1;
+}
 
 
-        /*텍스트*/
-        .text1{
-            width: 100%;
-            position: absolute;
-            top: 120px;
-            right: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            z-index: 2;
-            overflow: hidden;
-        }
-        .cof_text {
-            position: relative;
-            /* right: 0;
-            top: 120px;
-            padding: 20px; */
-            color: white;
-            font-size: 100px;
-            font-weight: 900;
-            font-family: 'Noto Sans KR', sans-serif;
-            z-index: 3;
-        }
+/*텍스트*/
+.text1 {
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
+    overflow: hidden;
+}
 
-        .min_text{
-            position: relative;
-            /* right: 0;
-            top: 230px;*/
-            padding: 20px;
-            color: white;
-            font-size: 100px;
-            font-weight: 900;
-            font-family: 'Noto Sans KR', sans-serif;
-            z-index: 3;
-        }
-        .fp-tableCell{
-            padding: 0px;
-        }
+.cof_text {
+    position: relative;
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Noto Sans KR', sans-serif;
+    z-index: 3;
+}
 
-        /*텍스트 호버 효과*/
-        .cof_text::after, .min_text::after{
-            display:block;
-            content: '';
-            border-bottom: solid 40px #ea2129;  
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);  
-            transition: transform 250ms ease-in-out;
-            bottom: 0;
-            z-index: -1;
-            /* border-bottom: -40px; */
-        }
-        .cof_text:hover::after, .min_text:hover::after{
-            transform: scaleX(1);
-            bottom: -10px;
-        }
+.min_text {
+    position: relative;
+    padding: 20px;
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Noto Sans KR', sans-serif;
+    z-index: 3;
+}
 
-        /* 푸드 페이지 */
-        .win_text{
-            position: absolute;
-            left: 300px;
-            top: 375px;
-            padding: 20px;
-            color: white;
-            font-size: 40px;
-            display: inline-block;
-            font-family: 'Noto Sans KR', sans-serif;
-            font-weight: 300;
-        }
-        .dep_text{
-            position: absolute;
-            left: 390px;
-            top: 425px;
-            padding: 20px;
-            color: white;
-            font-size: 40px;
-            display: inline-block;
-            font-family: 'Noto Sans KR', sans-serif;
-            font-weight: 900;
-        }
-        .win_text:before {
-            padding: 0px 20px;
-            width: 100%;
-        }
-        .win_text:before {
-            transition: All 0.4s ease;
-            -webkit-transition: All 0.4s ease;
-            -moz-transition: All 0.4s ease;
-            -o-transition: All 0.4s ease;
-            content: "";
-            position: absolute;
-            background: #B22F2B;
-            padding: 0px;
-            width: 0;
-            height: 50%;
-            z-index: 1;
-            top: 75%;
-            left: 50%;
-            -webkit-transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-        }
+/*텍스트 호버 효과*/
+.cof_text::after,
+.min_text::after {
+    display: block;
+    content: '';
+    border-bottom: solid 40px #ea2129;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    bottom: 0;
+    z-index: -1;
+}
 
-        /* md 상품 페이지 */
-        .hol_text{
-            position: absolute;
-            left: 700px;
-            top: 390px;
-            padding: 20px;
-            color: white;
-            font-size: 40px;
-            display: inline-block;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        .dep2_text{
-            position: absolute;
-            left: 700px;
-            top: 440px;
-            padding: 20px;
-            color: white;
-            font-size: 40px;
-            display: inline-block;
-            font-family: 'Noto Sans
-        }
-    
+.cof_text:hover::after,
+.min_text:hover::after {
+    transform: scaleX(1);
+    bottom: -10px;
+}
+
+/* 푸드 페이지 */
+.win_text {
+    position: absolute;
+    left: 300px;
+    top: 375px;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+.dep_text {
+    position: absolute;
+    left: 390px;
+    top: 425px;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+}
+
+
+.tatCh {
+    position: absolute;
+    right: 780px;
+    top: 355px;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+.macron {
+    position: absolute;
+    right: 500px;
+    bottom: 195px;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+/* md 상품 페이지 */
+
+.hol_text {
+    position: absolute;
+    left: 730px;
+    top: 390px;
+    padding: 20px;
+    color: transparent;
+    font-size: 60px;
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.dep2_text {
+    position: absolute;
+    left: 580px;
+    top: 450px;
+    padding: 20px;
+    color: transparent;
+    /* 글자 색을 투명하게 설정 */
+    font-size: 60px;
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    /* 외곽선 색을 흰색으로 설정 */
+}
+
+/* 텍스트 페이드 인 효과 */
+.text-fade-in {
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 별 애니메이션 효과 */
+/* .star a{
+    height: 100px;
+    width: 100px;
+} */
+.star1{
+    animation: motion 0.3s linear 0s infinite alternate;
+    position: absolute;
+    right: 700px;
+    bottom: 485px;
+    height: 70px;
+    width: 70px; 
+}
+.star2{
+    animation: motion 0.3s linear 0s infinite alternate;
+    position: absolute;
+    right: 980px;
+    bottom: 495px;
+    height: 30px;
+    width: 30px; 
+}
+.star3{
+    animation: motion 0.3s linear 0s infinite alternate;
+    position: absolute;
+    right: 1040px;
+    bottom: 410px;
+    height: 50px;
+    width: 50px; 
+}
+.star4{
+    animation: motion 0.3s linear 0s infinite alternate;
+    position: absolute;
+    right: 1000px;
+    bottom: 245px;
+    height: 40px;
+    width: 40px; 
+}
+.star5{
+    animation: motion 0.3s linear 0s infinite alternate;
+    position: absolute;
+    right: 700px;
+    bottom: 295px;
+    height: 30px;
+    width: 30px; 
+}
+.star6{
+    animation: motion 0.3s linear 0s infinite alternate;
+    position: absolute;
+    right: 650px;
+    bottom: 410px;
+    height: 30px;
+    width: 30px; 
+}
+
+@keyframes motion {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: 1200px;
+    }
+}
