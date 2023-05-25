@@ -262,6 +262,7 @@ td {
   text-align: center;
 }
 .menu_modal--gift_btn {
+  font-weight: 500;
   display: inline-block;
   width: 150px;
   color: #1b1b1b;
