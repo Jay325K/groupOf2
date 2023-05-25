@@ -75,7 +75,7 @@ a {
 .lnb_list {
   display: flex;
 }
-.lnb_list a {
+.lnb_list--title {
   font-size: 16px;
   font-weight: 800;
   padding: 10px 50px;
@@ -83,7 +83,7 @@ a {
   background: rgba(128, 128, 128, 0.39);
   transition: 0.3s;
 }
-.lnb_list a:hover {
+.lnb_list--title:hover {
   background: #c72f30;
 }
 
@@ -293,25 +293,25 @@ td {
 }
 
 /* drink.html */
-.drink_new--wrap {
+.menu_new--wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
-.drink_new--txt {
+.menu_new--txt {
   width: 600px;
 }
-.drink_new--title p:first-child {
+.menu_new--title p:first-child {
   font-size: 32px;
 }
-.drink_new--title p:last-child {
+.menu_new--title p:last-child {
   font-size: 48px;
 }
-.drink_new--desc {
+.menu_new--desc {
   font-size: 24px;
   color: #666;
 }
-.drink_new--img img {
+.menu_new--img img {
   width: 500px;
 }

@@ -1,6 +1,6 @@
 const headerId = document.getElementById("header");
 const footerId = document.getElementById("footer");
-const html = document.querySelector("html");
+const body = document.querySelector("body");
 
 const getHeader = () => {
   const response = fetch("/src/views/footer_header/header.html");
@@ -10,22 +10,22 @@ const getFooter = () => {
   const response = fetch("/src/views/footer_header/footer.html");
   return response.then((res) => res.text());
 };
-
-const headerPrint = async () => {
-  let headerData = await getHeader();
-  headerId.innerHTML = headerData;
+const headerFooterExec = () => {
+  headerFooterPrint().then(() => {
+    headerFooterJs();
+  });
 };
-const footerPrint = async () => {
-  let footerData = await getFooter();
+const headerFooterPrint = async () => {
+  const headerData = await getHeader();
+  const footerData = await getFooter();
+  headerId.innerHTML = headerData;
   footerId.innerHTML = footerData;
 };
 const headerFooterJs = () => {
-  let scr = document.createElement("script");
-  scr.setAttribute("src", "/src/views/footer_header/header.js");
-  html.appendChild(scr);
+  let createScript = document.createElement("script");
+  createScript.setAttribute("src", "/src/views/footer_header/header.js");
+  body.appendChild(createScript);
 };
 window.addEventListener("DOMContentLoaded", () => {
-  headerPrint();
-  footerPrint();
-  headerFooterJs();
+  headerFooterExec();
 });

@@ -28,7 +28,4 @@ const headerFooterJs = () => {
 };
 window.addEventListener("DOMContentLoaded", () => {
   headerFooterExec();
-  // headerPrint();
-  // footerPrint();
-  // headerFooterJs();
 });
