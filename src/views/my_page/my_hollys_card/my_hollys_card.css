@@ -83,10 +83,12 @@ button {
   margin: 0 auto;
 }
 .my_hollys--card_title--desc {
+  font-size: 16px;
   color: #666;
   margin-bottom: 30px;
 }
 .my_hollys--card_write--register {
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,6 +123,7 @@ button {
   margin-bottom: 100px;
 }
 .my_hollys--card_write--complete_btn {
+  font-size: 16px;
   border: 1px solid #666;
   background: inherit;
   padding: 5px 10px;

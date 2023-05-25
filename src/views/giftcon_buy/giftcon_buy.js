@@ -20,6 +20,7 @@ const giftconBuyResultHome = document.querySelector(
   ".giftcon_buy--result_home"
 );
 const { prName, img, price } = JSON.parse(localStorage.getItem("giftInfo"));
+const nowPage = window.location.pathname.slice(23, -5);
 const shippingFee = "2,500";
 
 const productPrint = () => {
@@ -44,13 +45,15 @@ const productPayPrint = () => {
   giftconBuyPayDetailDelivery.textContent = `${shippingFee}원`;
   giftconBuyPayDetailTotal.textContent = `${moneyTotalArr}원`;
 };
-window.addEventListener("DOMContentLoaded", (e) => {
-  const nowPage = e.target.location.pathname.slice(23, -5);
+window.addEventListener("DOMContentLoaded", () => {
   if (nowPage === "giftcon_buy") {
     productPrint();
     productPayPrint();
   }
 });
-giftconBuyResultHome.addEventListener("click", () => {
-  localStorage.removeItem("giftInfo");
-});
+
+if (nowPage === "giftcon_buy_result") {
+  giftconBuyResultHome.addEventListener("click", () => {
+    localStorage.removeItem("giftInfo");
+  });
+}

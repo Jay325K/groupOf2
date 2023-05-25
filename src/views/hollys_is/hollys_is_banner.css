@@ -103,3 +103,13 @@
 .display_none {
   display: none;
 }
+
+/* page route */
+.page_route--wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page_route {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
