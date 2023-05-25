@@ -3,8 +3,9 @@
 
 /**     banner     **/
 main .banner_wrap {
-  height: 899px;
+  height: 100vh;
   background: url(/src/assets/images/membership/membership.png);
+  background-size: cover;
   position: relative;
 }
 main .banner_wrap .banner {

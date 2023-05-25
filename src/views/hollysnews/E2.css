@@ -2,8 +2,9 @@
 
 /**     banner     **/
 main .banner_wrap{
-    height: 899px;
-    background: url(/src/assets/images/hollys_news/event_banner.png);  
+    height: 100vh;
+    background: url(/src/assets/images/hollys_news/event_banner.png) no-repeat;  
+    background-size: cover;
     position: relative;
 }
 main .banner_wrap .banner{
