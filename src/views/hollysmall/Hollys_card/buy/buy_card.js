@@ -27,7 +27,6 @@ card_list_wrap.forEach(e=>{
         document.querySelector('.result_wrap .card_message .my_select_card_wrap .my_select_card_text p').innerHTML=check_img_name;
 
         
-
     });
     console.log(e);
     e.children[2].addEventListener('focus',()=>{
@@ -35,6 +34,7 @@ card_list_wrap.forEach(e=>{
             card_list_wrap[x].children[0].style.border='0';
         }
         e.children[0].style.border='3px solid #000';
+        e.children[0].style.borderRadius='10px';
     });
 
 
