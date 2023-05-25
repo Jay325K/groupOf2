@@ -4,11 +4,11 @@
     font-weight: 700;
     font-style: normal;
 }
-a{
+.section_map a{
     text-decoration: none;
     text-align: center;
 }
-a:hover{
+.section_map a:hover{
     text-decoration: underline;
 }
 .Store_table{

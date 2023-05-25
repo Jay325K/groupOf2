@@ -195,9 +195,9 @@ page_move_btn.addEventListener('focus',function(){
 document.querySelectorAll('.prev_step').forEach((e,idx)=>{
     e.onclick=()=>{
         if(idx==1){
-            main_contents_list[2].style.visibility='hidden';
+            setTimeout(function(){main_contents_list[2].style.visibility='hidden';},400);
         }else{
-            main_contents_list[1].style.visibility='hidden';
+            setTimeout(function(){main_contents_list[1].style.visibility='hidden';},400);
         }
         distance+=1200;
         move_ul.style.transform='translateX('+distance+'px)';
@@ -207,5 +207,9 @@ document.querySelectorAll('.prev_step').forEach((e,idx)=>{
 /* 결제정보 확인창에서 카드선택 화면 누를시 */
 document.querySelector('.prev_select_design').onclick=()=>{
     distance=0;
+    setTimeout(function(){
+        main_contents_list[1].style.visibility='hidden';
+        main_contents_list[2].style.visibility='hidden';
+    },400);
     move_ul.style.transform='translateX('+distance+'px)'
 }

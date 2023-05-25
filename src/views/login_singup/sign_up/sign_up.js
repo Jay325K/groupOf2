@@ -1,5 +1,52 @@
 window.onload=()=>{
     $(function(){
+
+        $.ajax({
+            type:'get', //http 타입
+            url:'../id_pw_list.json', //호출url
+            cache:'false', //캐시처리
+            data:'', //호출시 보낼 파라미터 데이터
+            dataType:'json', //http통신시 응답 데이터 타입
+            success: function(id_pw_list){
+                let email_ = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+                var id_overlap_check_btn_click_number = 0; //아이디 중복검사 버튼 누른 횟수
+                var id_overlap_check_number = 0; //중복검사 횟수
+
+                let id_overlap_check_btn = document.querySelector('.id_overlap_check_btn');
+                id_overlap_check_btn.addEventListener('click',function(){
+                    if(document.querySelector('.id_input').value.length==0){
+                        alert('아이디를 입력해주세요.');
+                        return 0;
+                        
+                    }
+                    if(!email_.test(document.querySelector('.id_input').value)){
+                        alert('이메일 형식에 맞지 않습니다.');
+                        return 0;
+                    }
+
+
+                    id_pw_list.forEach(e=>{
+                        if(e.id != document.querySelector('.id_input').value){
+                            id_overlap_check_number++;
+                        }
+                    })
+
+                    if(id_overlap_check_number == id_pw_list.length){
+                        document.querySelector('.id_check_txt').innerHTML='사용할 수 있는 아이디입니다';
+                        
+                    }else{
+                        document.querySelector('.id_check_txt').innerHTML='이미 가입된 아이디입니다.';
+                    }
+                    
+                    id_overlap_check_number=0;
+                })
+                
+                document.querySelector('.id_input').addEventListener('change',function(){
+                    id_overlap_check_btn_click_number=0;
+                })
+                    
+
+
         let pw_input = document.querySelector('.pw_wrap .pw_input_box input');
         let show_hide_pw_btn = document.querySelector('.show_hide_pw_btn');
         let pw_check_input = document.querySelector('.pw_check_input');
@@ -33,7 +80,7 @@ window.onload=()=>{
 
         })
 
-        /* 비밀번호를 입력할때 */
+        /* 비밀번호 확인란을 입력할때 */
         pw_check_input.addEventListener('keyup',function(){
             let pw_same =document.querySelector('.pw_same');
             if(pw_input.value=='' || pw_input.value.length<8 || !check.test(pw_input.value)){
@@ -95,5 +142,7 @@ window.onload=()=>{
             }
             
         }
+            }
+        })
     })
 }
