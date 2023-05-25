@@ -1,16 +1,9 @@
-/**     header     **/
-header{
-  height: 70px;
-  border: 1px solid red;
-  box-sizing: border-box;
-}
-
 /**     main     **/
 
 /**     banner     **/
 main .banner_wrap{
   height: 899px;
-  background: url(../../assets/images/policy_img/mem_banner.png);  
+  background: url(/src/assets/images/policy_img/mem_banner.png);  
   position: relative;
 }
 main .banner_wrap .banner{
@@ -88,12 +81,3 @@ main .content .membership_term .term_service .term_contents .text {
   color: #6f6f6f;
   margin: 40px 0;
 }
-
-
-/**     footer     **/
-footer{
-  height: 300px;
-  border: 1px solid red;
-  box-sizing: border-box;
-}
-
