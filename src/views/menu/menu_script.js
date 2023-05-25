@@ -40,9 +40,7 @@ const getMenu = () => {
 const menuPrintExec = async () => {
   try {
     const menu = await getMenu();
-    if (pageNum) {
-      menuPrintProcess(menu[pageName]);
-    }
+    menuPrintProcess(menu[pageName]);
   } catch (error) {
     console.log(error);
   }
