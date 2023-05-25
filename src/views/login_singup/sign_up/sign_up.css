@@ -1,0 +1,236 @@
+/* 회원가입 텍스트 */
+.sign_up_wrap{
+    width: 440px;
+
+    margin: auto;
+    padding: 70px 0;
+}
+.sign_up_wrap h2{
+
+    text-align: center;
+
+    font-size: 3em;
+}
+.sign_up_wrap>p{
+
+    text-align: center;
+
+    font-size: 1.4em;
+
+    padding: 20px 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+/* 회원가입 본문 */
+.sign_up_wrap .input_wrap{
+    padding-top: 50px;
+}
+
+/* 아이디 */
+.sign_up_wrap .input_wrap .id_wrap{
+    width: 100%;
+}
+.sign_up_wrap .input_wrap .id_wrap>p{
+    padding-bottom: 5px;
+}
+.sign_up_wrap .input_wrap .id_wrap .id_input_wrap{
+    position: relative;
+    width: 100%;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.sign_up_wrap .input_wrap .id_wrap .id_input_wrap input{
+    width: 100%;
+    
+    padding: 10px 0;
+    padding-left: 5px;
+    border: 0;
+}
+.sign_up_wrap .input_wrap .id_wrap .id_input_wrap .id_overlap_check_btn{
+    position: absolute;
+    top: 30%;
+    right: 10px;
+
+    transform: translateY(-50%);
+
+    width: 15%;
+
+    background: 0;
+
+    border: 0;
+    margin: 7px;
+
+    box-shadow: 0 0 1px gray;
+}
+
+/* 비밀번호 */
+.sign_up_wrap .input_wrap .pw_wrap{
+    width: 100%;
+
+    margin-top: 50px;
+}
+.sign_up_wrap .input_wrap .pw_input_wrap{
+    width: 100%;
+
+    margin-top: 20px;
+}
+.sign_up_wrap .input_wrap .pw_input_wrap>p{
+    padding-bottom: 5px;
+}
+.sign_up_wrap .input_wrap .pw_input_wrap .pw_input_box{
+    position: relative;
+
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.sign_up_wrap .input_wrap .pw_input_wrap .pw_input_box input{
+    width: 100%;
+    
+    padding: 10px 0;
+    padding-left: 5px;
+    border: 0;
+}
+
+.sign_up_wrap .input_wrap .pw_input_wrap .pw_input_box .show_hide_pw_btn{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    font-size: 1.2em;
+
+    background: #eeeeee;
+    border: 1px solid #808080;
+    padding: 5px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 비밀번호 입력 조건 */
+.sign_up_wrap .input_wrap .pw_wrap .pw_precondition_wrap{
+    width: 95%;
+    height: 0;
+    margin: auto;
+
+    overflow: hidden;
+}
+.sign_up_wrap .input_wrap .pw_wrap .pw_precondition_wrap ul{
+    width: 100%;
+
+    background: #c72f2f;
+    color: #fff;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+
+    transition: 0.5s;
+}
+.sign_up_wrap .input_wrap .pw_wrap .pw_precondition_wrap .pw_precondition li{
+
+    padding-bottom: 5px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 2px solid;
+}.sign_up_wrap .input_wrap .pw_wrap .pw_precondition_wrap .pw_precondition li:nth-child(1){
+    margin-bottom: 10px;
+}
+.sign_up_wrap .input_wrap .pw_wrap .pw_precondition_wrap ul li p::before{
+    content: '- ';
+}
+
+/* 비밀번호 확인 */
+.sign_up_wrap .input_wrap .pw_check_input_wrap{
+    width: 100%;
+
+    margin-top: 20px;
+}
+.sign_up_wrap .input_wrap .pw_check_input_wrap>p{
+    padding-bottom: 5px;
+}
+.sign_up_wrap .input_wrap .pw_check_input_wrap .pw_check_input_box{
+    position: relative;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.sign_up_wrap .input_wrap .pw_check_input_wrap .pw_check_input_box input{
+    width: 100%;
+    
+    padding: 10px 0;
+    padding-left: 5px;
+    border: 0;
+}
+
+.sign_up_wrap .input_wrap .pw_check_input_wrap .pw_check_input_box .pw_check_mark{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    font-size: 1.2em;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 이전, 회원가입 버튼 */
+.sign_up_wrap .button_wrap_prev_next{
+
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.sign_up_wrap .button_wrap_prev_next button{
+    width: 100px;
+
+    padding: 7px 0;
+    border: 1px solid;
+    border-radius: 5px;
+
+    background: 0;
+}
+
+.sign_up_wrap .button_wrap_prev_next button:nth-child(1){
+    border: 1px solid #808080;
+
+    background: #d3d3d3;
+    color: #4e4e4e;
+
+    font-weight: 700;
+}
+.sign_up_wrap .button_wrap_prev_next button:nth-child(2){
+    color: #fff;
+    background: #c72f2f;
+
+    border: 1px solid #9b2121;
+
+    font-weight: 700;
+}
