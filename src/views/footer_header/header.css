@@ -13,7 +13,7 @@ header .header_first {
   justify-content: space-between;
   transition: 0.5s;
 }
-header .header_first{
+header .header_first {
   background: white;
 }
 header .header_first.active {
@@ -24,85 +24,84 @@ header .header_first.active .gnb_wrap ul a {
 }
 
 /***     logo     ***/
-header .header_first h1{
+header .header_first h1 {
   height: 70px;
 }
-header .header_first h1 a{
+header .header_first h1 a {
   display: flex;
   align-items: center;
 }
-header .header_first h1 a img{
+header .header_first h1 a img {
   position: absolute;
 }
-header .header_first h1 a img:nth-child(1){
+header .header_first h1 a img:nth-child(1) {
   height: 65px;
   top: 0;
   left: 0;
 }
-header .header_first h1 a img:nth-child(2){
+header .header_first h1 a img:nth-child(2) {
   height: 30px;
   top: 25px;
   left: 65px;
 }
-header .header_first.active h1 a:nth-child(1) img{
-  opacity: 0;
-} 
-header .header_first h1 a:nth-child(2) img{
+header .header_first.active h1 a:nth-child(1) img {
   opacity: 0;
 }
-header .header_first.active h1 a:nth-child(2) img{
+header .header_first h1 a:nth-child(2) img {
+  opacity: 0;
+}
+header .header_first.active h1 a:nth-child(2) img {
   opacity: 1;
-} 
+}
 
 /***     gnb     ***/
 
-header .header_first .gnb_right{
+header .header_first .gnb_right {
   height: 70px;
   margin-right: 10px;
 }
-header .header_first .gnb_right .header_top ul{
+header .header_first .gnb_right .header_top ul {
   width: 850px;
   display: flex;
   justify-content: right;
 }
-header .header_first .gnb_right .header_top ul li{
+header .header_first .gnb_right .header_top ul li {
   margin-left: 5px;
 }
-header .header_first .gnb_right .header_top ul li::after{
-  content: ' | ';
+header .header_first .gnb_right .header_top ul li::after {
+  content: " | ";
   color: #808080;
 }
-header .header_first .gnb_right .header_top ul li:last-child:after{
-  content: '';
+header .header_first .gnb_right .header_top ul li:last-child:after {
+  content: "";
 }
-header .header_first .gnb_right .header_top ul li a{
+header .header_first .gnb_right .header_top ul li a {
   font-size: 12px;
   color: #808080;
 }
-header .header_first .gnb_right .header_top ul li a:hover{
+header .header_first .gnb_right .header_top ul li a:hover {
   text-decoration: underline;
   font-weight: bold;
   color: #000;
 }
-header .header_first.active .gnb_right .header_top ul li a{
+header .header_first.active .gnb_right .header_top ul li a {
   color: #fff;
 }
-header .header_first.active .gnb_right .gnb_wrap .gnb .depth-01 li a:hover{
+header .header_first.active .gnb_right .gnb_wrap .gnb .depth-01 li a:hover {
   text-decoration: underline;
   color: #fff;
 }
-header .header_first.active .gnb_right .header_top ul li::after{
-  content: ' | ';
+header .header_first.active .gnb_right .header_top ul li::after {
+  content: " | ";
   color: #fff;
 }
-header .header_first.active .gnb_right .header_top ul li:last-child:after{
-  content: '';
+header .header_first.active .gnb_right .header_top ul li:last-child:after {
+  content: "";
 }
-
 
 /***     gnb depth-01     ***/
 header .header_first .gnb_right .gnb_wrap .gnb {
-  height: 49px;
+  height: 51px;
 }
 header .header_first .gnb_right .gnb_wrap .gnb a {
   display: block;
@@ -113,14 +112,14 @@ header .header_first .gnb_right .gnb_wrap .gnb a {
   font-weight: bold;
   color: #000;
 }
-header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a{
+header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a {
   height: 46px;
 
   display: flex;
   align-items: center;
 }
-header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a:hover{
-  color:rgb(199, 47, 47);
+header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a:hover {
+  color: rgb(199, 47, 47);
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 ul {
   display: flex;
@@ -129,46 +128,60 @@ header .header_first .gnb_right .gnb_wrap .gnb .depth-01 ul {
 header .header_first .gnb_right .gnb .depth-01 > li > a {
   display: block;
 }
-header .header_first.active .gnb_right .gnb .depth-01 > ul>li>a{
+header .header_first.active .gnb_right .gnb .depth-01 > ul > li > a {
   color: #fff;
 }
 /***     gnb depth-02     ***/
 header .header_first .gnb_right .gnb .depth-02 {
-  display: flex;
-  justify-content: right;
   position: absolute;
   width: 100%;
-  height: 200px;
   left: 0;
   top: 70px;
-  background: #4F4C4B url(/src/assets/images/header/depth2.png) no-repeat;
 }
-header .header_first .gnb_right .gnb .depth-02 ul{
+header .header_first .gnb_right .gnb .depth-02>div{
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  height: 200px;
+  background: #4f4c4b url(/src/assets/images/header/depth2.png) no-repeat;
+  position: absolute;
+  top: -270px;
+
+  transition: all;
+  transition-duration: 0.5s;
+  z-index: -1;
+}
+header .header_first .gnb_right .gnb .depth-02>div.active{
+  top: 0;
+}
+header .header_first .gnb_right .gnb .depth-02 ul {
   width: 110px;
-  margin: 10px 10px 0 20px;
+  padding-top: 10px;
   text-align: center;
 }
-header .header_first .gnb_right .gnb .depth-02 ul:nth-child(5){
-  margin-right: 15px;
+header .header_first .gnb_right .gnb .depth-02 ul:nth-child(6) {
+  margin-left: 45px;
 }
-header .header_first .gnb_right .gnb .depth-02 ul:nth-child(4){
-  margin-right: 40px;
+header .header_first .gnb_right .gnb .depth-02 ul:nth-child(5) {
+  margin-left: 55px;
 }
-header .header_first .gnb_right .gnb .depth-02 ul:nth-child(3){
-  margin-right: 35px;
+header .header_first .gnb_right .gnb .depth-02 ul:nth-child(4) {
+  margin-left: 60px;
 }
-header .header_first .gnb_right .gnb .depth-02 ul:nth-child(2){
-  margin-right: 25px;
+header .header_first .gnb_right .gnb .depth-02 ul:nth-child(3) {
+  margin-left: 42px;
 }
-header .header_first .gnb_right .gnb .depth-02 ul li a{
+header .header_first .gnb_right .gnb .depth-02 ul:nth-child(2) {
+  margin-left: 35px;
+}
+header .header_first .gnb_right .gnb .depth-02 ul li a {
   color: #fff;
   font-size: 14px;
-  line-height: 2;
+  line-height: 2.5;
 }
-header .header_first .gnb_right .gnb .depth-02 ul li a:hover{
+header .header_first .gnb_right .gnb .depth-02 ul li a:hover {
   text-decoration: underline;
 }
-
 
 /**     글씨 숨기기     **/
 .hide {
