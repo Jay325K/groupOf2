@@ -1,0 +1,143 @@
+/**     main     **/
+
+/**     banner     **/
+main .banner_wrap{
+    height: 899px;
+    background: url(/src/assets/images/hollys_news/notice_banner.png);  
+    position: relative;
+}
+main .banner_wrap .banner{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main .banner_wrap h2{
+    width: 500px;
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 3px solid rgb(199,47,47);
+  }
+  main .banner_wrap .lnb{
+    margin-top: 15px;
+    height: 60px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .banner_wrap .lnb li{
+    padding: 12px 45px;
+    align-items: center;
+    background: rgba(150, 150, 150, 0.39);
+  }
+  main .banner_wrap .lnb li:hover {
+    background: #c72f30;
+    transition: 0.5s;
+  }
+    main .banner_wrap .lnb li:nth-child(1){
+    margin-right: 20px;
+  }
+  main .banner_wrap .lnb li.active{
+    background: #c72f30;
+  }
+  main .banner_wrap .lnb li a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+/**     contents     **/
+main .content {
+    width: 1200px;
+    margin: auto;
+}
+
+/**     location     **/
+main .content .location span::after{
+    content: ' >';
+}
+main .content .location span:last-child::after{
+    content: ' ';
+}
+
+
+/**     게시판     **/
+main .content .board_wrap .board_title{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+main .content .board_wrap .board_list_wrap .board_list{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+main .content .board_wrap .board_list_wrap .board_list .top{
+    border-bottom: 1px solid #9b9a9a;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+main .content .board_wrap .board_list_wrap .board_list .top div{
+    font-weight: bold;
+}
+main .content .board_wrap .board_list_wrap .board_list .board_cont{
+    text-align: center;
+    margin: 20px 0;
+}
+main .content .board_wrap .board_list_wrap .board_list .board_cont img{
+  width: 950px;
+}
+
+/**     목록으로 돌아가기 버튼     **/
+main .content .board_wrap .board_list_wrap .bt_wrap{
+  margin: 20px 0 80px 0 ;
+  text-align: center;
+}
+main .content .board_wrap .board_list_wrap .bt_wrap a{
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 15px 50px;
+  border: 2px solid #9b9a9a;
+}
+main .content .board_wrap .board_list_wrap .bt_wrap a:hover{
+color: #fff;
+background: #9b9a9a;
+transition: all 0.5s linear;
+}
+
+/**     이전 글 / 다음 글     **/
+main .content .board_wrap .board_list_wrap .list_preview{
+border-top: 1px solid #EBEBEB;
+border-bottom: 1px solid #EBEBEB;
+margin-bottom: 200px;
+}
+main .content .board_wrap .board_list_wrap .list_preview>div{
+width: 1200px;
+display: flex;
+justify-content: space-between;
+margin: 20px 0;
+}
+main .content .board_wrap .board_list_wrap .list_preview>div:nth-child(1){
+padding-bottom: 20px;
+border-bottom: 1px solid #EBEBEB;
+}
+main .content .board_wrap .board_list_wrap .list_preview>div a:hover{
+  text-decoration: underline;
+}
+main .content .board_wrap .board_list_wrap .list_preview>div div:nth-child(1){
+width: 100px;
+font-size: 15px;
+color: #828282;
+}
+main .content .board_wrap .board_list_wrap .list_preview>div div:nth-child(2){
+width: 1000px;
+font-size: 20px;
+font-weight: bold;
+color: #828282;
+}

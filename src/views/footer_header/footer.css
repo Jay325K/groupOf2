@@ -22,8 +22,17 @@ footer>div .f_left .icon{
 footer>div .f_left .icon img{
   height: 60px;
 }
+footer>div .f_left .icon .social{
+  height: 60px;
+  width: 110px;
+  margin-top: 20px;
+}
+footer>div .f_left .icon .social ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 footer>div .f_left .icon .social img{
-  padding: 10px 0 0 10px;
   height: 30px;
 }
 footer>div .f_left .footer_text{
@@ -49,6 +58,13 @@ footer>div .f_right .list ul li a{
   font-size: 16px;
   color: #fff;
 }
+footer>div .f_right .list ul li a:hover{
+  text-decoration: underline;
+}
+footer>div .f_right .sub_list ul li a:hover{
+  text-decoration: underline;
+}
+
 
 footer>div .f_right .sub_list{
   display: flex;
