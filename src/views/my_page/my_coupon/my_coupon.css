@@ -1,8 +1,9 @@
-body {
-  font-size: 16px;
-}
 a {
   color: inherit;
+}
+button {
+  border: 0;
+  background: inherit;
 }
 
 /* page route */
@@ -39,4 +40,25 @@ a {
 }
 .my_coupon--coupon_img {
   width: 200px;
+}
+.my_coupon--coupon_detail {
+  font-size: 16px;
+  width: 200px;
+}
+.my_coupon--coupon_detail p:first-child {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.my_coupon--coupon_detail button {
+  font-size: 16px;
+  border: 1px solid #666;
+  padding: 3px 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.my_coupon--coupon_detail button:hover {
+  color: white;
+  border: 1px solid #c72f30;
+  background: #c72f30;
 }

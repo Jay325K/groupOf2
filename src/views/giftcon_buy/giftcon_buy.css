@@ -1,11 +1,6 @@
 body {
   font-size: 16px;
 }
-button {
-  padding: 0;
-  border: 0;
-  background: inherit;
-}
 a {
   color: inherit;
 }
@@ -62,10 +57,15 @@ a {
 }
 .page_route {
   font-size: 12px;
-  color: #666;
   margin-bottom: 50px;
 }
 
+/* giftcon_title */
+.giftcon_title {
+  width: 1200px;
+  margin: 0 auto 50px;
+  font-size: 2.4rem;
+}
 /* content */
 
 /* giftcon_buy--content */
@@ -79,7 +79,7 @@ a {
   justify-content: center;
   padding: 20px 0;
   border: 1px solid #666;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   box-sizing: border-box;
 }
 .giftcon_buy--ing,
@@ -100,6 +100,7 @@ a {
 .giftcon_buy--stay {
   background: #e2e2e2;
 }
+
 /* giftcon_buy--content_title */
 .giftcon_buy--content_title--wrap {
   margin-bottom: 30px;
@@ -109,9 +110,9 @@ a {
 }
 /* giftcon_buy--product */
 .giftcon_buy--product {
-  padding: 10px 50px;
+  padding: 20px 50px;
   border: 1px solid #666;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   box-sizing: border-box;
 }
 .giftcon_buy--product_detail {
@@ -148,7 +149,145 @@ a {
 .giftcon_buy--product_receipt--detail {
   display: flex;
 }
-/* giftcon_buy--payment */
+
+/* giftcon_buy--payment_wrap */
+.giftcon_buy--payment_wrap {
+  border: 1px solid #666;
+  box-sizing: border-box;
+  padding: 20px 50px 0;
+  margin-bottom: 30px;
+}
+.giftcon_buy--sub_title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 .giftcon_buy--payment {
   display: flex;
+}
+.giftcon_buy--money {
+  width: 550px;
+  padding: 0 0 50px 0;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+.giftcon_buy--receiver_wrap {
+  margin-bottom: 30px;
+}
+.giftcon_buy--receiver_wrap label {
+  width: 100px;
+  display: inline-block;
+}
+.receiver_name {
+  width: 200px;
+  padding: 0 0 0 10px;
+}
+.giftcon_buy--receiver_tel input:nth-child(2) {
+  text-align: center;
+  width: 45px;
+  margin-right: 6px;
+}
+.giftcon_buy--receiver_tel input:nth-child(3),
+.giftcon_buy--receiver_tel input:nth-child(4) {
+  width: 60px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+.giftcon_buy--pay {
+  display: flex;
+  flex-direction: column;
+}
+.giftcon_buy--pay label {
+  margin-bottom: 10px;
+}
+.giftcon_buy--pay input {
+  margin-right: 10px;
+}
+.giftcon_buy--pay img {
+  width: 100px;
+}
+.giftcon_buy--pay_detail--wrap {
+  width: 550px;
+  padding: 0 0 0 50px;
+  box-sizing: border-box;
+}
+.giftcon_buy--pay_detail {
+  display: flex;
+  justify-content: space-between;
+}
+.giftcon_buy--pay_detail--values {
+  text-align: end;
+}
+.giftcon_buy--pay_btn--wrap {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.giftcon_buy--pay_btn {
+  border: 1px solid #666;
+  padding: 5px 30px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.giftcon_buy--pay_btn:hover {
+  color: white;
+  background: #c72f30;
+  border: 1px solid #c72f30;
+  box-sizing: border-box;
+}
+
+/* giftcon_buy_result.html */
+.giftcon_buy--ing_result,
+.giftcon_buy--stay_result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 90px;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.giftcon_buy--ing_result {
+  background: #e2e2e2;
+  margin-right: -30px;
+}
+.giftcon_buy--stay_result {
+  color: white;
+  background: #c72f30;
+}
+.giftcon_buy--result_content--wrap {
+  text-align: center;
+}
+.giftcon_buy--result_txt--title {
+  font-size: 32px;
+  padding: 10px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.giftcon_buy--result_txt--check {
+  padding: 5px;
+  border: 1px solid gray;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+.giftcon_buy--result_txt--complete {
+  padding: 100px 0;
+  color: gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.giftcon_buy--result_home {
+  width: 100px;
+  padding: 7px 20px;
+  display: inline-block;
+  font-size: 13px;
+  box-sizing: border-box;
+  box-shadow: 0 0 1px black;
+}
+.giftcon_buy--result_home:hover {
+  background: #c72f30;
+  color: white;
 }

@@ -23,20 +23,6 @@ a:hover{
 }
 
 /* *************************************************** */
-header{
-    position: fixed;
-    top: 0;
-
-    width: 100%;
-    height: 70px;
-    min-width: 1200px;
-
-    margin: auto;
-
-    background: #c72f2f30;
-
-    z-index: 999;
-}
 table{
     border-top: #000;
     border-bottom: #000;
@@ -49,10 +35,6 @@ td,th{
     border-bottom: 1px solid #808080;
 }
 /*********** main ***********/
-main{
-    width: 100%;
-    min-width: 1200px;
-}
 main .section_wrap{
     position: relative;
     width: 1200px;
@@ -395,9 +377,15 @@ main .section_wrap .sec_three .Store_introduce{
     font-size: 1.2em;
 }
 main .section_wrap .sec_three .sec_three_wrap h3,
-main .section_wrap .sec_three .sec_three_wrap h2{
+main .section_wrap .sec_three .sec_three_wrap h4{
     text-align: center;
     padding: 10px;
+}
+main .section_wrap .sec_three .sec_three_wrap h3{
+    font-size: 2.5em;
+}
+main .section_wrap .sec_three .sec_three_wrap h4{
+    font-size: 1.5em;
 }
 main .section_wrap .sec_three .Store_introduce ul{
     margin-top: 5px;
@@ -433,11 +421,4 @@ main .section_wrap .sec_three .sec_three_wrap>button{
 main .section_wrap .sec_three .sec_three_wrap>button:active{
     background: #c72f2f;
     color: #fff;
-}
-
-/*********************footer*******************/
-footer{
-    width: 100%;
-    height: 300px;
-    border: 1px solid;
 }

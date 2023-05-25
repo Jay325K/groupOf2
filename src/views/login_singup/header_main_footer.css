@@ -6,13 +6,14 @@ header{
     height: 70px;
     
     background: #c72f2f50;
-
-    z-index: 999;
+    z-index: 10;
 }
 
 main{
     width: 100%;
     min-width: 1200px;
+
+    padding-top: 70px;
     margin: auto;
 }
 

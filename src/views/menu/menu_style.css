@@ -1,6 +1,3 @@
-body {
-  font-size: 16px;
-}
 button {
   padding: 0;
   border: 0;
@@ -79,6 +76,7 @@ a {
   display: flex;
 }
 .lnb_list a {
+  font-size: 16px;
   font-weight: 800;
   padding: 10px 50px;
   margin-right: 10px;
@@ -98,7 +96,6 @@ a {
 }
 .page_route {
   font-size: 12px;
-  color: #666;
   margin-bottom: 50px;
 }
 
@@ -137,6 +134,12 @@ a {
 .menu_category--checkbox:hover {
   color: #999;
 }
+.menu_category--checkbox span {
+  font-size: 16px;
+}
+.menu_category--checkbox input {
+  vertical-align: baseline;
+}
 
 /* menu list */
 .menu_list--wrap {
@@ -159,6 +162,7 @@ a {
 }
 .menu_list a {
   width: 250px;
+  height: 235px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,6 +173,7 @@ a {
 }
 .menu_list img {
   width: 250px;
+  height: 210px;
 }
 
 .blank_item {
@@ -183,6 +188,7 @@ a {
   background: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
+  /* z-index: 50; */
 }
 .menu_modal {
   position: fixed;
@@ -271,7 +277,7 @@ td {
 }
 .menu_page {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .menu_page button {
   padding: 10px;

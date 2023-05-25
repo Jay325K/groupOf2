@@ -1,5 +1,11 @@
 let card_list_wrap = document.querySelectorAll('.card_category_img_box li');
 
+let main_contents_list = document.querySelectorAll('.show_ul_page>ul>li');
+main_contents_list[1].style.visibility='hidden';
+main_contents_list[2].style.visibility='hidden';
+
+console.log(main_contents_list);
+
 card_list_wrap.forEach(e=>{
     e.children[2].addEventListener('click',()=>{
         for(let x=0; x<card_list_wrap.length; x++){
@@ -19,6 +25,16 @@ card_list_wrap.forEach(e=>{
 
         document.querySelector('.result_wrap .my_order>div>div>p .my_select_card_name').innerHTML=check_img_name;
         document.querySelector('.result_wrap .card_message .my_select_card_wrap .my_select_card_text p').innerHTML=check_img_name;
+
+        
+
+    });
+    console.log(e);
+    e.children[2].addEventListener('focus',()=>{
+        for(let x=0; x<card_list_wrap.length; x++){
+            card_list_wrap[x].children[0].style.border='0';
+        }
+        e.children[0].style.border='3px solid #000';
     });
 })
 

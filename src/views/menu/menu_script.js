@@ -184,6 +184,7 @@ const noDrinkNutritional = (data, nutritionalKeys) => {
   text += "</tr></tbody>";
   return text;
 };
+
 window.addEventListener("DOMContentLoaded", () => {
   const pageSlash = window.location.pathname.split("/");
   pageName = pageSlash[pageSlash.length - 1].split(".")[0];
