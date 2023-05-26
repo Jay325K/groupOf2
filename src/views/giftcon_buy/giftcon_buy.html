@@ -116,16 +116,12 @@
                     />
                   </div>
                   <div class="giftcon_buy--receiver_tel">
-                    <label for="receiver_tel">휴대폰 번호</label>
-                    <input
-                      type="text"
-                      id="receiver_tel"
-                      value="010"
-                      disabled
-                    />-<input type="tel" id="receiver_tel" />-<input
+                    <label for="receiver_tel--mid">휴대폰 번호</label>
+                    <input type="text" value="010" disabled />-<input
                       type="tel"
-                      id="receiver_tel"
-                    />
+                      id="receiver_tel--mid"
+                      maxlength="4"
+                    />-<input type="tel" id="receiver_tel--end" maxlength="4" />
                   </div>
                 </div>
                 <h4 class="giftcon_buy--sub_title">결제 수단</h4>
@@ -164,9 +160,7 @@
           </section>
         </section>
         <section class="giftcon_buy--pay_btn--wrap">
-          <a href="./giftcon_buy_result.html" class="giftcon_buy--pay_btn"
-            >결제하기</a
-          >
+          <button type="button" class="giftcon_buy--pay_btn">결제하기</button>
         </section>
       </section>
     </main>

@@ -191,6 +191,7 @@ a {
 }
 .giftcon_buy--receiver_tel input:nth-child(3),
 .giftcon_buy--receiver_tel input:nth-child(4) {
+  text-align: center;
   width: 60px;
   margin-right: 6px;
   margin-left: 6px;
