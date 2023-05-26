@@ -1,0 +1,10 @@
+[
+    {
+        "id":"abc1234@naver.com",
+        "password":"123abc!@#"
+    },
+    {
+        "id":"admin012@gmail.com",
+        "password":"adminPW123!@"
+    }
+]
