@@ -1,7 +1,9 @@
 
 window.onload=()=>{
 
+    let go_sign_up_page= document.querySelector('.go_sign_up_page');
     let list = document.querySelectorAll('.general_conditions_agree ul li');
+
 
     list.forEach((e,idx)=>{
 
@@ -34,8 +36,13 @@ window.onload=()=>{
             
                 if(checked_count==3){
                     list[0].children[0].children[0].checked=true;
+                    go_sign_up_page.classList.add('active');
+                    go_sign_up_page.setAttribute('href','../sign_up.html');
+                    
                 }else{
                     list[0].children[0].children[0].checked=false;
+                    go_sign_up_page.classList.remove('active');
+                    go_sign_up_page.setAttribute('href','#none');
                 }
             }
         }else{
@@ -46,30 +53,34 @@ window.onload=()=>{
                 if(e.children[0].children[0].checked){
                     list.forEach(el=>{
                         el.children[0].children[0].checked=true;
+                        go_sign_up_page.classList.add('active');
+                        go_sign_up_page.setAttribute('href','../sign_up.html');
+                        
                     })
                 }else{
                     list.forEach(el=>{
                         el.children[0].children[0].checked=false;
+                        go_sign_up_page.classList.remove('active');
+                        go_sign_up_page.setAttribute('href','#none');
                     })
                 }
             })
         }
     })
-    
 }
-    
-    
 
 
-    function src_call(src_link){
-        document.querySelector('.popup_contents').innerHTML='';
-        $(function(){
-            $.ajax({
-                url: src_link,	// HTML 파일 가져올 경로
-                dataType: "html",
-                success: function (html){
-                    $(".popup_contents").html(html); // HTML 코드 붙여넣기
-                }
-            });
-        })
-    }
+
+
+function src_call(src_link){
+    document.querySelector('.popup_contents').innerHTML='';
+    $(function(){
+        $.ajax({
+            url: src_link,	// HTML 파일 가져올 경로
+            dataType: "html",
+            success: function (html){
+                $(".popup_contents").html(html); // HTML 코드 붙여넣기
+            }
+        });
+    })
+}
