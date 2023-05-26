@@ -1,13 +1,13 @@
 /**     main     **/
 
 /**     banner     **/
-main .banner_wrap{
+main .banner_wrap {
   height: 100vh;
   background: url(/src/assets/images/policy_img/service_banner.png) no-repeat;
-  background-size: cover;  
+  background-size: cover;
   position: relative;
 }
-main .banner_wrap .banner{
+main .banner_wrap .banner {
   width: 600px;
   height: 200px;
   position: absolute;
@@ -15,59 +15,62 @@ main .banner_wrap .banner{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .banner_wrap h2{
+main .banner_wrap h2 {
   width: 700px;
   color: #fff;
   font-size: 65px;
   text-align: center;
   padding: 15px 0;
-  border-bottom: 3px solid rgb(199,47,47);
+  border-bottom: 3px solid rgb(199, 47, 47);
 }
-main .banner_wrap .lnb{
+main .banner_wrap .lnb {
   margin-top: 15px;
   height: 60px;
   width: 700px;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
-main .banner_wrap .lnb li{
+main .banner_wrap .lnb li {
   margin-right: 10px;
   padding: 12px 25px;
   align-items: center;
   background: rgba(150, 150, 150, 0.39);
 }
-main .banner_wrap .lnb li:hover{
+main .banner_wrap .lnb li:hover {
   background: #c72f30;
-  transition: 0.5s ;
+  transition: 0.5s;
 }
-main .banner_wrap .lnb li.active{
+main .banner_wrap .lnb li.active {
   background: #c72f30;
 }
-main .banner_wrap .lnb li a{
+main .banner_wrap .lnb li a {
   color: #fff;
   font-weight: bold;
 }
 
 /**     contents     **/
-main .content{
+main .content {
   width: 1200px;
   margin: auto;
 }
 
 /**     location     **/
-main .content .location span::after{
-  content: ' >';
+main .content .location {
+  padding: 100px 0 0;
 }
-main .content .location span:last-child::after{
-  content: ' ';
+main .content .location span::after {
+  content: " >";
+}
+main .content .location span:last-child::after {
+  content: " ";
 }
 
 main .content .service_term h2 {
   font-size: 40px;
   padding: 50px 0 40px 0;
 }
-main .content .service_term .term_service .select_area{
+main .content .service_term .term_service .select_area {
   text-align: right;
 }
 main .content .service_term .term_service .select_area select {

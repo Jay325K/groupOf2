@@ -1,4 +1,3 @@
-
 /**     main     **/
 
 /**     banner     **/
@@ -37,9 +36,9 @@ main .banner_wrap .lnb li {
   align-items: center;
   background: rgba(150, 150, 150, 0.39);
 }
-main .banner_wrap .lnb li:hover{
+main .banner_wrap .lnb li:hover {
   background: #c72f30;
-  transition: 0.5s ;
+  transition: 0.5s;
 }
 main .banner_wrap .lnb li:nth-child(1) {
   margin-right: 30px;
@@ -59,11 +58,17 @@ main .content {
 }
 
 /**     location     **/
+main .content .location {
+  padding: 100px 0 0;
+}
 main .content .location span::after {
   content: " >";
 }
 main .content .location span:last-child::after {
   content: " ";
+}
+main .content .location a {
+  font-size: 13px;
 }
 
 main .content .m_benefit h2 {
@@ -81,9 +86,9 @@ main .content .m_benefit > div > div {
   width: 24%;
   height: 500px;
   text-align: center;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
 }
-main .content .m_benefit > div > div .grade{
+main .content .m_benefit > div > div .grade {
   font-weight: bold;
   font-size: 20px;
 }
@@ -91,10 +96,10 @@ main .content .m_benefit > div .silver .grade {
   color: #a9a9a9;
 }
 main .content .m_benefit > div .gold .grade {
-  color: #C5A56C;
+  color: #c5a56c;
 }
 main .content .m_benefit > div .red .grade {
-  color: #BA000C;
+  color: #ba000c;
 }
 main .content .m_benefit > div > div .grade img {
   width: 200px;
@@ -112,31 +117,30 @@ main .content .m_benefit > div > div .text {
   text-align: left;
   padding: 0 5px;
 }
-main .content .m_benefit > div > div .text div ul li{
+main .content .m_benefit > div > div .text div ul li {
   padding-bottom: 8px;
 }
-main .content .m_benefit > div .gold .text .ben{
+main .content .m_benefit > div .gold .text .ben {
   font-size: 20px;
   font-weight: bold;
   color: #a9a9a9;
 }
-main .content .m_benefit > div .red .text .ben{
+main .content .m_benefit > div .red .text .ben {
   font-size: 20px;
   font-weight: bold;
-  color: #C5A56C;
+  color: #c5a56c;
 }
-main .content .m_benefit > div .dia .text .ben{
+main .content .m_benefit > div .dia .text .ben {
   font-size: 20px;
   font-weight: bold;
-  color: #BA000C;
+  color: #ba000c;
 }
-main .content .m_benefit > div .silver .text .ben{
+main .content .m_benefit > div .silver .text .ben {
   margin-top: 80px;
 }
-main .content .m_benefit > div div .text .plus_ben{
+main .content .m_benefit > div div .text .plus_ben {
   margin-top: 40px;
 }
-
 
 /**     notice     **/
 main .content .notice {

@@ -16,7 +16,9 @@ header .header_first {
 header .header_first {
   background: white;
 }
-header .header_first>a{
+
+/***     skip menu     ***/
+header .header_first > a {
   width: 300px;
   padding: 5px 10px;
   background: #4f4c4b;
@@ -26,28 +28,34 @@ header .header_first>a{
   top: -50px;
   border: 1px solid;
 }
-header .header_first>a:focus{
+header .header_first > a:focus {
   top: 0;
   z-index: 9999;
 }
-header .header_first>a:hover{
+header .header_first > a:hover {
   text-decoration: underline;
 }
 
+/***     header scroll active     ***/
 header .header_first.active {
   background: rgb(199, 47, 47);
 }
 header .header_first.active .gnb_wrap ul a {
   color: #fff;
 }
-
 /***     logo     ***/
 header .header_first h1 {
   height: 70px;
 }
 header .header_first h1 a {
-  display: flex;
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 70px;
   align-items: center;
+}
+header .header_first h1 a p {
+  display: flex;
 }
 header .header_first h1 a img {
   position: absolute;
@@ -71,9 +79,7 @@ header .header_first h1 a:nth-child(2) img {
 header .header_first.active h1 a:nth-child(2) img {
   opacity: 1;
 }
-
 /***     gnb     ***/
-
 header .header_first .gnb_right {
   height: 70px;
   margin-right: 10px;
@@ -116,23 +122,19 @@ header .header_first.active .gnb_right .header_top ul li::after {
 header .header_first.active .gnb_right .header_top ul li:last-child:after {
   content: "";
 }
-
 /***     gnb depth-01     ***/
 header .header_first .gnb_right .gnb_wrap .gnb {
   height: 51px;
 }
 header .header_first .gnb_right .gnb_wrap .gnb a {
   display: block;
-
   height: 100%;
-
   font-size: 19px;
   font-weight: bold;
   color: #000;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a {
   height: 51px;
-
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -157,7 +159,7 @@ header .header_first .gnb_right .gnb .depth-02 {
   left: 0;
   top: 70px;
 }
-header .header_first .gnb_right .gnb .depth-02>div{
+header .header_first .gnb_right .gnb .depth-02 > div {
   display: flex;
   justify-content: right;
   width: 100%;
@@ -165,12 +167,11 @@ header .header_first .gnb_right .gnb .depth-02>div{
   background: #4f4c4b url(/src/assets/images/header/depth2.png) no-repeat;
   position: absolute;
   top: -270px;
-
   transition: all;
   transition-duration: 0.5s;
   z-index: -1;
 }
-header .header_first .gnb_right .gnb .depth-02>div.active{
+header .header_first .gnb_right .gnb .depth-02 > div.active {
   top: 0;
 }
 header .header_first .gnb_right .gnb .depth-02 ul {
@@ -202,7 +203,6 @@ header .header_first .gnb_right .gnb .depth-02 ul li a {
 header .header_first .gnb_right .gnb .depth-02 ul li a:hover {
   text-decoration: underline;
 }
-
 /**     글씨 숨기기     **/
 .hide {
   width: 0;
