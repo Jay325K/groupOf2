@@ -1,17 +1,10 @@
-/**     header     **/
-header{
-    height: 70px;
-    width: 100%;
-    border: 1px solid red;
-    box-sizing: border-box;
-}
-  
 /**     main     **/
 
 /**     banner     **/
 main .banner_wrap{
-    height: 899px;
-    background: url(n_images/notice_banner.png);  
+    height: 100vh;
+    background: url(/src/assets/images/hollys_news/notice_banner.png) no-repeat;  
+    background-size: cover;
     position: relative;
 }
 main .banner_wrap .banner{

@@ -2,8 +2,9 @@
 
 /**     banner     **/
 main .banner_wrap {
-  height: 899px;
-  background: url(/src/assets/images/sitemap/sitemap_banner.png);
+  height: 100vh;
+  background: url(/src/assets/images/sitemap/sitemap_banner.png) no-repeat;
+  background-size: cover;
   position: relative;
 }
 main .banner_wrap .banner {
@@ -31,7 +32,7 @@ main .banner_wrap .lnb {
   justify-content: center;
 }
 main .banner_wrap .lnb li {
-  padding: 12px 25px;
+  padding: 10px 40px;
   align-items: center;
   background: rgba(150, 150, 150, 0.39);
 }
@@ -45,6 +46,7 @@ main .banner_wrap .lnb li.active {
 main .banner_wrap .lnb li a {
   color: #fff;
   font-weight: bold;
+  font-size: 15px;
 }
 
 /**     contents     **/
@@ -86,6 +88,8 @@ main .content .sitemap_wrap .sitemap > div h3 {
   width: 20%;
   padding: 20px 5px;
   text-align: center;
+  font-size: 18px;
+  color: #303030;
   background: #efefef;
 }
 main .content .sitemap_wrap .sitemap > div dl {
@@ -93,7 +97,7 @@ main .content .sitemap_wrap .sitemap > div dl {
   padding: 20px 30px;
   flex-wrap: wrap;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 main .content .sitemap_wrap .sitemap > div dl dt {
   width: 0;
@@ -105,10 +109,11 @@ main .content .sitemap_wrap .sitemap > div dl dd {
 }
 main .content .sitemap_wrap .sitemap > div dl dd a {
   font-weight: bold;
+  font-size: 15px;
   color: #303030;
 }
 main .content .sitemap_wrap .sitemap > div dl dd ul {
-  margin: 10px 0 0 10px;
+  margin: 5px 0 15px 10px;
 }
 main .content .sitemap_wrap .sitemap > div dl dd ul li::before {
   content: "- ";
@@ -117,5 +122,5 @@ main .content .sitemap_wrap .sitemap > div dl dd ul li::before {
 main .content .sitemap_wrap .sitemap > div dl dd ul li a {
   color: #8b8b8b;
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 2;
 }
