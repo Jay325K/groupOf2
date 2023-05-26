@@ -1,3 +1,7 @@
+button {
+  border: 0;
+  background: inherit;
+}
 a {
   color: inherit;
 }
