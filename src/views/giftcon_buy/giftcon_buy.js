@@ -19,6 +19,8 @@ const giftconBuyPayDetailTotal = document.querySelector(
 const giftconBuyResultHome = document.querySelector(
   ".giftcon_buy--result_home"
 );
+const giftconBuyPayBtn = document.querySelector(".giftcon_buy--pay_btn");
+
 const { prName, img, price } = JSON.parse(localStorage.getItem("giftInfo"));
 const nowPage = window.location.pathname.slice(23, -5);
 const shippingFee = "2,500";
@@ -57,3 +59,9 @@ if (nowPage === "giftcon_buy_result") {
     localStorage.removeItem("giftInfo");
   });
 }
+
+window.addEventListener("click", (e) => {
+  console.log(e);
+});
+const gif = document.querySelector(".giftcon_buy--receiver_tel");
+console.log(gif);
