@@ -2,13 +2,13 @@ $(function(){
     let origin=window.pageYOffset;
     add_active(origin);
 
-
     /***   sticky gnb   ***/
     window.addEventListener('scroll',function(){
         let scroll = window.pageYOffset;
         add_active(scroll);
 
     });
+
 
     /***   depth-02   ***/
     $('.gnb').hover(function(){
