@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../styles/reset.css">
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png">
 
     <link rel="stylesheet" href="../main_tag.css">
     <link rel="stylesheet" href="../../footer_header/header.css">
-    <link rel="stylesheet" href="../../footer_header/footer.css">\
+    <link rel="stylesheet" href="../../footer_header/footer.css">
     
     <link rel="stylesheet" href="login.css">
 
@@ -21,7 +22,7 @@
 <body>
     <header id="header"></header>
     <main>
-        <article class="login_wrap">
+        <article class="login_wrap" id="content">
             <section class="section_one login_txt_box">
                 <h2>로그인</h2>
             </section>
@@ -31,14 +32,14 @@
                     <div class="id_wrap">
                         <div class="id_input_box" id="id_input_box">
                             <input type="text" id="id_input">
-                            <label for="id_input">아이디 입력</label>
+                            <label for="id_input">이메일 입력</label>
                         </div>
                         <a href="#none" class="cancel_btn">X</a>
                     </div>
                     
                     <div class="pw_wrap">
                         <div class="pw_input_box" id="pw_input_box">
-                            <input type="text" id="pw_input">
+                            <input type="password" id="pw_input">
                             <label for="pw_input">비밀번호 입력</label>
                         </div>
                         <a href="#none" class="cancel_btn">X</a>
@@ -48,12 +49,18 @@
 
 
             <section class="section_three login_btn_wrap">
-                <button type="button">로그인</button>
+                <button type="button" class="login_btn" id="login_btn">로그인</button>
             </section>
 
             <section class="tection_four search_sign_up_wrap">
                 <div class="search_box">
-                    <a href="#none">아이디/비밀번호찾기</a>
+                    <div class="id_search_wrap">
+                        <a href="#none" class="id_search">아이디 찾기</a>
+                    </div>
+
+                    <div class="pw_search_wrap">
+                        <a href="#none" class="pw_search">비밀번호 찾기</a>
+                    </div>
                 </div>
 
                 <div class="sign_up_box">
