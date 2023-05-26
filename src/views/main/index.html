@@ -1,368 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<html lang="ko">
 <head>
-    <title>메인 페이지</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- <link rel="stylesheet" href="../footer_header/header.html"> -->
     <script src="../../jquery/jquery-3.6.4.min.js"></script>
+    <script src="../../jquery/jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <!-- header footer -->
+    <link rel="stylesheet" href="../footer_header/footer.css">
+    <script src="../footer_header/header_call.js"></script>
+    <link rel="stylesheet" href="../footer_header/header.css">
+    
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- full page -->
-    <script src="../../jquery/jquery.fullPage.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../styles/jquery.fullPage.css" />
-
-    <script type="text/javascript" src="../../jquery/vendors/scrolloverflow.min.js"></script>
-    <script src="../../jquery/dist/jquery.fullpage.extensions.min.js"></script>
-    <!-- js -->
-    <script src="main.js"></script>
-    <!-- scroll magic -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <!-- gsap -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    
-    <!-- inclue -->
-    <script src="../../jquery/include-html.min.js"></script>
-
-
-    <style>
-        @import url("https://cdn.jsdelivr.net/npm/normalize.css");
-
-        /* 헤더 ex*/
-        header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            z-index: 9999;
-        }
-
-        /* 로고 ex */
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        /* GNB */
-        nav ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav li {
-            margin: 0 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            text-transform: uppercase;
-            font-weight: bold;
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        /* 메인 콘텐츠 */
-        
-        .main_cont {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .main_cont > *{
-        display: flex;
-        align-items: center; /* 수직 가운데 정렬 */
-        justify-content: center; /* 수평 가운데 정렬 */
-        }
-
-        .main_cont > video {
-        max-width: 130%;
-        max-height: 130%;
-        height: auto;
-        }
-
-
-        /*텍스트*/
-        .cof_text {
-        position: absolute;
-        right: 0;
-        top: 120px;
-        padding: 20px;
-        color: white;
-        font-size: 100px;
-        font-weight: 900;
-        display: inline-block;
-        font-family: 'Noto Sans KR', sans-serif;
-        }
-
-        .min_text{
-        position: absolute;
-        right: 0;
-        top: 230px;
-        padding: 20px;
-        color: white;
-        font-size: 100px;
-        font-weight: 900;
-        display: inline-block;
-        font-family: 'Noto Sans KR', sans-serif;
-        }
-        .fp-tableCell{
-            padding: 0px;
-        }
-
-        /*텍스트 호버 효과*/
-        .cof_text::after, .min_text::after{
-            display:block;
-            content: '';
-            border-bottom: solid 40px #ea2129;  
-            transform: scaleX(0);  
-            transition: transform 250ms ease-in-out;
-            z-index: -1;
-            bottom: -10px;
-        }
-        .cof_text:hover::after, .min_text:hover::after{
-            transform: scaleX(1);
-        }
-
-        /* 푸드 페이지 */
-        .win_text{
-            position: absolute;
-            left: 300px;
-            top: 375px;
-            padding: 20px;
-            color: white;
-            font-size: 40px;
-            display: inline-block;
-            font-family: 'Noto Sans KR', sans-serif;
-            font-weight: 300;
-        }
-        .dep_text{
-            position: absolute;
-            left: 390px;
-            top: 425px;
-            padding: 20px;
-            color: white;
-            font-size: 40px;
-            display: inline-block;
-            font-family: 'Noto Sans KR', sans-serif;
-            font-weight: 900;
-        }
-        .win_text:before {
-            padding: 0px 20px;
-            width: 100%;
-        }
-        .win_text:before {
-            transition: All 0.4s ease;
-            -webkit-transition: All 0.4s ease;
-            -moz-transition: All 0.4s ease;
-            -o-transition: All 0.4s ease;
-            content: "";
-            position: absolute;
-            background: #B22F2B;
-            padding: 0px;
-            width: 0;
-            height: 50%;
-            z-index: 1;
-            top: 75%;
-            left: 50%;
-            -webkit-transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-        }
-        .chSm{
-            position: absolute;
-            top: 255px;
-            right: 643px;
-            opacity: 1;
-            transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
-        }
-        .chSm:hover{
-             transform: scale(1.1);
-             z-index: 1;
-        }
-
-
-        /* svg hover */
-        /* svg{
-        width:40vmin; height:auto;
-        display:block;
-        margin:30vmin auto;
-        right: 640px;
-        position: absolute;
-        }
-        text{
-        font-size:10px;
-        transition:font-size .4s ease-out;
-        font-weight:900;
-        font-family:arial;
-        }
-        svg:hover text{
-        transition:font-size .4s ease-in;
-        font-size: 400px;
-        } */
-        /* svg hover */
-
-
-        /* .chSmBlur:hover{
-            filter: blur(30px);
-            -webkit-filter: blur(30px);
-            transform: scale(1.1);
-        } */
-
-        /* md 상품 페이지 */
-        .hol_text{
-            position: absolute;
-            left: 700px;
-            top: 390px;
-            padding: 20px;
-            color: white;
-            font-size: 40px;
-            display: inline-block;
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        .dep2_text{
-            position: absolute;
-            left: 700px;
-            top: 440px;
-            padding: 20px;
-            color: white;
-            font-size: 40px;
-            display: inline-block;
-            font-family: 'Noto Sans
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+   
 </head>
+<body>  
+    <header class="header" id="header"></header>
+    <main>
+        <article>
+            <section id="main1" class="main_cont">
+                <div> <!--width:100% height:100% -->
+                    <video src="../../assets/video/main.mp4" autoplay muted loop>
+                        메인 영상
+                    </video>
+                </div>
 
-<body>
-    <header>
-        <h1 class="logo">Maybe Hollys GNB</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Hollys mall</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Hollys News</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Hollys is</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main id="fullpage">
-        
-        
-            <section class="main_cont section" id="main1">
-                <video src="../../assets/video/main.mp4" autoplay muted> 
-                    메인 영상
-                </video>
-                    <div class="cof_text">
-                        <span class="text-content">커피의 즐거움을 만드는</span>
-                        <span class="underline"></span>
+                <div class="text1 text-fade-in"> <!-- width:100%; position:absolut-->
+                    <div class="cof_text"> <!-- position:relative-->
+                        <span>커피의 즐거움을 만드는</span>
                     </div>
-                    <div class="min_text">
-                        <span class="text-content">작은 차이의 미학</span>
-                        <span class="underline"></span>
+                    <div class="min_text"> <!-- position:relative-->
+                        <span>작은 차이의 미학</span>
                     </div>
+                </div>
             </section>
 
-            <section class="main_cont section" id="main2" data-anchor="slide2">
+            <section id="main2" class="main_cont">
                 <a href="#none"><img src="../../assets/images/main/foodFontFin.png" alt="이달의 메뉴"> </a>
-                <div class="win_text">
-                    겨울을 빨갛게 물들이는
+                <div class="text2">
+                    <div class="win_text">
+                        겨울을 빨갛게 물들이는
+                    </div>
+                    <div class="dep_text">
+                        DEEP RED
+                    </div>
                 </div>
-                <div class="dep_text">
-                    DEEP RED
-                </div>
-                <a href="#none"><img src="../../assets/images/main/tartCherrySm.png" alt="타트 체리 스무디" class="chSm"> </a>
-                <!-- <a href="#none"><img src="../../assets/images/main/tartCherrySm.png" alt="타트 체리 스무디" class="chSmBlur"> </a> -->
-                <!-- svg hover -->
-                <!-- <svg viewbox="0 0 50 50" width="50" height="50">
-                    <defs>
-                      <mask id="mask" x="0" y="0" width="100" height="49">
-                        <rect x="0.5" y="0.5" width="49" height="49" fill="#fff"/>
-                        <text x="20" text-anchor="middle" y="30" dy="0">타</text>
-                        <text x="30" text-anchor="middle" y="30" dy="0">트</text>
-                        <text x="20" text-anchor="middle" y="40" dy="0">체</text>
-                        <text x="30" text-anchor="middle" y="40" dy="0">리</text>
-                        <text x="15" text-anchor="middle" y="50" dy="0">스</text>
-                        <text x="25" id="ltrV" text-anchor="middle" y="50" dy="0">무</text>
-                        <text x="35" text-anchor="middle" y="50" dy="0">디</text>
-                      </mask>
-                      
-                    </defs>
-                    <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#B22F2B"/>
-                  </svg> -->
-                  <!-- svg hover -->
-            </section>
-
-            <section class="main_cont section" id="main3" data-anchor="slide3">
-                <a href="#none"><img src="../../assets/images/main/mdFontFin.png" alt="이달의 md상품"> </a>
-                <div class="hol_text">
-                    HOLLYS
-                </div>
-                <div class="dep2_text">
-                    DEEP RED EDITION
+                <div class="menuT">
+                    <div class="tatCh">
+                        타트 체리 스무디
+                    </div>
+                    <div class="macron">
+                        레드벨벳 뚱카롱
+                    </div>
                 </div>
             </section>
 
-            <!-- <section class="main_cont section" id="main4" data-anchor="slide4">
-                <a href=""><img src="" alt=""> </a>
-            </section> -->
-        
-        <!-- 1
-        2
-        3
-        4
-        PrevNext
-        Franchise 가맹안내
-        HOLLYS MALL
+            <section id="main3" class="main_cont">
+                <a href="#none" style="height: 100vh;"><img src="../../assets/images/main/mdFontFin.png" alt="이달의 md상품" style="height: 100vh;"> </a>
+                <div class="text3">
+                    <div class="hol_text">
+                        HOLLYS
+                    </div>
+                    <div class="dep2_text">
+                        DEEP RED EDITION
+                    </div>
+                </div>
+                <div class="star">
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star1" class="star1"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star2" class="star2"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star3" class="star3"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star4" class="star4"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star5" class="star5"></a>
+                    <a href="#none"><img src="../../assets/images/main/pngegg.png" alt="star6" class="star6"></a>
+                </div>
+            </section>
 
-        할리스의 다양한 상품들을 온라인에서도 만나보세요.
-        더블베리 초코 쏘스윗박스 더블베리 초코 쏘스윗박스
-        카네이션 케이크 카네이션 케이크
-        트리플 베리 생크림 트리플 베리 생크림
-        store store
-        할리스 멤버십
-        할리스카드 이벤트
-        news
-        [출시기념 이벤트] 케이크 픽업 예약하고 더 많은 혜택 받아가세요! 04-17
-        Dear My Love, 카네이션 케이크 출시 Event 04-17
-        VIVID SPRING, 싱그럽고 생생한 봄 음료 출시! 04-06
-        Hollys B2B Solution
-        할리스 F&B는 20년의 커피 노하우를
-        기반으로 한 할리스 B2B 솔루션을
-        소개합니다.
-        바로가기
-        news news 바로가기
-        [공고] 제3자 배정 유상증자 신주발행 공고 05-03 -->
-        <footer class="section fp-auto-height">
-            <div data-include="../../footer_header/footer.html"></div>
-        </footer>
+        </article>
     </main>
-    
-    
+    <footer class="footer" id="footer"></footer>  
+
     
 </body>
-
-</html>
+</html> 
