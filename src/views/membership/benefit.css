@@ -123,16 +123,19 @@ main .content .m_benefit > div > div .text div ul li {
 main .content .m_benefit > div .gold .text .ben {
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
   color: #a9a9a9;
 }
 main .content .m_benefit > div .red .text .ben {
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
   color: #c5a56c;
 }
 main .content .m_benefit > div .dia .text .ben {
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
   color: #ba000c;
 }
 main .content .m_benefit > div .silver .text .ben {
