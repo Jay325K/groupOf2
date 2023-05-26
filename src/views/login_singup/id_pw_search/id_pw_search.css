@@ -1,6 +1,6 @@
 .search_container{
     width: 1200px;
-    height: 600px;
+    height: 700px;
 
     display: flex;
     align-items: center;
@@ -168,4 +168,42 @@
 }
 .search_container .pw_search_wrap form button:active{
     background-color: #c72f2f;
+}
+
+/* 이전으로 홈으로 버튼 */
+.search_container .prev_home_btn_wrap{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_container .prev_home_btn_wrap>a{
+    display: block;
+
+    width: 100px;
+
+    padding: 7px 21px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+
+    background: #d2d2d260;
+    color: #808080;
+
+    text-align: center;
+
+    font-size: 1.2em;
+    font-weight: 400;
+
+    margin: 0 10px;
+    margin-bottom: 20px;
+
+    transition: 0.2s;
+}
+.search_container .prev_home_btn_wrap>a:hover,
+.search_container .prev_home_btn_wrap>a:focus{
+    background: #d2d2d2;
+    border: 1px solid #a5a5a5;
+    color: #000;
 }

@@ -59,46 +59,4 @@ window.onload=()=>{
             }
         }); 
     });
-
-
-
-    //아이디 찾기 누를시 
-    document.querySelector('.id_search').addEventListener('click',function(){
-        $.ajax({
-            type:'get', //http 타입
-            url:'../id_pw_list.json', //호출url
-            cache:'false', //캐시처리
-            data:'', //호출시 보낼 파라미터 데이터
-            dataType:'json', //http통신시 응답 데이터 타입
-            success: function (id_pw_list){
-                let id_search = prompt('찾으실 아이디를 입력하세요.','');
-        
-                for(let x=0; x<id_pw_list.length; x++){
-                    if(id_search == id_pw_list[x].id){
-                        alert(`입력하신 아이디 ${id_search} 는 가입되어있습니다.`);
-                    }
-                }
-            }
-        }); 
-        
-    })
-
-    //비밀번호 찾기 누를시
-    document.querySelector('.pw_search').addEventListener('click',function(){
-        $.ajax({
-            type:'get', //http 타입
-            url:'../id_pw_list.json', //호출url
-            cache:'false', //캐시처리
-            data:'', //호출시 보낼 파라미터 데이터
-            dataType:'json', //http통신시 응답 데이터 타입
-            success: function (id_pw_list){
-                let id_search = prompt('찾으실 아이디를 입력하세요.','');
-        
-                for(let x=0; x<id_pw_list.length; x++){
-                    if(id_search == id_pw_list[x].id){
-                    }
-                }
-            }
-        }); 
-    })
 }
