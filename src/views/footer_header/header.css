@@ -86,6 +86,7 @@ header .header_first .gnb_right {
 }
 header .header_first .gnb_right .header_top ul {
   width: 850px;
+  height: 19px;
   display: flex;
   justify-content: right;
 }
