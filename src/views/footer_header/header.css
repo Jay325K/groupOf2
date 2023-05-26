@@ -16,6 +16,24 @@ header .header_first {
 header .header_first {
   background: white;
 }
+header .header_first>a{
+  width: 300px;
+  padding: 5px 10px;
+  background: #4f4c4b;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: -50px;
+  border: 1px solid;
+}
+header .header_first>a:focus{
+  top: 0;
+  z-index: 9999;
+}
+header .header_first>a:hover{
+  text-decoration: underline;
+}
+
 header .header_first.active {
   background: rgb(199, 47, 47);
 }
@@ -113,10 +131,11 @@ header .header_first .gnb_right .gnb_wrap .gnb a {
   color: #000;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a {
-  height: 46px;
+  height: 51px;
 
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a:hover {
   color: rgb(199, 47, 47);
