@@ -11,17 +11,54 @@
     <link rel="stylesheet" href="../../footer_header/header.css">
     <link rel="stylesheet" href="../../footer_header/footer.css">
     
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="id_pw_search.css">
 
     <script src="../../../jquery/jquery.js"></script>
     <script src="../header.js"></script>
     <script src="../footer.js"></script>
+    <script src="id_pw_search.js"></script>
     <title>아이디/비밀번호 찾기</title>
 </head>
 <body>
     <header id="header"></header>
-    <main id="main">
+    <main id="main">    <!-- wid 100% -->
+        <article class="search_container" id="content"> <!-- wid 1200px -->
+            <h2>아이디/ 비밀번호 찾기</h2>
+            <div class="section_wrap">
+                <section class="sec_one id_search_wrap">   <!-- wid 600px -->
+                    <h3>아이디 찾기</h3>
+
+                    <form action="#" method="get" name="id_search">
+                        <div class="tel_search_input">
+                            <label for="tel_search_tel_input">전화번호</label>
+                            <input type="tel" id="tel_search_tel_input" placeholder="ex. 010-1234-5678" maxlength="13">
+                        </div>
+
+                        <button type="submit" class="id_search_btn">아이디 찾기</button>
+                    </form>
+                </section>
+
+                <section class="sec_two pw_search_wrap">   <!-- wid 600px -->
+                    <h3>비밀번호 찾기</h3>
         
+                    <form action="#" method="get" name="pw_search">
+                        <div class="id_tel_search_wrap">
+                            <div class="id_search_input">
+                                <label for="email_input">이메일</label>
+                                <input type="tel" id="email_input" placeholder="ex. abc123@google.com">
+                            </div>
+
+                            <div class="tel_search_input">
+                                <label for="pw_search_tel_input">전화번호</label>
+                                <input type="tel" id="pw_search_tel_input" placeholder="ex. 010-1234-5678">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="pw_search_btn">비밀번호 찾기</button>
+                    </form>
+                </section>
+            </div>
+        </article>
     </main>
     <footer id="footer"></footer>
 </body>
