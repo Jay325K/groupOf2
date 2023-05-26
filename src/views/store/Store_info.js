@@ -7,6 +7,7 @@ request.responseType='json';
 request.send();
 
 request.onload = function() {
+    
     const locate = request.response;
     let locate_city=[];
     for(let x=0; x<locate.length; x++){
@@ -29,7 +30,6 @@ request.onload = function() {
             $('.locate_Store_input_label').css('display','block');
         });
 
-        
         let local_text ='';
         for(let x =0; x<$('.local_city li').length; x++){
             local_text=local_text+' '+$('.local_city li').eq(x).text();

@@ -114,9 +114,9 @@ main .section_wrap .sec_two .search_wrap .map{
 main .section_wrap .sec_two .search_wrap .search_Store{
     position: absolute;
     top: 50%;
-    left: calc(-20%);
-    transform: translateY(-50%) translateX(-0px);
-    width: 20%;
+    left: -20%;
+    transform: translateY(-50%) translateX(-34%);
+    width: 30%;
     height: 300px;
     transition: 0.5s;
 }
@@ -124,8 +124,9 @@ main .section_wrap .sec_two .search_wrap .search_Store.active{
     width: 30%;
 
     left: 5px;
+    
     transform: translateY(-50%) translateX(-5px);
-    right: 0;
+
     transition: 0.5s;
 }
 /* 매장 검색하는곳 열고 닫는곳 */

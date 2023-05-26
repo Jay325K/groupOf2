@@ -42,13 +42,31 @@
                     </p>
                 </div>
 
+                <div class="name_wrap"> <!-- width:100% -->
+                    <p>* 이름 입력</p>
+                    <div class="name_input_wrap">
+
+                        <label for="name_input" class="screen_out">이름</label>
+                        <input type="text" id="id_input" class="name_input" placeholder="이름을 입력해주세요.">
+                    </div>
+                </div>
+
+                <div class="tel_wrap"> <!-- width:100% -->
+                    <p>* 전화번호 입력</p>
+                    <div class="tel_input_wrap">
+
+                        <label for="tel_input" class="screen_out">전화번호</label>
+                        <input type="tel" id="tel_input" class="tel_input" placeholder="ex. 010-1234-5678" maxlength="13">
+                    </div>
+                </div>
+
                 <div class="pw_wrap"> <!-- width:100% -->
                     <div class="pw_input_wrap">
                         <p>* 비밀번호 입력</p>
 
                         <div class="pw_input_box">
-                            <label for="" class="screen_out">비밀번호</label>
-                            <input type="password" id="" placeholder="비밀번호를 입력해주세요." maxlength="15" minlength="8">
+                            <label for="pw_input" class="screen_out">비밀번호</label>
+                            <input type="password" id="pw_input" placeholder="비밀번호를 입력해주세요." maxlength="15" minlength="8">
                             <button type="button" class="show_hide_pw_btn"><i class="fa-solid fa-eye-slash"></i></button>
 
                             <!-- 
@@ -83,8 +101,8 @@
                         <p>* 비밀번호 확인</p>
 
                         <div class="pw_check_input_box">
-                            <label for="" class="screen_out">비밀번호 확인</label>
-                            <input type="password" id="" placeholder="비밀번호를 다시 입력해주세요." class="pw_check_input">
+                            <label for="pw_check_input" class="screen_out">비밀번호 확인</label>
+                            <input type="password" id="pw_check_input" placeholder="비밀번호를 다시 입력해주세요." class="pw_check_input">
                             <span class="pw_check_mark"></span>
                         </div>
                         

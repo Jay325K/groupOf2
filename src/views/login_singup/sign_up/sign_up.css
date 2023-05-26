@@ -66,11 +66,65 @@
     box-shadow: 0 0 1px gray;
 }
 
+/* 이름 */
+.sign_up_wrap .input_wrap .name_wrap{
+    width: 100%;
+
+    margin-top: 30px;
+}
+.sign_up_wrap .input_wrap .name_wrap>p{
+    padding-bottom: 5px;
+}
+.sign_up_wrap .input_wrap .name_wrap .name_input_wrap{
+    position: relative;
+    width: 100%;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.sign_up_wrap .input_wrap .name_wrap .name_input_wrap input{
+    width: 100%;
+    
+    padding: 10px 0;
+    padding-left: 5px;
+    border: 0;
+}
+
+/* 전화번호 */
+.sign_up_wrap .input_wrap .tel_wrap{
+    width: 100%;
+
+    margin-top: 10px;
+}
+.sign_up_wrap .input_wrap .tel_wrap>p{
+    padding-bottom: 5px;
+}
+.sign_up_wrap .input_wrap .tel_wrap .tel_input_wrap{
+    position: relative;
+    width: 100%;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.sign_up_wrap .input_wrap .tel_wrap .tel_input_wrap input{
+    width: 100%;
+    
+    padding: 10px 0;
+    padding-left: 5px;
+    border: 0;
+}
+
 /* 비밀번호 */
 .sign_up_wrap .input_wrap .pw_wrap{
     width: 100%;
 
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .sign_up_wrap .input_wrap .pw_input_wrap{
     width: 100%;
