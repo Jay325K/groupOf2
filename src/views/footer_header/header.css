@@ -113,10 +113,11 @@ header .header_first .gnb_right .gnb_wrap .gnb a {
   color: #000;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a {
-  height: 46px;
+  height: 51px;
 
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 header .header_first .gnb_right .gnb_wrap .gnb .depth-01 li a:hover {
   color: rgb(199, 47, 47);
