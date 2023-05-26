@@ -158,6 +158,7 @@ a {
 }
 .menu_list li:hover {
   scale: 1.1;
+  transition: 0.3s;
   color: #999;
 }
 .menu_list a {
