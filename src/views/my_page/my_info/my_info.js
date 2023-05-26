@@ -13,7 +13,7 @@ myInfoClickBtn.addEventListener("click", () => {
     myInfoUid.value === "admin012" &&
     myInfoUPassword.value === "adminPW"
   ) {
-    location.href = "./my_info_change.html";
+    location.href = "#none";
   } else {
     alert("비밀번호를 잘못 입력하셨습니다.");
     myInfoUPassword.value = "";

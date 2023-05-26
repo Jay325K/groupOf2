@@ -40,9 +40,7 @@ const getMenu = () => {
 const menuPrintExec = async () => {
   try {
     const menu = await getMenu();
-    if (pageNum) {
-      menuPrintProcess(menu[pageName]);
-    }
+    menuPrintProcess(menu[pageName]);
   } catch (error) {
     console.log(error);
   }
@@ -123,7 +121,7 @@ const modalPrint = (data) => {
     menuNutritionalPrint(data);
   }
   if (data.price !== "") {
-    menuModalGift.innerHTML = `<a href="../../giftcon_buy/giftcon_buy.html" class="menu_modal--gift_btn">GIFT</a>`;
+    menuModalGift.innerHTML = `<a href="../../giftcon_buy/giftcon_buy.html" class="menu_modal--gift_btn">GIFT 구매하기</a>`;
   } else {
     menuModalGift.innerHTML = "";
   }

@@ -27,7 +27,6 @@ card_list_wrap.forEach(e=>{
         document.querySelector('.result_wrap .card_message .my_select_card_wrap .my_select_card_text p').innerHTML=check_img_name;
 
         
-
     });
     console.log(e);
     e.children[2].addEventListener('focus',()=>{
@@ -35,7 +34,10 @@ card_list_wrap.forEach(e=>{
             card_list_wrap[x].children[0].style.border='0';
         }
         e.children[0].style.border='3px solid #000';
+        e.children[0].style.borderRadius='10px';
     });
+
+
 })
 
 
@@ -112,6 +114,9 @@ message.onkeyup=()=>{
 
 let move_ul = document.querySelector('.show_ul_page>ul');
 let distance =0;
+
+const special_pattern = /[`0-9|~!@#$%^&*|\\\'\";:\/?]/gi;               //특수문자, 숫자, 공백 걸러내는 필터
+const special_pattern2 = /[`a-zA-Z|ㄱ-힣|~!@#$%^&*|\\\'\";:\/?]/gi;     //영어, 한글, 특수문자, 공백 걸러내는 필터
 /* 다음 버튼 클릭시 */
 document.querySelectorAll('.next_step').forEach((e,idx)=>{
     e.addEventListener('click',()=>{
@@ -129,39 +134,71 @@ document.querySelectorAll('.next_step').forEach((e,idx)=>{
             if(check_empty_length==0){
                 alert('카드 디자인을 선택해주세요.');
             }else{
+                main_contents_list[1].style.visibility='visible';
                 distance-=1200;
-                move_ul.style.transform='translateX('+distance+'px)'
+                move_ul.style.transform='translateX('+distance+'px)';
             }
-        }else{
+        }else{//두번째 버튼 클릭시
             for(let x=0; x<pay_info_table.children.length; x++){
-                var special_pattern = /[`0-9|~!@#$%^&*|\\\'\";:\/?]/gi;
-                var special_pattern2 = /[`a-zA-Z|ㄱ-힣|~!@#$%^&*|\\\'\";:\/?]/gi;
+                
                 if(special_pattern.test(pay_info_table.children[x].children[0].children[1].value)==true){
                     alert('받는 사람 이름에는 숫자, 특수문자, 공백이 포함될 수 없습니다.');
                     return 0;
                 }
                 if(special_pattern2.test(pay_info_table.children[x].children[1].children[3].value) || special_pattern2.test(pay_info_table.children[x].children[1].children[5].value)){
                     alert('받는 사람 전화번호에는 문자, 공백이 들어갈 수 없습니다.');
+                    
                     return 0;
                 } 
                 if(pay_info_table.children[x].children[0].children[1].value==''){
                     alert('받는 사람 이름을 입력해주세요.');
+
                     return 0;
                 }
                 if(pay_info_table.children[x].children[1].children[3].value=='' || pay_info_table.children[x].children[1].children[5].value==''){
                     alert('전화번호를 입력해주세요.');
                     return 0;
                 } 
+                pay_info_table.children[x].children[0].children[1].onchange=()=>{
+                    if(pay_info_table.children[x].children[0].children[1].value==''){
+                        main_contents_list[2].style.visibility='hidden';
+                    }
+                }
+                pay_info_table.children[x].children[1].children[3].onchange=()=>{
+                    if(pay_info_table.children[x].children[1].children[3].value==''){
+                        main_contents_list[2].style.visibility='hidden';
+                    }
+                }
+                pay_info_table.children[x].children[1].children[5].onchange=()=>{
+                    if(pay_info_table.children[x].children[1].children[5].value==''){
+                        main_contents_list[2].style.visibility='hidden';
+                    }
+                }
             }
+            main_contents_list[2].style.visibility='visible';
             distance-=1200;
             move_ul.style.transform='translateX('+distance+'px)'
         }
     });
 })
 
+
+/* 첫번째 다음버튼 입력시 카드 border 없애기 */
+let page_move_btn = document.querySelector('.page_move_btn_wrap .btn_locate_right .next_step');
+page_move_btn.addEventListener('focus',function(){
+    for(let x=0; x<card_list_wrap.length; x++){
+        card_list_wrap[x].children[0].style.border='0';
+    }
+})
+
 /* 이전 버튼 클릭시 */
 document.querySelectorAll('.prev_step').forEach((e,idx)=>{
     e.onclick=()=>{
+        if(idx==1){
+            setTimeout(function(){main_contents_list[2].style.visibility='hidden';},400);
+        }else{
+            setTimeout(function(){main_contents_list[1].style.visibility='hidden';},400);
+        }
         distance+=1200;
         move_ul.style.transform='translateX('+distance+'px)';
     }
@@ -170,5 +207,9 @@ document.querySelectorAll('.prev_step').forEach((e,idx)=>{
 /* 결제정보 확인창에서 카드선택 화면 누를시 */
 document.querySelector('.prev_select_design').onclick=()=>{
     distance=0;
+    setTimeout(function(){
+        main_contents_list[1].style.visibility='hidden';
+        main_contents_list[2].style.visibility='hidden';
+    },400);
     move_ul.style.transform='translateX('+distance+'px)'
 }

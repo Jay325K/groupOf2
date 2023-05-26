@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>할리스 : 멤버십</title>
-    <link rel="stylesheet" href="../../../styles/reset.css" />
+    <title>할리스 : MY 멤버십</title>
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/views/footer_header/header.css" />
+    <link rel="stylesheet" href="/src/views/footer_header/footer.css" />
     <link rel="stylesheet" href="../my_page_banner.css" />
     <link rel="stylesheet" href="./my_membership.css" />
+    <link rel="icon" href="/src/assets/images/favicon.png" />
+    <script src="/src/jquery/jquery-3.6.4.min.js"></script>
   </head>
   <body>
+    <header id="header" class="header"></header>
     <main id="main" class="main">
       <section class="my_page--banner_wrap">
         <section class="my_page--banner">
@@ -62,7 +67,7 @@
                 현재 멤버십 등급은
                 <span class="silver_color">SILVER</span> 입니다.
               </p>
-              <p>
+              <p class="my_membership--content_grade--benefits">
                 <span class="silver_color">SILVER</span> 등급의 혜택은
                 <a href="#none" class="my_membership--content_benefit--link"
                   >멤버십 혜택</a
@@ -154,80 +159,15 @@
                 멤버십 카드 관리
               </button>
             </section>
-            <section class="my_membership--content_management--crown">
-              <section
-                class="my_membership--content_management--crown_assortment"
-              >
-                <!-- <div>
-                  <img
-                    src="../../../assets/images/my_page/crown.png"
-                    alt="왕관"
-                  />
-                </div> -->
-                <span
-                  class="my_membership--content_management--crown_assortment--txt"
-                  >CROWN</span
-                >
-                <span
-                  class="my_membership--content_management--crown_assortment--txt"
-                  >적립일</span
-                >
-                <span
-                  class="my_membership--content_management--crown_assortment--txt"
-                  >소멸일</span
-                >
-                <span
-                  class="my_membership--content_management--crown_assortment--txt"
-                  >적립개수</span
-                >
-              </section>
-              <section class="my_membership--content_management--crown_notice">
-                <img
-                  src="../../../assets/images/my_page/no_data.png"
-                  alt=""
-                  class="my_membership--content_management--crown_notice--none_img"
-                />
-                <span>내역이 없습니다.</span>
-              </section>
-            </section>
-            <!-- <section class="my_membership--content_management--membership">
-              <section class="my_membership--content_management--membership_re">
-                <span class="my_membership--content_management--membership_txt"
-                  >모바일 멤버십 카드 재발급</span
-                ><a
-                  href="#none"
-                  class="my_membership--content_management--membership_link"
-                  >바로가기</a
-                >
-              </section>
-              <section
-                class="my_membership--content_management--membership_register"
-              >
-                <span class="my_membership--content_management--membership_txt"
-                  >실물 카드 등록</span
-                >
-                <a
-                  href="#none"
-                  class="my_membership--content_management--membership_link"
-                  >바로가기</a
-                >
-              </section>
-              <section
-                class="my_membership--content_management--membership_stop"
-              >
-                <span class="my_membership--content_management--membership_txt"
-                  >멤버십 카드 사용중지</span
-                >
-                <a
-                  href="#none"
-                  class="my_membership--content_management--membership_link"
-                  >사용중지</a
-                >
-              </section>
-            </section> -->
+            <section
+              class="my_membership--content_management--content_wrap"
+            ></section>
           </section>
         </section>
       </section>
     </main>
+    <footer id="footer" class="footer"></footer>
   </body>
+  <script src="../import_header_footer.js"></script>
+  <script src="./my_membership.js"></script>
 </html>
