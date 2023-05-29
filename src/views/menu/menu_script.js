@@ -22,6 +22,7 @@ const menuCategoryArray = {
   food: ["cake", "sandwich/toast", "bakery", "food"],
   md: ["product", "food"],
 };
+let pageBtn = "";
 let giftInfo = {
   prName: "",
   img: "",
@@ -48,12 +49,11 @@ const menuPrintExec = async () => {
 const menuPrintProcess = (menu) => {
   menuListArray = [];
   menuList.innerHTML = "";
-  menuPage.innerHTML = "";
 
   menuListGenerate(menu);
-  const pageCount = Math.ceil(menuListArray.length / 20);
-
-  pagePrint(pageCount);
+  if (menuPage.innerHTML === "") {
+    pagePrint();
+  }
   menuPrint();
 };
 const menuListGenerate = (menu) => {
@@ -69,10 +69,15 @@ const menuListGenerate = (menu) => {
     });
   }
 };
-const pagePrint = (pageCount) => {
+const pagePrint = () => {
+  const pageCount = Math.ceil(menuListArray.length / 20);
   for (let i = 1; i <= pageCount; i++) {
     if (pageCount != 1)
-      menuPage.innerHTML += `<button type="button" class="hollys">${i}</button>`;
+      menuPage.innerHTML += `<button type="button" class="page_btn">${i}</button>`;
+  }
+  pageBtn = document.querySelectorAll(".page_btn");
+  if (pageBtn[0] !== undefined) {
+    pageBtn[0].classList.add("hollys_red");
   }
 };
 const menuPrint = () => {
@@ -192,6 +197,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 menuPage.addEventListener("click", (e) => {
   if (pageNum !== e.target.innerHTML && e.target.localName == "button") {
+    pageBtn.forEach((e) => e.classList.remove("hollys_red"));
+    e.target.classList.add("hollys_red");
     pageNum = e.target.innerHTML;
     menuPrintExec();
     menuCategory.scrollIntoView();
@@ -212,6 +219,7 @@ menuCategory.addEventListener("change", () => {
   ) {
     menuCategoryCheckbox[0].lastElementChild.checked = true;
     menuCategoryChecked[0] = true;
+
     for (let i = 1; i < menuCategoryCheckbox.length; i++) {
       menuCategoryChecked[i] = false;
       menuCategoryCheckbox[i].lastElementChild.checked = false;
@@ -221,6 +229,7 @@ menuCategory.addEventListener("change", () => {
   for (let i = 0; i < menuCategoryCheckbox.length; i++) {
     menuCategoryChecked[i] = menuCategoryCheckbox[i].lastElementChild.checked;
   }
+  menuPage.innerHTML = "";
   menuPrintExec();
 });
 

@@ -81,14 +81,39 @@ const managementMenuCardPrint = () => {
             </section>
     `;
 };
+const hollysRedBgClassAdd = () => {
+  const myMembershipContentManagementMenuCrownClass = [
+    ...myMembershipContentManagementMenuCrown.classList,
+  ];
+  const myMembershipContentManagementMenuCrownFilter =
+    myMembershipContentManagementMenuCrownClass.filter(
+      (e) => e === "hollys_red--bg"
+    );
+  const myMembershipContentManagementMenuCardClass = [
+    ...myMembershipContentManagementMenuCard.classList,
+  ];
+  const myMembershipContentManagementMenuCardFilter =
+    myMembershipContentManagementMenuCardClass.filter(
+      (e) => e === "hollys_red--bg"
+    );
+  if (myMembershipContentManagementMenuCrownFilter[0] === undefined) {
+    myMembershipContentManagementMenuCrown.classList.add("hollys_red--bg");
+    myMembershipContentManagementMenuCard.classList.remove("hollys_red--bg");
+  } else if (myMembershipContentManagementMenuCardFilter[0] === undefined) {
+    myMembershipContentManagementMenuCard.classList.add("hollys_red--bg");
+    myMembershipContentManagementMenuCrown.classList.remove("hollys_red--bg");
+  }
+};
 
 window.addEventListener("DOMContentLoaded", () => {
-  console.log(myMembershipContentManagementContentWrap);
   managementMenuCrownPrint();
+  myMembershipContentManagementMenuCrown.classList.add("hollys_red--bg");
 });
 myMembershipContentManagementMenuCrown.addEventListener("click", () => {
   managementMenuCrownPrint();
+  hollysRedBgClassAdd();
 });
 myMembershipContentManagementMenuCard.addEventListener("click", () => {
   managementMenuCardPrint();
+  hollysRedBgClassAdd();
 });
