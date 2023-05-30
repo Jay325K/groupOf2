@@ -94,7 +94,7 @@ main .content .location span:last-child::after {
   font-size: 16px;
   padding: 0 0 0 5px;
 }
-.board_wrap .search_wrap div a {
+.board_wrap .search_wrap div button {
   margin-left: 5px;
   height: 40px;
   display: inline-block;
@@ -104,6 +104,11 @@ main .content .location span:last-child::after {
   color: #fff;
   font-weight: bold;
   font-size: 15px;
+  border: none;
+}
+.board_wrap .search_wrap div button:hover,
+.board_wrap .search_wrap div button:focus {
+  background: #6c6c6c;
 }
 
 .board_wrap .board_list_wrap .board_list {
