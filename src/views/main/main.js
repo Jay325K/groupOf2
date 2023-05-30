@@ -47,5 +47,35 @@ $(function () {
     }
 
   });
+  // Intersection Observer를 생성할 콜백 함수
+  const callback = function(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // 텍스트가 화면에 진입할 때 'text-fade-in' 클래스 추가
+        entry.target.classList.add('text-fade-in');
+        // Intersection Observer 관찰 중지
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  // Intersection Observer 생성
+  const options = {
+    threshold: 0.5 // 텍스트가 50% 이상 화면에 보일 때 콜백 함수 호출
+  };
+  const observer = new IntersectionObserver(callback, options);
+
+  // 텍스트 요소를 선택하여 Intersection Observer에 관찰 대상으로 등록
+  const text1 = document.querySelector('.text1');
+  const win_text = document.querySelector('.win_text');
+  const dep_text = document.querySelector('.dep_text');
+  const holText = document.querySelector('.hol_text');
+  const dep2Text = document.querySelector('.dep2_text');
+  observer.observe(text1);
+  observer.observe(win_text);
+  observer.observe(dep_text);
+  observer.observe(holText);
+  observer.observe(dep2Text);
+
   
 })
