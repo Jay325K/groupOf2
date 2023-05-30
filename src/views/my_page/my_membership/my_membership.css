@@ -16,7 +16,11 @@ button {
   color: #666;
   margin-bottom: 50px;
 }
-
+/* hollys red bg */
+.hollys_red--bg {
+  color: white;
+  background: #c72f30;
+}
 /* my membership page */
 .my_membership--title_wrap {
   width: 1200px;
