@@ -19,7 +19,7 @@ main{
     width: 100%;
     min-width: 1200px;
     height: 100vh;
-    background: url(../../assets/images/franchise/hollysFriends.png);
+    background: url(../../assets/images/franchise/howFriend.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -125,36 +125,16 @@ h2{
     margin-top: 10px;
     border-bottom: 1px solid lightgray;
 }
-.franchise_wrap {
-    overflow: hidden;
-    width: auto;
-    margin: 30px 0 0 0;
-    margin-top: 140px;
-    margin-bottom: 80px;
+/* sec02 - content */
+.content .step_wrap .step_img{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px 0 100px;
 }
-.franchise_wrap li:first-child {
-    margin-left: 0;
-}
-.franchise_wrap li {
-    text-align: center;
-    vertical-align: top;
-    display: inline-block;
-    margin: 0 0 100px 70px;
-    font-size: 14px;
+.tit_sub {
+    font-size: 12pt;
     color: #303030;
-}
-img {
-    vertical-align: top;
-    verflow-clip-margin: content-box;
-    overflow: clip;
-}
-.franchise_wrap li strong {
-    display: block;
-    margin: 25px 0 15px 0;
-    font-size: 16px;
-    color: #ba000c;
-    line-height: 1.4em;
-}
-strong {
     font-weight: bold;
 }
