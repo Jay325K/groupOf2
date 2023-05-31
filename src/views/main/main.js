@@ -21,12 +21,12 @@ $(function () {
       if (count < section_number.length - 1) {//vh 단위로 페이지 이동
         count++;
         move_distance_vh -= 100;
-        document.querySelector('article').style.transform = 'translateY(' + move_distance_vh + 'vh)';
+        document.querySelector('main').style.transform = 'translateY(' + move_distance_vh + 'vh)';
         
       } else if (count == section_number.length - 1) {//(footer)높이만큼 페이지이동
         count++;
         move_distance_px -= footer_height;
-        document.querySelector('article').style.transform = 'translateY(calc(' + ((section_number.length - 1) * -100) + 'vh + ' + move_distance_px + 'px))';
+        document.querySelector('main').style.transform = 'translateY(calc(' + ((section_number.length - 1) * -100) + 'vh + ' + move_distance_px + 'px))';
       }
 
       /* 스크롤 업 */
@@ -38,11 +38,11 @@ $(function () {
       if (count > 0 && count < section_number.length) { //vh 단위로 페이지 이동
         count--;
         move_distance_vh += 100;
-        document.querySelector('article').style.transform = 'translateY(' + move_distance_vh + 'vh)';
+        document.querySelector('main').style.transform = 'translateY(' + move_distance_vh + 'vh)';
       } else if (count == section_number.length) { //(footer)높이만큼 페이지이동
         count--;
         move_distance_px += footer_height;
-        document.querySelector('article').style.transform = 'translateY(calc(' + ((section_number.length - 1) * -100) + 'vh + ' + move_distance_px + 'px))';
+        document.querySelector('main').style.transform = 'translateY(calc(' + ((section_number.length - 1) * -100) + 'vh + ' + move_distance_px + 'px))';
       }
     }
 
