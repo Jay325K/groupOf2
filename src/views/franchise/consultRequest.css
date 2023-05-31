@@ -127,6 +127,9 @@ h2{
 }
 
 /* sec02 - content */
+.content{
+    margin: 0 140px 200px 140px;
+}
 .tableInfo03 {
     margin: 0px 0 15px 0;
     overflow: hidden;
