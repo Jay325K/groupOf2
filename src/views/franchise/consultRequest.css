@@ -19,7 +19,7 @@ main{
     width: 100%;
     min-width: 1200px;
     height: 100vh;
-    background: url(../../assets/images/franchise/howFriend.png);
+    background: url(../../assets/images/franchise/const.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -125,38 +125,41 @@ h2{
     margin-top: 10px;
     border-bottom: 1px solid lightgray;
 }
+
 /* sec02 - content */
-.content{
-    margin: 0 140px 200px 140px;
-}
-.content .step_wrap .step_img{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 34px;
-    margin-bottom: 28px;
-}
-.tit_sub {
-    font-size: 16pt;
-    color: #303030;
-    font-weight: bold;
-}
-.tit_sub + .tb_01 {
-    margin-top: 22px;
-}
-.tb_01 table {
-    width: 100%;
-    border-top: 1px solid #303030;
-}
-caption{
-    width: 0;
-    height: 0;
+.tableInfo03 {
+    margin: 0px 0 15px 0;
     overflow: hidden;
-    padding: 0;
-    visibility: hidden;
-    font-size: 0;
-    line-height: 0;
+    _zoom: 1;
+    letter-spacing: -1px;
+}
+.fl_r {
+    float: right;
+}
+.tableType01.counsel {
+    text-align: center;
+}
+.tableType01.counsel {
+    text-align: center;
+}
+.tableType01 {
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+    width: 100%;
+}
+.mar_t_20 {
+    margin-top: 20px !important;
+}
+/* table {
+    border-collapse: collapse;
+} */
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
 }
 colgroup {
     display: table-column-group;
@@ -164,7 +167,7 @@ colgroup {
 col {
     display: table-column;
 }
-.thead {
+thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
@@ -174,75 +177,33 @@ tr {
     vertical-align: inherit;
     border-color: inherit;
 }
-.tb_01 table thead th:first-child {
-    border-left: 0;
-}
-.tb_01 table thead th {
-    padding: 10px 0 10px 0;
-    border: 1px solid #d9d9d9;
-    border-top: 0;
-    border-right: 0;
-    font-size: 9pt;
-    color: #303030;
-    font-weight: bold;
+.tableType01.counsel thead th {
     background: #f1f1f1;
+}
+.tableType01 th.noline {
+    border-left: none;
+}
+.tableType01 thead th {
+    border-bottom: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    padding: 10px 0 12px;
+    text-align: center;
 }
 tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
 }
-.tb_01 table td:first-child {
-    border-left: 0;
-}
-.tb_01 table td {
+.tableType01.counsel tbody th {
     text-align: center;
-    padding: 10px 0 10px 0;
-    border-left: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
-    font-size: 9pt;
+    padding: 10px 0px 12px 0px;
+    font-weight: normal;
+}
+.tableType01.counsel td {
+    padding: 12px 0 12px;
+}
+a {
     color: #6f6f6f;
+    text-decoration: none;
 }
-table {
-    border-collapse: collapse;
-}
-.tb_01 + .tit_sub {
-    margin-top: 63px;
-}
-.tit_table {
-    margin-bottom: 6px;
-    text-align: right;
-    font-size: 9pt;
-    color: #b91c22;
-}
-.guide_txt {
-    margin: 6px 0 0 0;
-}
-.guide_txt li {
-    font-size: 9pt;
-    color: #6f6f6f;
-}
-.guide_txt + .tit_sub {
-    margin-top: 60px;
-}
-.tit_sub + .tb_01 {
-    margin-top: 22px;
-}
-.tb_01 table tfoot th:first-child {
-    border-left: 0;
-}
-.tb_01 table tfoot th {
-    padding: 10px 0 10px 0;
-    border-left: 1px solid #d9d9d9;
-    border-bottom: 1px solid #303030;
-    font-size: 9pt;
-    color: #303030;
-    font-weight: bold;
-    background: #f1f1f1;
-}
-.point_link {
-    font-size: 9pt;
-    color: #b91c22;
-    font-weight: bold;
-}
-.point_link:hover{color:#b91c22;text-decoration:underline;}
+a:hover, a:active{color:#6f6f6f;text-decoration:underline}
