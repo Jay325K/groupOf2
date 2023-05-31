@@ -111,6 +111,7 @@ main .content .location span:last-child::after {
   background: #6c6c6c;
 }
 
+/**     리스트     **/
 .board_wrap .board_list_wrap .board_list {
   margin: 20px 0 40px 0;
   padding: 5px 0 10px 0;
@@ -123,6 +124,8 @@ main .content .location span:last-child::after {
 }
 
 .board_wrap .board_list_wrap .board_list .top {
+  font-size: 0;
+
   border-bottom: 1px solid #9b9a9a;
   display: flex;
 }
@@ -130,9 +133,13 @@ main .content .location span:last-child::after {
   font-weight: bold;
 }
 .board_wrap .board_list_wrap .board_list .Notice {
+  font-size: 0;
+
   display: flex;
 }
-.board_wrap .board_list_wrap .board_list .page-cont > div {
+.board_wrap .board_list_wrap .board_list .page-cont ul li> div {
+  font-size: 0;
+
   display: flex;
 }
 .board_wrap .board_list_wrap .board_list .page-cont {
@@ -141,26 +148,27 @@ main .content .location span:last-child::after {
 .board_wrap .board_list_wrap .board_list .page-cont.current {
   display: inherit;
 }
-.board_wrap .board_list_wrap .board_list > div > div {
+.board_wrap .board_list_wrap .board_list > div > div,
+.board_wrap .board_list_wrap .board_list > div ul li div  {
   text-align: center;
   font-size: 1rem;
   padding: 10px 0;
   line-height: 1.5;
 }
-.board_wrap .board_list_wrap .board_list > div .num {
+.board_wrap .board_list_wrap .board_list .num {
   width: 10%;
 }
-.board_wrap .board_list_wrap .board_list > div .title {
+.board_wrap .board_list_wrap .board_list .title {
   text-align: left;
   width: 80%;
 }
-.board_wrap .board_list_wrap .board_list > div .title a:hover {
+.board_wrap .board_list_wrap .board_list .title a:hover {
   text-decoration: underline;
 }
 .board_wrap .board_list_wrap .board_list .top .title {
   text-align: center;
 }
-.board_wrap .board_list_wrap .board_list > div .date {
+.board_wrap .board_list_wrap .board_list .date {
   width: 10%;
 }
 
