@@ -16,6 +16,7 @@
     <script src="../footer_header/header_call.js"></script>
     <link rel="stylesheet" href="../footer_header/header.css">
 
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +26,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=56dc0313a64611fe8a398e28978188c0&libraries=services"></script>
+
 
 </head>
+
 <body>
     <header class="header" id="header"></header>
     <main>
@@ -86,111 +91,53 @@
                         <td class="noline">
                             <div class="way_info">
                                 <div class="way" style="overflow: hidden;
-                                margin: 17px 0 28px 0;">
+                                margin: 17px 120px 28px 120px;">
                                     <dl>
-                                        <dt style="font-size: 20px; font-weight: 400;
-                                        font-family: 'Noto Sans KR', sans-serif; margin-left: 240px; margin-top: 100px;">찾아 오시는길</dt>
+                                        <dt
+                                            style="font-size: 20px; font-weight: 400;
+                                        font-family: 'Noto Sans KR', sans-serif; margin-left: 40px; margin-top: 100px;">
+                                            찾아 오시는길</dt>
                                         <dd style="font-size: 17px; font-weight: 300;
-                                        font-family: 'Noto Sans KR', sans-serif; margin-left: 240px;">서울시 중구 통일로92, KG타워 B1 하모니홀 </dd>
+                                        font-family: 'Noto Sans KR', sans-serif; margin-left: 40px;">서울시 중구 통일로92,
+                                            KG타워 B1 하모니홀 </dd>
                                     </dl>
                                     <a href="#" onclick="javascript:onMap('5'); return false;" class="fl_r"><img
-                                            src="https://www.hollys.co.kr/websrc/images/common/btn_map01.gif"
-                                            alt="출력하기"
-                                            style="float: right; margin-right: 270px;"></a>
+                                            src="https://www.hollys.co.kr/websrc/images/common/btn_map01.gif" alt="출력하기"
+                                            style="float: right; margin-right: 70px; margin-bottom: 20px;"></a>
+                                    <div id="map" style=" position: relative;
+                                            width: 100%;
+                                            height: 430px;
+                                            z-index: 0;
+                                            border: 1px solid #d3d3d3;
+                                            "></div>
+                                    
                                 </div>
-                                <div class="step" style="display: flex;
+                                <!-- <div class="step"
+                                    style="display: flex;
                                 justify-content: center; margin-bottom: 100px; padding-bottom: 60px; border-bottom: 1px solid #999;">
-                                    <div id="map_canvas_5"
-                                        style="width: 640px; height: 280px; position: relative; overflow: hidden; background: url(&quot;https://t1.daumcdn.net/mapjsapi/images/bg_tile.png&quot;);">
-                                        <div
-                                            style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; touch-action: none; cursor: url(&quot;https://t1.daumcdn.net/mapjsapi/images/cursor/openhand.cur.ico&quot;) 7 5, url(&quot;https://t1.daumcdn.net/mapjsapi/images/cursor/openhand.cur.ico&quot;), default;">
-                                            <div style="position: absolute;">
-                                                <div style="position: absolute; z-index: 0;"></div>
-                                                <div style="position: absolute; z-index: 1; left: 0px; top: 0px;"><img
-                                                        src="https://map2.daumcdn.net/map_2d/2303ksn/L3/1997/886.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -144px; top: 214px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map3.daumcdn.net/map_2d/2303ksn/L3/1997/887.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 112px; top: 214px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map0.daumcdn.net/map_2d/2303ksn/L3/1997/888.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 368px; top: 214px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map1.daumcdn.net/map_2d/2303ksn/L3/1997/889.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 624px; top: 214px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map2.daumcdn.net/map_2d/2303ksn/L3/1998/886.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -144px; top: -42px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map3.daumcdn.net/map_2d/2303ksn/L3/1998/887.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 112px; top: -42px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map0.daumcdn.net/map_2d/2303ksn/L3/1998/888.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 368px; top: -42px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map1.daumcdn.net/map_2d/2303ksn/L3/1998/889.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 624px; top: -42px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map2.daumcdn.net/map_2d/2303ksn/L3/1999/886.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: -144px; top: -298px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map3.daumcdn.net/map_2d/2303ksn/L3/1999/887.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 112px; top: -298px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map0.daumcdn.net/map_2d/2303ksn/L3/1999/888.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 368px; top: -298px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;"><img
-                                                        src="https://map1.daumcdn.net/map_2d/2303ksn/L3/1999/889.png"
-                                                        alt="" role="presentation" draggable="false"
-                                                        style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 624px; top: -298px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
-                                                </div>
-                                                <div style="position: absolute; z-index: 1;"></div>
-                                                <div
-                                                    style="width: 640px; height: 280px; position: absolute; z-index: 1;">
-                                                </div>
-                                                <div style="position: absolute; z-index: 1;"><svg version="1.1"
-                                                        style="stroke: none; stroke-dashoffset: 0.5; stroke-linejoin: round; fill: none; transform: translateZ(0px); position: absolute; width: 3200px; height: 1400px; left: -1280px; top: -560px;"
-                                                        viewBox="0 0 3200 1400">
-                                                        <defs></defs>
-                                                    </svg></div>
-                                                <div
-                                                    style="position: absolute; z-index: 1; width: 100%; height: 0px; transform: translateZ(0px);">
-                                                    <div
-                                                        style="position: absolute; margin: -49px 0px 0px -19px; z-index: 0; left: 320px; top: 140px;">
-                                                        <img draggable="false"
-                                                            src="https://www.hollys.co.kr/websrc/images/icon_hollys2019.png"
-                                                            alt="" role="presentation" title=""
-                                                            style="min-width: 0px; min-height: 0px; max-width: 99999px; max-height: none; border: 0px; display: block; position: absolute; user-select: none; -webkit-user-drag: none; clip: rect(0px, 40px, 50px, 0px); top: 0px; left: 0px; width: 40px; height: 50px;">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            style="position: absolute; cursor: default; z-index: 1; margin: 0px 6px; height: 19px; line-height: 14px; left: 0px; bottom: 0px; color: rgb(0, 0, 0);">
-                                            <div
-                                                style="color: rgb(0, 0, 0); text-align: center; font-size: 10px; float: left;">
-                                                <div
-                                                    style="float: left; margin: 2px 3px 0px 4px; height: 6px; transition: width 0.1s ease 0s; border-top: none rgb(0, 0, 0); border-right: 2px solid rgb(0, 0, 0); border-bottom: 2px solid rgb(0, 0, 0); border-left: 2px solid rgb(0, 0, 0); border-image: initial; width: 46px;">
-                                                </div>
-                                                <div
-                                                    style="float: left; margin: 0px 4px 0px 0px; font-family: AppleSDGothicNeo-Regular, 돋움, dotum, sans-serif; font-weight: bold; color: rgb(0, 0, 0);">
-                                                    50m</div>
-                                            </div>
-                                            <div style="margin: 0px 4px; float: left;"><a target="_blank"
-                                                    href="http://map.kakao.com/" title="Kakao 지도로 보시려면 클릭하세요."
-                                                    style="float: left; width: 32px; height: 10px;"><img
-                                                        src="https://t1.daumcdn.net/mapjsapi/images/m_bi_b.png"
-                                                        alt="Kakao 지도로 이동"
-                                                        style="float: left; width: 32px; height: 10px; border: none;"></a>
-                                                <div
-                                                    style="font: 11px / 11px Arial, Tahoma, Dotum, sans-serif; float: left;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="cursor: auto; position: absolute; z-index: 2; left: 0px; top: 0px;">
-                                        </div>
-                                    </div>
-                                </div>
+                                    
+                                </div> -->
+
+
+                                <!-- <script>
+                                    // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해야 합니다.
+                                    Kakao.init('016d331fa981ce9e6d87e30c9514e4cc');
+                            
+                                    // SDK 초기화 여부를 판단합니다.
+                                    console.log(Kakao.isInitialized());
+
+                                    $(function() {
+                                        var container = document.getElementById('map_canvas_5'); //지도를 담을 영역의 DOM 레퍼런스
+                                        var options = { //지도를 생성할 때 필요한 기본 옵션
+                                            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+                                            level: 3 //지도의 레벨(확대, 축소 정도)
+                                        };
+
+                                        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+                                        
+                                    });
+
+                                </script> -->
                             </div>
                         </td>
                     </tr>
@@ -199,23 +146,11 @@
         </article>
     </main>
     <footer class="footer" id="footer"></footer>
-    <!-- 할리스 가맹점
-가맹문의 및 절차
-상담신청
-할리스에프앤비 x KEB하나은행
-할리스에프앤비와 KEB하나은행이
-제휴를 통해 특별한 가맹점대출
-금융서비스를 지원합니다.
-Membership
 
-가맹 안내 및 창업설명회
-
-일시	장소	설명회 안내
-6월 22일(목) 14시	서울시 중구 통일로92, KG타워 B1 하모니홀	창업설명회는 약 1시간 정도 진행되며, 설명회 이후 각 지역별로 담당자와 개별상담가능 합니다.
-찾아 오시는길
-서울시 중구 통일로92, KG타워 B1 하모니홀
-출력하기 -->
-
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.2.0/kakao.min.js"
+        integrity="sha384-x+WG2i7pOR+oWb6O5GV5f1KN2Ko6N7PTGPS7UlasYWNxZMKQA63Cj/B2lbUmUfuC" crossorigin="anonymous">
+        </script>
+    <script src="franchiseIntro.js"></script>
 </body>
 
 </html>
