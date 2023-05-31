@@ -95,27 +95,24 @@ main .content .board_wrap .board_list_wrap .board_list {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
 }
-main .content .board_wrap .board_list_wrap .board_list .page-cont > div {
-  border-bottom: 1px solid #aeaeae;
-  display: flex;
-  box-sizing: border-box;
-}
-main
-  .content
-  .board_wrap
-  .board_list_wrap
-  .board_list
-  .page-cont
-  > div:last-child {
-  border: none;
-}
 main .content .board_wrap .board_list_wrap .board_list .page-cont {
   display: none;
 }
 main .content .board_wrap .board_list_wrap .board_list .page-cont.current {
   display: inherit;
 }
-main .content .board_wrap .board_list_wrap .board_list .page-cont > div {
+
+main .content .board_wrap .board_list_wrap .board_list .page-cont ul li {
+  border-bottom: 1px solid #aeaeae;
+  box-sizing: border-box;
+}
+main .content .board_wrap .board_list_wrap .board_list .page-cont ul li:last-child{
+  border-bottom: none;
+}
+
+main .content .board_wrap .board_list_wrap .board_list .page-cont ul li > div {
+  display: flex;
+
   padding: 15px 0 15px 0;
   display: flex;
   align-items: center;
