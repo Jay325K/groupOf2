@@ -76,13 +76,20 @@ main .content .board_wrap .board_title {
 }
 
 /**     게시판     **/
-main .content .board_wrap .board_list_wrap select {
-  width: 130px;
-  height: 25px;
+main .content .board_wrap .board_list_wrap .select_wrap {
+  position: relative;
+  height: 30px;
+}
+main .content .board_wrap .board_list_wrap .select_wrap select {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
 }
 
 main .content .board_wrap .board_list_wrap .board_list {
-  margin: 40px 0;
+  margin: 20px 0;
   padding: 5px 0 10px 0;
   width: 100%;
   border-top: 2px solid #000;

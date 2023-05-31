@@ -26,14 +26,6 @@ $(function () {
     }
   );
 
-  // $('.gnb').hover(function(){
-  //         $('.depth-02').css({display:'block', height:'0'}).stop().animate({height:"200px"}, "fast");
-  // },function(){
-  //     $('.depth-02').stop().animate({height:'0'}, 'fast', function(){
-  //         $('.depth-02').css({display:'none'})
-  //     });
-  // });
-
   window_resize();
   window.addEventListener("resize", function () {
     window_resize();

@@ -3,9 +3,6 @@ window.onload=()=>{
     const slide_contents = document.querySelectorAll('.show_curriculum_content_wrap>.show_ul>ul>li');
     const slide_btn_bg = document.querySelector('.show_curriculum_content_wrap>.show_ul>.menu_bg_color');
 
-    const brista_master_slide_btns =document.querySelectorAll('.brista_master_content_wrap .detail_curiculum_level>a');
-    const brista_string_1_slide_btns =document.querySelectorAll('.brista_string_1_content_wrap .detail_curiculum_level>a');
-
     slide_contents.forEach((e,idx)=>{
         e.children[0].onclick=()=>{
             /* 버튼 배경 움직이기 */
