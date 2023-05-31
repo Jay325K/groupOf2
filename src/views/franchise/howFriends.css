@@ -159,10 +159,10 @@ caption{
     line-height: 0;
 }
 colgroup {
-    display: table-column-group;
+    width: 100%;
 }
 col {
-    display: table-column;
+    width: 100%;
 }
 .thead {
     display: table-header-group;

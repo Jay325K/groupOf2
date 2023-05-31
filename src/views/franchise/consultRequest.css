@@ -128,7 +128,7 @@ h2{
 
 /* sec02 - content */
 .content{
-    margin: 0 140px 200px 140px;
+    margin: 30px 140px 200px 140px;
 }
 .tableInfo03 {
     margin: 0px 0 15px 0;
@@ -139,8 +139,9 @@ h2{
 .fl_r {
     float: right;
 }
-.tableType01.counsel {
-    text-align: center;
+.tableType01 table {
+    width: 100%;
+    table-layout: fixed;
 }
 .tableType01.counsel {
     text-align: center;
@@ -153,16 +154,17 @@ h2{
 .mar_t_20 {
     margin-top: 20px !important;
 }
-/* table {
+table {
     border-collapse: collapse;
-} */
+}
 table {
     display: table;
-    border-collapse: separate;
+    border-collapse: collapse;
     box-sizing: border-box;
     text-indent: initial;
     border-spacing: 2px;
     border-color: gray;
+    margin: 0;
 }
 colgroup {
     display: table-column-group;
