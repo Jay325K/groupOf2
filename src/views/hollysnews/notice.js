@@ -1,6 +1,13 @@
+/**     검색     **/
+// function inputValueChange(){
+//     var inputValue = document.getElementById('search').value;
+//     // console.log(inputValue);
+// };
+
 $(document).ready(function(){
 
     /**     검색     **/
+
     $('main .content .board_wrap .search_wrap div').find('button').click(function(){
         var val = document.getElementById('search').value;
 
