@@ -8,7 +8,7 @@ $(function () {
     add_active(scroll);
   });
 
-  /***   gnb a태그 포커스 시 depth-02 active   ***/
+  /***   tab key로 이동 : gnb a태그 포커스 시 depth-02 active   ***/
   $(".gnb a").focus(function () {
     $(".depth-02>div").addClass("active");
   });
