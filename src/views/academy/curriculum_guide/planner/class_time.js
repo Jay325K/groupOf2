@@ -18,6 +18,10 @@ $(function(){
             let change_month = nowmonth;
             let nowdate = nowday__date.getDate();
 
+            //현재 연, 월 테이블 출력
+            $('.show_year').text(change_year+'년');
+            $('.show_month').text(change_month+'월');
+
             /* setting_date에 nowdate를 전달하는 이유는 date_for함수에 현재 날짜에 배경색을 바꾸기 위함 */
             setting_date(nowdate, change_month, change_year);
             planner_in_text_click();
@@ -27,7 +31,7 @@ $(function(){
             }
             planner_in_infomation();
             /**************************/
-
+            
 
             /* 년도나 월 바꾸는 버튼 클릭시 */
             $('.year_month div a').on('click',function(){
@@ -103,12 +107,11 @@ $(function(){
                 let oneyear = oneday__date.getFullYear();
                 let onemonth = oneday__date.getMonth()+1;
                 let oneday = oneday__date.getDay();
-                
-        
+                console.log('od =',oneday)
                 let month_last_date = date_length(change_year,change_month);
         
                 myTR_numb(oneday, month_last_date);
-                now_date_reading(oneyear,onemonth,nowdate,change_month,change_year);
+                now_date_reading(oneyear,onemonth,(nowdate + oneday -1),change_month,change_year);
                     /* date_for함수에 nowyear,nowmonth를 전달하는 이유는 현재 날짜에 배경색을 바꾸기 위함 */
                 date_for(oneday, month_last_date,change_year,change_month);
             }
@@ -152,6 +155,9 @@ $(function(){
 
             /* 오늘 날짜 백그라운드 변경 */
             function now_date_reading(oneyear,onemonth,nowdate,onemonth,oneyear){
+                console.log(nowyear);
+                console.log(nowmonth);
+                console.log(nowdate)
                 if(nowyear === oneyear && nowmonth === onemonth){
                     
                     
