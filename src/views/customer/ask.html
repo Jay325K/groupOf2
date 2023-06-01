@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ask</title>
+    <script src="../../jquery/jquery-3.6.4.min.js"></script>
+    <script src="../../jquery/jquery.js"></script>
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="ask.css">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <script src="ask.js"></script>
+
+    <link rel="stylesheet" href="../footer_header/footer.css">
+    <script src="../footer_header/header_call.js"></script>
+    <link rel="stylesheet" href="../footer_header/header.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header" id="header"></header>
+    <main>
+        <article class="article container" id="article">
+            <section class="sec01">
+                <div class="banner">
+                    <div class="banner_txt">
+                        <span class="h2_deco"></span>
+                        <h2>고객 문의</h2>
+                        <div class="lnb" id="lnb">
+                            <ul>
+                                <li><a href="faq.html">FAQ</a> </li>
+                                <li><a href="survey.html">고객 설문</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="sec02">
+                <div class="franchise_info">
+                    <div class="page_info">
+                        <div class="path">
+                            홈 > 고객서비스 > 고객 문의
+                        </div>
+                    </div>
+                    <div class="page_name">
+                        <h3>고객 문의</h3>
+                    </div>
+                    <!-- content -->
+                    <div class="content">
+                        <form id="frm" name="frm" method="POST" action="/customer/inquiry.do"
+                            enctype="multipart/form-data">
+                            <input type="hidden" id="inqryType" name="inqryType" value="C2001">
+                            <input type="hidden" id="mobile" name="mobile" value="">
+                            <input type="hidden" id="nationCd" name="nationCd" value="KOR">
+                            <input type="hidden" id="storCd" name="storCd" value="">
+                            <input type="hidden" id="areaDiv" name="areaDiv" value="00">
+                            <input type="hidden" id="visitDt" name="visitDt" value="">
+
+                            <dl class="wr_agreement">
+                                <dt class="ft16B">개인정보 수집관련 동의사항</dt>
+                                <dd>
+                                    <div class="agreement" style="height:400px;">
+                                        <div class="agreement_list">
+                                            ■ 수집하는 개인정보 항목 <br>
+                                            회사는 회원가입, 할리스 멤버십카드 등록 및 조회, 고객 문의 사항 처리, 가맹상담, 아카데미 수강신청 등의 서비스 신청을 위해 아래와
+                                            같은 개인정보를 수집하고 있습니다.<br><br>
+                                            <div class="point_text">
+                                                ◦ 개인정보 수집항목<br>
+                                                - 필수 : 이름, 생년월일, 성별, 아이디, 비밀번호, 휴대전화번호<br>
+                                                - 선택 : 주소, E-mail<br><br>
+
+                                                ◦ 서비스 이용과정 및 사업 처리과정에서 수집될 수 있는 개인정보<br>
+                                                - 서비스이용기록, 접속로그, 쿠키, 접속IP정보, 결제기록, 이용정지기록, 멤버십 카드 번호, 할리스카드 번호, 할리스카드
+                                                PIN번호, 단말기 정보(OS종류, PUSH용 토큰, 디바이스 ID), DI<br><br>
+
+                                                ◦ 개인정보 수집방법<br>
+                                                - 회원가입, 고객문의, 고객설문, 가맹점 상담신청, 아카데미 수강신청, 이벤트 참여, 모바일앱 이용<br><br>
+                                                - 로그 분석 프로그램을 통한 생성 정보 수집<br>
+                                                - 쿠키에 의한 정보 수집<br><br>
+                                            </div>
+
+                                            ■ 개인정보의 수집 및 이용목적 <br>
+                                            회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br><br>
+                                            <div class="point_text">
+                                                ◦ 멤버십 회원 관리<br>
+                                                - 멤버십 서비스 이용을 위한 본인 확인, 이벤트 참여, 불만처리 등 고객 문의, 고객 설문, 할리스콘 및 할리스카드
+                                                구입ㆍ선물<br><br>
+
+                                                ◦ 가맹 상담 신청<br><br>
+
+                                                ◦ 마케팅 및 광고에 활용<br>
+                                                - 신규 서비스(제품) 개발 및 특화, 이벤트 등 광고성 정보 전달, 인구통계학적 특성에 따른 서비스 제공 및 광고 게재, 접속
+                                                빈도 파악 또는 회원의 서비스 이용에 대한 통계<br><br>
+
+                                                ◦ 기타<br>
+                                                - 각종 서비스 공지 및 이벤트 홍보 안내를 위한 문자메시지 및 이메일 전달<br>
+                                                (단, 별도 마케팅 및 프로모션 정보 수신 동의한 이용자에 한함)<br><br>
+                                            </div>
+                                            ■ 개인정보의 보유 및 이용기간 <br>
+                                            회사는 이용자의 개인정보제공일로부터 서비스를 제공하는 기간 동안에 한하여 이용자의 개인정보를 보유 및 이용하게 됩니다. 회사는 회원이
+                                            탈퇴를 요청하거나 개인정보 수집 및 이용에 대한 동의를 철회하는 경우, 개인정보 수집 및 이용목적이 달성된 후, 보유 및 이용기간이
+                                            종료된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.<br><br>
+
+                                            다만, 모바일앱 이용자의 경우, 그 앱을 삭제 한다하여도 자동 탈퇴 처리가 되지 않으니, 탈퇴를 원하실 경우 모바일앱 메인 화면 하단의
+                                            ‘회원탈퇴’를 통한 별도의 탈퇴 요청이 필요합니다.<br><br>
+
+                                            다만, 아래와 같은 경우 일정기간 동안 예외적으로 수집한 회원정보의 전부 또는 일부를 보관할 수 있습니다.<br><br>
+
+                                            <div class="point_text">
+                                                ◦ 보유항목: 아이디, 이름, DI<br>
+                                                ◦ 보유이유: 무분별한 회원탈퇴 및 재가입으로 인한 부정 사용 및 피해예방<br>
+                                                ◦ 보유기간: 회원 탈퇴 후 30일간<br><br>
+                                            </div>
+
+                                            전자상거래 등에서의 소비자 보호에 관한 법률, 전자금융거래법, 통신비밀보호법 등 법령에서 일정기간 정보의 보관을 규정하는 경우는 아래와
+                                            같습니다. 회사는 이 기간 동안 법령의 규정에 따라 개인정보를 보관하며, 본 정보를 다른 목적으로는 절대 이용하지
+                                            않습니다.<br><br>
+                                            <div class="point_text">
+                                                가. 전자상거래 등에서 소비자 보호에 관한 법률<br>
+                                                ◦ 계약 또는 청약철회 등에 관한 기록: 5년<br>
+                                                ◦ 대금 결제 및 재화 등의 공급에 관한 기록: 5년<br>
+                                                ◦ 소비자의 불만 또는 분쟁처리에 관한 기록: 3년<br>
+                                                ◦ 표시/광고에 관한 기록 : 6개월<br><br>
+
+                                                나. 전자금융거래법<br>
+                                                ◦ 전자금융에 관한 기록: 5년 보관 <br><br>
+
+                                                다. 통신비밀보호법<br>
+                                                ◦ 접속로그, 접속IP정보, 서비스이용기록: 3개월<br><br>
+                                            </div>
+                                            ■ 개인정보의 파기절차 및 방법<br>
+                                            회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 파기절차 및 방법은 다음과
+                                            같습니다.<br><br>
+
+                                            ◦ 파기절차<br>
+                                            - 회사는 회원탈퇴, 서비스 종료, 이용자에게 동의 받은 개인정보 보유기간의 도래와 같이 개인정보의 수집 및 이용목적이 달성된 개인정보는
+                                            재생이 불가능한 방법으로 파기하고 있습니다. 법령에서 보존의무를 부과한 정보에 대해서도 해당 기간 경과 후 지체 없이 재생이 불가능한
+                                            방법으로 파기합니다.<br>
+                                            ◦ 파기방법 <br>
+                                            - 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 완전하게 삭제하고, 출력물 등은 분쇄기로 분쇄하거나
+                                            소각하는 방식 등으로 파기합니다.<br><br>
+                                        </div>
+                                    </div>
+                                </dd>
+                                <dd class="ag_radio"><input type="radio" id="agree_yn" name="agree_yn" value="1"
+                                        checked="checked"> <label for="yes">동의함</label> <input type="radio"
+                                        id="agree_yn" name="agree_yn" value="0"> <label for="no">동의하지않음</label></dd>
+                            </dl>
+
+
+                            <p class="tableInfo01">고객문의 입력</p>
+                            <fieldset>
+                                <legend>고객문의 입력</legend>
+                                <div class="tableType01">
+                                    <table summary="" class="form">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col width="14%">
+                                            <col width="36%">
+                                            <col width="15%">
+                                            <col width="35%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><label for="sort_sel">분류</label></th>
+                                                <td colspan="3">
+                                                    <select id="vocHighcate" name="vocHighcate" style="width:120px;">
+                                                        <option value="">선택하세요</option>
+                                                        <option value="C3101">칭찬</option>
+                                                        <option value="C3102">문의</option>
+                                                        <option value="C3103">제안</option>
+                                                        <option value="C3104">불만</option>
+                                                        <option value="C3105">가맹 상담</option>
+                                                    </select>
+                                                    <select id="vocLowcate" name="vocLowcate" style="width:120px;">
+                                                        <option value="">선택하세요</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label for="vocTitle">제목</label></th>
+                                                <td colspan="3"><input type="text" id="vocTitle" name="vocTitle"
+                                                        class="searchIn02" style="width:578px" maxlength="64"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label for="custNm">성명</label></th>
+                                                <td class="bor_right"><input type="text" id="custNm" name="custNm"
+                                                        class="searchIn02" style="width:220px;background:#f6f6f6;"
+                                                        maxlength="30" value="김재희" readonly="readonly"></td>
+                                                <th scope="row"><label for="email">이메일</label></th>
+                                                <td><input type="text" id="email" name="email" class="searchIn02"
+                                                        style="width:220px;" value="hjysjhhj277@gmail.com"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label for="visitDt">방문일자</label></th>
+                                                <td class="bor_right" colspan="3">
+                                                    <select id="visitDt1" name="visitDt1" title="년도" style="width:25%;">
+                                                        <option value="">년도</option>
+                                                        <option value="2023">2023년</option>
+                                                        <option value="2022">2022년</option>
+                                                        <option value="2021">2021년</option>
+                                                        <option value="2020">2020년</option>
+                                                        <option value="2019">2019년</option>
+                                                        <option value="2018">2018년</option>
+                                                        <option value="2017">2017년</option>
+                                                        <option value="2016">2016년</option>
+                                                        <option value="2015">2015년</option>
+                                                        <option value="2014">2014년</option>
+                                                        <option value="2013">2013년</option>
+                                                        <option value="2012">2012년</option>
+                                                        <option value="2011">2011년</option>
+                                                        <option value="2010">2010년</option>
+                                                    </select>
+                                                    <select id="visitDt2" name="visitDt2" title="월" style="width:25%;">
+                                                        <option value="">월</option>
+                                                        <option value="01">01월</option>
+                                                        <option value="02">02월</option>
+                                                        <option value="03">03월</option>
+                                                        <option value="04">04월</option>
+                                                        <option value="05">05월</option>
+                                                        <option value="06">06월</option>
+                                                        <option value="07">07월</option>
+                                                        <option value="08">08월</option>
+                                                        <option value="09">09월</option>
+                                                        <option value="10">10월</option>
+                                                        <option value="11">11월</option>
+                                                        <option value="12">12월</option>
+                                                    </select>
+                                                    <select id="visitDt3" name="visitDt3" title="일" style="width:25%;">
+                                                        <option value="">일</option>
+                                                        <option value="01">01일</option>
+                                                        <option value="02">02일</option>
+                                                        <option value="03">03일</option>
+                                                        <option value="04">04일</option>
+                                                        <option value="05">05일</option>
+                                                        <option value="06">06일</option>
+                                                        <option value="07">07일</option>
+                                                        <option value="08">08일</option>
+                                                        <option value="09">09일</option>
+                                                        <option value="10">10일</option>
+                                                        <option value="11">11일</option>
+                                                        <option value="12">12일</option>
+                                                        <option value="13">13일</option>
+                                                        <option value="14">14일</option>
+                                                        <option value="15">15일</option>
+                                                        <option value="16">16일</option>
+                                                        <option value="17">17일</option>
+                                                        <option value="18">18일</option>
+                                                        <option value="19">19일</option>
+                                                        <option value="20">20일</option>
+                                                        <option value="21">21일</option>
+                                                        <option value="22">22일</option>
+                                                        <option value="23">23일</option>
+                                                        <option value="24">24일</option>
+                                                        <option value="25">25일</option>
+                                                        <option value="26">26일</option>
+                                                        <option value="27">27일</option>
+                                                        <option value="28">28일</option>
+                                                        <option value="29">29일</option>
+                                                        <option value="30">30일</option>
+                                                        <option value="31">31일</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">지역</th>
+                                                <td class="bor_right" id="storeDistrict">
+                                                    <select id="sidoCd" name="sidoCd" title="시/도" style="width:48%;">
+                                                        <option value="">--시/도--</option>
+                                                        <option value="110">부산광역시</option>
+                                                        <option value="120">대구광역시</option>
+                                                        <option value="130">인천광역시</option>
+                                                        <option value="140">광주광역시</option>
+                                                        <option value="150">대전광역시</option>
+                                                        <option value="160">울산광역시</option>
+                                                        <option value="170">세종특별자치시</option>
+                                                        <option value="180">경기도</option>
+                                                        <option value="190">강원도</option>
+                                                        <option value="200">충청북도</option>
+                                                        <option value="210">충청남도</option>
+                                                        <option value="220">전라북도</option>
+                                                        <option value="230">전라남도</option>
+                                                        <option value="240">경상북도</option>
+                                                        <option value="250">경상남도</option>
+                                                        <option value="260">제주특별자치도</option>
+                                                        <option value="100">서울특별시</option>
+                                                    </select>
+                                                    <select id="region" name="region" style="width:48%;float:right;">
+                                                        <option value="">--구/군--</option>
+                                                    </select>
+                                                </td>
+                                                <th scope="row">매장명</th>
+                                                <td>
+                                                    <select style="width:100%;" id="store" name="storNm">
+                                                        <option value="">선택하세요</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">핸드폰</th>
+                                                <td colspan="3">
+                                                    <select title="휴대폰 첫자리" class="formSelect" style="width:120px;"
+                                                        id="mobile1" name="mobile1">
+                                                        <option value="010" selected="">010</option>
+                                                        <option value="011">011</option>
+                                                        <option value="016">016</option>
+                                                        <option value="017">017</option>
+                                                        <option value="019">019</option>
+                                                    </select>
+                                                    - <input type="text" class="searchIn02 number-only" title="휴대폰 중간자리"
+                                                        style="width:100px" id="mobile2" name="mobile2" size="4"
+                                                        maxlength="4" value="">
+                                                    - <input type="text" class="searchIn02 number-only" title="휴대폰 끝자리"
+                                                        style="width:100px" id="mobile3" name="mobile3" size="4"
+                                                        maxlength="4" value="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label for="">첨부파일</label></th>
+                                                <td colspan="3">
+                                                    <ul>
+                                                        <li><input type="file" style="width:500px; height:27px"
+                                                                id="file" name="file" size="40"></li>
+                                                        <li class="txt03">※ 업로드 제한 사이즈 : 10MB※ 업로드 가능 확장자 : jpg, jpeg,
+                                                            png, gif</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><label for="strContent">내용</label></th>
+                                                <td colspan="3">
+                                                    <textarea id="strContent" name="content" rows="15" cols=""
+                                                        style="width:100%; height:80px;box-sizing:border-box;"></textarea>
+                                                    * 로그인 후 30분 경과 시 고객님의 개인 정보 보호를 위해 자동 로그아웃 됩니다.
+                                                </td>
+                                            </tr>
+                                            <tr class="noline">
+                                                <td colspan="4" class="noline">
+                                                    <div
+                                                        style="margin-bottom:5px;padding:10px;border:1px solid #d9d9d9;line-height:1.8em;">
+                                                        <ul>
+                                                            <li style="margin-left:10px;text-indent:-10px;">
+                                                                · 본 고객문의는 메일을 통한 안내로 진행됩니다. <br>
+                                                                (필요한 경우 고객이 동의한 개인정보처리방침에 따라 홈페이지 가입시에 등록한 연락처 또는 고객문의
+                                                                본문에 고객이 직접 문의처리를 위해 기재한 개인정보를 활용하여 처리할 수 있습니다.)</li>
+                                                            <li style="margin-left:10px;text-indent:-10px;">
+                                                                · 문의에 대한 답변은 고객정보 내 메일주소로 발송되며, 기재 오류 및 계정 문제가 발생할 경우에는
+                                                                답변이 불가할 수 있으므로 메일 주소를 꼭 확인해 주시기 바랍니다.</li>
+                                                            <li style="margin-left:10px;text-indent:-10px;">
+                                                                <strong>· 고객문의 접수 내용은 고객센터 운영시간 내 순차적으로 답변드리고 있으며, 추가
+                                                                    문의사항 있으시거나 신속한 답변이 필요하신 경우에는 할리스
+                                                                    대표번호(☎02-2188-7100)로 문의하여 주시기 바랍니다.</strong>
+                                                            </li>
+                                                            <li style="margin-left:10px;text-indent:-10px;">
+                                                                · 비속어 및 비방성 등의 부적절한 내용이 포함되어 있는 경우, 답변 진행이 어려울 수 있습니다.
+                                                            </li>
+                                                            <li style="margin-left:10px;text-indent:-10px;">
+                                                                · 작성해 주신 내용은 공정거래위원회에서 고시 소비자 분쟁 해결기준에 의하여 처리됩니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <div class="btn_wr04">
+                            <a href="#" class="btnType01" onclick="javascript:onProc(); return false;">작성완료</a>
+                        </div>
+                    </div>
+
+                </div>
+        </article>
+    </main>
+    <footer class="footer" id="footer"></footer>
+</body>
+
+</html>
