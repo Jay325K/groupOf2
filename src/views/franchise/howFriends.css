@@ -158,12 +158,6 @@ caption{
     font-size: 0;
     line-height: 0;
 }
-colgroup {
-    width: 100%;
-}
-col {
-    width: 100%;
-}
 .thead {
     display: table-header-group;
     vertical-align: middle;
@@ -187,6 +181,11 @@ tr {
     font-weight: bold;
     background: #f1f1f1;
 }
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
 tbody {
     display: table-row-group;
     vertical-align: middle;
@@ -195,6 +194,7 @@ tbody {
 .tb_01 table td:first-child {
     border-left: 0;
 }
+
 .tb_01 table td {
     text-align: center;
     padding: 10px 0 10px 0;
@@ -227,6 +227,11 @@ table {
 }
 .tit_sub + .tb_01 {
     margin-top: 22px;
+}
+tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
 }
 .tb_01 table tfoot th:first-child {
     border-left: 0;
