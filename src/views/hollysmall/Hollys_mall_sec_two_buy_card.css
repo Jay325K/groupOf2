@@ -191,7 +191,16 @@
 
     font-size: 5em;
 
-    color: #0005;
+    color: #000;
+}
+.buy_wrap .page_step_contents .card_category_img_box li .check i{
+    width: 100%;
+    height: 100%;
+    background: #fff3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .buy_wrap .page_step_contents .card_category_img_box li .select_card_img_name{
