@@ -75,7 +75,7 @@ $(document).ready(function(){
             arrStr.push('<option value="' + this.codeCd + '">' + this.codeNm + '</option>');
         });
 
-        $('#vocLowcate').html(arrStr.join()).focus();
+        
     });
 
             $('#store').on('change', function() {
@@ -108,12 +108,7 @@ $(document).ready(function(){
         return false;
     }
 
-    jqElem = $('#vocLowcate');
-    if(!jqElem.val()){
-        alert("분류를 선택해 주십시오.");
-        jqElem.focus();
-        return false;
-    }
+    
 
     jqElem = $('#vocTitle');
     if(!jqElem.val()){

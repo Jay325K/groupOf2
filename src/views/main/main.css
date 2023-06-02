@@ -88,6 +88,7 @@ section {
     align-items: flex-end;
     z-index: 2;
     overflow: hidden;
+    opacity: 0;
 }
 
 .cof_text {
@@ -149,6 +150,7 @@ section {
     display: inline-block;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
+    opacity: 0;
 }
 
 .dep_text {
@@ -161,6 +163,7 @@ section {
     display: inline-block;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 900;
+    opacity: 0;
 }
 
 
@@ -205,6 +208,7 @@ section {
     font-family: 'Noto Sans KR', sans-serif;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+    opacity: 0;
 }
 
 .dep2_text {
@@ -219,6 +223,7 @@ section {
     font-family: 'Noto Sans KR', sans-serif;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+    opacity: 0;
     /* 외곽선 색을 흰색으로 설정 */
 }
 
