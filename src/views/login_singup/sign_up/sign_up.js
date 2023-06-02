@@ -46,9 +46,11 @@ window.onload=()=>{
 
                     if(id_overlap_check_number == id_pw_list.length){
                         document.querySelector('.id_check_txt').innerHTML='사용할 수 있는 아이디입니다';
+                        document.querySelector('.id_check_txt').style.color='#008000';
                         id_overlap_check_btn_click_number=1;
                     }else{
                         document.querySelector('.id_check_txt').innerHTML='이미 가입된 아이디입니다.';
+                        document.querySelector('.id_check_txt').style.color='#c72f2f';
                         id_overlap_check_btn_click_number=0;
                     }
                     
