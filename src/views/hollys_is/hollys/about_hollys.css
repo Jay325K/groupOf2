@@ -44,8 +44,15 @@ a {
   width: 450px;
   line-height: 1.5;
 }
-.about_content--top_main span {
-  border-bottom: 5px solid #c72f30;
+.about_content--top_main--span_under--line {
+  width: 0;
+  height: 5px;
+}
+.about_content--top_main--span_under--line_active {
+  width: 85px;
+  height: 5px;
+  background: #c72f30;
+  transition: 0.5s;
 }
 .about_content--top_detail {
   font-size: 16px;
