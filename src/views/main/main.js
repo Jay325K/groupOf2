@@ -1,6 +1,6 @@
 $(function () {
   let section_number = document.querySelectorAll('article section');
-  let texts = document.querySelectorAll('.text1, .text2, .menuT, .text3');
+  
 
   /*             //메인 컨텐츠가 main태그 맨 위에 붙어있게하기
               document.querySelector('article').style.transform='translateY(0)'; */

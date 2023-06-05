@@ -154,4 +154,5 @@ h2 {
 .faq_list dd {
     background: url(../../assets/images/customer/img_a.gif) left 13px no-repeat;
     padding: 21px 0 18px 40px;
+    background-color: #d3d3d3;
 }
