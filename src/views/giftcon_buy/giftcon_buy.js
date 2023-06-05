@@ -72,7 +72,9 @@ const inputCheck = () => {
       alert("결제 수단을 선택해 주세요.");
       payChecked = 0;
     } else {
-      pageMove();
+      if (confirm("결제 완료하시겠습니까?")) {
+        pageMove();
+      }
     }
   }
 };
