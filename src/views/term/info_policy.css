@@ -17,17 +17,38 @@ main .banner_wrap .banner {
   transform: translate(-50%, -50%);
 }
 main .banner_wrap h2 {
-  width: 700px;
+  width: 650px;
   color: #fff;
   font-size: 65px;
   text-align: center;
   padding: 15px 0;
-  border-bottom: 3px solid rgb(199, 47, 47);
 }
+main .banner_wrap .banner .h2_deco {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 700px;
+  height: 3px;
+  background-color: rgb(199, 47, 47);
+  animation: animate 0.5s ease-in;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    width: 340px;
+  }
+}
+
 main .banner_wrap .lnb {
   margin-top: 15px;
   height: 60px;
-  width: 700px;
+  width: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
