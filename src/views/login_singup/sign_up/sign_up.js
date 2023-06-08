@@ -22,6 +22,7 @@ window.onload=()=>{
                 let email_ = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;    // 이메일 정규식
                 let tel_=/^[0-9]{3}-[0-9]{4}-[0-9]{4}$/; //전화번호 정규식
 
+
                 var id_overlap_check_btn_click_number = 0; //아이디 중복검사 버튼 누른 횟수
                 var id_overlap_check_number = 0; //중복검사 횟수
 
@@ -186,25 +187,23 @@ window.onload=()=>{
                         alert('아이디 중복확인이 필요합니다.');
                         return 0;
                     }
-                    if(pw_check_input.value<8 || pw_check_input.value!=pw_input.value){
-                        alert('비밀번호 확인이 필요합니다.');
-                        return 0;
-                    }
-                    
-                    if(!tel_.test(document.querySelector('.tel_input').value)){
-                        alert('전화번호를 잘못 입력하셨습니다.');
-                        return 0;
-                    }
                     if(document.querySelector('.name_input').value ==''){
                         alert('이름을 입력하세요.');
                         return 0;
                     }
-
+                    if(!tel_.test(document.querySelector('.tel_input').value)){
+                        alert('전화번호를 잘못 입력하셨습니다.');
+                        return 0;
+                    }
                     for(let x=0; x<id_pw_list.length; x++){
                         if(id_pw_list[x].tel==document.querySelector('.tel_input').value){
                             alert('이미 가입된 전화번호입니다.');
                             return 0;
                         }
+                    }
+                    if(pw_check_input.value<8 || pw_check_input.value!=pw_input.value){
+                        alert('비밀번호 확인이 필요합니다.');
+                        return 0;
                     }
 
                     alert('회원가입이 완료되었습니다.');

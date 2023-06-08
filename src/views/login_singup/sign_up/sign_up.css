@@ -298,9 +298,12 @@
 
     font-weight: 400;
 }
-.sign_up_wrap .button_wrap_prev_next button:nth-child(2):hover{
+.sign_up_wrap .button_wrap_prev_next button:nth-child(2){
     color: #ffffff;
     background: #c72f2f;
 
     border: 1px solid #9c2121;
+}
+.sign_up_wrap .button_wrap_prev_next button:nth-child(2):hover{
+    background: #8b2121;
 }
